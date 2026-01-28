@@ -1,0 +1,10 @@
+{
+    "name": "hyperlanes-modpack",
+    "version": "1.0.0",
+    "title": "Hyperlanes Modpack",
+    "author": "shibadisaster",
+    "factorio_version": "2.0",
+    "dependencies": ["base >= 2.0", "maraxsis", "Moshine"],
+    "description": "Factorio modpack made with the goal of creating a Space Age experience with a focus on intermod cohesion and interplanetary logistics!",
+    "license": "MIT"
+}
