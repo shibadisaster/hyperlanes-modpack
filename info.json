@@ -18,7 +18,13 @@
         "panglia_planet",
         "planetaris-arig",
         "planetaris-hyarion",
-        "planetaris-tellus"
+        "planetaris-tellus",
+        "Redrawn-Space-Connections",
+        "rubia-minus-memes",
+        "dynamic_platform_lighting",
+        "cerys-science-edit",
+        "Better_Starmap_Background",
+        "alien-biomes"
     ],
     "description": "Factorio modpack made with the goal of creating a Space Age experience with a focus on long-term progression, mod cohesion, and interplanetary logistics!",
     "license": "MIT"
