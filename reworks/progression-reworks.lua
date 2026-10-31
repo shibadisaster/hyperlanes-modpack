@@ -93,6 +93,15 @@ table.insert(utsp_tech.unit.ingredients, {"space-science-pack", 1})
 
 
 
+
+
+-- QUANTUM PROCESSOR & FUSION
+local qtpr_tech = data.raw["technology"]["quantum-processor"]
+qtpr_tech.prerequisites = {"cryogenic-science-pack"}
+
+
+
+
 -- BIG NOTES
 --              Return fusion to Aquilo instead of post-Paracelsin, since Vesta requires it...
 --                  Maybe inefficient/nonrenewable recipe on Aquilo then better recipe after Paracelsin???
