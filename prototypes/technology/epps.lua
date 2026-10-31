@@ -14,7 +14,7 @@ local t2_epp = {
         },
         time = 30
     },
-    prerequisites = {},
+    prerequisites = {"rocket-silo"},
     order = "c-a"
 }
 data:extend({t2_epp})
@@ -40,7 +40,7 @@ local t3_epp = {
         },
         time = 60
     },
-    prerequisites = {"hyperlanes-t2-epp"},
+    prerequisites = {"hyperlanes-t2-epp", "space-science-pack"},
     order = "c-a"
 }
 data:extend({t3_epp})
@@ -69,7 +69,7 @@ local t4_epp = {
         },
         time = 60
     },
-    prerequisites = {"hyperlanes-t3-epp"},
+    prerequisites = {"hyperlanes-t3-epp", "metallurgic-science-pack", "agricultural-science-pack", "electromagnetic-science-pack"},
     order = "c-a"
 }
 data:extend({t4_epp})
@@ -99,7 +99,7 @@ local t5_epp = {
         },
         time = 60
     },
-    prerequisites = {"hyperlanes-t4-epp"},
+    prerequisites = {"hyperlanes-t4-epp", "interstellar-science-pack"},
     order = "c-a"
 }
 data:extend({t5_epp})
@@ -132,7 +132,7 @@ local t6_epp = {
         },
         time = 60
     },
-    prerequisites = {"hyperlanes-t5-epp"},
+    prerequisites = {"hyperlanes-t5-epp", "planetaris-compression-science", "craptonite-processing", "acidworking-science-pack"},
     order = "c-a"
 }
 data:extend({t6_epp})
@@ -167,7 +167,7 @@ local t7_epp = {
         },
         time = 60
     },
-    prerequisites = {"hyperlanes-t6-epp"},
+    prerequisites = {"hyperlanes-t6-epp", "planetaris-refraction-science-pack", "moshine-tech-ai-tier-5"}, 
     order = "c-a"
 }
 data:extend({t7_epp})
@@ -204,7 +204,7 @@ local t8_epp = {
         },
         time = 60
     },
-    prerequisites = {"hyperlanes-t7-epp"},
+    prerequisites = {"hyperlanes-t7-epp", "cryogenic-science-pack", "hydraulic-science-pack"},
     order = "c-a"
 }
 data:extend({t8_epp})
@@ -245,7 +245,7 @@ local t10_epp = {
         },
         time = 60
     },
-    prerequisites = {"hyperlanes-t8-epp"},
+    prerequisites = {"hyperlanes-t8-epp", "promethium-science-pack"},
     order = "c-a"
 }
 data:extend({t10_epp})
