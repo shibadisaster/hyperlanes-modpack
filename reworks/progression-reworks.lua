@@ -80,6 +80,19 @@ table.insert(panglia_tech.prerequisites, "hyperlanes-t10-epp")
 
 
 
+
+
+-- PRODUCTION & UTILITY SCIENCE PACKS
+local prsp_tech = data.raw["technology"]["production-science-pack"]
+table.insert(prsp_tech.prerequisites, "space-science-pack")
+table.insert(prsp_tech.unit.ingredients, {"space-science-pack", 1})
+
+local utsp_tech = data.raw["technology"]["utility-science-pack"]
+table.insert(utsp_tech.prerequisites, "space-science-pack")
+table.insert(utsp_tech.unit.ingredients, {"space-science-pack", 1})
+
+
+
 -- BIG NOTES
 --              Return fusion to Aquilo instead of post-Paracelsin, since Vesta requires it...
 --                  Maybe inefficient/nonrenewable recipe on Aquilo then better recipe after Paracelsin???
