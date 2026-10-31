@@ -77,3 +77,9 @@ table.insert(solar_system_edge_tech.prerequisites, "galvanization-science-pack")
 -- PANGLIA (T10)
 local panglia_tech = data.raw["technology"]["panglia_planet_discovery_panglia"]
 table.insert(panglia_tech.prerequisites, "hyperlanes-t10-epp")
+
+
+
+-- BIG NOTES
+--              Return fusion to Aquilo instead of post-Paracelsin, since Vesta requires it...
+--                  Maybe inefficient/nonrenewable recipe on Aquilo then better recipe after Paracelsin???
