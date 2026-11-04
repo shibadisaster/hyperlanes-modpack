@@ -41,7 +41,7 @@ local t3_epp = {
         },
         time = 60
     },
-    prerequisites = {"hyperlanes-t2-epp", "space-science-pack"},
+    prerequisites = {"hyperlanes-t2-epp", "space-science-pack", "production-science-pack", "utility-science-pack"},
     order = "c-a",
     essential = true
 }

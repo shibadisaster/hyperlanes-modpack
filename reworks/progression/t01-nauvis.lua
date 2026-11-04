@@ -5,3 +5,12 @@ data.raw["recipe"]["electric-furnace"].ingredients = {
     {type = "item", name = "stone-brick", amount = 10},
     {type = "item", name = "steel-furnace", amount = 1},
 }
+
+-- Production and utility science: move after Muluna space science
+local prsp_tech = data.raw["technology"]["production-science-pack"]
+table.insert(prsp_tech.prerequisites, "space-science-pack")
+table.insert(prsp_tech.unit.ingredients, {"space-science-pack", 1})
+
+local utsp_tech = data.raw["technology"]["utility-science-pack"]
+table.insert(utsp_tech.prerequisites, "space-science-pack")
+table.insert(utsp_tech.unit.ingredients, {"space-science-pack", 1})
