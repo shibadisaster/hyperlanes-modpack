@@ -172,7 +172,7 @@ local t7_epp = {
         },
         time = 60
     },
-    prerequisites = {"hyperlanes-t6-epp", "planetaris-refraction-science-pack", "moshine-tech-ai-tier-5"}, 
+    prerequisites = {"hyperlanes-t6-epp", "planetaris-refraction-science-pack", "moshine-tech-ai-tier-6"}, 
     order = "c-a",
     essential = true
 }
@@ -210,7 +210,7 @@ local t8_epp = {
         },
         time = 60
     },
-    prerequisites = {"hyperlanes-t7-epp", "cryogenic-science-pack", "hydraulic-science-pack"},
+    prerequisites = {"hyperlanes-t7-epp", "cryogenic-science-pack", "hydraulic-science-pack", "moshine-tech-ai-tier-8"},
     order = "c-a",
     essential = true
 }
