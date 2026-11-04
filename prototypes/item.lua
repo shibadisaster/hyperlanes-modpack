@@ -107,18 +107,24 @@ local t8_artificial_lifeform = {
     type = "item",
     name = "hyperlanes-artificial-lifeform",
     icon = "__base__/graphics/icons/fish-entity.png",
-    -- subgroup = "vesta-items-organic",
-    -- order = "a[vesta-organics]-i[algea-clump-iridium]",
-    -- inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
-    -- pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
-    -- drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 100,
     weight = 10 * kg
 }
 data:extend({t8_artificial_lifeform})
 
 
--- Artificial lifeform
+-- Microcellular filter
+local t8_microcellular_filter = {
+    type = "item",
+    name = "hyperlanes-microcellular-filter",
+    icon = "__space-age__/graphics/icons/carbon-fiber.png",
+    stack_size = 100,
+    weight = 5 * kg
+}
+data:extend({t8_microcellular_filter})
+
+
+-- Enlightened processor
 local t10_enlightened_processor = {
     type = "item",
     name = "hyperlanes-enlightened-processor",
