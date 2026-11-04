@@ -1,3 +1,5 @@
 require("prototypes.recipes.glass")
 require("prototypes.technology.epps")
 require("prototypes.quality")
+require("prototypes.item")
+require("prototypes.fluid")
