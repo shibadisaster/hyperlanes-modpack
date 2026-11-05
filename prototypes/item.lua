@@ -149,3 +149,19 @@ local t10_enlightened_processor = {
     weight = 10 * kg
 }
 data:extend({t10_enlightened_processor})
+
+
+-- Sealant
+local t5_sealant = {
+    type = "item",
+    name = "hyperlanes-sealant",
+    icon = "__maraxsis__/graphics/icons/super-sealant-substance-1.png",
+    -- subgroup = "vesta-items-organic",
+    -- order = "a[vesta-organics]-i[algea-clump-iridium]",
+    -- inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+    -- pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+    -- drop_sound = space_age_item_sounds.agriculture_inventory_move,
+    stack_size = 100,
+    weight = 10 * kg
+}
+data:extend({t5_sealant})
