@@ -43,3 +43,144 @@ data.raw["technology"]["moshine-tech-cosmicscanner-construction2"].prerequisites
 data.raw["technology"]["moshine-tech-datacell-empty"].prerequisites = {"moshine-tech-magnet"}
 data.raw["technology"]["moshine-tech-data-processor-building"].prerequisites = {"moshine-tech-datacell-empty"}
 data.raw["technology"]["sun_heat_cooler_2_tech"].prerequisites = {"cryogenic-science-pack", "sun_heat_cooler_1_tech"}
+
+
+-- Sun heat cooler
+-- data.raw["recipe"]["sun_heat_cooler_1"].ingredients = {
+--     {type = "item", name = "neodymium", amount = 1},
+--     {type = "item", name = "hyperlanes-fulgora-magnet", amount = 2},
+--     {type = "fluid", name = "molten-iron", amount = 20},
+--     {type = "item", name = "hyperlanes-sealant", amount = 2},
+-- }
+
+
+-- Empty datacell
+data.raw["recipe"]["datacell-empty"].ingredients = {
+    {type = "item", name = "magnet", amount = 1},
+    {type = "item", name = "silicon-cell", amount = 1},
+    {type = "item", name = "glass", amount = 1},
+    {type = "item", name = "processing-unit", amount = 1}
+}
+
+
+-- Cosmic scanner
+data.raw["recipe"]["moshine_cosmicscanner-construction-stage-1"].ingredients = {
+    {type = "item", name = "refined-concrete", amount = 1200},
+    {type = "item", name = "tungsten-plate", amount = 600},
+    {type = "item", name = "low-density-space-platform-foundation", amount = 500},
+    {type = "item", name = "radar", amount = 50},
+    {type = "item", name = "silicon-carbide", amount = 500},
+}
+
+data.raw["recipe"]["moshine_cosmicscanner-construct-1"].ingredients = {
+    {type = "item", name = "magnet", amount = 120},
+    {type = "item", name = "silicon-carbide", amount = 100},
+    {type = "item", name = "carbon-fiber", amount = 100},
+    {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 10}
+}
+
+data.raw["recipe"]["moshine_cosmicscanner-construct-2"].ingredients = {
+    {type = "item", name = "data-processor", amount = 1},
+    {type = "item", name = "silicon-cell", amount = 200},
+    {type = "item", name = "glass", amount = 50},
+    {type = "item", name = "hyperlanes-advanced-material-microsuspension-barrel", amount = 10}
+}
+
+data.raw["recipe"]["moshine_cosmicscanner-construct-3"].ingredients = {
+    {type = "item", name = "data-extractor", amount = 1},
+    {type = "item", name = "tesla-turret", amount = 1},
+    {type = "item", name = "electric-engine-unit", amount = 40},
+    {type = "item", name = "craptonite-frame", amount = 100}
+}
+
+data.raw["recipe"]["moshine_cosmicscanner-construct-4"].ingredients = {
+    {type = "item", name = "biolab", amount = 1},
+    {type = "item", name = "radar", amount = 1},
+    {type = "item", name = "ai-tier-1", amount = 1},
+    {type = "item", name = "glass", amount = 100},
+    {type = "item", name = "hyperlanes-superacid-barrel", amount = 20}
+}
+
+
+-- Data processor
+data.raw["recipe"]["data-processor"].ingredients = {
+    {type = "item", name = "biolab", amount = 1},
+    {type = "item", name = "silicon-carbide", amount = 5},
+    {type = "item", name = "productivity-module-3", amount = 5},
+    {type = "item", name = "optical-cable", amount = 10},
+    {type = "fluid", name = "hyperlanes-superacid", amount = 50},
+}
+data.raw["recipe"]["data-processor"].categories = {
+    "crafting-with-fluid",
+    -- "thinkingbrain"
+}
+
+
+-- Neural computer
+data.raw["recipe"]["neural_computer"].ingredients = {
+    {type = "item", name = "data-processor", amount = 1},
+    {type = "item", name = "datacell-empty", amount = 100},
+    {type = "item", name = "processing-unit", amount = 50},
+    {type = "item", name = "silicon-carbide", amount = 40},
+    {type = "item", name = "magnet", amount = 20},
+}
+
+
+-- Optical fiber storage tank
+data.raw["recipe"]["opticalfiber-storage-tank"].ingredients = {
+    {type = "item", name = "datacell-empty", amount = 100},
+    {type = "item", name = "processing-unit", amount = 15},
+    {type = "item", name = "optical-cable", amount = 5},
+    {type = "fluid", name = "hyperlanes-superacid", amount = 50},
+}
+data.raw["recipe"]["opticalfiber-storage-tank"].categories = {
+    "crafting-with-fluid",
+    -- "thinkingbrain"
+}
+
+
+-- Data extractor
+-- all good :)
+
+
+-- 3D data storage
+-- all good :)
+
+
+-- Processing grid
+-- all good :)
+
+
+-- AI trainer
+-- all good?
+
+
+-- Webbed processor
+data.raw["recipe"]["webbed_processor_tile"].ingredients = {
+    {type = "item", name = "low-density-space-platform-foundation", amount = 1},
+    {type = "item", name = "processing-unit", amount = 1},
+    {type = "item", name = "optical-cable", amount = 1},
+    {type = "item", name = "model-stable", amount = 1},
+}
+
+
+-- equation.data
+data.raw["recipe"]["datacell-equation"].ingredients = {
+    {type = "item", name = "datacell-empty", amount = 1},
+    {type = "fluid", name = "muluna-astronomical-data", amount = 120},
+}
+
+
+-- out_signal.data
+data.raw["recipe"]["cosmic-data-outsignal-creation"].ingredients = {
+    {type = "item", name = "interstellar-science-pack", amount = 1},
+    {type = "item", name = "biorecycling-science-pack", amount = 1},
+    {type = "item", name = "acidworking-science-pack", amount = 1},
+    {type = "item", name = "planetaris-compression-science-pack", amount = 1},
+    {type = "fluid", name = "raw-data", amount = 15000},
+    {type = "fluid", name = "solved-equation-data", amount = 1000},
+}
+data.raw["recipe"]["cosmic-data-outsignal-creation"].energy_required = 100.0
+data.raw["recipe"]["cosmic-data-outsignal-creation"].results = {
+    {type = "fluid", name = "cosmic-data-outsignal", amount = 200},
+}

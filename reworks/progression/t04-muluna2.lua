@@ -9,3 +9,18 @@ table.insert(nanopoly_tech.prerequisites, "cerysian-science-pack")
 -- Telescope: tech moved to require nanofoamed polymers
 local telesc_tech = data.raw["technology"]["muluna-telescope"]
 table.insert(telesc_tech.prerequisites, "muluna-nanofoamed-polymers")
+
+
+-- Low density space platform foundation
+data.raw["recipe"]["low-density-space-platform-foundation"].surface_conditions = {
+    {
+        property = "gravity",
+        min = 2,
+        max = 2,
+    },
+    {
+        property = "oxygen",
+        min = 0,
+        max = 0,
+    }
+}
