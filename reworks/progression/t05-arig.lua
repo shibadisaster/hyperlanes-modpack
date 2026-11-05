@@ -64,3 +64,4 @@ data.raw["recipe"]["planetaris-advanced-sand-sifting"].ingredients = {
 
 
 data.raw["technology"]["condensing-agricultural-tower"].essential = false
+data.raw["technology"]["planetaris-arig-rocket-part"].essential = false

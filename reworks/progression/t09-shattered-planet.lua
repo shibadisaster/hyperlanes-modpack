@@ -1,0 +1,1 @@
+data.raw["technology"]["promethium-science-pack"].prerequisites = {"stellar-discovery-solar-system-edge", "biter-egg-handling"}

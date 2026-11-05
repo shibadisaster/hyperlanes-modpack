@@ -43,22 +43,25 @@ local aquilo_tech = data.raw["technology"]["planet-discovery-aquilo"]
 table.insert(aquilo_tech.prerequisites, "hyperlanes-t7-epp")
 
 -- Removing Aquilo requiring Pathological science because huh???????
-local new_prereqs = {}
-for i, v in ipairs(aquilo_tech.prerequisites) do
-    if v ~= "planetaris-pathological-science-pack" and v ~= "planetaris-bioengineering-science-pack" then
-        table.insert(new_prereqs, v)
-    end
-end
-aquilo_tech.prerequisites = new_prereqs
+-- local new_prereqs = {}
+-- for i, v in ipairs(aquilo_tech.prerequisites) do
+--     if v ~= "planetaris-pathological-science-pack" and v ~= "planetaris-bioengineering-science-pack" then
+--         table.insert(new_prereqs, v)
+--     end
+-- end
+-- aquilo_tech.prerequisites = new_prereqs
+aquilo_tech.prerequisites = {"hyperlanes-t7-epp"}
 
 
 -- MARAXSIS (T7)
 local maraxsis_tech = data.raw["technology"]["planet-discovery-maraxsis"]
 table.insert(maraxsis_tech.prerequisites, "hyperlanes-t7-epp")
+maraxsis_tech.prerequisites = {"hyperlanes-t7-epp"}
 
 -- VESTA (T8)
 local vesta_tech = data.raw["technology"]["planet-discovery-vesta"]
 table.insert(vesta_tech.prerequisites, "hyperlanes-t8-epp")
+vesta_tech.prerequisites = {"hyperlanes-t8-epp"}
 
 -- TELLUS (T8)
 local tellus_tech = data.raw["technology"]["planet-discovery-tellus"]
@@ -67,6 +70,7 @@ table.insert(tellus_tech.prerequisites, "hyperlanes-t8-epp")
 -- PARACELSIN (T8)
 local paracelsin_tech = data.raw["technology"]["planet-discovery-paracelsin"]
 table.insert(paracelsin_tech.prerequisites, "hyperlanes-t8-epp")
+paracelsin_tech.prerequisites = {"hyperlanes-t8-epp"}
 
 -- SOLAR SYSTEM EDGE / SHATTERED PLANET (T9)
 local solar_system_edge_tech = data.raw["technology"]["stellar-discovery-solar-system-edge"]

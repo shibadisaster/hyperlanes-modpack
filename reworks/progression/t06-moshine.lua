@@ -189,3 +189,5 @@ data.raw["recipe"]["cosmic-data-outsignal-creation"].results = {
 -- get it out of my sight
 data.raw["technology"]["sun_heat_cooler_1_tech"].essential = false
 data.raw["technology"]["sun_heat_cooler_2_tech"].essential = false
+data.raw["technology"]["moshine-tech-ai-tier-8"].essential = true
+data.raw["technology"]["moshine-tech-ai-tier-10"].essential = true
