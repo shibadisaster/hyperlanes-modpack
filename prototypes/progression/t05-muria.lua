@@ -11,7 +11,7 @@ local superacid_recipe = {
     energy_required = 30.0,
     results = {
         {type = "fluid", name = "hyperlanes-superacid", amount = 400},
-        {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1}
+        {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1}
     },
     main_product = "hyperlanes-superacid",
     allow_productivity = true,
@@ -34,7 +34,7 @@ local purified_lead_recipe = {
     energy_required = 2.0,
     results = {
         {type = "item", name = "hyperlanes-purified-lead", amount = 1},
-        {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1}
+        {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1}
     },
     main_product = "hyperlanes-purified-lead",
     allow_productivity = true,
