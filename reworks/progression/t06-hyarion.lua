@@ -5,6 +5,145 @@ data.raw["recipe"]["planetaris-quartz-furnace"].enabled = false
 -- kill it kill it
 data.raw["technology"]["planetaris-quartz-furnace"].enabled = false
 data.raw["technology"]["planetaris-quartz-furnace"].prerequisites = {}
+data.raw["furnace"]["planetaris-quartz-furnace"].hidden = true
 
 data.raw["technology"]["planetaris-metallic-ore-processing"].prerequisites = {"planet-discovery-hyarion"}
+table.remove(data.raw["technology"]["planetaris-metallic-ore-processing"].effects, 1)
+table.remove(data.raw["technology"]["planetaris-metallic-ore-processing"].effects, 1)
 data.raw["technology"]["planetaris-polishing"].prerequisites = {"planetaris-metallic-ore-processing"}
+
+
+-- Polishing compound
+data.raw["recipe"]["planetaris-polishing-compound"].ingredients = {
+    {type = "item", name = "iron-ore", amount = 20},
+    {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1},
+    {type = "fluid", name = "hyperlanes-metamaterial-microsuspension", amount = 10},
+}
+data.raw["recipe"]["planetaris-polishing-compound"].results = {
+    {type = "fluid", name = "planetaris-polishing-compound", amount = 50},
+    {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98}
+}
+data.raw["recipe"]["planetaris-polishing-compound"].main_product = "planetaris-polishing-compound"
+
+
+-- Polishing recipes
+table.insert(data.raw["recipe"]["planetaris-polished-bismuth"].ingredients, {type = "fluid", name = "hyperlanes-superacid", amount = 5})
+table.insert(data.raw["recipe"]["planetaris-polished-diamond"].ingredients, {type = "fluid", name = "hyperlanes-superacid", amount = 5})
+table.insert(data.raw["recipe"]["planetaris-polished-emerald"].ingredients, {type = "fluid", name = "hyperlanes-superacid", amount = 5})
+table.insert(data.raw["recipe"]["planetaris-polished-quartz"].ingredients, {type = "fluid", name = "hyperlanes-superacid", amount = 5})
+table.insert(data.raw["recipe"]["planetaris-polished-ruby"].ingredients, {type = "fluid", name = "hyperlanes-superacid", amount = 5})
+table.insert(data.raw["recipe"]["planetaris-polished-sapphire"].ingredients, {type = "fluid", name = "hyperlanes-superacid", amount = 5})
+
+
+-- Polisher
+data.raw["recipe"]["planetaris-polisher"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 25},
+    {type = "item", name = "processing-unit", amount = 25},
+    {type = "item", name = "planetaris-raw-quartz", amount = 50},
+    {type = "item", name = "hyperlanes-sealant", amount = 5},
+    {type = "item", name = "centrifuge", amount = 1},
+}
+
+
+-- Geode mining drill
+data.raw["recipe"]["hyarion-geode-mining-drill"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 10},
+    {type = "item", name = "processing-unit", amount = 5},
+    {type = "item", name = "planetaris-polished-quartz", amount = 10},
+    {type = "item", name = "big-mining-drill", amount = 1},
+}
+
+
+-- Optical cable
+data.raw["recipe"]["planetaris-fiber-optics-cable"].ingredients = {
+    {type = "item", name = "planetaris-heavy-glass", amount = 2},
+    {type = "item", name = "planetaris-polished-diamond", amount = 1},
+    {type = "item", name = "planetaris-polished-sapphire", amount = 1},
+    {type = "item", name = "muluna-data-cable", amount = 2},
+}
+
+
+-- Silica
+data.raw["recipe"]["planetaris-silica"].ingredients = {
+    {type = "item", name = "calcite", amount = 1},
+    {type = "item", name = "silicon", amount = 1},
+    {type = "item", name = "planetaris-raw-quartz", amount = 5},
+    {type = "fluid", name = "sulfuric-acid", amount = 1},
+}
+
+
+-- Crystallization motor
+data.raw["recipe"]["planetaris-crystalization-motor"].ingredients = {
+    {type = "item", name = "electric-engine-unit", amount = 1},
+    {type = "item", name = "processing-unit", amount = 3},
+    {type = "item", name = "planetaris-polished-emerald", amount = 5},
+    {type = "item", name = "planetaris-polished-quartz", amount = 5},
+    {type = "item", name = "planetaris-heavy-glass", amount = 1},
+}
+data.raw["recipe"]["planetaris-crystalization-motor"].surface_conditions = {
+    {
+        property = "planetaris-crystalization-resistance",
+        min = 50,
+        max = 100
+    }
+}
+
+
+-- Simulating unit
+data.raw["recipe"]["planetaris-simulating-unit"].ingredients = {
+    {type = "item", name = "processing-unit", amount = 1},
+    {type = "item", name = "planetaris-silica", amount = 5},
+    {type = "item", name = "planetaris-fiber-optics-cable", amount = 2},
+    {type = "item", name = "supercapacitor", amount = 1},
+    {type = "fluid", name = "hyperlanes-superacid", amount = 5},
+}
+data.raw["recipe"]["planetaris-simulating-unit"].surface_conditions = {
+    {
+        property = "planetaris-crystalization-resistance",
+        min = 50,
+        max = 100
+    }
+}
+
+
+-- Assembling machine 4
+data.raw["recipe"]["planetaris-assembling-machine-4"].surface_conditions = {
+    {
+        property = "planetaris-crystalization-resistance",
+        min = 50,
+        max = 100
+    }
+}
+
+
+-- Nanoscale lens
+data.raw["recipe"]["planetaris-nanoscale-lens"].ingredients = {
+    {type = "item", name = "planetaris-heavy-glass", amount = 1},
+    {type = "item", name = "planetaris-polished-diamond", amount = 1},
+    {type = "fluid", name = "planetaris-polishing-compound", amount = 5},
+}
+
+
+-- Refraction plant
+-- table.insert(data.raw["recipe"]["planetaris-refraction-plant"].ingredients, {type = "item", name = "electromagnetic-plant", amount = 1})
+
+
+-- Particle manipulator
+table.insert(data.raw["recipe"]["planetaris-particle-manipulator"].ingredients, {type = "item", name = "electromagnetic-plant", amount = 1})
+
+
+-- Refraction ray collectors
+data.raw["recipe"]["planetaris-refraction-ray-collector"].ingredients = {
+    {type = "item", name = "aluminum-plate", amount = 5},
+    {type = "item", name = "copper-cable", amount = 10},
+    {type = "item", name = "planetaris-raw-quartz", amount = 5},
+    {type = "item", name = "lightning-collector", amount = 1},
+}
+
+data.raw["recipe"]["planetaris-big-refraction-ray-collector"].ingredients = {
+    {type = "item", name = "planetaris-heavy-glass", amount = 2},
+    {type = "item", name = "tungsten-plate", amount = 10},
+    {type = "item", name = "processing-unit", amount = 5},
+    {type = "item", name = "planetaris-crystalization-motor", amount = 1},
+    {type = "item", name = "planetaris-refraction-ray-collector", amount = 1},
+}
