@@ -165,3 +165,19 @@ local t5_sealant = {
     weight = 10 * kg
 }
 data:extend({t5_sealant})
+
+
+-- Purified lead
+local t5_purified_lead = {
+    type = "item",
+    name = "hyperlanes-purified-lead",
+    icon = "__Muria-Graphics__/graphics/icons/lead.png",
+    -- subgroup = "vesta-items-organic",
+    -- order = "a[vesta-organics]-i[algea-clump-iridium]",
+    -- inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+    -- pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+    -- drop_sound = space_age_item_sounds.agriculture_inventory_move,
+    stack_size = 50,
+    weight = 10 * kg
+}
+data:extend({t5_purified_lead})
