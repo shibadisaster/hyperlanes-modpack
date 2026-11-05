@@ -42,6 +42,17 @@ local t4_catalyst = {
 }
 data:extend({t4_catalyst})
 
+local t4_activated_catalyst = {
+    type = "item",
+    name = "hyperlanes-activated-elementary-catalyst",
+    icon = "__base__/graphics/icons/sulfur.png",
+    stack_size = 100,
+    weight = 1*kg,
+    spoil_ticks = 3600 * 60,
+    spoil_result = "hyperlanes-elementary-catalyst"
+}
+data:extend({t4_activated_catalyst})
+
 
 -- Volatile catalyst
 local t7_catalyst = {
