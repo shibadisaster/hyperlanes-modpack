@@ -9,7 +9,7 @@ local sealant_recipe = {
         {type = "fluid", name = "planetaris-sand", amount = 20},
         {type = "item", name = "stone-crushed", amount = 3},
     },
-    energy_required = 1.0,
+    energy_required = 5.0,
     results = {
         {type = "item", name = "hyperlanes-sealant", amount = 1}
     },
