@@ -50,3 +50,14 @@ data.raw["recipe"]["planetaris-heavy-glass"].surface_conditions = {
     }
 }
 data.raw["recipe"]["planetaris-heavy-glass"].categories = {"compressing"}
+
+
+-- Sand sifting
+data.raw["recipe"]["planetaris-sand-sifting"].ingredients = {
+    {type = "fluid", name = "planetaris-sand", amount = 200},
+    {type = "item", name = "hyperlanes-fulgora-magnet", amount = 1},
+}
+data.raw["recipe"]["planetaris-advanced-sand-sifting"].ingredients = {
+    {type = "fluid", name = "planetaris-sand", amount = 200},
+    {type = "item", name = "hyperlanes-fulgora-magnet", amount = 1},
+}
