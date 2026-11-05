@@ -184,3 +184,8 @@ data.raw["recipe"]["cosmic-data-outsignal-creation"].energy_required = 100.0
 data.raw["recipe"]["cosmic-data-outsignal-creation"].results = {
     {type = "fluid", name = "cosmic-data-outsignal", amount = 200},
 }
+
+
+-- get it out of my sight
+data.raw["technology"]["sun_heat_cooler_1_tech"].essential = false
+data.raw["technology"]["sun_heat_cooler_2_tech"].essential = false

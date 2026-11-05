@@ -1,0 +1,1 @@
+data.raw["technology"]["s1_gas_manipulation_science_pack"].essential = true

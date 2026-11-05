@@ -147,3 +147,7 @@ data.raw["recipe"]["planetaris-big-refraction-ray-collector"].ingredients = {
     {type = "item", name = "planetaris-crystalization-motor", amount = 1},
     {type = "item", name = "planetaris-refraction-ray-collector", amount = 1},
 }
+
+
+-- go away
+data.raw["technology"]["planetaris-space-facilities-1"].essential = false

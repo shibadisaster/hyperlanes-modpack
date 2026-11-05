@@ -1,13 +1,3 @@
-local gmsp_tech = data.raw["technology"]["s1_gas_manipulation_science_pack"]
-gmsp_tech.essential = true
-
-local crpr_tech = data.raw["technology"]["craptonite-processing"]
-crpr_tech.essential = true
-
-
-
-
-
 -- MULUNA (T2)
 local muluna_tech = data.raw["technology"]["planet-discovery-muluna"]
 table.insert(muluna_tech.prerequisites, "hyperlanes-t2-epp")

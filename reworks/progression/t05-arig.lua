@@ -61,3 +61,6 @@ data.raw["recipe"]["planetaris-advanced-sand-sifting"].ingredients = {
     {type = "fluid", name = "planetaris-sand", amount = 200},
     {type = "item", name = "hyperlanes-fulgora-magnet", amount = 1},
 }
+
+
+data.raw["technology"]["condensing-agricultural-tower"].essential = false

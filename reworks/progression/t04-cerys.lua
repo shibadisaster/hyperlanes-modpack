@@ -1,0 +1,1 @@
+data.raw["technology"]["planetslib-cerys-cargo-drops"].essential = true
