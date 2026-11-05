@@ -48,7 +48,7 @@ local t4_activated_catalyst = {
     icon = "__base__/graphics/icons/sulfur.png",
     stack_size = 100,
     weight = 1*kg,
-    spoil_ticks = 3600 * 60,
+    spoil_ticks = 180 * 60,
     spoil_result = "hyperlanes-elementary-catalyst"
 }
 data:extend({t4_activated_catalyst})

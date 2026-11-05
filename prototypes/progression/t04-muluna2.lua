@@ -6,6 +6,7 @@ local elcatalyst_recipe = {
     ingredients =
     {
         {type = "item", name = "alumina-crushed", amount = 20},
+        {type = "item", name = "uranium-235", amount = 5},
         {type = "item", name = "plutonium-238", amount = 1},
         {type = "fluid", name = "ammonia", amount = 10},
     },
