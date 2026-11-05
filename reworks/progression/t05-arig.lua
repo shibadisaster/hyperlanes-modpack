@@ -16,3 +16,37 @@ data.raw["recipe"]["planetaris-press"].ingredients = {
     {type = "item", name = "planetaris-glass-panel", amount = 10},
     {type = "item", name = "hyperlanes-sealant", amount = 10},
 }
+
+-- Condensing agricultural tower
+data.raw["recipe"]["condensing-agricultural-tower"].ingredients = {
+    {type = "item", name = "carbon-fiber", amount = 20},
+    {type = "item", name = "processing-unit", amount = 25},
+    {type = "item", name = "planetaris-glass-panel", amount = 10},
+    {type = "item", name = "hyperlanes-sealant", amount = 10},
+    {type = "item", name = "agricultural-tower", amount = 1},
+    {type = "item", name = "storage-tank", amount = 1},
+}
+data.raw["recipe"]["condensing-agricultural-tower"].surface_conditions = {
+    {
+        property="planetaris-dust-concentration",
+        min=50,
+        max=100
+    }
+}
+
+
+-- Heavy glass
+data.raw["recipe"]["planetaris-heavy-glass"].ingredients = {
+    {type = "item", name = "planetaris-glass-panel", amount = 2},
+    {type = "item", name = "tungsten-plate", amount = 4},
+    {type = "item", name = "silicon-carbide", amount = 2},
+    {type = "item", name = "hyperlanes-sealant", amount = 4},
+}
+data.raw["recipe"]["planetaris-heavy-glass"].surface_conditions = {
+    {
+        property="planetaris-dust-concentration",
+        min=50,
+        max=100
+    }
+}
+data.raw["recipe"]["planetaris-heavy-glass"].categories = {"compressing"}
