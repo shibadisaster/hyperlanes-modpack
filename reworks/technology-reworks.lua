@@ -74,9 +74,10 @@ paracelsin_tech.prerequisites = {"hyperlanes-t8-epp"}
 
 -- SOLAR SYSTEM EDGE / SHATTERED PLANET (T9)
 local solar_system_edge_tech = data.raw["technology"]["stellar-discovery-solar-system-edge"]
-table.insert(solar_system_edge_tech.prerequisites, "s1_gas_manipulation_science_pack")
-table.insert(solar_system_edge_tech.prerequisites, "planetaris-pathological-science-pack")
-table.insert(solar_system_edge_tech.prerequisites, "galvanization-science-pack")
+solar_system_edge_tech.prerequisites = {"hyperlanes-t9-epp"}
+-- table.insert(solar_system_edge_tech.prerequisites, "s1_gas_manipulation_science_pack")
+-- table.insert(solar_system_edge_tech.prerequisites, "planetaris-pathological-science-pack")
+-- table.insert(solar_system_edge_tech.prerequisites, "galvanization-science-pack")
 
 -- PANGLIA (T10)
 local panglia_tech = data.raw["technology"]["panglia_planet_discovery_panglia"]

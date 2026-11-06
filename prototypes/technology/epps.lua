@@ -217,9 +217,9 @@ local t8_epp = {
 data:extend({t8_epp})
 
 
-local t10_epp = {
+local t9_epp = {
     type = "technology",
-    name = "hyperlanes-t10-epp",
+    name = "hyperlanes-t9-epp",
     icon_size = 256,
     icon = "__space-age__/graphics/technology/solar-system-edge.png",
     effects = {},
@@ -248,11 +248,56 @@ local t10_epp = {
             {"gas-manipulation-science-pack", 1},
             {"planetaris-bioengineering-science-pack", 1},
             {"galvanization-science-pack", 1},
+        },
+        time = 60
+    },
+    prerequisites = {"hyperlanes-t8-epp", "s1_gas_manipulation_science_pack", "planetaris-pathological-science-pack", "galvanization-science-pack"},
+    order = "c-a",
+    essential = true
+}
+data:extend({t9_epp})
+
+-- table.insert(solar_system_edge_tech.prerequisites, "s1_gas_manipulation_science_pack")
+-- table.insert(solar_system_edge_tech.prerequisites, "planetaris-pathological-science-pack")
+-- table.insert(solar_system_edge_tech.prerequisites, "galvanization-science-pack")
+
+
+local t10_epp = {
+    type = "technology",
+    name = "hyperlanes-t10-epp",
+    icon_size = 256,
+    icon = "__space-age__/graphics/technology/solar-system-edge.png",
+    effects = {},
+    unit =
+    {
+        count = 50000,
+        ingredients = {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"military-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"production-science-pack", 1},
+            {"utility-science-pack", 1},
+            {"space-science-pack", 1},
+            {"metallurgic-science-pack", 1},
+            {"agricultural-science-pack", 1},
+            {"electromagnetic-science-pack", 1},
+            {"interstellar-science-pack", 1},
+            {"planetaris-compression-science-pack", 1},
+            {"biorecycling-science-pack", 1},
+            {"acidworking-science-pack", 1},
+            {"planetaris-polishing-science-pack", 1},
+            {"planetaris-refraction-science-pack", 1},
+            {"cryogenic-science-pack", 1},
+            {"hydraulic-science-pack", 1},
+            {"gas-manipulation-science-pack", 1},
+            {"planetaris-bioengineering-science-pack", 1},
+            {"galvanization-science-pack", 1},
             {"promethium-science-pack", 1}
         },
         time = 60
     },
-    prerequisites = {"hyperlanes-t8-epp", "promethium-science-pack"},
+    prerequisites = {"hyperlanes-t9-epp", "promethium-science-pack"},
     order = "c-a",
     essential = true
 }
