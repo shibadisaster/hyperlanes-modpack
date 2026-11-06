@@ -168,3 +168,33 @@ table.insert(
     data.raw["recipe"]["ske_algea_clump_iridium"].results,
     {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98}
 )
+
+
+-- Fusion bots rework (https://www.desmos.com/calculator/2p7wzzgs24)
+data.raw["logistic-robot"]["fusion-logistic-robot"].max_payload_size = 20
+data.raw["logistic-robot"]["fusion-logistic-robot"].speed = 0.05 * 1.5
+
+data.raw["construction-robot"]["fusion-construction-robot"].max_payload_size = 20
+data.raw["construction-robot"]["fusion-construction-robot"].speed = 0.05 * 1.5
+
+data.raw["recipe"]["fusion-logistic-robot"].ingredients = {
+    {type = "item", name = "lead-logistic-robot", amount = 1},
+    {type = "item", name = "ske_fusion_framework", amount = 1},
+    {type = "fluid", name = "ske_supermagnetic", amount = 20},
+}
+
+data.raw["recipe"]["fusion-construction-robot"].ingredients = {
+    {type = "item", name = "lead-construction-robot", amount = 1},
+    {type = "item", name = "ske_fusion_framework", amount = 1},
+    {type = "fluid", name = "ske_supermagnetic", amount = 20},
+}
+
+data.raw["recipe"]["ske_fusion_framework"].ingredients = {
+    {type = "item", name = "flying-robot-frame", amount = 2},
+    {type = "item", name = "quantum-processor", amount = 1},
+    {type = "item", name = "planetaris-crystalization-motor", amount = 1},
+    {type = "item", name = "ske_empty_dt_canister", amount = 2},
+    {type = "item", name = "accumulator", amount = 1},
+    {type = "fluid", name = "ske_dt_fuel", amount = 200},
+}
+data.raw["recipe"]["ske_fusion_framework"].categories = {"magnetics"}

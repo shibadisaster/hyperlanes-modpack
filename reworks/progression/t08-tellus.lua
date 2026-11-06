@@ -171,3 +171,16 @@ table.insert(
     data.raw["recipe"]["planetaris-wasp-egg"].ingredients,
     {type = "item", name = "pentapod-egg", amount = 1}
 )
+
+
+-- Robowasp rework
+data.raw["logistic-robot"]["planetaris-logistic-robowasp"].max_payload_size = 1
+data.raw["logistic-robot"]["planetaris-logistic-robowasp"].speed = 0.05 * 4.0
+
+data.raw["recipe"]["planetaris-logistic-robowasp"].ingredients = {
+    {type = "item", name = "lead-logistic-robot", amount = 1},
+    {type = "item", name = "planetaris-artificial-heart", amount = 1},
+    {type = "item", name = "planetaris-polimer-skin", amount = 1},
+    {type = "item", name = "planetaris-magnesium-sheet", amount = 5},
+}
+data.raw["recipe"]["planetaris-logistic-robowasp"].categories = {"organic"}

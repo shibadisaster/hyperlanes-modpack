@@ -46,3 +46,19 @@ data.raw["recipe"]["smelting-plant"].ingredients = {
     {type = "item", name = "electric-furnace", amount = 3},
     {type = "fluid", name = "oxygen", amount = 50},
 }
+
+
+-- Lead bots
+data.raw["recipe"]["lead-logistic-robot"].ingredients = {
+    {type = "item", name = "logistic-robot", amount = 1},
+    {type = "item", name = "flying-robot-frame", amount = 1},
+    {type = "item", name = "anti-corrosion-cladding", amount = 1},
+    {type = "item", name = "processing-unit", amount = 1},
+}
+
+data.raw["recipe"]["lead-construction-robot"].ingredients = {
+    {type = "item", name = "construction-robot", amount = 1},
+    {type = "item", name = "flying-robot-frame", amount = 1},
+    {type = "item", name = "anti-corrosion-cladding", amount = 1},
+    {type = "item", name = "processing-unit", amount = 1},
+}
