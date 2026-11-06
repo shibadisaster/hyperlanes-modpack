@@ -57,7 +57,7 @@ data.raw["recipe"]["maraxsis-hydro-plant"].ingredients = {
     {type = "item", name = "ai-tier-8", amount = 1},
     {type = "item", name = "glass", amount = 20},
     {type = "item", name = "quality-module-3", amount = 1},
-    {type = "item", name = "planetaris-assembling-machine-4", amount = 1},
+    {type = "item", name = "flare-stack", amount = 1},
     {type = "item", name = "chemical-plant", amount = 2},
 }
 

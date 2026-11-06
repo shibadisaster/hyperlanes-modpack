@@ -101,3 +101,24 @@ local t8_bose_einstein_condensate = {
     fuel_value = "1MJ"
 }
 data:extend({t8_bose_einstein_condensate})
+
+
+-- Aerated water
+local t8_aerated_water = {
+    type = "fluid",
+    name = "hyperlanes-aerated-water",
+    icon = "__panglia_planet__/graphics/icons/panglia_branbalite_slurry.png",
+    -- subgroup = "fluid",
+    -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
+    default_temperature = 165,
+    max_temperature = 165,
+    gas_temperature = 165,
+    heat_capacity = "0.2kJ",
+    base_color = {200, 50, 255},
+    flow_color = {200, 50, 255},
+    visualization_color = {200, 50, 255},
+    draw_as_glow = true,
+    auto_barrel = true,
+    fuel_value = "1MJ"
+}
+data:extend({t8_aerated_water})

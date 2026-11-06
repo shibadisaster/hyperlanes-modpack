@@ -4,6 +4,7 @@ data.raw["recipe"]["pressure-turbine"].ingredients = {
     {type = "item", name = "pumpjack", amount = 1},
     {type = "item", name = "planetaris-crystalization-motor", amount = 5},
     {type = "item", name = "aluminum-plate", amount = 50},
+    {type = "item", name = "lithium-plate", amount = 20},
 }
 
 
