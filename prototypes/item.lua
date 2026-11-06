@@ -183,3 +183,14 @@ local t5_purified_lead = {
     weight = 10 * kg
 }
 data:extend({t5_purified_lead})
+
+
+-- Loaded simulating unit
+local t7_losimunit = {
+    type = "item",
+    name = "hyperlanes-loaded-simulating-unit",
+    icon = "__planetaris-hyarion__/graphics/icons/simulating-unit.png",
+    stack_size = 100,
+    weight = 10 * kg
+}
+data:extend({t7_losimunit})

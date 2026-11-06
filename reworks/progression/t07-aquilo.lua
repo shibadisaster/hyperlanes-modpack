@@ -50,3 +50,33 @@ data.raw["recipe"]["ice-platform"].ingredients = {
     {type = "item", name = "muluna-microcellular-plastic", amount = 2},
     {type = "fluid", name = "ammonia", amount = 400},
 }
+
+
+-- Quantum processor
+data.raw["recipe"]["quantum-processor"].ingredients = {
+    {type = "item", name = "hyperlanes-loaded-simulating-unit", amount = 1},
+    {type = "item", name = "superconductor", amount = 4},
+    {type = "item", name = "planetaris-carbon-nanotube", amount = 4},
+    {type = "item", name = "lithium-plate", amount = 2},
+    {type = "item", name = "glass", amount = 2},
+    {type = "fluid", name = "fluoroketone-cold", amount = 10},
+    {type = "fluid", name = "planetaris-aluminium", amount = 10},
+}
+
+
+-- Fusion reactor
+data.raw["recipe"]["fusion-reactor"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 200},
+    {type = "item", name = "lead-plate", amount = 100},
+    {type = "item", name = "glass", amount = 100},
+    {type = "item", name = "quantum-processor", amount = 250},
+    {type = "item", name = "cerys-mixed-oxide-reactor", amount = 1},
+}
+
+data.raw["recipe"]["fusion-generator"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 100},
+    {type = "item", name = "lead-plate", amount = 50},
+    {type = "item", name = "glass", amount = 50},
+    {type = "item", name = "quantum-processor", amount = 50},
+    {type = "item", name = "muluna-cycling-steam-turbine", amount = 1},
+}
