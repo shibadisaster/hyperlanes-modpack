@@ -76,7 +76,7 @@ local recooling_voca_recipe = {
     {
         {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1},
     },
-    energy_required = 5.0,
+    energy_required = 0.5,
     results = {
         {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1, reset_freshness_on_craft = true},
     },

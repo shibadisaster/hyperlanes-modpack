@@ -64,7 +64,7 @@ local t7_catalyst = {
     stack_size = 100,
     weight = 4*kg,
 
-    spoil_ticks = 60 * 60,
+    spoil_ticks = 120 * 60,
     spoil_to_trigger_result = {
         items_per_trigger = 25,
         trigger = {
