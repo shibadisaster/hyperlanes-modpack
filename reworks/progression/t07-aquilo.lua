@@ -73,6 +73,8 @@ data.raw["recipe"]["fusion-reactor"].ingredients = {
     {type = "item", name = "cerys-mixed-oxide-reactor", amount = 1},
 }
 
+
+-- Fusion generator
 data.raw["recipe"]["fusion-generator"].ingredients = {
     {type = "item", name = "tungsten-plate", amount = 100},
     {type = "item", name = "lead-plate", amount = 50},

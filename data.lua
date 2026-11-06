@@ -18,7 +18,6 @@ require("prototypes.progression.t08-vesta")
 require("prototypes.progression.t09-shattered-planet")
 require("prototypes.progression.t10-panglia")
 
-require("prototypes.recipes.glass")
 require("prototypes.technology.epps")
 require("prototypes.quality")
 require("prototypes.item")
