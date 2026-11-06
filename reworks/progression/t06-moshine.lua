@@ -89,16 +89,16 @@ data.raw["recipe"]["moshine_cosmicscanner-construct-2"].ingredients = {
 data.raw["recipe"]["moshine_cosmicscanner-construct-3"].ingredients = {
     {type = "item", name = "data-extractor", amount = 1},
     {type = "item", name = "tesla-turret", amount = 1},
-    {type = "item", name = "electric-engine-unit", amount = 40},
-    {type = "item", name = "craptonite-frame", amount = 100}
+    {type = "item", name = "planetaris-crystalization-motor", amount = 10},
+    {type = "item", name = "quantum-processor", amount = 10}
 }
 
 data.raw["recipe"]["moshine_cosmicscanner-construct-4"].ingredients = {
     {type = "item", name = "biolab", amount = 1},
-    {type = "item", name = "radar", amount = 1},
-    {type = "item", name = "ai-tier-1", amount = 1},
-    {type = "item", name = "glass", amount = 100},
-    {type = "item", name = "hyperlanes-superacid-barrel", amount = 20}
+    {type = "item", name = "maraxsis-sonar", amount = 1},
+    {type = "item", name = "ai-tier-8", amount = 1},
+    {type = "item", name = "maraxsis-glass-panes", amount = 100},
+    {type = "item", name = "hyperlanes-supercooled-magnet", amount = 10}
 }
 
 
@@ -191,3 +191,12 @@ data.raw["technology"]["sun_heat_cooler_1_tech"].essential = false
 data.raw["technology"]["sun_heat_cooler_2_tech"].essential = false
 data.raw["technology"]["moshine-tech-ai-tier-8"].essential = true
 data.raw["technology"]["moshine-tech-ai-tier-10"].essential = true
+
+
+
+
+
+
+-- MOSHINE PT2
+table.insert(data.raw["technology"]["moshine-tech-cosmicscanner-construction4"].prerequisites, "cryogenic-science-pack")
+table.insert(data.raw["technology"]["moshine-tech-cosmicscanner-construction4"].prerequisites, "hydraulic-science-pack")
