@@ -74,11 +74,4 @@ data.raw["recipe"]["fusion-reactor"].ingredients = {
 }
 
 
--- Fusion generator
-data.raw["recipe"]["fusion-generator"].ingredients = {
-    {type = "item", name = "tungsten-plate", amount = 100},
-    {type = "item", name = "lead-plate", amount = 50},
-    {type = "item", name = "glass", amount = 50},
-    {type = "item", name = "quantum-processor", amount = 50},
-    {type = "item", name = "muluna-cycling-steam-turbine", amount = 1},
-}
+-- Fusion generator moved to Paracelsin

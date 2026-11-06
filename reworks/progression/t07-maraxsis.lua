@@ -43,7 +43,8 @@ data.raw["recipe"]["maraxsis-super-sealant-substance"].ingredients = {
 data.raw["recipe"]["maraxsis-pressure-dome"].ingredients = {
     {type = "item", name = "maraxsis-glass-panes", amount = 1000},
     {type = "item", name = "tungsten-plate", amount = 100},
-    {type = "item", name = "pipe", amount = 30},
+    {type = "item", name = "pipe", amount = 100},
+    {type = "item", name = "pump", amount = 20},
     {type = "item", name = "hyperlanes-sealant", amount = 20},
 }
 
