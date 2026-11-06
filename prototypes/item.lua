@@ -63,6 +63,38 @@ local t7_catalyst = {
     icon = "__base__/graphics/icons/sulfur.png",
     stack_size = 100,
     weight = 4*kg,
+
+    spoil_ticks = 60 * 60,
+    spoil_to_trigger_result = {
+        items_per_trigger = 25,
+        trigger = {
+            {
+                type = "direct",
+                action_delivery = {
+                    type = "instant",
+                    target_effects = {
+                        {
+                            type = "create-entity",
+                            entity_name = "medium-explosion"
+                        }
+                    }
+                }
+            },
+            {
+                type = "area",
+                radius = 1,
+                action_delivery = {
+                    type = "instant",
+                    target_effects = {
+                        {
+                            type = "damage",
+                            damage = {amount = 60, type = "explosion"}
+                        }
+                    }
+                }
+            },
+        }
+    }
 }
 data:extend({t7_catalyst})
 
