@@ -53,6 +53,7 @@ local voca_recipe = {
     {
         {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 2},
         {type = "item", name = "planetaris-polished-bismuth", amount = 10},
+        {type = "item", name = "lead-pellets", amount = 20},
         {type = "fluid", name = "lithium-brine", amount = 100},
         {type = "fluid", name = "hyperlanes-superacid", amount = 50},
         {type = "fluid", name = "fusion-plasma", amount = 20},

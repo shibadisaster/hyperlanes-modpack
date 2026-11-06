@@ -79,8 +79,8 @@ data.raw["recipe"]["maraxsis-fishing-tower"].ingredients = {
 
 -- Sonar
 data.raw["recipe"]["maraxsis-sonar"].ingredients = {
-    {type = "item", name = "muluna-satellite-radar", amount = 1},
-    {type = "item", name = "maraxsis-glass-panes", amount = 10},
+    {type = "item", name = "planetaris-electromagnetic-radar", amount = 1},
+    {type = "item", name = "maraxsis-glass-panes", amount = 20},
     {type = "item", name = "ai-tier-8", amount = 1},
-    {type = "item", name = "planetaris-simulating-unit", amount = 5},
+    {type = "item", name = "planetaris-simulating-unit", amount = 20},
 }
