@@ -150,3 +150,17 @@ table.insert(
     {type = "fluid", name = "planetaris-chlorophyll", amount = 5}
 )
 data.raw["recipe"]["planetaris-mycelia-processing"].categories = {"organic"}
+
+
+-- Artificial skin
+table.insert(
+    data.raw["recipe"]["planetaris-polimer-skin"].ingredients,
+    {type = "fluid", name = "hyperlanes-bioslurry", amount = 20}
+)
+
+
+-- Artificial heart
+table.insert(
+    data.raw["recipe"]["planetaris-artificial-heart"].ingredients,
+    {type = "fluid", name = "hyperlanes-bioslurry", amount = 20}
+)
