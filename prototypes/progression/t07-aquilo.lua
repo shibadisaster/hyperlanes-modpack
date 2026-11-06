@@ -93,12 +93,13 @@ local losim_recipe = {
     enabled = false,
     ingredients =
     {
-        {type = "item", name = "planetaris-simulating-unit", amount = 1},
-        {type = "fluid", name = "solved-equation-data", amount = 120},
+        {type = "item", name = "planetaris-simulating-unit", amount = 10},
+        {type = "item", name = "ai-tier-8", amount = 1},
+        {type = "fluid", name = "solved-equation-data", amount = 1200},
     },
     energy_required = 10.0,
     results = {
-        {type = "item", name = "hyperlanes-loaded-simulating-unit", amount = 1},
+        {type = "item", name = "hyperlanes-loaded-simulating-unit", amount = 10},
     },
     allow_productivity = false,
     categories = {"data-processing"},

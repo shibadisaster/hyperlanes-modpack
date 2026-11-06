@@ -197,6 +197,21 @@ data.raw["technology"]["moshine-tech-ai-tier-10"].essential = true
 
 
 
--- MOSHINE PT2
+-- ╒══════════╗  ╒════════╗  ╒══════════╗ ╒══════════╗      ╒═════════╗
+-- └┐  ╓───┐  ║  │  ╓──┐  ║  └┐  ╓───┐  ║ │ ╓─┐  ╓─┐ ║      │ ╓────┐  ║
+--  │  ║   │  ║  │  ║  │  ║   │  ║   │  ║ └─╜ │  ║ └─╜      └─╜  ╒═╛ ╓╜
+--  │  ╚═══╛  ║  │  ╚══╛  ║   │  ╚═══╛  ║     │  ║             ╒═╛ ╓─╜ 
+--  │  ╓──────╜  │  ╓──┐  ║   │  ╓┐  ╓──╜     │  ║           ╒═╛ ╓─╜   
+--  │  ║         │  ║  │  ║   │  ║└┐ ╚╗       │  ║          ╒╛ ╓─╜     
+-- ╒╛  ╚╗       ╒╛  ╚╗╒╛  ╚╗ ╒╛  ╚╗└┐ ╚═╗    ╒╛  ╚╗         │  ╚══════╗
+-- └────╜       └────╜└────╜ └────╜ └───╜    └────╜         └─────────╜
 table.insert(data.raw["technology"]["moshine-tech-cosmicscanner-construction4"].prerequisites, "cryogenic-science-pack")
 table.insert(data.raw["technology"]["moshine-tech-cosmicscanner-construction4"].prerequisites, "hydraulic-science-pack")
+
+data.raw["recipe"]["ai-tier-9"].ingredients = {
+    {type = "item", name = "hyperlanes-ai-tier-8-primed", amount = 1},
+}
+
+data.raw["recipe"]["ai-tier-10"].ingredients = {
+    {type = "item", name = "hyperlanes-ai-tier-9-primed", amount = 1},
+}
