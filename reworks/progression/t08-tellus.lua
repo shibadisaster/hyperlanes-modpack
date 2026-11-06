@@ -162,5 +162,12 @@ table.insert(
 -- Artificial heart
 table.insert(
     data.raw["recipe"]["planetaris-artificial-heart"].ingredients,
-    {type = "fluid", name = "hyperlanes-bioslurry", amount = 20}
+    {type = "fluid", name = "hyperlanes-bioslurry", amount = 100}
+)
+
+
+-- Wasp egg
+table.insert(
+    data.raw["recipe"]["planetaris-wasp-egg"].ingredients,
+    {type = "item", name = "pentapod-egg", amount = 1}
 )
