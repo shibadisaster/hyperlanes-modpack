@@ -129,3 +129,41 @@ data.raw["recipe"]["ske_ammonia_chilled_plate"].ingredients = {
     {type = "item", name = "aluminum-plate", amount = 1},
     {type = "fluid", name = "ammonia", amount = 50},
 }
+
+
+-- Oxygenated fuel
+data.raw["recipe"]["fluorofuel"].ingredients = {
+    {type = "fluid", name = "fluoroketone-cold", amount = 40},
+    {type = "fluid", name = "oxygen", amount = 200},
+    {type = "fluid", name = "thruster-oxidizer", amount = 100},
+}
+
+
+-- Hydrogenated fuel
+data.raw["recipe"]["plasmafuel"].ingredients = {
+    {type = "fluid", name = "fusion-plasma", amount = 5},
+    {type = "fluid", name = "hydrogen", amount = 400},
+    {type = "fluid", name = "thruster-fuel", amount = 100},
+}
+
+
+-- Exotic algae clump
+table.insert(
+    data.raw["recipe"]["ske_algea_clump_rare"].ingredients, 
+    {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1}
+)
+table.insert(
+    data.raw["recipe"]["ske_algea_clump_rare"].results,
+    {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98}
+)
+
+
+-- Iridium algae clump
+table.insert(
+    data.raw["recipe"]["ske_algea_clump_iridium"].ingredients, 
+    {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1}
+)
+table.insert(
+    data.raw["recipe"]["ske_algea_clump_iridium"].results,
+    {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98}
+)
