@@ -117,6 +117,7 @@ data.raw["recipe"]["supermagnet"].ingredients = {
     {type = "item", name = "ske_ammonia_chilled_plate", amount = 20},
     {type = "item", name = "iridium-plate", amount = 10},
     {type = "item", name = "quantum-processor", amount = 20},
+    {type = "item", name = "planetaris-crystalization-motor", amount = 20},
     {type = "item", name = "ai-tier-10", amount = 1},
     {type = "fluid", name = "electrolyte", amount = 1000},
 }
