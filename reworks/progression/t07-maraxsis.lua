@@ -2,7 +2,7 @@
 data.raw["recipe"]["maraxsis-fish-food"].ingredients = {
     {type = "item", name = "maraxsis-coral", amount = 3},
     {type = "item", name = "maraxsis-tropical-fish", amount = 1},
-    {type = "item", name = "sand", amount = 1},
+    {type = "fluid", name = "planetaris-pure-sand", amount = 10},
     {type = "item", name = "jelly", amount = 2},
     {type = "item", name = "yumako-mash", amount = 1},
     {type = "fluid", name = "hyperlanes-metamaterial-microsuspension", amount = 10},

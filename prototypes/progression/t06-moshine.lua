@@ -1,3 +1,22 @@
+-- Sand unification
+local sand_recipe = {
+    type = "recipe",
+    name = "hyperlanes-sand-to-planetaris-sand",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "sand", amount = 200},
+    },
+    energy_required = 2.0,
+    results = {
+        {type = "fluid", name = "planetaris-sand", amount = 50}
+    },
+    allow_productivity = true,
+    categories = {"sifting"}
+}
+data:extend({sand_recipe})
+
+
 -- ╒══════════╗  ╒════════╗  ╒══════════╗ ╒══════════╗      ╒═════════╗
 -- └┐  ╓───┐  ║  │  ╓──┐  ║  └┐  ╓───┐  ║ │ ╓─┐  ╓─┐ ║      │ ╓────┐  ║
 --  │  ║   │  ║  │  ║  │  ║   │  ║   │  ║ └─╜ │  ║ └─╜      └─╜  ╒═╛ ╓╜

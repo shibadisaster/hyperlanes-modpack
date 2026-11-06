@@ -1,3 +1,18 @@
+-- Sand unification
+data.raw["recipe"]["concrete-from-molten-iron-and-sand"].ingredients = {
+    {type = "fluid", name = "planetaris-sand", amount = 60},
+    {type = "fluid", name = "molten-iron", amount = 20},
+    {type = "fluid", name = "water", amount = 100},
+}
+
+data.raw["recipe"]["petroleum-from-sand-sulfur-steam-carbon"].ingredients = {
+    {type = "item", name = "sulfur", amount = 10},
+    {type = "item", name = "coal", amount = 5},
+    {type = "fluid", name = "planetaris-sand", amount = 80},
+    {type = "fluid", name = "steam", amount = 50},
+}
+
+
 -- Tempered glass
 data.raw["recipe"]["glass"].ingredients = {
     {type = "item", name = "planetaris-heavy-glass", amount = 3},
@@ -27,6 +42,7 @@ data.raw["recipe"]["optical-cable"].ingredients = {
 
 -- Silicon (disable)
 data.raw["recipe"]["silicon"].enabled = false
+data.raw["recipe"]["silicon"].hidden = true
 
 data.raw["technology"]["moshine-tech-silicon"].enabled = false
 data.raw["technology"]["moshine-tech-silicon"].prerequisites = {}
