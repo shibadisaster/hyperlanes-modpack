@@ -28,6 +28,8 @@ local t7_magnet = {
     },
     stack_size = 50,
     weight = 10*kg,
+    spoil_ticks = 300 * 60,
+    spoil_result = "magnet"
 }
 data:extend({t7_magnet})
 

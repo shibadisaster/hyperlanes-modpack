@@ -1,0 +1,52 @@
+-- Lithium
+data.raw["recipe"]["lithium"].ingredients = {
+    {type = "item", name = "holmium-plate", amount = 1},
+    {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_stats = 1},
+    {type = "fluid", name = "lithium-brine", amount = 50},
+    {type = "fluid", name = "ammonia", amount = 50},
+}
+data.raw["recipe"]["lithium"].results = {
+    {type = "item", name = "lithium", amount = 5},
+    {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98}
+}
+data.raw["recipe"]["lithium"].main_product = "lithium"
+
+
+-- Fluoroketone
+data.raw["recipe"]["fluoroketone"].ingredients = {
+    {type = "item", name = "lithium", amount = 1},
+    {type = "item", name = "methane-ice", amount = 10},
+    {type = "fluid", name = "fluorine", amount = 50},
+    {type = "fluid", name = "ammonia", amount = 50},
+}
+
+
+-- Cryogenic plant
+data.raw["recipe"]["cryogenic-plant"].ingredients = {
+    {type = "item", name = "planetaris-simulating-unit", amount = 20},
+    {type = "item", name = "ai-tier-8", amount = 1},
+    {type = "item", name = "chemical-plant", amount = 2},
+    {type = "item", name = "lithium-plate", amount = 20},
+    {type = "item", name = "refined-concrete", amount = 50},
+    {type = "item", name = "glass", amount = 10},
+    {type = "item", name = "superconductor", amount = 20},
+}
+
+
+-- Foundation
+data.raw["recipe"]["foundation"].ingredients = {
+    {type = "item", name = "landfill", amount = 5},
+    {type = "item", name = "planetaris-carbon-nanotube", amount = 5},
+    {type = "item", name = "refined-concrete", amount = 10},
+    {type = "item", name = "glass", amount = 10},
+    {type = "fluid", name = "fluoroketone-cold", amount = 20},
+    {type = "fluid", name = "hyperlanes-metamaterial-microsuspension", amount = 10},
+}
+
+
+-- Ice platform
+data.raw["recipe"]["ice-platform"].ingredients = {
+    {type = "item", name = "ice", amount = 50},
+    {type = "item", name = "muluna-microcellular-plastic", amount = 2},
+    {type = "fluid", name = "ammonia", amount = 400},
+}
