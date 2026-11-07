@@ -5,16 +5,24 @@ local sealant_recipe = {
     enabled = false,
     ingredients =
     {
-        {type = "fluid", name = "tar", amount = 10},
-        {type = "fluid", name = "planetaris-sand", amount = 20},
-        {type = "item", name = "stone-crushed", amount = 3},
+        {type = "fluid", name = "tar", amount = 20},
+        {type = "item", name = "planetaris-sand-barrel", amount = 1},
+        {type = "fluid", name = "hyperlanes-advanced-material-microsuspension", amount = 4},
+        {type = "item", name = "stone-crushed", amount = 10},
     },
     energy_required = 5.0,
     results = {
-        {type = "item", name = "hyperlanes-sealant", amount = 1}
+        {type = "item", name = "hyperlanes-sealant", amount = 2}
     },
     allow_productivity = true,
     categories = {"chemistry"},
-    auto_recycle = true
+    auto_recycle = true,
+    surface_conditions = {
+        {
+            property="planetaris-dust-concentration",
+            min=50,
+            max=100
+        }
+    }
 }
 data:extend({sealant_recipe})

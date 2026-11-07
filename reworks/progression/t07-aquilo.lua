@@ -78,6 +78,7 @@ data.raw["recipe"]["fusion-reactor"].ingredients = {
 
 
 -- Fusion generator moved to Paracelsin
+table.remove(data.raw["technology"]["fusion-reactor"].effects, 2)
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗

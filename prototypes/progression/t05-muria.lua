@@ -34,7 +34,7 @@ local purified_lead_recipe = {
     energy_required = 2.0,
     results = {
         {type = "item", name = "hyperlanes-purified-lead", amount = 1},
-        {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98}
+        {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.99}
     },
     main_product = "hyperlanes-purified-lead",
     allow_productivity = true,

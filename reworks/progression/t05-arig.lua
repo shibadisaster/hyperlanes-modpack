@@ -64,6 +64,21 @@ data.raw["recipe"]["planetaris-advanced-sand-sifting"].ingredients = {
     {type = "fluid", name = "planetaris-sand", amount = 200},
     {type = "item", name = "hyperlanes-fulgora-magnet", amount = 1},
 }
+data.raw["recipe"]["planetaris-sand-sifting"].surface_conditions = {
+    {
+        property="planetaris-dust-concentration",
+        min=50,
+        max=100
+    }
+}
+data.raw["recipe"]["planetaris-advanced-sand-sifting"].surface_conditions = {
+    {
+        property="planetaris-dust-concentration",
+        min=50,
+        max=100
+    }
+}
+
 
 
 data.raw["technology"]["condensing-agricultural-tower"].essential = false
