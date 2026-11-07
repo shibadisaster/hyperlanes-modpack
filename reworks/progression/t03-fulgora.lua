@@ -13,6 +13,15 @@ data.raw["recipe"]["electromagnetic-plant"].ingredients = {
 }
 
 
+table.insert(
+    data.raw["technology"]["electromagnetic-plant"].effects,
+    {
+        type = "unlock-recipe",
+        recipe = "hyperlanes-fulgora-magnet"
+    }
+)
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

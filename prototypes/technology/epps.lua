@@ -5,7 +5,7 @@ local t2_epp = {
     type = "technology",
     name = "hyperlanes-t2-epp",
     icon_size = 256,
-    icon = "__space-age__/graphics/technology/solar-system-edge.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
     effects = {},
     unit =
     {
@@ -24,7 +24,7 @@ local t3_epp = {
     type = "technology",
     name = "hyperlanes-t3-epp",
     icon_size = 256,
-    icon = "__space-age__/graphics/technology/solar-system-edge.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
     effects = {},
     unit =
     {
@@ -43,7 +43,7 @@ local t4_epp = {
     type = "technology",
     name = "hyperlanes-t4-epp",
     icon_size = 256,
-    icon = "__space-age__/graphics/technology/solar-system-edge.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
     effects = {},
     unit =
     {
@@ -62,7 +62,7 @@ local t5_epp = {
     type = "technology",
     name = "hyperlanes-t5-epp",
     icon_size = 256,
-    icon = "__space-age__/graphics/technology/solar-system-edge.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
     effects = {},
     unit =
     {
@@ -81,7 +81,7 @@ local t6_epp = {
     type = "technology",
     name = "hyperlanes-t6-epp",
     icon_size = 256,
-    icon = "__space-age__/graphics/technology/solar-system-edge.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
     effects = {},
     unit =
     {
@@ -100,7 +100,7 @@ local t7_epp = {
     type = "technology",
     name = "hyperlanes-t7-epp",
     icon_size = 256,
-    icon = "__space-age__/graphics/technology/solar-system-edge.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
     effects = {},
     unit =
     {
@@ -119,7 +119,7 @@ local t8_epp = {
     type = "technology",
     name = "hyperlanes-t8-epp",
     icon_size = 256,
-    icon = "__space-age__/graphics/technology/solar-system-edge.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
     effects = {},
     unit =
     {
@@ -138,7 +138,7 @@ local t9_epp = {
     type = "technology",
     name = "hyperlanes-t9-epp",
     icon_size = 256,
-    icon = "__space-age__/graphics/technology/solar-system-edge.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
     effects = {},
     unit =
     {
@@ -161,7 +161,7 @@ local t10_epp = {
     type = "technology",
     name = "hyperlanes-t10-epp",
     icon_size = 256,
-    icon = "__space-age__/graphics/technology/solar-system-edge.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
     effects = {},
     unit =
     {

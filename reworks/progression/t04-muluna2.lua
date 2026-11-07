@@ -36,6 +36,11 @@ data.raw["recipe"]["low-density-space-platform-foundation"].surface_conditions =
 }
 data.raw["recipe"]["low-density-space-platform-foundation"].categories = {"crafting-with-fluid"}
 
+data.raw["technology"]["low-density-space-platform-foundation"].prerequisites = {
+    "muluna-nanofoamed-polymers",
+    "hyperlanes-advanced-material-microsuspension"
+}
+
 
 -- Rigor module 1
 data.raw["technology"]["rigor-module"].prerequisites = {

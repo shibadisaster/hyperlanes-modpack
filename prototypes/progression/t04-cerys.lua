@@ -1,3 +1,6 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
+
 -- Inert radioactive catalyst
 local elcatalyst_recipe = {
     type = "recipe",
@@ -64,4 +67,55 @@ local ammicrosuspension_recipe = {
 data:extend({ammicrosuspension_recipe})
 
 
--- tech for unlocking ammicrosuspension_recipe
+-- Tech for unlocking Advanced material microsuspension
+local amms = {
+    type = "technology",
+    name = "hyperlanes-advanced-material-microsuspension",
+    icon_size = 64,
+    icon = "__hyperlanes-modpack__/graphics/icons/advanced-material-microsuspension.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-advanced-material-microsuspension"
+        },
+    },
+    unit =
+    {
+        count = utils.t4_spcost_tech,
+        ingredients = utils.t4_sp_cerys,
+        time = 60
+    },
+    prerequisites = {"planetslib-cerys-cargo-drops"},
+    order = "c-a",
+    essential = false
+}
+data:extend({amms})
+
+
+-- Tech for unlocking Radioactive catalyst
+local elca = {
+    type = "technology",
+    name = "hyperlanes-elementary-catalyst",
+    icon_size = 64,
+    icon = "__hyperlanes-modpack__/graphics/icons/elementary-catalyst.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-elementary-catalyst"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-activated-elementary-catalyst"
+        },
+    },
+    unit =
+    {
+        count = utils.t4_spcost_tech,
+        ingredients = utils.t4_sp_cerys,
+        time = 60
+    },
+    prerequisites = {"planetslib-cerys-cargo-drops"},
+    order = "c-a",
+    essential = false
+}
+data:extend({elca})

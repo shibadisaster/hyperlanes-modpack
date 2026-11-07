@@ -143,6 +143,12 @@ utils.t4_spcost_tech = 1500
 utils.t4_spcost_bigtech = utils.t4_spcost_tech * 2
 utils.t4_spcost_smalltech = utils.t4_spcost_tech / 2
 
+utils.t4_sp_cerys = {
+    {"cerysian-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"space-science-pack", 1},
+}
+
 utils.t4_sp_muluna = table.deepcopy(utils.t4_sp)
 table.insert(utils.t4_sp_muluna, {"interstellar-science-pack", 1})
 
