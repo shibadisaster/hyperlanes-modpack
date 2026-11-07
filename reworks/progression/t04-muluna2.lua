@@ -15,6 +15,13 @@ table.insert(telesc_tech.prerequisites, "muluna-nanofoamed-polymers")
 
 
 -- Low density space platform foundation
+data.raw["recipe"]["low-density-space-platform-foundation"].ingredients = {
+    {type = "item", name = "low-density-structure", amount = 1},
+    {type = "item", name = "aluminum-plate", amount = 5},
+    {type = "item", name = "muluna-microcellular-plastic", amount = 5},
+    {type = "item", name = "space-platform-foundation", amount = 1},
+    {type = "fluid", name = "hyperlanes-advanced-material-microsuspension", amount = 5},
+}
 data.raw["recipe"]["low-density-space-platform-foundation"].surface_conditions = {
     {
         property = "gravity",
@@ -27,6 +34,14 @@ data.raw["recipe"]["low-density-space-platform-foundation"].surface_conditions =
         max = 0,
     }
 }
+data.raw["recipe"]["low-density-space-platform-foundation"].categories = {"crafting-with-fluid"}
+
+
+-- Rigor module 1
+data.raw["technology"]["rigor-module"].prerequisites = {
+    "interstellar-science-pack",
+    "modules"
+}
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
@@ -38,4 +53,37 @@ data.raw["recipe"]["low-density-space-platform-foundation"].surface_conditions =
 --    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
--- asteroid-upcycling
+data.raw["technology"]["muluna-telescope"].unit.ingredients = utils.t4_sp
+data.raw["technology"]["muluna-telescope"].unit.count = utils.t3_spcost_bigtech
+
+data.raw["technology"]["crusher-2"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["crusher-2"].unit.count = utils.t4_spcost_bigtech
+
+data.raw["technology"]["muluna-asteroid-upcycling"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["muluna-asteroid-upcycling"].unit.count = utils.t4_spcost_bigtech
+
+data.raw["technology"]["advanced-space-science-pack"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["advanced-space-science-pack"].unit.count = utils.t4_spcost_tech
+
+data.raw["technology"]["muluna-cycling-steam-turbine"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["muluna-cycling-steam-turbine"].unit.count = utils.t4_spcost_bigtech
+
+data.raw["technology"]["water-recycling-productivity"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["water-recycling-productivity"].unit.count_formula = "1.5^L*" .. utils.t4_spcost_smalltech
+
+data.raw["technology"]["thruster-fuel-productivity"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["thruster-fuel-productivity"].unit.count_formula = "1.5^L*" .. utils.t4_spcost_bigtech
+
+data.raw["technology"]["muluna-satellite-radar"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["muluna-satellite-radar"].unit.count = utils.t4_spcost_bigtech
+
+data.raw["technology"]["muluna-vacuum-heating-tower"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["muluna-vacuum-heating-tower"].unit.count = utils.t4_spcost_tech
+
+data.raw["technology"]["rigor-module-3"].unit.ingredients = utils.placeholder_sp
+
+data.raw["technology"]["space-chest-muluna"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["space-chest-muluna"].unit.count = utils.t4_spcost_bigtech
+
+data.raw["technology"]["rigor-module"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["rigor-module"].unit.count = utils.t4_spcost_bigtech

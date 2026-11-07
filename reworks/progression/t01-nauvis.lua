@@ -29,3 +29,5 @@ table.insert(utsp_tech.unit.ingredients, {"space-science-pack", 1})
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["quality-module"].unit.ingredients = utils.placeholder_sp
+
+data.raw["technology"]["rigor-module"].unit.ingredients = utils.placeholder_sp

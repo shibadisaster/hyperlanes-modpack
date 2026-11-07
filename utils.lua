@@ -80,7 +80,6 @@ utils.t3_spcost_tech = 1000
 utils.t3_spcost_bigtech = utils.t3_spcost_tech * 2
 utils.t3_spcost_smalltech = utils.t3_spcost_tech / 2
 
-
 utils.t3_sp_fulgora = table.deepcopy(utils.t3_sp)
 table.insert(utils.t3_sp_fulgora, {"electromagnetic-science-pack", 1})
 
@@ -141,6 +140,12 @@ utils.t4_sp = t4_sp
 utils.t4_spcost_epp = 10000
 utils.t4_spcost_planet = 3000
 utils.t4_spcost_tech = 1500
+utils.t4_spcost_bigtech = utils.t4_spcost_tech * 2
+utils.t4_spcost_smalltech = utils.t4_spcost_tech / 2
+
+utils.t4_sp_muluna = table.deepcopy(utils.t4_sp)
+table.insert(utils.t4_sp_muluna, {"interstellar-science-pack", 1})
+
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
@@ -170,6 +175,8 @@ utils.t5_sp = t5_sp
 utils.t5_spcost_epp = 15000
 utils.t5_spcost_planet = 5000
 utils.t5_spcost_tech = 2000
+utils.t5_spcost_bigtech = utils.t5_spcost_tech * 2
+utils.t5_spcost_smalltech = utils.t5_spcost_tech / 2
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
@@ -202,6 +209,8 @@ utils.t6_sp = t6_sp
 utils.t6_spcost_epp = 30000
 utils.t6_spcost_planet = 10000
 utils.t6_spcost_tech = 3500
+utils.t6_spcost_bigtech = utils.t6_spcost_tech * 2
+utils.t6_spcost_smalltech = utils.t6_spcost_tech / 2
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
@@ -236,6 +245,8 @@ utils.t7_sp = t7_sp
 utils.t7_spcost_epp = 60000
 utils.t7_spcost_planet = 15000
 utils.t7_spcost_tech = 5000
+utils.t7_spcost_bigtech = utils.t7_spcost_tech * 2
+utils.t7_spcost_smalltech = utils.t7_spcost_tech / 2
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
@@ -272,6 +283,8 @@ utils.t8_sp = t8_sp
 utils.t8_spcost_epp = 100000
 utils.t8_spcost_planet = 25000
 utils.t8_spcost_tech = 7500
+utils.t8_spcost_bigtech = utils.t8_spcost_tech * 2
+utils.t8_spcost_smalltech = utils.t8_spcost_tech / 2
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
@@ -312,6 +325,8 @@ utils.t9_sp = t9_sp
 utils.t9_spcost_epp = 200000
 utils.t9_spcost_planet = 30000
 utils.t9_spcost_tech = 10000
+utils.t9_spcost_bigtech = utils.t9_spcost_tech * 2
+utils.t9_spcost_smalltech = utils.t9_spcost_tech / 2
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗       ╒══╗  ╒═════════╗
@@ -353,6 +368,8 @@ utils.t10_sp = t10_sp
 utils.t10_spcost_epp = 500000
 utils.t10_spcost_planet = 50000
 utils.t10_spcost_tech = 15000
+utils.t10_spcost_bigtech = utils.t10_spcost_tech * 2
+utils.t10_spcost_smalltech = utils.t10_spcost_tech / 2
 
 
 
