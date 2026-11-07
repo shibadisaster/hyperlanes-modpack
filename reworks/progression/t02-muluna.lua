@@ -30,3 +30,33 @@ data.raw["recipe"]["crusher"].ingredients = {
 --     │  ║      │  ║   ╒═╗ │  ║    ╒═╗  │  ║  │  ║  ╒═╗    │  ║
 --    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
+
+data.raw["technology"]["efficiency-module-2"].unit.ingredients = utils.t2_sp_muluna
+data.raw["technology"]["efficiency-module-2"].unit.count = utils.t2_spcost_tech
+
+data.raw["technology"]["speed-module-2"].unit.ingredients = utils.t2_sp_muluna
+data.raw["technology"]["speed-module-2"].unit.count = utils.t2_spcost_tech
+
+data.raw["technology"]["rigor-module-2"].unit.ingredients = utils.t2_sp_muluna
+data.raw["technology"]["rigor-module-2"].unit.count = utils.t2_spcost_tech
+
+data.raw["technology"]["quality-module-2"].unit.ingredients = utils.t2_sp_muluna
+data.raw["technology"]["quality-module-2"].unit.count = utils.t2_spcost_tech
+
+data.raw["technology"]["productivity-module-2"].unit.ingredients = utils.t2_sp_muluna
+data.raw["technology"]["productivity-module-2"].unit.count = utils.t2_spcost_tech
+
+data.raw["technology"]["landing-pad-unloading-bay"].unit.ingredients = utils.t2_sp_muluna
+data.raw["technology"]["landing-pad-unloading-bay"].unit.count = utils.t2_spcost_bigtech
+
+data.raw["technology"]["production-science-pack"].unit.ingredients = utils.t2_sp_muluna
+data.raw["technology"]["production-science-pack"].unit.count = utils.t2_spcost_tech
+
+data.raw["technology"]["utility-science-pack"].unit.ingredients = utils.t2_sp_muluna
+data.raw["technology"]["utility-science-pack"].unit.count = utils.t2_spcost_tech
+
+data.raw["technology"]["muluna-rocket-buggy"].unit.ingredients = utils.t2_sp_muluna_mil
+data.raw["technology"]["muluna-rocket-buggy"].unit.count = utils.t2_spcost_tech
+
+data.raw["technology"]["muluna-silicon-processing"].unit.ingredients = utils.t2_sp_muluna_prod
+data.raw["technology"]["muluna-silicon-processing"].unit.count = utils.t2_spcost_smalltech

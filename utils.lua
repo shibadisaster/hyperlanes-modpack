@@ -30,6 +30,20 @@ utils.t2_sp = t2_sp
 utils.t2_spcost_epp = 2000
 utils.t2_spcost_planet = 1000
 utils.t2_spcost_tech = 500
+utils.t2_spcost_bigtech = utils.t2_spcost_tech * 2
+utils.t2_spcost_smalltech = utils.t2_spcost_tech / 2
+
+utils.t2_sp_muluna = table.deepcopy(utils.t2_sp)
+table.insert(utils.t2_sp_muluna, {"space-science-pack", 1})
+
+utils.t2_sp_muluna_mil = table.deepcopy(utils.t2_sp_muluna)
+table.insert(utils.t2_sp_muluna_mil, {"military-science-pack", 1})
+
+utils.t2_sp_muluna_prod = table.deepcopy(utils.t2_sp_muluna)
+table.insert(utils.t2_sp_muluna_prod, {"production-science-pack", 1})
+
+utils.t2_sp_muluna_util = table.deepcopy(utils.t2_sp_muluna)
+table.insert(utils.t2_sp_muluna_util, {"utility-science-pack", 1})
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
