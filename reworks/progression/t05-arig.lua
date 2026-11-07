@@ -1,3 +1,6 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
+
 -- Sifter
 data.raw["recipe"]["planetaris-sifter"].ingredients = {
     {type = "item", name = "steel-plate", amount = 10},
@@ -65,3 +68,15 @@ data.raw["recipe"]["planetaris-advanced-sand-sifting"].ingredients = {
 
 data.raw["technology"]["condensing-agricultural-tower"].essential = false
 data.raw["technology"]["planetaris-arig-rocket-part"].essential = false
+
+
+-- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
+-- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
+-- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
+--     │  ║      │  ╚══╗    │  ║         │  ╚══╛  ║  │  ╚══════╗
+--     │  ║      │  ╓──╜    │  ║         │  ╓──┐  ║  └──────┐  ║
+--     │  ║      │  ║   ╒═╗ │  ║    ╒═╗  │  ║  │  ║  ╒═╗    │  ║
+--    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
+--    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
+
+data.raw["technology"]["planet-discovery-arig"].unit.ingredients = utils.t5_sp

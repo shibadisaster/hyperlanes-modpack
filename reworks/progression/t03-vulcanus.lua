@@ -1,3 +1,6 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
+
 -- Foundry
 data.raw["recipe"]["foundry"].ingredients = {
     {type = "item", name = "steel-plate", amount = 50},
@@ -8,3 +11,15 @@ data.raw["recipe"]["foundry"].ingredients = {
     {type = "fluid", name = "lubricant", amount = 20},
     {type = "item", name = "crusher", amount = 1}
 }
+
+
+-- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
+-- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
+-- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
+--     │  ║      │  ╚══╗    │  ║         │  ╚══╛  ║  │  ╚══════╗
+--     │  ║      │  ╓──╜    │  ║         │  ╓──┐  ║  └──────┐  ║
+--     │  ║      │  ║   ╒═╗ │  ║    ╒═╗  │  ║  │  ║  ╒═╗    │  ║
+--    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
+--    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
+
+data.raw["technology"]["planet-discovery-vulcanus"].unit.ingredients = utils.t3_sp

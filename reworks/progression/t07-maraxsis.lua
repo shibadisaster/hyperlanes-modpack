@@ -1,3 +1,6 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
+
 -- Fish food
 data.raw["recipe"]["maraxsis-fish-food"].ingredients = {
     {type = "item", name = "maraxsis-coral", amount = 3},
@@ -84,3 +87,15 @@ data.raw["recipe"]["maraxsis-sonar"].ingredients = {
     {type = "item", name = "ai-tier-8", amount = 1},
     {type = "item", name = "planetaris-simulating-unit", amount = 20},
 }
+
+
+-- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
+-- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
+-- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
+--     │  ║      │  ╚══╗    │  ║         │  ╚══╛  ║  │  ╚══════╗
+--     │  ║      │  ╓──╜    │  ║         │  ╓──┐  ║  └──────┐  ║
+--     │  ║      │  ║   ╒═╗ │  ║    ╒═╗  │  ║  │  ║  ╒═╗    │  ║
+--    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
+--    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
+
+data.raw["technology"]["planet-discovery-maraxsis"].unit.ingredients = utils.t7_sp

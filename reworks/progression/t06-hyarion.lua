@@ -1,3 +1,6 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
+
 data.raw["recipe"]["planetaris-metallic-smelting"].enabled = false
 data.raw["recipe"]["planetaris-burner-drill-alternative"].enabled = false
 data.raw["recipe"]["planetaris-quartz-furnace"].enabled = false
@@ -151,3 +154,15 @@ data.raw["recipe"]["planetaris-big-refraction-ray-collector"].ingredients = {
 
 -- go away
 data.raw["technology"]["planetaris-space-facilities-1"].essential = false
+
+
+-- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
+-- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
+-- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
+--     │  ║      │  ╚══╗    │  ║         │  ╚══╛  ║  │  ╚══════╗
+--     │  ║      │  ╓──╜    │  ║         │  ╓──┐  ║  └──────┐  ║
+--     │  ║      │  ║   ╒═╗ │  ║    ╒═╗  │  ║  │  ║  ╒═╗    │  ║
+--    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
+--    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
+
+data.raw["technology"]["planet-discovery-hyarion"].unit.ingredients = utils.t6_sp

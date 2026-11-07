@@ -1,3 +1,6 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
+
 -- Biochamber
 data.raw["recipe"]["biochamber"].ingredients = {
     {type = "item", name = "iron-plate", amount = 20},
@@ -7,3 +10,15 @@ data.raw["recipe"]["biochamber"].ingredients = {
     {type = "item", name = "landfill", amount = 1},
     {type = "item", name = "muluna-greenhouse", amount = 1}
 }
+
+
+-- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
+-- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
+-- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
+--     │  ║      │  ╚══╗    │  ║         │  ╚══╛  ║  │  ╚══════╗
+--     │  ║      │  ╓──╜    │  ║         │  ╓──┐  ║  └──────┐  ║
+--     │  ║      │  ║   ╒═╗ │  ║    ╒═╗  │  ║  │  ║  ╒═╗    │  ║
+--    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
+--    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
+
+data.raw["technology"]["planet-discovery-gleba"].unit.ingredients = utils.t3_sp

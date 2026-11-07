@@ -1,3 +1,6 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
+
 local t2_epp = {
     type = "technology",
     name = "hyperlanes-t2-epp",
@@ -7,11 +10,7 @@ local t2_epp = {
     unit =
     {
         count = 1000,
-        ingredients = {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"chemical-science-pack", 1}
-        },
+        ingredients = utils.t2_sp,
         time = 30
     },
     prerequisites = {"rocket-silo"},
@@ -30,15 +29,7 @@ local t3_epp = {
     unit =
     {
         count = 2000,
-        ingredients = {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"military-science-pack", 1},
-            {"chemical-science-pack", 1},
-            {"production-science-pack", 1},
-            {"utility-science-pack", 1},
-            {"space-science-pack", 1}
-        },
+        ingredients = utils.t3_sp,
         time = 60
     },
     prerequisites = {"hyperlanes-t2-epp", "space-science-pack", "production-science-pack", "utility-science-pack"},
@@ -57,18 +48,7 @@ local t4_epp = {
     unit =
     {
         count = 4000,
-        ingredients = {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"military-science-pack", 1},
-            {"chemical-science-pack", 1},
-            {"production-science-pack", 1},
-            {"utility-science-pack", 1},
-            {"space-science-pack", 1},
-            {"metallurgic-science-pack", 1},
-            {"agricultural-science-pack", 1},
-            {"electromagnetic-science-pack", 1},
-        },
+        ingredients = utils.t4_sp,
         time = 60
     },
     prerequisites = {"hyperlanes-t3-epp", "metallurgic-science-pack", "agricultural-science-pack", "electromagnetic-science-pack"},
@@ -87,19 +67,7 @@ local t5_epp = {
     unit =
     {
         count = 7000,
-        ingredients = {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"military-science-pack", 1},
-            {"chemical-science-pack", 1},
-            {"production-science-pack", 1},
-            {"utility-science-pack", 1},
-            {"space-science-pack", 1},
-            {"metallurgic-science-pack", 1},
-            {"agricultural-science-pack", 1},
-            {"electromagnetic-science-pack", 1},
-            {"interstellar-science-pack", 1}
-        },
+        ingredients = utils.t5_sp,
         time = 60
     },
     prerequisites = {"hyperlanes-t4-epp", "interstellar-science-pack"},
@@ -118,22 +86,7 @@ local t6_epp = {
     unit =
     {
         count = 10000,
-        ingredients = {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"military-science-pack", 1},
-            {"chemical-science-pack", 1},
-            {"production-science-pack", 1},
-            {"utility-science-pack", 1},
-            {"space-science-pack", 1},
-            {"metallurgic-science-pack", 1},
-            {"agricultural-science-pack", 1},
-            {"electromagnetic-science-pack", 1},
-            {"interstellar-science-pack", 1},
-            {"planetaris-compression-science-pack", 1},
-            {"biorecycling-science-pack", 1},
-            {"acidworking-science-pack", 1}
-        },
+        ingredients = utils.t6_sp,
         time = 60
     },
     prerequisites = {"hyperlanes-t5-epp", "planetaris-compression-science", "craptonite-processing", "acidworking-science-pack"},
@@ -152,24 +105,7 @@ local t7_epp = {
     unit =
     {
         count = 14000,
-        ingredients = {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"military-science-pack", 1},
-            {"chemical-science-pack", 1},
-            {"production-science-pack", 1},
-            {"utility-science-pack", 1},
-            {"space-science-pack", 1},
-            {"metallurgic-science-pack", 1},
-            {"agricultural-science-pack", 1},
-            {"electromagnetic-science-pack", 1},
-            {"interstellar-science-pack", 1},
-            {"planetaris-compression-science-pack", 1},
-            {"biorecycling-science-pack", 1},
-            {"acidworking-science-pack", 1},
-            {"planetaris-polishing-science-pack", 1},
-            {"planetaris-refraction-science-pack", 1}
-        },
+        ingredients = utils.t7_sp,
         time = 60
     },
     prerequisites = {"hyperlanes-t6-epp", "planetaris-refraction-science-pack", "moshine-tech-ai-tier-8"},
@@ -188,26 +124,7 @@ local t8_epp = {
     unit =
     {
         count = 20000,
-        ingredients = {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"military-science-pack", 1},
-            {"chemical-science-pack", 1},
-            {"production-science-pack", 1},
-            {"utility-science-pack", 1},
-            {"space-science-pack", 1},
-            {"metallurgic-science-pack", 1},
-            {"agricultural-science-pack", 1},
-            {"electromagnetic-science-pack", 1},
-            {"interstellar-science-pack", 1},
-            {"planetaris-compression-science-pack", 1},
-            {"biorecycling-science-pack", 1},
-            {"acidworking-science-pack", 1},
-            {"planetaris-polishing-science-pack", 1},
-            {"planetaris-refraction-science-pack", 1},
-            {"cryogenic-science-pack", 1},
-            {"hydraulic-science-pack", 1}
-        },
+        ingredients = utils.t8_sp,
         time = 60
     },
     prerequisites = {"hyperlanes-t7-epp", "cryogenic-science-pack", "hydraulic-science-pack", "moshine-tech-ai-tier-10"},
@@ -226,29 +143,7 @@ local t9_epp = {
     unit =
     {
         count = 30000,
-        ingredients = {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"military-science-pack", 1},
-            {"chemical-science-pack", 1},
-            {"production-science-pack", 1},
-            {"utility-science-pack", 1},
-            {"space-science-pack", 1},
-            {"metallurgic-science-pack", 1},
-            {"agricultural-science-pack", 1},
-            {"electromagnetic-science-pack", 1},
-            {"interstellar-science-pack", 1},
-            {"planetaris-compression-science-pack", 1},
-            {"biorecycling-science-pack", 1},
-            {"acidworking-science-pack", 1},
-            {"planetaris-polishing-science-pack", 1},
-            {"planetaris-refraction-science-pack", 1},
-            {"cryogenic-science-pack", 1},
-            {"hydraulic-science-pack", 1},
-            {"gas-manipulation-science-pack", 1},
-            {"planetaris-bioengineering-science-pack", 1},
-            {"galvanization-science-pack", 1},
-        },
+        ingredients = utils.t9_sp,
         time = 60
     },
     prerequisites = {"hyperlanes-t8-epp", "s1_gas_manipulation_science_pack", "planetaris-pathological-science-pack", "galvanization-science-pack"},
@@ -271,30 +166,7 @@ local t10_epp = {
     unit =
     {
         count = 50000,
-        ingredients = {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"military-science-pack", 1},
-            {"chemical-science-pack", 1},
-            {"production-science-pack", 1},
-            {"utility-science-pack", 1},
-            {"space-science-pack", 1},
-            {"metallurgic-science-pack", 1},
-            {"agricultural-science-pack", 1},
-            {"electromagnetic-science-pack", 1},
-            {"interstellar-science-pack", 1},
-            {"planetaris-compression-science-pack", 1},
-            {"biorecycling-science-pack", 1},
-            {"acidworking-science-pack", 1},
-            {"planetaris-polishing-science-pack", 1},
-            {"planetaris-refraction-science-pack", 1},
-            {"cryogenic-science-pack", 1},
-            {"hydraulic-science-pack", 1},
-            {"gas-manipulation-science-pack", 1},
-            {"planetaris-bioengineering-science-pack", 1},
-            {"galvanization-science-pack", 1},
-            {"promethium-science-pack", 1}
-        },
+        ingredients = utils.t10_sp,
         time = 60
     },
     prerequisites = {"hyperlanes-t9-epp", "promethium-science-pack"},
