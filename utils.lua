@@ -1,6 +1,14 @@
 local utils = {}
 
 
+
+
+
+utils.placeholder_sp = {
+    {"promethium-science-pack", 1},
+}
+
+
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗  ╒══╗ 
 -- │ ╓─┐  ╓─┐ ║ └─┐  ╓─╜ └┐  ╓───┐ ║ └┐  ╓───┐  ║      │  ╓───┐  ║ ╒╛  ║ 
 -- └─╜ │  ║ └─╜   │  ║    │  ║   └─╜  │  ║   │  ║      │  ║   │  ║ └┐  ║ 
@@ -76,13 +84,35 @@ utils.t3_spcost_smalltech = utils.t3_spcost_tech / 2
 utils.t3_sp_fulgora = table.deepcopy(utils.t3_sp)
 table.insert(utils.t3_sp_fulgora, {"electromagnetic-science-pack", 1})
 
-
 utils.t3_sp_gleba = table.deepcopy(utils.t3_sp)
 table.insert(utils.t3_sp_gleba, {"agricultural-science-pack", 1})
 
-
 utils.t3_sp_vulcanus = table.deepcopy(utils.t3_sp)
 table.insert(utils.t3_sp_vulcanus, {"metallurgic-science-pack", 1})
+
+utils.t3_sp_prod_fulgora = table.deepcopy(utils.t2_sp)
+table.insert(utils.t3_sp_prod_fulgora, {"production-science-pack", 1})
+table.insert(utils.t3_sp_prod_fulgora, {"electromagnetic-science-pack", 1})
+
+utils.t3_sp_prod_gleba = table.deepcopy(utils.t2_sp)
+table.insert(utils.t3_sp_prod_gleba, {"production-science-pack", 1})
+table.insert(utils.t3_sp_prod_gleba, {"agricultural-science-pack", 1})
+
+utils.t3_sp_prod_vulcanus = table.deepcopy(utils.t2_sp)
+table.insert(utils.t3_sp_prod_vulcanus, {"production-science-pack", 1})
+table.insert(utils.t3_sp_prod_vulcanus, {"metallurgic-science-pack", 1})
+
+utils.t3_sp_fulgora_vulcanus = table.deepcopy(utils.t3_sp)
+table.insert(utils.t3_sp_fulgora_vulcanus, {"electromagnetic-science-pack", 1})
+table.insert(utils.t3_sp_fulgora_vulcanus, {"metallurgic-science-pack", 1})
+
+utils.t3_sp_fulgora_gleba = table.deepcopy(utils.t3_sp)
+table.insert(utils.t3_sp_fulgora_gleba, {"electromagnetic-science-pack", 1})
+table.insert(utils.t3_sp_fulgora_gleba, {"agricultural-science-pack", 1})
+
+utils.t3_sp_gleba_vulcanus = table.deepcopy(utils.t3_sp)
+table.insert(utils.t3_sp_gleba_vulcanus, {"agricultural-science-pack", 1})
+table.insert(utils.t3_sp_gleba_vulcanus, {"metallurgic-science-pack", 1})
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒══╗   ╒══╗

@@ -37,3 +37,5 @@ data.raw["recipe"]["low-density-space-platform-foundation"].surface_conditions =
 --     │  ║      │  ║   ╒═╗ │  ║    ╒═╗  │  ║  │  ║  ╒═╗    │  ║
 --    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
+
+-- asteroid-upcycling
