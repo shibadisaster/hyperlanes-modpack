@@ -90,3 +90,4 @@ data.raw["recipe"]["fusion-reactor"].ingredients = {
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-aquilo"].unit.ingredients = utils.t7_sp
+data.raw["technology"]["planet-discovery-aquilo"].unit.count = utils.t7_spcost_planet

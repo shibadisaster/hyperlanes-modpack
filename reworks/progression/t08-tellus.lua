@@ -199,3 +199,4 @@ data.raw["recipe"]["planetaris-logistic-robowasp"].categories = {"organic"}
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-tellus"].unit.ingredients = utils.t8_sp
+data.raw["technology"]["planet-discovery-tellus"].unit.count = utils.t8_spcost_planet

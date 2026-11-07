@@ -23,3 +23,4 @@ data.raw["recipe"]["foundry"].ingredients = {
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-vulcanus"].unit.ingredients = utils.t3_sp
+data.raw["technology"]["planet-discovery-vulcanus"].unit.count = utils.t3_spcost_planet

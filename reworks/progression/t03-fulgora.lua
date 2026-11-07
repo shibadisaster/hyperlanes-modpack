@@ -23,3 +23,4 @@ data.raw["recipe"]["electromagnetic-plant"].ingredients = {
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-fulgora"].unit.ingredients = utils.t3_sp
+data.raw["technology"]["planet-discovery-fulgora"].unit.count = utils.t3_spcost_planet

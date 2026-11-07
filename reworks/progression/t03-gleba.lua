@@ -22,3 +22,4 @@ data.raw["recipe"]["biochamber"].ingredients = {
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-gleba"].unit.ingredients = utils.t3_sp
+data.raw["technology"]["planet-discovery-gleba"].unit.count = utils.t3_spcost_planet

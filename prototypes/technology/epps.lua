@@ -9,7 +9,7 @@ local t2_epp = {
     effects = {},
     unit =
     {
-        count = 1000,
+        count = utils.t2_spcost_epp,
         ingredients = utils.t2_sp,
         time = 30
     },
@@ -28,7 +28,7 @@ local t3_epp = {
     effects = {},
     unit =
     {
-        count = 2000,
+        count = utils.t3_spcost_epp,
         ingredients = utils.t3_sp,
         time = 60
     },
@@ -47,7 +47,7 @@ local t4_epp = {
     effects = {},
     unit =
     {
-        count = 4000,
+        count = utils.t4_spcost_epp,
         ingredients = utils.t4_sp,
         time = 60
     },
@@ -66,7 +66,7 @@ local t5_epp = {
     effects = {},
     unit =
     {
-        count = 7000,
+        count = utils.t5_spcost_epp,
         ingredients = utils.t5_sp,
         time = 60
     },
@@ -85,7 +85,7 @@ local t6_epp = {
     effects = {},
     unit =
     {
-        count = 10000,
+        count = utils.t6_spcost_epp,
         ingredients = utils.t6_sp,
         time = 60
     },
@@ -104,7 +104,7 @@ local t7_epp = {
     effects = {},
     unit =
     {
-        count = 14000,
+        count = utils.t7_spcost_epp,
         ingredients = utils.t7_sp,
         time = 60
     },
@@ -123,7 +123,7 @@ local t8_epp = {
     effects = {},
     unit =
     {
-        count = 20000,
+        count = utils.t8_spcost_epp,
         ingredients = utils.t8_sp,
         time = 60
     },
@@ -142,7 +142,7 @@ local t9_epp = {
     effects = {},
     unit =
     {
-        count = 30000,
+        count = utils.t9_spcost_epp,
         ingredients = utils.t9_sp,
         time = 60
     },
@@ -165,7 +165,7 @@ local t10_epp = {
     effects = {},
     unit =
     {
-        count = 50000,
+        count = utils.t10_spcost_epp,
         ingredients = utils.t10_sp,
         time = 60
     },

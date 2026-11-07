@@ -246,3 +246,4 @@ data.raw["recipe"]["ai-tier-10"].ingredients = {
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-moshine"].unit.ingredients = utils.t6_sp
+data.raw["technology"]["planet-discovery-moshine"].unit.count = utils.t6_spcost_planet

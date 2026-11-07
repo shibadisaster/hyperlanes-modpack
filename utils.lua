@@ -27,6 +27,9 @@ local t2_sp = {
     {"chemical-science-pack", 1}
 }
 utils.t2_sp = t2_sp
+utils.t2_spcost_epp = 2000
+utils.t2_spcost_planet = 1000
+utils.t2_spcost_tech = 500
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
@@ -49,6 +52,9 @@ local t3_sp = {
     {"space-science-pack", 1},
 }
 utils.t3_sp = t3_sp
+utils.t3_spcost_epp = 5000
+utils.t3_spcost_planet = 2000
+utils.t3_spcost_tech = 1000
 
 
 local t3_sp_fulgora = {
@@ -113,6 +119,9 @@ local t4_sp = {
     {"electromagnetic-science-pack", 1},
 }
 utils.t4_sp = t4_sp
+utils.t4_spcost_epp = 10000
+utils.t4_spcost_planet = 3000
+utils.t4_spcost_tech = 1500
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
@@ -139,6 +148,9 @@ local t5_sp = {
     {"interstellar-science-pack", 1}
 }
 utils.t5_sp = t5_sp
+utils.t5_spcost_epp = 15000
+utils.t5_spcost_planet = 5000
+utils.t5_spcost_tech = 2000
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
@@ -168,6 +180,9 @@ local t6_sp = {
     {"acidworking-science-pack", 1}
 }
 utils.t6_sp = t6_sp
+utils.t6_spcost_epp = 30000
+utils.t6_spcost_planet = 10000
+utils.t6_spcost_tech = 3500
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
@@ -199,6 +214,9 @@ local t7_sp = {
     {"planetaris-refraction-science-pack", 1}
 }
 utils.t7_sp = t7_sp
+utils.t7_spcost_epp = 60000
+utils.t7_spcost_planet = 15000
+utils.t7_spcost_tech = 5000
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
@@ -232,6 +250,9 @@ local t8_sp = {
     {"hydraulic-science-pack", 1}
 }
 utils.t8_sp = t8_sp
+utils.t8_spcost_epp = 100000
+utils.t8_spcost_planet = 25000
+utils.t8_spcost_tech = 7500
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
@@ -269,6 +290,9 @@ local t9_sp = {
     {"galvanization-science-pack", 1},
 }
 utils.t9_sp = t9_sp
+utils.t9_spcost_epp = 200000
+utils.t9_spcost_planet = 30000
+utils.t9_spcost_tech = 10000
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗       ╒══╗  ╒═════════╗
@@ -307,6 +331,9 @@ local t10_sp = {
     {"promethium-science-pack", 1}
 }
 utils.t10_sp = t10_sp
+utils.t10_spcost_epp = 500000
+utils.t10_spcost_planet = 50000
+utils.t10_spcost_tech = 15000
 
 
 

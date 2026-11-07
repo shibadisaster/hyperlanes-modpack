@@ -80,3 +80,4 @@ data.raw["technology"]["planetaris-arig-rocket-part"].essential = false
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-arig"].unit.ingredients = utils.t5_sp
+data.raw["technology"]["planet-discovery-arig"].unit.count = utils.t5_spcost_planet

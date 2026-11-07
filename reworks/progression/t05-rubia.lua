@@ -16,3 +16,4 @@ data.raw["technology"]["craptonite-processing"].essential = true
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-rubia"].unit.ingredients = utils.t5_sp
+data.raw["technology"]["planet-discovery-rubia"].unit.count = utils.t5_spcost_planet

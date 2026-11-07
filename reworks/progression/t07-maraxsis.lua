@@ -99,3 +99,4 @@ data.raw["recipe"]["maraxsis-sonar"].ingredients = {
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-maraxsis"].unit.ingredients = utils.t7_sp
+data.raw["technology"]["planet-discovery-maraxsis"].unit.count = utils.t7_spcost_planet

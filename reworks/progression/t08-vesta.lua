@@ -213,3 +213,4 @@ data.raw["recipe"]["ske_fusion_framework"].categories = {"magnetics"}
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-vesta"].unit.ingredients = utils.t8_sp
+data.raw["technology"]["planet-discovery-vesta"].unit.count = utils.t8_spcost_planet

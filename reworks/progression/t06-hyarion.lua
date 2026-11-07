@@ -166,3 +166,4 @@ data.raw["technology"]["planetaris-space-facilities-1"].essential = false
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-hyarion"].unit.ingredients = utils.t6_sp
+data.raw["technology"]["planet-discovery-hyarion"].unit.count = utils.t6_spcost_planet

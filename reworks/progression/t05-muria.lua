@@ -58,3 +58,4 @@ data.raw["recipe"]["lead-construction-robot"].ingredients = {
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-muria"].unit.ingredients = utils.t5_sp
+data.raw["technology"]["planet-discovery-muria"].unit.count = utils.t5_spcost_planet

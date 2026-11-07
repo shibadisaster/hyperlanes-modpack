@@ -119,3 +119,4 @@ data.raw["recipe"]["mechanical-plant"].ingredients = {
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 data.raw["technology"]["planet-discovery-paracelsin"].unit.ingredients = utils.t8_sp
+data.raw["technology"]["planet-discovery-paracelsin"].unit.count = utils.t8_spcost_planet
