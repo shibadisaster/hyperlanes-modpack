@@ -2,7 +2,7 @@
 local t3_magnet = {
     type = "item",
     name = "hyperlanes-fulgora-magnet",
-    icon = "__Moshine__/graphics/icons/magnet.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/fulgora-magnet.png",
     pictures = {
         {size = 64, filename = "__Moshine__/graphics/icons/magnet.png", scale = 0.5},
         {size = 64, filename = "__Moshine__/graphics/icons/magnet_1.png", scale = 0.5},
@@ -19,7 +19,7 @@ data:extend({t3_magnet})
 local t7_magnet = {
     type = "item",
     name = "hyperlanes-supercooled-magnet",
-    icon = "__Moshine__/graphics/icons/magnet.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/supercooled-magnet.png",
     pictures = {
         {size = 64, filename = "__Moshine__/graphics/icons/magnet.png", scale = 0.5},
         {size = 64, filename = "__Moshine__/graphics/icons/magnet_1.png", scale = 0.5},
@@ -38,7 +38,7 @@ data:extend({t7_magnet})
 local t4_catalyst = {
     type = "item",
     name = "hyperlanes-elementary-catalyst",
-    icon = "__base__/graphics/icons/sulfur.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/elementary-catalyst.png",
     stack_size = 100,
     weight = 1*kg,
 }
@@ -47,7 +47,7 @@ data:extend({t4_catalyst})
 local t4_activated_catalyst = {
     type = "item",
     name = "hyperlanes-activated-elementary-catalyst",
-    icon = "__base__/graphics/icons/sulfur.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/activated-elementary-catalyst.png",
     stack_size = 100,
     weight = 1*kg,
     spoil_ticks = 180 * 60,
@@ -60,11 +60,11 @@ data:extend({t4_activated_catalyst})
 local t7_catalyst = {
     type = "item",
     name = "hyperlanes-volatile-catalyst",
-    icon = "__base__/graphics/icons/sulfur.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/volatile-catalyst.png",
     stack_size = 100,
     weight = 4*kg,
 
-    spoil_ticks = 120 * 60,
+    spoil_ticks = 180 * 60,
     spoil_to_trigger_result = {
         items_per_trigger = 25,
         trigger = {
@@ -103,7 +103,7 @@ data:extend({t7_catalyst})
 local t8_osmium_clump = {
     type = "item",
     name = "hyperlanes-osmium-algae-clump",
-    icon = "__skewer_planet_vesta_assets__/graphics/icons/algea_clump_iridium.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/osmium-algae-clump.png",
     -- subgroup = "vesta-items-organic",
     -- order = "a[vesta-organics]-i[algea-clump-iridium]",
     -- inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
@@ -119,7 +119,7 @@ data:extend({t8_osmium_clump})
 local t8_osmium_plate = {
     type = "item",
     name = "hyperlanes-osmium-plate",
-    icon = "__skewer_planet_vesta_assets_2__/graphics/icons/iridium-plate.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/osmium-plate.png",
     -- subgroup = "vesta-items-organic",
     -- order = "a[vesta-organics]-i[algea-clump-iridium]",
     -- inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
@@ -135,7 +135,7 @@ data:extend({t8_osmium_plate})
 local t8_osmiridium_alloy_plate = {
     type = "item",
     name = "hyperlanes-osmiridium-alloy-plate",
-    icon = "__skewer_planet_vesta_assets_2__/graphics/icons/iridium-plate.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/osmiridium-plate.png",
     -- subgroup = "vesta-items-organic",
     -- order = "a[vesta-organics]-i[algea-clump-iridium]",
     -- inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
@@ -151,7 +151,7 @@ data:extend({t8_osmiridium_alloy_plate})
 local t8_artificial_lifeform = {
     type = "item",
     name = "hyperlanes-artificial-lifeform",
-    icon = "__base__/graphics/icons/fish-entity.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/artificial-lifeform.png",
     stack_size = 100,
     weight = 10 * kg
 }
@@ -162,7 +162,7 @@ data:extend({t8_artificial_lifeform})
 local t8_microcellular_filter = {
     type = "item",
     name = "hyperlanes-microcellular-filter",
-    icon = "__space-age__/graphics/icons/carbon-fiber.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/microcellular-filter.png",
     stack_size = 100,
     weight = 5 * kg
 }
@@ -173,7 +173,7 @@ data:extend({t8_microcellular_filter})
 local t10_enlightened_processor = {
     type = "item",
     name = "hyperlanes-enlightened-processor",
-    icon = "__base__/graphics/icons/processing-unit.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/enlightened-processor.png",
     -- subgroup = "vesta-items-organic",
     -- order = "a[vesta-organics]-i[algea-clump-iridium]",
     -- inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
@@ -189,7 +189,7 @@ data:extend({t10_enlightened_processor})
 local t5_sealant = {
     type = "item",
     name = "hyperlanes-sealant",
-    icon = "__maraxsis__/graphics/icons/super-sealant-substance-1.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/sealant.png",
     -- subgroup = "vesta-items-organic",
     -- order = "a[vesta-organics]-i[algea-clump-iridium]",
     -- inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
@@ -205,7 +205,7 @@ data:extend({t5_sealant})
 local t5_purified_lead = {
     type = "item",
     name = "hyperlanes-purified-lead",
-    icon = "__Muria-Graphics__/graphics/icons/lead.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/purified-lead.png",
     -- subgroup = "vesta-items-organic",
     -- order = "a[vesta-organics]-i[algea-clump-iridium]",
     -- inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
@@ -221,7 +221,7 @@ data:extend({t5_purified_lead})
 local t7_losimunit = {
     type = "item",
     name = "hyperlanes-loaded-simulating-unit",
-    icon = "__planetaris-hyarion__/graphics/icons/simulating-unit.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/loaded-simulating-unit.png",
     stack_size = 100,
     weight = 10 * kg
 }

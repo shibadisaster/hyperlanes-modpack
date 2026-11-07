@@ -2,7 +2,7 @@
 local t4_advanced_material_microsuspension = {
     type = "fluid",
     name = "hyperlanes-advanced-material-microsuspension",
-    icon = "__panglia_planet__/graphics/icons/panglia_branbalite_slurry.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/advanced-material-microsuspension.png",
     -- subgroup = "fluid",
     -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
     default_temperature = 165,
@@ -23,7 +23,7 @@ data:extend({t4_advanced_material_microsuspension})
 local t5_metamaterial_microsuspension = {
     type = "fluid",
     name = "hyperlanes-metamaterial-microsuspension",
-    icon = "__panglia_planet__/graphics/icons/panglia_branbalite_slurry.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/metamaterial-microsuspension.png",
     -- subgroup = "fluid",
     -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
     default_temperature = 165,
@@ -44,7 +44,7 @@ data:extend({t5_metamaterial_microsuspension})
 local t5_superacid = {
     type = "fluid",
     name = "hyperlanes-superacid",
-    icon = "__panglia_planet__/graphics/icons/panglia_branbalite_slurry.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/superacid.png",
     -- subgroup = "fluid",
     -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
     default_temperature = 165,
@@ -65,7 +65,7 @@ data:extend({t5_superacid})
 local t7_bioslurry = {
     type = "fluid",
     name = "hyperlanes-bioslurry",
-    icon = "__panglia_planet__/graphics/icons/panglia_branbalite_slurry.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/bioslurry.png",
     -- subgroup = "fluid",
     -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
     default_temperature = 165,
@@ -86,7 +86,7 @@ data:extend({t7_bioslurry})
 local t8_bose_einstein_condensate = {
     type = "fluid",
     name = "hyperlanes-bose-einstein-condensate",
-    icon = "__panglia_planet__/graphics/icons/panglia_branbalite_slurry.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/bose-einstein-condensate.png",
     -- subgroup = "fluid",
     -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
     default_temperature = 165,
@@ -107,7 +107,7 @@ data:extend({t8_bose_einstein_condensate})
 local t8_aerated_water = {
     type = "fluid",
     name = "hyperlanes-aerated-water",
-    icon = "__panglia_planet__/graphics/icons/panglia_branbalite_slurry.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/aerated-water.png",
     -- subgroup = "fluid",
     -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
     default_temperature = 165,

@@ -69,45 +69,20 @@ utils.t3_sp = t3_sp
 utils.t3_spcost_epp = 5000
 utils.t3_spcost_planet = 2000
 utils.t3_spcost_tech = 1000
+utils.t3_spcost_bigtech = utils.t3_spcost_tech * 2
+utils.t3_spcost_smalltech = utils.t3_spcost_tech / 2
 
 
-local t3_sp_fulgora = {
-    {"automation-science-pack", 1},
-    {"logistic-science-pack", 1},
-    {"military-science-pack", 1},
-    {"chemical-science-pack", 1},
-    {"production-science-pack", 1},
-    {"utility-science-pack", 1},
-    {"space-science-pack", 1},
-    {"electromagnetic-science-pack", 1},
-}
-utils.t3_sp_fulgora = t3_sp_fulgora
+utils.t3_sp_fulgora = table.deepcopy(utils.t3_sp)
+table.insert(utils.t3_sp_fulgora, {"electromagnetic-science-pack", 1})
 
 
-local t3_sp_gleba = {
-    {"automation-science-pack", 1},
-    {"logistic-science-pack", 1},
-    {"military-science-pack", 1},
-    {"chemical-science-pack", 1},
-    {"production-science-pack", 1},
-    {"utility-science-pack", 1},
-    {"space-science-pack", 1},
-    {"agricultural-science-pack", 1},
-}
-utils.t3_sp_gleba = t3_sp_gleba
+utils.t3_sp_gleba = table.deepcopy(utils.t3_sp)
+table.insert(utils.t3_sp_gleba, {"agricultural-science-pack", 1})
 
 
-local t3_sp_vulcanus = {
-    {"automation-science-pack", 1},
-    {"logistic-science-pack", 1},
-    {"military-science-pack", 1},
-    {"chemical-science-pack", 1},
-    {"production-science-pack", 1},
-    {"utility-science-pack", 1},
-    {"space-science-pack", 1},
-    {"metallurgic-science-pack", 1},
-}
-utils.t3_sp_vulcanus = t3_sp_vulcanus
+utils.t3_sp_vulcanus = table.deepcopy(utils.t3_sp)
+table.insert(utils.t3_sp_vulcanus, {"metallurgic-science-pack", 1})
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒══╗   ╒══╗
