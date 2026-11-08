@@ -40,6 +40,8 @@ data.raw["technology"]["rubia-craptonite-satchel"].hidden = true
 data.raw["technology"]["rubia-craptonite-sunglasses"].enabled = false
 data.raw["technology"]["rubia-craptonite-sunglasses"].hidden = true
 
+-- TODO: get rid of the HELL TECHNOLOGY that uses "69 unknown items" that we toss into the wind
+
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║

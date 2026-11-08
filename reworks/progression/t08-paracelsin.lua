@@ -137,9 +137,10 @@ data.raw["technology"]["concrete-productivity"].unit.count_formula = "1.5^(L-1)*
 data.raw["technology"]["galvanized-steel"].unit.ingredients = utils.t8_sp_paracelsin
 data.raw["technology"]["galvanized-steel"].unit.count = utils.t8_spcost_smalltech
 
--- TODO: FIX????!??!?!??!?!?!?!
--- data.raw["technology"]["return-inserter"].unit.ingredients = utils.t8_sp_paracelsin
--- data.raw["technology"]["return-inserter"].unit.count = utils.t8_spcost_tech
+-- Fix by removing Acidworking pack and Galvanization pack to avoid duplication
+data.raw["technology"]["return-inserter"].unit.ingredients = table.deepcopy(utils.t8_sp)
+table.remove(data.raw["technology"]["return-inserter"].unit.ingredients, 14)
+data.raw["technology"]["return-inserter"].unit.count = utils.t8_spcost_tech
 
 data.raw["technology"]["vaterite-formation"].unit.ingredients = utils.t8_sp_paracelsin
 data.raw["technology"]["vaterite-formation"].unit.count = utils.t8_spcost_tech

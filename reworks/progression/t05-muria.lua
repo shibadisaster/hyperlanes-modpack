@@ -126,3 +126,7 @@ data.raw["technology"]["oxygenated-bacteria-cultivation"].unit.count = utils.t5_
 
 data.raw["technology"]["toxic-rounds-magazine"].unit.ingredients = utils.t5_sp_muria
 data.raw["technology"]["toxic-rounds-magazine"].unit.count = utils.t5_spcost_tech
+
+data.raw["technology"]["zinc-and-lead-refining"].unit.ingredients = utils.t5_sp_muria
+data.raw["technology"]["zinc-and-lead-refining"].unit.count = utils.t5_spcost_tech
+data.raw["technology"]["zinc-and-lead-refining"].prerequisites = {"advanced-acid-processing"}

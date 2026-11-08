@@ -4,13 +4,13 @@ local superacid_recipe = {
     name = "hyperlanes-superacid",
     enabled = false,
     ingredients = {
-        {type = "fluid", name = "hydrogen-chloride", amount = 300},
-        {type = "fluid", name = "nitric-acid", amount = 100},
+        {type = "fluid", name = "aqua-regia", amount = 200},
+        {type = "fluid", name = "sulfuric-acid", amount = 200},
         {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_stats = 1},
     },
     energy_required = 30.0,
     results = {
-        {type = "fluid", name = "hyperlanes-superacid", amount = 400},
+        {type = "fluid", name = "hyperlanes-superacid", amount = 200},
         {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98}
     },
     main_product = "hyperlanes-superacid",
@@ -34,7 +34,8 @@ local purified_lead_recipe = {
     energy_required = 2.0,
     results = {
         {type = "item", name = "hyperlanes-purified-lead", amount = 1},
-        {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.99}
+        {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.99},
+        {type = "fluid", name = "muriatic-solution", amount = 50, ignored_by_productivity = 50},
     },
     main_product = "hyperlanes-purified-lead",
     allow_productivity = true,
