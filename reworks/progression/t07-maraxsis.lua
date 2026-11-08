@@ -101,6 +101,27 @@ data.raw["recipe"]["maraxsis-sonar"].ingredients = {
 data.raw["technology"]["planet-discovery-maraxsis"].unit.ingredients = utils.t7_sp
 data.raw["technology"]["planet-discovery-maraxsis"].unit.count = utils.t7_spcost_planet
 
+data.raw["technology"]["maraxsis-effect-transmission-2"].unit.ingredients = utils.t7_sp_maraxsis
+data.raw["technology"]["maraxsis-effect-transmission-2"].unit.count = utils.t7_spcost_bigtech
+
+data.raw["technology"]["maraxsis-sonar"].unit.ingredients = utils.t7_sp_maraxsis
+data.raw["technology"]["maraxsis-sonar"].unit.count = utils.t7_spcost_bigtech
+
+data.raw["technology"]["maraxsis-stone-centrifuging"].unit.ingredients = utils.t7_sp_maraxsis
+data.raw["technology"]["maraxsis-stone-centrifuging"].unit.count = utils.t7_spcost_tech
+
+data.raw["technology"]["maraxsis-deepsea-research"].unit.ingredients = utils.t7_sp_maraxsis
+data.raw["technology"]["maraxsis-deepsea-research"].unit.count = utils.t7_spcost_tech
+
+data.raw["technology"]["cargo-landing-pad-capacity"].unit.ingredients = utils.t7_sp_maraxsis
+data.raw["technology"]["cargo-landing-pad-capacity"].unit.count_formula = "5^(L-1)*" .. utils.t7_spcost_tech
+
+data.raw["technology"]["maraxsis-glass-productivity"].unit.ingredients = utils.t7_sp_maraxsis
+data.raw["technology"]["maraxsis-glass-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t7_spcost_tech
+
+data.raw["technology"]["maraxsis-omega_3"].unit.ingredients = utils.t7_sp_maraxsis
+data.raw["technology"]["maraxsis-omega_3"].unit.count = utils.t7_spcost_tech
+
 
 -- ╒═════════╗ ╒═════════╗  ╒════════════╗  ╒═════════╗  ╒═════════╗ ╒═════════╗
 -- │  ╓────┐ ║ │  ╓───┐  ║  │  ╓─┐  ╓─┐  ║  └┐  ╓───┐ ╚╗ │  ╓───┐  ║ │  ╓────┐ ║
@@ -110,7 +131,6 @@ data.raw["technology"]["planet-discovery-maraxsis"].unit.count = utils.t7_spcost
 -- │  ║    ╒═╗ │  ║   │  ║  │  ║ └──╜ │  ║   │  ║   │  ║ │  ║   │  ║ ╒═╗    │  ║
 -- │  ╚════╛ ║ │  ╚═══╛  ║ ╒╛  ╚╗    ╒╛  ╚╗ ╒╛  ╚═══╛ ╓╜ │  ╚═══╛  ║ │ ╚════╛  ║
 -- └─────────╜ └─────────╜ └────╜    └────╜ └─────────╜  └─────────╜ └─────────╜
-
 
 data.raw["technology"]["maraxsis-liquid-atmosphere"].unit.ingredients = utils.t8_sp
 data.raw["technology"]["maraxsis-liquid-atmosphere"].unit.count = utils.t7_spcost_bigtech

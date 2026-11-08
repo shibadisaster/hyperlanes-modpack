@@ -226,7 +226,7 @@ data.raw["technology"]["moshine-tech-ai-tier-10"].essential = true
 -- ╒╛  ╚╗       ╒╛  ╚╗╒╛  ╚╗ ╒╛  ╚╗└┐ ╚═╗    ╒╛  ╚╗         │  ╚══════╗
 -- └────╜       └────╜└────╜ └────╜ └───╜    └────╜         └─────────╜
 table.insert(data.raw["technology"]["moshine-tech-cosmicscanner-construction4"].prerequisites, "cryogenic-science-pack")
-table.insert(data.raw["technology"]["moshine-tech-cosmicscanner-construction4"].prerequisites, "hydraulic-science-pack")
+table.insert(data.raw["technology"]["moshine-tech-cosmicscanner-construction4"].prerequisites, "maraxsis-project-seadragon")
 
 data.raw["recipe"]["ai-tier-9"].ingredients = {
     {type = "item", name = "hyperlanes-ai-tier-8-primed", amount = 1},
