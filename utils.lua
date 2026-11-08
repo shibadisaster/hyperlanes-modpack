@@ -273,6 +273,12 @@ utils.t7_spcost_tech = 5000
 utils.t7_spcost_bigtech = utils.t7_spcost_tech * 2
 utils.t7_spcost_smalltech = utils.t7_spcost_tech / 2
 
+utils.t7_sp_aquilo = table.deepcopy(utils.t7_sp)
+table.insert(utils.t7_sp_aquilo, {"cryogenic-science-pack", 1})
+
+utils.t7_sp_maraxsis = table.deepcopy(utils.t7_sp)
+table.insert(utils.t7_sp_maraxsis, {"hydraulic-science-pack", 1})
+
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └─┐  ╓─╜ └┐  ╓───┐ ║ └┐  ╓───┐  ║      │  ╓───┐  ║ │  ╓───┐  ║

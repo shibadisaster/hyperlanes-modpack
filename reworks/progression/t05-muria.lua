@@ -93,7 +93,7 @@ data.raw["technology"]["acid-weaponization"].unit.ingredients = utils.t5_sp_muri
 data.raw["technology"]["acid-weaponization"].unit.count = utils.t5_spcost_tech
 
 data.raw["technology"]["refined-acid-weaponry"].unit.ingredients = utils.t5_sp_muria
-data.raw["technology"]["refined-acid-weaponry"].unit.count_formula = "2^L*" .. utils.t5_spcost_smalltech
+data.raw["technology"]["refined-acid-weaponry"].unit.count_formula = "2^(L-1)*" .. utils.t5_spcost_smalltech
 
 data.raw["technology"]["advanced-acid-processing"].unit.ingredients = utils.t5_sp_muria
 data.raw["technology"]["advanced-acid-processing"].unit.count = utils.t5_spcost_tech
@@ -108,16 +108,17 @@ data.raw["technology"]["hydrogen-chloride-explosives"].unit.ingredients = utils.
 data.raw["technology"]["hydrogen-chloride-explosives"].unit.count = utils.t5_spcost_tech
 
 data.raw["technology"]["explosives-productivity"].unit.ingredients = utils.t5_sp_muria
-data.raw["technology"]["explosives-productivity"].unit.count_formula = "1.5^L*" .. utils.t5_spcost_tech
+data.raw["technology"]["explosives-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t5_spcost_tech
 
 data.raw["technology"]["hydrogen-chloride-lead-battery"].unit.ingredients = utils.t5_sp_muria
 data.raw["technology"]["hydrogen-chloride-lead-battery"].unit.count = utils.t5_spcost_tech
 
 data.raw["technology"]["battery-productivity"].unit.ingredients = utils.t5_sp_muria
-data.raw["technology"]["battery-productivity"].unit.count_formula = "1.5^L*" .. utils.t5_spcost_tech
+data.raw["technology"]["battery-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t5_spcost_tech
 
 data.raw["technology"]["holmium-chloride"].unit.ingredients = utils.t5_sp_muria
 data.raw["technology"]["holmium-chloride"].unit.count = utils.t5_spcost_bigtech
+data.raw["technology"]["holmium-chloride"].prerequisites = {"offworld-chlorine-compounds-production"}
 
 data.raw["technology"]["oxygenated-bacteria-cultivation"].unit.ingredients = utils.t5_sp_muria
 data.raw["technology"]["oxygenated-bacteria-cultivation"].unit.count = utils.t5_spcost_bigtech

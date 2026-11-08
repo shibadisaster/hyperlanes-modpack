@@ -101,7 +101,7 @@ data.raw["technology"]["planetaris-arig-roboport"].unit.ingredients = utils.t5_s
 data.raw["technology"]["planetaris-arig-roboport"].unit.count = utils.t5_spcost_tech
 
 data.raw["technology"]["planetaris-cactus-plastic-productivity"].unit.ingredients = utils.t5_sp_arig
-data.raw["technology"]["planetaris-cactus-plastic-productivity"].unit.count_formula = "1.5^L*" .. utils.t5_spcost_smalltech
+data.raw["technology"]["planetaris-cactus-plastic-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t5_spcost_smalltech
 
 data.raw["technology"]["planetaris-advanced-sand-sifting"].unit.ingredients = utils.t5_sp_arig
 data.raw["technology"]["planetaris-advanced-sand-sifting"].unit.count = utils.t5_spcost_bigtech
@@ -116,7 +116,7 @@ data.raw["technology"]["planetaris-silica-processing"].unit.ingredients = utils.
 data.raw["technology"]["planetaris-silica-processing"].unit.count = utils.t5_spcost_tech
 
 data.raw["technology"]["planetaris-heavy-glass-productivity"].unit.ingredients = utils.t5_sp_arig
-data.raw["technology"]["planetaris-heavy-glass-productivity"].unit.count_formula = "1.5^L*" .. utils.t5_spcost_tech
+data.raw["technology"]["planetaris-heavy-glass-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t5_spcost_tech
 
 data.raw["technology"]["planetaris-water-harvesting"].unit.ingredients = utils.t5_sp_arig
 data.raw["technology"]["planetaris-water-harvesting"].unit.count = utils.t5_spcost_tech
@@ -131,4 +131,4 @@ data.raw["technology"]["planetaris-supported-solar-panel"].unit.ingredients = ut
 data.raw["technology"]["planetaris-supported-solar-panel"].unit.count = utils.t5_spcost_bigtech
 
 data.raw["technology"]["planetaris-raw-quartz-productivity"].unit.ingredients = utils.t5_sp_arig
-data.raw["technology"]["planetaris-raw-quartz-productivity"].unit.count_formula = "1.5^L*" .. utils.t5_spcost_tech
+data.raw["technology"]["planetaris-raw-quartz-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t5_spcost_tech

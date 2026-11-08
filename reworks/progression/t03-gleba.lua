@@ -37,7 +37,7 @@ data.raw["technology"]["captivity"].unit.ingredients = utils.t3_sp_gleba
 data.raw["technology"]["captivity"].unit.count = utils.t3_spcost_bigtech
 
 data.raw["technology"]["health"].unit.ingredients = utils.t3_sp_gleba
-data.raw["technology"]["health"].unit.count_formula = "3^L*" .. utils.t3_spcost_smalltech
+data.raw["technology"]["health"].unit.count_formula = "3^(L-1)*" .. utils.t3_spcost_smalltech
 
 data.raw["technology"]["carbon-fiber"].unit.ingredients = utils.t3_sp_gleba
 data.raw["technology"]["carbon-fiber"].unit.count = utils.t3_spcost_tech

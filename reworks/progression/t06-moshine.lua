@@ -278,5 +278,5 @@ data.raw["technology"]["moshine-tech-cosmicscanner-construction2"].unit.count = 
 
 data.raw["technology"]["moshine-tech-data-processor-building"].unit.ingredients = utils.t6_sp
 data.raw["technology"]["moshine-tech-data-processor-building"].unit.count = utils.t6_spcost_smalltech
-
+ 
 -- move sun_heat_cooler_2_tech

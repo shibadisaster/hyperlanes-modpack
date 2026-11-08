@@ -210,13 +210,13 @@ data.raw["technology"]["planetaris-refraction-science-pack"].unit.ingredients = 
 data.raw["technology"]["planetaris-refraction-science-pack"].unit.count = utils.t6_spcost_tech
 
 data.raw["technology"]["planetaris-ray-collection-productivity"].unit.ingredients = utils.t6_sp_hyarion_refraction
-data.raw["technology"]["planetaris-ray-collection-productivity"].unit.count_formula = "2^L*" .. utils.t6_spcost_smalltech
+data.raw["technology"]["planetaris-ray-collection-productivity"].unit.count_formula = "2^(L-1)*" .. utils.t6_spcost_smalltech
 
 data.raw["technology"]["planetaris-simulating-unit-productivity"].unit.ingredients = utils.t6_sp_hyarion_refraction
-data.raw["technology"]["planetaris-simulating-unit-productivity"].unit.count_formula = "1.5^L*" .. utils.t6_spcost_tech
+data.raw["technology"]["planetaris-simulating-unit-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t6_spcost_tech
 
 data.raw["technology"]["planetaris-supercapacitor-productivity"].unit.ingredients = utils.t6_sp_hyarion_refraction
-data.raw["technology"]["planetaris-supercapacitor-productivity"].unit.count_formula = "1.5^L*" .. utils.t6_spcost_tech
+data.raw["technology"]["planetaris-supercapacitor-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t6_spcost_tech
 
 data.raw["technology"]["planetaris-ruby-laser-turret"].unit.ingredients = utils.t6_sp_hyarion_refraction
 data.raw["technology"]["planetaris-ruby-laser-turret"].unit.count = utils.t6_spcost_bigtech

@@ -74,10 +74,10 @@ data.raw["technology"]["muluna-cycling-steam-turbine"].unit.ingredients = utils.
 data.raw["technology"]["muluna-cycling-steam-turbine"].unit.count = utils.t4_spcost_bigtech
 
 data.raw["technology"]["water-recycling-productivity"].unit.ingredients = utils.t4_sp_muluna
-data.raw["technology"]["water-recycling-productivity"].unit.count_formula = "1.5^L*" .. utils.t4_spcost_tech
+data.raw["technology"]["water-recycling-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t4_spcost_tech
 
 data.raw["technology"]["thruster-fuel-productivity"].unit.ingredients = utils.t4_sp_muluna
-data.raw["technology"]["thruster-fuel-productivity"].unit.count_formula = "1.5^L*" .. utils.t4_spcost_bigtech
+data.raw["technology"]["thruster-fuel-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t4_spcost_bigtech
 
 data.raw["technology"]["muluna-satellite-radar"].unit.ingredients = utils.t4_sp_muluna
 data.raw["technology"]["muluna-satellite-radar"].unit.count = utils.t4_spcost_bigtech

@@ -100,3 +100,26 @@ data.raw["recipe"]["maraxsis-sonar"].ingredients = {
 
 data.raw["technology"]["planet-discovery-maraxsis"].unit.ingredients = utils.t7_sp
 data.raw["technology"]["planet-discovery-maraxsis"].unit.count = utils.t7_spcost_planet
+
+
+-- ╒═════════╗ ╒═════════╗  ╒════════════╗  ╒═════════╗  ╒═════════╗ ╒═════════╗
+-- │  ╓────┐ ║ │  ╓───┐  ║  │  ╓─┐  ╓─┐  ║  └┐  ╓───┐ ╚╗ │  ╓───┐  ║ │  ╓────┐ ║
+-- │  ║    └─╜ │  ║   │  ║  │  ║ │  ║ │  ║   │  ║   │  ║ │  ║   │  ║ │  ║    └─╜
+-- │  ║        │  ║   │  ║  │  ║ │  ║ │  ║   │  ╚═══╛  ║ │  ║   │  ║ │  ╚══════╗
+-- │  ║        │  ║   │  ║  │  ║ │  ║ │  ║   │  ╓───┐  ║ │  ║   │  ║ └──────┐  ║
+-- │  ║    ╒═╗ │  ║   │  ║  │  ║ └──╜ │  ║   │  ║   │  ║ │  ║   │  ║ ╒═╗    │  ║
+-- │  ╚════╛ ║ │  ╚═══╛  ║ ╒╛  ╚╗    ╒╛  ╚╗ ╒╛  ╚═══╛ ╓╜ │  ╚═══╛  ║ │ ╚════╛  ║
+-- └─────────╜ └─────────╜ └────╜    └────╜ └─────────╜  └─────────╜ └─────────╜
+
+
+data.raw["technology"]["maraxsis-liquid-atmosphere"].unit.ingredients = utils.t8_sp
+data.raw["technology"]["maraxsis-liquid-atmosphere"].unit.count = utils.t7_spcost_bigtech
+
+data.raw["technology"]["maraxsis-nuclear-submarine"].unit.ingredients = utils.t8_sp
+data.raw["technology"]["maraxsis-nuclear-submarine"].unit.count = utils.t7_spcost_bigtech
+
+data.raw["technology"]["maraxsis-abyssal-diving-gear"].unit.ingredients = utils.t8_sp
+data.raw["technology"]["maraxsis-abyssal-diving-gear"].unit.count = utils.t7_spcost_bigtech
+
+data.raw["technology"]["maraxsis-depth-charges"].unit.ingredients = utils.t8_sp
+data.raw["technology"]["maraxsis-depth-charges"].unit.count = utils.t7_spcost_bigtech

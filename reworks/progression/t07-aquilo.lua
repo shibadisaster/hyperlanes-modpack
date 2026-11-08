@@ -92,3 +92,49 @@ table.remove(data.raw["technology"]["fusion-reactor"].effects, 2)
 
 data.raw["technology"]["planet-discovery-aquilo"].unit.ingredients = utils.t7_sp
 data.raw["technology"]["planet-discovery-aquilo"].unit.count = utils.t7_spcost_planet
+
+data.raw["technology"]["captive-biter-spawner"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["captive-biter-spawner"].unit.count = utils.t7_spcost_tech
+
+data.raw["technology"]["foundation"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["foundation"].unit.count = utils.t7_spcost_bigtech
+
+data.raw["technology"]["quantum-processor"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["quantum-processor"].unit.count = utils.t7_spcost_tech
+
+data.raw["technology"]["cerys-radiative-heaters"].unit.count = utils.t7_spcost_smalltech
+
+data.raw["technology"]["rocket-part-productivity-aquilo"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["rocket-part-productivity-aquilo"].unit.count_formula = "1.5^(L-1)*" .. utils.t7_spcost_tech
+
+data.raw["technology"]["sun_heat_cooler_2_tech"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["sun_heat_cooler_2_tech"].unit.count = utils.t7_spcost_tech
+
+
+-- Move legendary quality to Maraxsis
+
+
+data.raw["technology"]["muluna-fertilized-greenhouses-vulcanus"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["muluna-fertilized-greenhouses-vulcanus"].unit.count = utils.t7_spcost_tech
+
+data.raw["technology"]["muluna-big-rocket-silo"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["muluna-big-rocket-silo"].unit.count = utils.t7_spcost_bigtech
+
+
+-- Move Cryolab to T9
+
+
+data.raw["technology"]["fusion-reactor"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["fusion-reactor"].unit.count = utils.t7_spcost_tech
+
+data.raw["technology"]["fusion-reactor-equipment"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["fusion-reactor-equipment"].unit.count = utils.t7_spcost_bigtech
+
+data.raw["technology"]["railgun"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["railgun"].unit.count = utils.t7_spcost_tech
+
+data.raw["technology"]["railgun-damage-1"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["railgun-damage-1"].unit.count_formula = "2^(L-1)*" .. utils.t7_spcost_tech
+
+data.raw["technology"]["railgun-shooting-speed-1"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["railgun-shooting-speed-1"].unit.count_formula = "2^(L-1)*" .. utils.t7_spcost_tech
