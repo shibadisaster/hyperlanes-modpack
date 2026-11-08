@@ -193,6 +193,9 @@ table.insert(utils.t5_sp_muria, {"acidworking-science-pack", 1})
 utils.t5_sp_rubia = table.deepcopy(utils.t5_sp)
 table.insert(utils.t5_sp_rubia, {"biorecycling-science-pack", 1})
 
+utils.t5_sp_rubia_biofusion = table.deepcopy(utils.t5_sp_rubia)
+table.insert(utils.t5_sp_rubia_biofusion, {"rubia-biofusion-science-pack", 1})
+
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └─┐  ╓─╜ └┐  ╓───┐ ║ └┐  ╓───┐  ║      │  ╓───┐  ║ │  ╓──────╜
