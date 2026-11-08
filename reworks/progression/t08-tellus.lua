@@ -200,3 +200,63 @@ data.raw["recipe"]["planetaris-logistic-robowasp"].categories = {"organic"}
 
 data.raw["technology"]["planet-discovery-tellus"].unit.ingredients = utils.t8_sp
 data.raw["technology"]["planet-discovery-tellus"].unit.count = utils.t8_spcost_planet
+
+data.raw["technology"]["planetaris-overgrowth-soil"].unit.ingredients = utils.t8_sp_tellus
+data.raw["technology"]["planetaris-overgrowth-soil"].unit.count = utils.t8_spcost_bigtech
+
+data.raw["technology"]["planetaris-pathogens"].unit.ingredients = utils.t8_sp_tellus
+data.raw["technology"]["planetaris-pathogens"].unit.count = utils.t8_spcost_smalltech
+
+-- Let's retier these maybe?
+data.raw["technology"]["planetaris-primary-dyes"].unit.ingredients = utils.t8_sp_tellus
+data.raw["technology"]["planetaris-primary-dyes"].unit.count = utils.t8_spcost_tech
+
+data.raw["technology"]["planetaris-secondary-dyes"].unit.ingredients = utils.t8_sp_tellus_pathological
+data.raw["technology"]["planetaris-secondary-dyes"].unit.count = utils.t8_spcost_tech
+
+-- Transport belts unified to combo tech with Vesta
+
+data.raw["technology"]["planetaris-artificial-organisms"].unit.ingredients = utils.t8_sp_tellus
+data.raw["technology"]["planetaris-artificial-organisms"].unit.count = utils.t8_spcost_smalltech
+
+data.raw["technology"]["planetaris-advanced-pathological-research"].unit.ingredients = utils.t8_sp_tellus
+data.raw["technology"]["planetaris-advanced-pathological-research"].unit.count = utils.t8_spcost_smalltech
+
+data.raw["technology"]["planetaris-fulgora-pathological-research"].unit.ingredients = utils.t8_sp_tellus
+data.raw["technology"]["planetaris-fulgora-pathological-research"].unit.count = utils.t8_spcost_smalltech
+
+data.raw["technology"]["planetaris-vulcanus-pathological-research"].unit.ingredients = utils.t8_sp_tellus
+data.raw["technology"]["planetaris-vulcanus-pathological-research"].unit.count = utils.t8_spcost_smalltech
+
+data.raw["technology"]["planetaris-gleba-pathological-research"].unit.ingredients = utils.t8_sp_tellus
+data.raw["technology"]["planetaris-gleba-pathological-research"].unit.count = utils.t8_spcost_smalltech
+
+data.raw["technology"]["planetaris-hyarion-pathological-research"].unit.ingredients = utils.t8_sp_tellus
+data.raw["technology"]["planetaris-hyarion-pathological-research"].unit.count = utils.t8_spcost_smalltech
+
+data.raw["technology"]["planetaris-arig-pathological-research"].unit.ingredients = utils.t8_sp_tellus
+data.raw["technology"]["planetaris-arig-pathological-research"].unit.count = utils.t8_spcost_smalltech
+
+data.raw["technology"]["planetaris-parasite-nest"].unit.ingredients = utils.t8_sp_tellus
+data.raw["technology"]["planetaris-parasite-nest"].unit.count = utils.t8_spcost_smalltech
+
+data.raw["technology"]["planetaris-pathological-science-pack"].unit.ingredients = utils.t8_sp_tellus
+data.raw["technology"]["planetaris-pathological-science-pack"].unit.count = utils.t8_spcost_smalltech
+
+data.raw["technology"]["planetaris-bioflux-productivity"].unit.ingredients = utils.t8_sp_tellus_pathological
+data.raw["technology"]["planetaris-bioflux-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t8_spcost_tech
+
+data.raw["technology"]["planetaris-enemy-egg-productivity"].unit.ingredients = utils.t8_sp_tellus_pathological
+data.raw["technology"]["planetaris-enemy-egg-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t8_spcost_tech
+
+data.raw["technology"]["planetaris-robowasps"].unit.ingredients = utils.t8_sp_tellus_pathological
+data.raw["technology"]["planetaris-robowasps"].unit.count = utils.t8_spcost_bigtech
+
+-- Space preservation unit moved to combo tech with Paracelsin
+
+data.raw["technology"]["planetaris-three-long-handed-inserter"].unit.ingredients = utils.t8_sp_tellus_pathological
+data.raw["technology"]["planetaris-three-long-handed-inserter"].unit.count = utils.t8_spcost_bigtech
+
+-- oh great the third one
+data.raw["technology"]["planetaris-long-stack-inserter"].unit.ingredients = utils.t8_sp_tellus_pathological
+data.raw["technology"]["planetaris-long-stack-inserter"].unit.count = utils.t8_spcost_bigtech

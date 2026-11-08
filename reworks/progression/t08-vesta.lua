@@ -226,3 +226,11 @@ data.raw["technology"]["planet-discovery-vesta"].unit.count = utils.t8_spcost_pl
 -- │  ║    ╒═╗ │  ║   │  ║  │  ║ └──╜ │  ║   │  ║   │  ║ │  ║   │  ║ ╒═╗    │  ║
 -- │  ╚════╛ ║ │  ╚═══╛  ║ ╒╛  ╚╗    ╒╛  ╚╗ ╒╛  ╚═══╛ ╓╜ │  ╚═══╛  ║ │ ╚════╛  ║
 -- └─────────╜ └─────────╜ └────╜    └────╜ └─────────╜  └─────────╜ └─────────╜
+
+-- Paracelsin + Tellus
+--      Preservation unit: requires BEC
+-- Paracelsin + Vesta
+--      Plasma pipes: requires Zinc pipes
+--      Combustion recipes
+-- Tellus + Vesta
+--      Transport belt capacity: unify this and make it repeatable, with 5x scaling
