@@ -60,6 +60,7 @@ data.raw["technology"]["turbo-transport-belt"].unit.count = utils.t3_spcost_bigt
 -- │  ╚════╛ ║ │  ╚═══╛  ║ ╒╛  ╚╗    ╒╛  ╚╗ ╒╛  ╚═══╛ ╓╜ │  ╚═══╛  ║ │ ╚════╛  ║
 -- └─────────╜ └─────────╜ └────╜    └────╜ └─────────╜  └─────────╜ └─────────╜
 
+-- Fulgora + Vulcanus
 data.raw["technology"]["rail-support-foundations"].unit.ingredients = utils.t3_sp_fulgora_vulcanus
 data.raw["technology"]["rail-support-foundations"].unit.count = utils.t3_spcost_bigtech
 
@@ -68,9 +69,12 @@ data.raw["technology"]["quality-module"].prerequisites = {
     "electromagnetic-science-pack",
     "modules"
 }
+
+-- Fulgora + Gleba
 data.raw["technology"]["quality-module"].unit.ingredients = utils.t3_sp_fulgora_gleba
 data.raw["technology"]["quality-module"].unit.count = utils.t3_spcost_bigtech
 
+-- Gleba + Vulcanus
 data.raw["technology"]["asteroid-reprocessing"].prerequisites = {
     "agricultural-science-pack",
     "metallurgic-science-pack",

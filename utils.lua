@@ -327,7 +327,21 @@ utils.t8_sp_tellus_pathological = table.deepcopy(utils.t8_sp_tellus)
 table.insert(utils.t8_sp_tellus_pathological, {"planetaris-pathological-science-pack", 1})
 
 utils.t8_sp_vesta = table.deepcopy(utils.t8_sp)
-table.insert(utils.t8_sp_vesta, {"s1_gas_manipulation_science_pack", 1})
+table.insert(utils.t8_sp_vesta, {"gas-manipulation-science-pack", 1})
+
+utils.t8_sp_paracelsin_tellus = table.deepcopy(utils.t8_sp)
+table.insert(utils.t8_sp_paracelsin_tellus, {"galvanization-science-pack", 1})
+table.insert(utils.t8_sp_paracelsin_tellus, {"planetaris-bioengineering-science-pack", 1})
+table.insert(utils.t8_sp_paracelsin_tellus, {"planetaris-pathological-science-pack", 1})
+
+utils.t8_sp_paracelsin_vesta = table.deepcopy(utils.t8_sp)
+table.insert(utils.t8_sp_paracelsin_vesta, {"galvanization-science-pack", 1})
+table.insert(utils.t8_sp_paracelsin_vesta, {"gas-manipulation-science-pack", 1})
+
+utils.t8_sp_tellus_vesta = table.deepcopy(utils.t8_sp)
+table.insert(utils.t8_sp_tellus_vesta, {"planetaris-bioengineering-science-pack", 1})
+table.insert(utils.t8_sp_tellus_vesta, {"planetaris-pathological-science-pack", 1})
+table.insert(utils.t8_sp_tellus_vesta, {"gas-manipulation-science-pack", 1})
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗

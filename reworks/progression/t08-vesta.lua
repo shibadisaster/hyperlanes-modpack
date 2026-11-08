@@ -215,6 +215,41 @@ data.raw["recipe"]["ske_fusion_framework"].categories = {"magnetics"}
 data.raw["technology"]["planet-discovery-vesta"].unit.ingredients = utils.t8_sp
 data.raw["technology"]["planet-discovery-vesta"].unit.count = utils.t8_spcost_planet
 
+data.raw["technology"]["carbon-dioxide"].unit.ingredients = utils.t8_sp_vesta
+data.raw["technology"]["carbon-dioxide"].unit.count = utils.t8_spcost_tech
+
+data.raw["technology"]["dt-fuel"].unit.ingredients = utils.t8_sp_vesta
+data.raw["technology"]["dt-fuel"].unit.count = utils.t8_spcost_bigtech
+
+data.raw["technology"]["s2_fusion_robots"].unit.ingredients = utils.t8_sp_vesta
+data.raw["technology"]["s2_fusion_robots"].unit.count = utils.t8_spcost_bigtech
+
+data.raw["technology"]["hydrogen-sulfide"].unit.ingredients = utils.t8_sp_vesta
+data.raw["technology"]["hydrogen-sulfide"].unit.count = utils.t8_spcost_tech
+
+data.raw["technology"]["s2_intermediate_productivity"].unit.ingredients = utils.t8_sp_vesta
+data.raw["technology"]["s2_intermediate_productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t8_spcost_tech
+
+-- Plasma pipes moved to T9
+
+data.raw["technology"]["fusion-missile"].unit.ingredients = utils.t8_sp_vesta
+data.raw["technology"]["fusion-missile"].unit.count = utils.t8_spcost_bigtech
+data.raw["technology"]["fusion-missile"].prerequisites = {"s1_gas_manipulation_science_pack"}
+
+data.raw["technology"]["ske_fusion_thruster"].unit.ingredients = utils.t8_sp_vesta
+data.raw["technology"]["ske_fusion_thruster"].unit.count = utils.t8_spcost_bigtech
+data.raw["technology"]["ske_fusion_thruster"].prerequisites = {"s1_gas_manipulation_science_pack"}
+
+-- Plateworking moved to combo tech with Paracelsin
+
+-- Transport belt capacity unified, get rid of this one
+data.raw["technology"]["s2_transport-belt-capacity-vesta"].enabled = false
+data.raw["technology"]["s2_transport-belt-capacity-vesta"].hidden = true
+
+data.raw["technology"]["s2_worker-robots-storage-vesta"].unit.ingredients = utils.t8_sp_vesta
+data.raw["technology"]["s2_worker-robots-storage-vesta"].unit.count = utils.t8_spcost_bigtech
+
+
 
 
 
@@ -228,9 +263,26 @@ data.raw["technology"]["planet-discovery-vesta"].unit.count = utils.t8_spcost_pl
 -- └─────────╜ └─────────╜ └────╜    └────╜ └─────────╜  └─────────╜ └─────────╜
 
 -- Paracelsin + Tellus
---      Preservation unit: requires BEC
+data.raw["technology"]["planetaris-space-preservation"].prerequisites = {
+    "galvanization-science-pack",
+    "planetaris-pathological-science-pack"
+}
+data.raw["technology"]["planetaris-space-preservation"].unit.ingredients = utils.t8_sp_paracelsin_tellus
+data.raw["technology"]["planetaris-space-preservation"].unit.count = utils.t8_spcost_bigtech
+
 -- Paracelsin + Vesta
---      Plasma pipes: requires Zinc pipes
---      Combustion recipes
+data.raw["technology"]["s2_plateworkings"].prerequisites = {
+    "galvanization-science-pack",
+    "s1_gas_manipulation_science_pack"
+}
+data.raw["technology"]["s2_plateworkings"].unit.ingredients = utils.t8_sp_paracelsin_vesta
+data.raw["technology"]["s2_plateworkings"].unit.count = utils.t8_spcost_bigtech
+
 -- Tellus + Vesta
 --      Transport belt capacity: unify this and make it repeatable, with 5x scaling
+data.raw["technology"]["tellus-transport-belt-capacity-3"].prerequisites = {
+    "planetaris-pathological-science-pack",
+    "s1_gas_manipulation_science_pack"
+}
+data.raw["technology"]["tellus-transport-belt-capacity-3"].unit.ingredients = utils.t8_sp_tellus_vesta
+data.raw["technology"]["tellus-transport-belt-capacity-3"].unit.count = utils.t8_spcost_bigtech

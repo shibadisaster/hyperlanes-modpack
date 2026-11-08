@@ -241,7 +241,7 @@ data.raw["technology"]["planetaris-parasite-nest"].unit.ingredients = utils.t8_s
 data.raw["technology"]["planetaris-parasite-nest"].unit.count = utils.t8_spcost_smalltech
 
 data.raw["technology"]["planetaris-pathological-science-pack"].unit.ingredients = utils.t8_sp_tellus
-data.raw["technology"]["planetaris-pathological-science-pack"].unit.count = utils.t8_spcost_smalltech
+data.raw["technology"]["planetaris-pathological-science-pack"].unit.count = utils.t8_spcost_tech
 
 data.raw["technology"]["planetaris-bioflux-productivity"].unit.ingredients = utils.t8_sp_tellus_pathological
 data.raw["technology"]["planetaris-bioflux-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t8_spcost_tech
