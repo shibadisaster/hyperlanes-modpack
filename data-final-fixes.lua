@@ -19,3 +19,13 @@ data.raw["technology"]["panglia_planet_discovery_panglia"].unit.count = utils.t1
 -- Return inserter
 data.raw["technology"]["return-inserter"].unit.ingredients = table.deepcopy(utils.t8_sp_paracelsin)
 data.raw["technology"]["return-inserter"].unit.count = utils.t8_spcost_tech
+
+
+-- Why (for T6 combo tech)
+data.raw["technology"]["planetaris-hyper-transport-belt"].prerequisites = {
+    "planetaris-refraction-science-pack",
+    "moshine-tech-ai-tier-8",
+    "turbo-transport-belt"
+}
+data.raw["technology"]["planetaris-hyper-transport-belt"].unit.ingredients = utils.t7_sp
+data.raw["technology"]["planetaris-hyper-transport-belt"].unit.count = utils.t6_spcost_bigtech
