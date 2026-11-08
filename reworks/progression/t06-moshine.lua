@@ -248,3 +248,35 @@ data.raw["recipe"]["ai-tier-10"].ingredients = {
 
 data.raw["technology"]["planet-discovery-moshine"].unit.ingredients = utils.t6_sp
 data.raw["technology"]["planet-discovery-moshine"].unit.count = utils.t6_spcost_planet
+
+data.raw["technology"]["minimalist-rails"].unit.ingredients = utils.t6_sp
+data.raw["technology"]["minimalist-rails"].unit.count = utils.t6_spcost_bigtech
+
+data.raw["technology"]["minimalist-elevated-rails"].unit.ingredients = utils.t6_sp
+data.raw["technology"]["minimalist-elevated-rails"].unit.count = utils.t6_spcost_bigtech
+
+data.raw["technology"]["moshine-tech-glass"].unit.ingredients = utils.t6_sp
+data.raw["technology"]["moshine-tech-glass"].unit.count = utils.t6_spcost_tech
+
+data.raw["technology"]["moshine-petroleum-from-sand-sulfur-steam-carbon"].unit.ingredients = utils.t6_sp
+data.raw["technology"]["moshine-petroleum-from-sand-sulfur-steam-carbon"].unit.count = utils.t6_spcost_tech
+
+data.raw["technology"]["moshine-concrete-from-molten-iron-and-sand"].unit.ingredients = utils.t6_sp
+data.raw["technology"]["moshine-concrete-from-molten-iron-and-sand"].unit.count = utils.t6_spcost_tech
+
+data.raw["technology"]["sun_heat_cooler_1_tech"].unit.ingredients = utils.t6_sp
+data.raw["technology"]["sun_heat_cooler_1_tech"].unit.count = utils.t6_spcost_smalltech
+
+data.raw["technology"]["tech-space-trains"].unit.ingredients = utils.t6_sp
+data.raw["technology"]["tech-space-trains"].unit.count = utils.t6_spcost_bigtech
+
+data.raw["technology"]["moshine-tech-cosmicscanner-construction1"].unit.ingredients = utils.t6_sp
+data.raw["technology"]["moshine-tech-cosmicscanner-construction1"].unit.count = utils.t6_spcost_bigtech
+
+data.raw["technology"]["moshine-tech-cosmicscanner-construction2"].unit.ingredients = utils.t6_sp
+data.raw["technology"]["moshine-tech-cosmicscanner-construction2"].unit.count = utils.t6_spcost_bigtech
+
+data.raw["technology"]["moshine-tech-data-processor-building"].unit.ingredients = utils.t6_sp
+data.raw["technology"]["moshine-tech-data-processor-building"].unit.count = utils.t6_spcost_smalltech
+
+-- move sun_heat_cooler_2_tech
