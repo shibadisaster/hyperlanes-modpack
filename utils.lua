@@ -184,6 +184,15 @@ utils.t5_spcost_tech = 2000
 utils.t5_spcost_bigtech = utils.t5_spcost_tech * 2
 utils.t5_spcost_smalltech = utils.t5_spcost_tech / 2
 
+utils.t5_sp_arig = table.deepcopy(utils.t5_sp)
+table.insert(utils.t5_sp_arig, {"planetaris-compression-science-pack", 1})
+
+utils.t5_sp_muria = table.deepcopy(utils.t5_sp)
+table.insert(utils.t5_sp_muria, {"acidworking-science-pack", 1})
+
+utils.t5_sp_rubia = table.deepcopy(utils.t5_sp)
+table.insert(utils.t5_sp_rubia, {"biorecycling-science-pack", 1})
+
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └─┐  ╓─╜ └┐  ╓───┐ ║ └┐  ╓───┐  ║      │  ╓───┐  ║ │  ╓──────╜

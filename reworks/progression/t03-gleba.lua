@@ -48,7 +48,7 @@ data.raw["technology"]["efficiency-module-3"].unit.count = utils.t3_spcost_bigte
 data.raw["technology"]["epic-quality"].unit.ingredients = utils.placeholder_sp
 
 data.raw["technology"]["muluna-fertilized-greenhouses"].unit.ingredients = utils.t3_sp_gleba
-data.raw["technology"]["muluna-fertilized-greenhouses"].unit.count = utils.t3_spcost_bigtech
+data.raw["technology"]["muluna-fertilized-greenhouses"].unit.count = utils.t3_spcost_tech
 
 data.raw["technology"]["tree-seeding"].unit.ingredients = utils.t3_sp_gleba
 data.raw["technology"]["tree-seeding"].unit.count = utils.t3_spcost_smalltech

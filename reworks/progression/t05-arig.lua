@@ -96,3 +96,39 @@ data.raw["technology"]["planetaris-arig-rocket-part"].essential = false
 
 data.raw["technology"]["planet-discovery-arig"].unit.ingredients = utils.t5_sp
 data.raw["technology"]["planet-discovery-arig"].unit.count = utils.t5_spcost_planet
+
+data.raw["technology"]["planetaris-arig-roboport"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["planetaris-arig-roboport"].unit.count = utils.t5_spcost_tech
+
+data.raw["technology"]["planetaris-cactus-plastic-productivity"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["planetaris-cactus-plastic-productivity"].unit.count_formula = "1.5^L*" .. utils.t5_spcost_smalltech
+
+data.raw["technology"]["planetaris-advanced-sand-sifting"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["planetaris-advanced-sand-sifting"].unit.count = utils.t5_spcost_bigtech
+
+data.raw["technology"]["planetaris-heavy-glass"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["planetaris-heavy-glass"].unit.count = utils.t5_spcost_tech
+
+data.raw["technology"]["planetaris-sandstone-foundation"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["planetaris-sandstone-foundation"].unit.count = utils.t5_spcost_smalltech
+
+data.raw["technology"]["planetaris-silica-processing"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["planetaris-silica-processing"].unit.count = utils.t5_spcost_tech
+
+data.raw["technology"]["planetaris-heavy-glass-productivity"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["planetaris-heavy-glass-productivity"].unit.count_formula = "1.5^L*" .. utils.t5_spcost_tech
+
+data.raw["technology"]["planetaris-water-harvesting"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["planetaris-water-harvesting"].unit.count = utils.t5_spcost_tech
+
+data.raw["technology"]["planetaris-big-chest"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["planetaris-big-chest"].unit.count = utils.t5_spcost_bigtech
+
+data.raw["technology"]["planetaris-advanced-solar-panel"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["planetaris-advanced-solar-panel"].unit.count = utils.t5_spcost_bigtech
+
+data.raw["technology"]["planetaris-supported-solar-panel"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["planetaris-supported-solar-panel"].unit.count = utils.t5_spcost_bigtech
+
+data.raw["technology"]["planetaris-raw-quartz-productivity"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["planetaris-raw-quartz-productivity"].unit.count_formula = "1.5^L*" .. utils.t5_spcost_tech

@@ -19,6 +19,7 @@ data.raw["recipe"]["petroleum-from-sand-sulfur-steam-carbon"].ingredients = {
 -- Tempered glass
 data.raw["recipe"]["glass"].ingredients = {
     {type = "item", name = "planetaris-heavy-glass", amount = 3},
+    {type = "item", name = "planetaris-raw-diamond", amount = 3},
     {type = "item", name = "silicon-carbide", amount = 5},
     {type = "item", name = "carbon-fiber", amount = 5},
     {type = "fluid", name = "hyperlanes-superacid", amount = 20},

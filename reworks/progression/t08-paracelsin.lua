@@ -9,6 +9,13 @@ data.raw["recipe"]["pressure-turbine"].ingredients = {
     {type = "item", name = "aluminum-plate", amount = 50},
     {type = "item", name = "lithium-plate", amount = 20},
 }
+data.raw["recipe"]["pressure-turbine"].surface_conditions = {
+    {
+        property = "pressure",
+        min = 5300,
+        max = 5300,
+    }
+}
 
 
 -- Fusion generator

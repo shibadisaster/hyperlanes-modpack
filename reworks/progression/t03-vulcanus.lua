@@ -43,7 +43,7 @@ data.raw["technology"]["coal-liquefaction"].unit.count = utils.t3_spcost_smallte
 data.raw["technology"]["low-density-structure-productivity"].unit.ingredients = utils.t3_sp_prod_vulcanus
 
 data.raw["technology"]["muluna-advanced-stone-processing"].unit.ingredients = utils.t3_sp_vulcanus
-data.raw["technology"]["muluna-advanced-stone-processing"].unit.count = utils.t3_spcost_bigtech
+data.raw["technology"]["muluna-advanced-stone-processing"].unit.count = utils.t3_spcost_tech
 
 data.raw["technology"]["speed-module-3"].unit.ingredients = utils.t3_sp_vulcanus
 data.raw["technology"]["speed-module-3"].unit.count = utils.t3_spcost_bigtech
