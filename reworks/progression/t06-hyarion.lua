@@ -232,3 +232,22 @@ data.raw["technology"]["planetaris-electromagnetic-radar"].unit.count = utils.t6
 
 data.raw["technology"]["planetaris-zero-grav-accumulator"].unit.ingredients = utils.t6_sp_hyarion_refraction
 data.raw["technology"]["planetaris-zero-grav-accumulator"].unit.count = utils.t6_spcost_bigtech
+
+-- Move quality 3 here
+data.raw["technology"]["quality-module-3"].prerequisites = {
+    "planetaris-refraction-science-pack",
+    "quality-module-2"
+}
+data.raw["technology"]["quality-module-3"].unit.ingredients = utils.t6_sp_hyarion_refraction
+data.raw["technology"]["quality-module-3"].unit.count = utils.t6_spcost_bigtech
+table.insert(
+    data.raw["technology"]["quality-module-3"].effects,
+    {
+        type = "unlock-quality",
+        quality = "epic"
+    }
+)
+
+-- Kill epic quality tech
+data.raw["technology"]["epic-quality"].enabled = false
+data.raw["technology"]["epic-quality"].hidden = true

@@ -125,6 +125,13 @@ data.raw["technology"]["quality-module-2"].prerequisites = {
 }
 data.raw["technology"]["quality-module-2"].unit.ingredients = utils.t5_sp_arig_rubia
 data.raw["technology"]["quality-module-2"].unit.count = utils.t5_spcost_bigtech
+table.insert(
+    data.raw["technology"]["quality-module-2"].effects,
+    {
+        type = "unlock-quality",
+        quality = "rare"
+    }
+)
 
 -- Muria + Rubia
 data.raw["technology"]["oxygenated-bacteria-cultivation"].prerequisites = {

@@ -64,15 +64,17 @@ data.raw["technology"]["turbo-transport-belt"].unit.count = utils.t3_spcost_bigt
 data.raw["technology"]["rail-support-foundations"].unit.ingredients = utils.t3_sp_fulgora_vulcanus
 data.raw["technology"]["rail-support-foundations"].unit.count = utils.t3_spcost_bigtech
 
+
+
+-- Fulgora + Gleba
 data.raw["technology"]["quality-module"].prerequisites = {
     "agricultural-science-pack",
     "electromagnetic-science-pack",
     "modules"
 }
-
--- Fulgora + Gleba
 data.raw["technology"]["quality-module"].unit.ingredients = utils.t3_sp_fulgora_gleba
 data.raw["technology"]["quality-module"].unit.count = utils.t3_spcost_bigtech
+table.remove(data.raw["technology"]["quality-module"].effects, 3) -- Remove Rare quality unlock
 
 -- Gleba + Vulcanus
 data.raw["technology"]["asteroid-reprocessing"].prerequisites = {

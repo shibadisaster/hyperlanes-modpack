@@ -101,6 +101,10 @@ data.raw["recipe"]["maraxsis-sonar"].ingredients = {
 data.raw["technology"]["planet-discovery-maraxsis"].unit.ingredients = utils.t7_sp
 data.raw["technology"]["planet-discovery-maraxsis"].unit.count = utils.t7_spcost_planet
 
+data.raw["technology"]["maraxsis-effect-transmission-2"].prerequisites = {
+    "maraxsis-project-seadragon",
+    "effect-transmission"
+}
 data.raw["technology"]["maraxsis-effect-transmission-2"].unit.ingredients = utils.t7_sp_maraxsis
 data.raw["technology"]["maraxsis-effect-transmission-2"].unit.count = utils.t7_spcost_bigtech
 
@@ -121,6 +125,13 @@ data.raw["technology"]["maraxsis-glass-productivity"].unit.count_formula = "1.5^
 
 data.raw["technology"]["maraxsis-omega_3"].unit.ingredients = utils.t7_sp_maraxsis
 data.raw["technology"]["maraxsis-omega_3"].unit.count = utils.t7_spcost_tech
+
+data.raw["technology"]["legendary-quality"].prerequisites = {
+    "quality-module-3",
+    "maraxsis-project-seadragon"
+}
+data.raw["technology"]["legendary-quality"].unit.ingredients = utils.t7_sp_maraxsis
+data.raw["technology"]["legendary-quality"].unit.count = utils.t7_spcost_bigtech
 
 
 -- ╒═════════╗ ╒═════════╗  ╒════════════╗  ╒═════════╗  ╒═════════╗ ╒═════════╗

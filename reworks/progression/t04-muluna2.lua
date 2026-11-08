@@ -70,6 +70,9 @@ data.raw["technology"]["muluna-asteroid-upcycling"].unit.count = utils.t4_spcost
 data.raw["technology"]["advanced-space-science-pack"].unit.ingredients = utils.t4_sp_muluna
 data.raw["technology"]["advanced-space-science-pack"].unit.count = utils.t4_spcost_tech
 
+data.raw["technology"]["muluna-cycling-steam-turbine"].prerequisites = {
+    "interstellar-science-pack"
+}
 data.raw["technology"]["muluna-cycling-steam-turbine"].unit.ingredients = utils.t4_sp_muluna
 data.raw["technology"]["muluna-cycling-steam-turbine"].unit.count = utils.t4_spcost_bigtech
 
