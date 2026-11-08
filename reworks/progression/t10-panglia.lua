@@ -16,5 +16,4 @@ data.raw["technology"]["panglia_collect_dna_pentapod"].essential = false
 --    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
-data.raw["technology"]["panglia_planet_discovery_panglia"].unit.ingredients = utils.t10_sp
-data.raw["technology"]["panglia_planet_discovery_panglia"].unit.count = utils.t10_spcost_planet
+-- refer to data-final-fixes

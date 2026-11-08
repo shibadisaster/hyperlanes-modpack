@@ -196,6 +196,18 @@ table.insert(utils.t5_sp_rubia, {"biorecycling-science-pack", 1})
 utils.t5_sp_rubia_biofusion = table.deepcopy(utils.t5_sp_rubia)
 table.insert(utils.t5_sp_rubia_biofusion, {"rubia-biofusion-science-pack", 1})
 
+utils.t5_sp_arig_muria = table.deepcopy(utils.t5_sp)
+table.insert(utils.t5_sp_arig_muria, {"planetaris-compression-science-pack", 1})
+table.insert(utils.t5_sp_arig_muria, {"acidworking-science-pack", 1})
+
+utils.t5_sp_arig_rubia = table.deepcopy(utils.t5_sp)
+table.insert(utils.t5_sp_arig_rubia, {"planetaris-compression-science-pack", 1})
+table.insert(utils.t5_sp_arig_rubia, {"biorecycling-science-pack", 1})
+
+utils.t5_sp_muria_rubia = table.deepcopy(utils.t5_sp)
+table.insert(utils.t5_sp_muria_rubia, {"acidworking-science-pack", 1})
+table.insert(utils.t5_sp_muria_rubia, {"biorecycling-science-pack", 1})
+
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └─┐  ╓─╜ └┐  ╓───┐ ║ └┐  ╓───┐  ║      │  ╓───┐  ║ │  ╓──────╜

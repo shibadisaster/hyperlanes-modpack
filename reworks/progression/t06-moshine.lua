@@ -291,3 +291,4 @@ data.raw["technology"]["moshine-tech-data-processor-building"].unit.count = util
 -- │  ╚════╛ ║ │  ╚═══╛  ║ ╒╛  ╚╗    ╒╛  ╚╗ ╒╛  ╚═══╛ ╓╜ │  ╚═══╛  ║ │ ╚════╛  ║
 -- └─────────╜ └─────────╜ └────╜    └────╜ └─────────╜  └─────────╜ └─────────╜
 
+-- hyper belts

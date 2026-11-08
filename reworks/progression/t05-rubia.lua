@@ -114,3 +114,22 @@ data.raw["technology"]["planetslib-rubia-cargo-drops"].unit.count = utils.t5_spc
 -- │  ╚════╛ ║ │  ╚═══╛  ║ ╒╛  ╚╗    ╒╛  ╚╗ ╒╛  ╚═══╛ ╓╜ │  ╚═══╛  ║ │ ╚════╛  ║
 -- └─────────╜ └─────────╜ └────╜    └────╜ └─────────╜  └─────────╜ └─────────╜
 
+-- Arig + Muria
+-- refer to data-final-fixes
+
+-- Arig + Rubia
+data.raw["technology"]["quality-module-2"].prerequisites = {
+    "planetaris-compression-science",
+    "planetslib-rubia-cargo-drops",
+    "quality-module"
+}
+data.raw["technology"]["quality-module-2"].unit.ingredients = utils.t5_sp_arig_rubia
+data.raw["technology"]["quality-module-2"].unit.count = utils.t5_spcost_bigtech
+
+-- Muria + Rubia
+data.raw["technology"]["oxygenated-bacteria-cultivation"].prerequisites = {
+    "offworld-chlorine-compounds-production",
+    "planetslib-rubia-cargo-drops"
+}
+data.raw["technology"]["oxygenated-bacteria-cultivation"].unit.ingredients = utils.t5_sp_muria_rubia
+data.raw["technology"]["oxygenated-bacteria-cultivation"].unit.count = utils.t5_spcost_bigtech

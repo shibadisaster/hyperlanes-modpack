@@ -129,8 +129,7 @@ data.raw["technology"]["holmium-chloride"].unit.ingredients = utils.t5_sp_muria
 data.raw["technology"]["holmium-chloride"].unit.count = utils.t5_spcost_bigtech
 data.raw["technology"]["holmium-chloride"].prerequisites = {"offworld-chlorine-compounds-production"}
 
-data.raw["technology"]["oxygenated-bacteria-cultivation"].unit.ingredients = utils.t5_sp_muria
-data.raw["technology"]["oxygenated-bacteria-cultivation"].unit.count = utils.t5_spcost_bigtech
+-- Oxygenated bacteria culti moved as combo tech with Rubia
 
 data.raw["technology"]["toxic-rounds-magazine"].unit.ingredients = utils.t5_sp_muria
 data.raw["technology"]["toxic-rounds-magazine"].unit.count = utils.t5_spcost_tech
