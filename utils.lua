@@ -231,6 +231,13 @@ utils.t6_spcost_bigtech = utils.t6_spcost_tech * 2
 utils.t6_spcost_smalltech = utils.t6_spcost_tech / 2
 
 
+utils.t6_sp_hyarion = table.deepcopy(utils.t6_sp)
+table.insert(utils.t6_sp_hyarion, {"planetaris-polishing-science-pack", 1})
+
+utils.t6_sp_hyarion_refraction = table.deepcopy(utils.t6_sp_hyarion)
+table.insert(utils.t6_sp_hyarion_refraction, {"planetaris-refraction-science-pack", 1})
+
+
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └─┐  ╓─╜ └┐  ╓───┐ ║ └┐  ╓───┐  ║      │  ╓───┐  ║ └──────┐  ║
 -- └─╜ │  ║ └─╜   │  ║    │  ║   └─╜  │  ║   │  ║      │  ║   │  ║       ╒╛  ║

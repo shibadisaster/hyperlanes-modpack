@@ -167,3 +167,68 @@ data.raw["technology"]["planetaris-space-facilities-1"].essential = false
 
 data.raw["technology"]["planet-discovery-hyarion"].unit.ingredients = utils.t6_sp
 data.raw["technology"]["planet-discovery-hyarion"].unit.count = utils.t6_spcost_planet
+
+-- HYPER TRANSPORT BELT MOVE
+
+data.raw["technology"]["planetaris-crystalization-motor"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-crystalization-motor"].unit.count = utils.t6_spcost_smalltech
+
+data.raw["technology"]["planetaris-diamond-polishing"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-diamond-polishing"].unit.count = utils.t6_spcost_smalltech
+
+data.raw["technology"]["planetaris-big-refraction-ray-collector"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-big-refraction-ray-collector"].unit.count = utils.t6_spcost_smalltech
+
+data.raw["technology"]["planetaris-nanoscale-lens"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-nanoscale-lens"].unit.count = utils.t6_spcost_tech
+
+data.raw["technology"]["planetaris-advanced-raw-quartz"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-advanced-raw-quartz"].unit.count = utils.t6_spcost_tech
+
+data.raw["technology"]["planetaris-simulating-unit"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-simulating-unit"].unit.count = utils.t6_spcost_tech
+
+data.raw["technology"]["planetaris-automation-4"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-automation-4"].unit.count = utils.t6_spcost_bigtech
+
+data.raw["technology"]["planetaris-refraction-plant"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-refraction-plant"].unit.count = utils.t6_spcost_smalltech
+
+data.raw["technology"]["planetaris-particle-manipulation"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-particle-manipulation"].unit.count = utils.t6_spcost_tech
+
+data.raw["technology"]["planetaris-ruby-laser"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-ruby-laser"].unit.count = utils.t6_spcost_tech
+
+data.raw["technology"]["planetaris-unstable-gems"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-unstable-gems"].unit.count = utils.t6_spcost_tech
+
+data.raw["technology"]["planetaris-beryllium-processing"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-beryllium-processing"].unit.count = utils.t6_spcost_tech
+
+data.raw["technology"]["planetaris-refraction-science-pack"].unit.ingredients = utils.t6_sp_hyarion
+data.raw["technology"]["planetaris-refraction-science-pack"].unit.count = utils.t6_spcost_tech
+
+data.raw["technology"]["planetaris-ray-collection-productivity"].unit.ingredients = utils.t6_sp_hyarion_refraction
+data.raw["technology"]["planetaris-ray-collection-productivity"].unit.count_formula = "2^L*" .. utils.t6_spcost_smalltech
+
+data.raw["technology"]["planetaris-simulating-unit-productivity"].unit.ingredients = utils.t6_sp_hyarion_refraction
+data.raw["technology"]["planetaris-simulating-unit-productivity"].unit.count_formula = "1.5^L*" .. utils.t6_spcost_tech
+
+data.raw["technology"]["planetaris-supercapacitor-productivity"].unit.ingredients = utils.t6_sp_hyarion_refraction
+data.raw["technology"]["planetaris-supercapacitor-productivity"].unit.count_formula = "1.5^L*" .. utils.t6_spcost_tech
+
+data.raw["technology"]["planetaris-ruby-laser-turret"].unit.ingredients = utils.t6_sp_hyarion_refraction
+data.raw["technology"]["planetaris-ruby-laser-turret"].unit.count = utils.t6_spcost_bigtech
+
+data.raw["technology"]["planetaris-space-facilities-1"].unit.ingredients = utils.t6_sp_hyarion_refraction
+data.raw["technology"]["planetaris-space-facilities-1"].unit.count = utils.t6_spcost_bigtech
+
+data.raw["technology"]["planetaris-bismuth-processing"].unit.ingredients = utils.t6_sp_hyarion_refraction
+data.raw["technology"]["planetaris-bismuth-processing"].unit.count = utils.t6_spcost_tech
+
+data.raw["technology"]["planetaris-electromagnetic-radar"].unit.ingredients = utils.t6_sp_hyarion_refraction
+data.raw["technology"]["planetaris-electromagnetic-radar"].unit.count = utils.t6_spcost_bigtech
+
+data.raw["technology"]["planetaris-zero-grav-accumulator"].unit.ingredients = utils.t6_sp_hyarion_refraction
+data.raw["technology"]["planetaris-zero-grav-accumulator"].unit.count = utils.t6_spcost_bigtech
