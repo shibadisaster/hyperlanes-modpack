@@ -24,7 +24,8 @@
         "dynamic_platform_lighting",
         "cerys-science-edit",
         "Better_Starmap_Background",
-        "alien-biomes"
+        "alien-biomes",
+        "Return-Inserter"
     ],
     "description": "Factorio modpack made with the goal of creating a Space Age experience with a focus on long-term progression, mod cohesion, and interplanetary logistics!",
     "license": "MIT"

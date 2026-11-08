@@ -127,3 +127,37 @@ data.raw["recipe"]["mechanical-plant"].ingredients = {
 
 data.raw["technology"]["planet-discovery-paracelsin"].unit.ingredients = utils.t8_sp
 data.raw["technology"]["planet-discovery-paracelsin"].unit.count = utils.t8_spcost_planet
+
+data.raw["technology"]["advanced-repair-device"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["advanced-repair-device"].unit.count = utils.t8_spcost_tech
+
+data.raw["technology"]["concrete-productivity"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["concrete-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t8_spcost_tech
+
+data.raw["technology"]["galvanized-steel"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["galvanized-steel"].unit.count = utils.t8_spcost_smalltech
+
+-- TODO: FIX????!??!?!??!?!?!?!
+-- data.raw["technology"]["return-inserter"].unit.ingredients = utils.t8_sp_paracelsin
+-- data.raw["technology"]["return-inserter"].unit.count = utils.t8_spcost_tech
+
+data.raw["technology"]["vaterite-formation"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["vaterite-formation"].unit.count = utils.t8_spcost_tech
+
+data.raw["technology"]["vaterite-processing-productivity"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["vaterite-processing-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t8_spcost_tech
+
+data.raw["technology"]["accumulator-v2"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["accumulator-v2"].unit.count = utils.t8_spcost_bigtech
+
+data.raw["technology"]["elevated-pipe"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["elevated-pipe"].unit.count = utils.t8_spcost_bigtech
+
+data.raw["technology"]["macerating"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["macerating"].unit.count = utils.t8_spcost_bigtech
+
+data.raw["technology"]["solar-matrix"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["solar-matrix"].unit.count = utils.t8_spcost_bigtech
+
+data.raw["technology"]["zinc-piping"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["zinc-piping"].unit.count = utils.t8_spcost_bigtech

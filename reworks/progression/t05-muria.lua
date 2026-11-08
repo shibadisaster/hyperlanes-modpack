@@ -103,6 +103,7 @@ data.raw["technology"]["pickled-casting"].unit.count = utils.t5_spcost_bigtech
 
 data.raw["technology"]["air-scrubbing"].unit.ingredients = utils.t5_sp_muria
 data.raw["technology"]["air-scrubbing"].unit.count = utils.t5_spcost_bigtech
+data.raw["technology"]["air-scrubbing"].prerequisites = {"offworld-chlorine-compounds-production"}
 
 data.raw["technology"]["hydrogen-chloride-explosives"].unit.ingredients = utils.t5_sp_muria
 data.raw["technology"]["hydrogen-chloride-explosives"].unit.count = utils.t5_spcost_tech

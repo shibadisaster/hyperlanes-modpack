@@ -70,6 +70,7 @@ data.raw["technology"]["craptonite-axe"].unit.count = utils.t5_spcost_tech
 
 data.raw["technology"]["axe-mining-speed"].unit.ingredients = utils.t5_sp_rubia
 data.raw["technology"]["axe-mining-speed"].unit.count_formula = "2^(L-1)*" .. utils.t5_spcost_tech
+data.raw["technology"]["axe-mining-speed"].prerequisites = {"craptonite-axe"}
 
 data.raw["technology"]["rubia-holmium-craptalysis"].unit.ingredients = utils.t5_sp_rubia
 data.raw["technology"]["rubia-holmium-craptalysis"].unit.count = utils.t5_spcost_bigtech
@@ -100,3 +101,14 @@ data.raw["technology"]["rubia-nutrient-productivity"].unit.count_formula = "1.8^
 
 data.raw["technology"]["planetslib-rubia-cargo-drops"].unit.ingredients = utils.t5_sp_rubia
 data.raw["technology"]["planetslib-rubia-cargo-drops"].unit.count = utils.t5_spcost_smalltech
+
+
+-- ╒═════════╗ ╒═════════╗  ╒════════════╗  ╒═════════╗  ╒═════════╗ ╒═════════╗
+-- │  ╓────┐ ║ │  ╓───┐  ║  │  ╓─┐  ╓─┐  ║  └┐  ╓───┐ ╚╗ │  ╓───┐  ║ │  ╓────┐ ║
+-- │  ║    └─╜ │  ║   │  ║  │  ║ │  ║ │  ║   │  ║   │  ║ │  ║   │  ║ │  ║    └─╜
+-- │  ║        │  ║   │  ║  │  ║ │  ║ │  ║   │  ╚═══╛  ║ │  ║   │  ║ │  ╚══════╗
+-- │  ║        │  ║   │  ║  │  ║ │  ║ │  ║   │  ╓───┐  ║ │  ║   │  ║ └──────┐  ║
+-- │  ║    ╒═╗ │  ║   │  ║  │  ║ └──╜ │  ║   │  ║   │  ║ │  ║   │  ║ ╒═╗    │  ║
+-- │  ╚════╛ ║ │  ╚═══╛  ║ ╒╛  ╚╗    ╒╛  ╚╗ ╒╛  ╚═══╛ ╓╜ │  ╚═══╛  ║ │ ╚════╛  ║
+-- └─────────╜ └─────────╜ └────╜    └────╜ └─────────╜  └─────────╜ └─────────╜
+
