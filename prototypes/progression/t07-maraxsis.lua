@@ -6,9 +6,8 @@ local bioslurry_recipe = {
     ingredients =
     {
         {type = "item", name = "maraxsis-tropical-fish", amount = 1},
-        {type = "item", name = "biter-egg", amount = 1},
-        {type = "item", name = "rubia-bacteria-A", amount = 1},
-        {type = "item", name = "rubia-bacteria-B", amount = 1},
+        {type = "item", name = "rubia-biofusion-science-pack", amount = 1},
+        {type = "item", name = "planetaris-cactus", amount = 1},
         {type = "item", name = "pentapod-egg", amount = 1},
         {type = "item", name = "eschatotaxite-paste", amount = 1},
     },
