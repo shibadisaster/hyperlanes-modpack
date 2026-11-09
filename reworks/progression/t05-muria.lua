@@ -50,7 +50,7 @@ data.raw["recipe"]["lead-construction-robot"].ingredients = {
 
 -- Aqua regia
 data.raw["recipe"]["aqua-regia"].ingredients = {
-    {type = "item", name = "calcite", amount = 3, quality_min = "uncommon"},
+    {type = "item", name = "calcite", amount = 2, quality_min = "uncommon"},
     {type = "fluid", name = "nitric-acid", amount = 50},
     {type = "fluid", name = "hydrogen-chloride", amount = 150},
 }

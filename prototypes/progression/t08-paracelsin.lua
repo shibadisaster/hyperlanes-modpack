@@ -40,3 +40,26 @@ local micellfilter_recipe = {
     auto_recycle = true
 }
 data:extend({micellfilter_recipe})
+
+
+local bec_recipe = {
+    type = "recipe",
+    name = "hyperlanes-bose-einstein-condensate",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "lithium", amount = 1, quality_min = "legendary"},
+        {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1},
+        {type = "fluid", name = "nitrogen", amount = 1200},
+    },
+    energy_required = 30.0,
+    results = {
+        {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 20},
+        {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98},
+    },
+    main_product = "hyperlanes-bose-einstein-condensate",
+    allow_productivity = true,
+    categories = {"particle-manipulation"},
+    auto_recycle = true
+}
+data:extend({bec_recipe})
