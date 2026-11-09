@@ -331,6 +331,12 @@ table.insert(
     data.raw["technology"]["tellus-transport-belt-capacity-3"].effects,
     {
         type = "bulk-inserter-capacity-bonus",
-        modifier = 1
+        modifier = 2
     }
 )
+
+data.raw["utility-constants"]["default"].max_belt_stack_size = 100
+data.raw["utility-constants"]["default"].inserter_hand_stack_max_sprites = 100
+
+data.raw["inserter"]["stack-inserter"].max_belt_stack_size = 100
+data.raw["inserter"]["long-stack-inserter"].max_belt_stack_size = 100
