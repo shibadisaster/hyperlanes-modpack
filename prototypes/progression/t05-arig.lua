@@ -8,7 +8,7 @@ local sealant_recipe = {
         {type = "fluid", name = "tar", amount = 20},
         {type = "item", name = "planetaris-sand-barrel", amount = 1},
         {type = "fluid", name = "hyperlanes-advanced-material-microsuspension", amount = 4},
-        {type = "item", name = "stone-crushed", amount = 10},
+        {type = "item", name = "stone-crushed", amount = 10, quality_min = "uncommon"},
     },
     energy_required = 5.0,
     results = {

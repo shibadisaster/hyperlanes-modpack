@@ -16,7 +16,7 @@ data.raw["recipe"]["acidworking-plant"].ingredients = {
     {type = "item", name = "processing-unit", amount = 20},
     {type = "item", name = "lead-plate", amount = 10},
     {type = "item", name = "refined-concrete", amount = 20},
-    {type = "item", name = "chemical-plant", amount = 3},
+    {type = "item", name = "chemical-plant", amount = 3, quality_min = "uncommon"},
     {type = "fluid", name = "chlorine", amount = 50},
 }
 
@@ -27,7 +27,7 @@ data.raw["recipe"]["smelting-plant"].ingredients = {
     {type = "item", name = "lead-plate", amount = 10},
     {type = "item", name = "refined-concrete", amount = 20},
     {type = "item", name = "foundry", amount = 1},
-    {type = "item", name = "electric-furnace", amount = 3},
+    {type = "item", name = "electric-furnace", amount = 3, quality_min = "uncommon"},
     {type = "fluid", name = "oxygen", amount = 50},
 }
 

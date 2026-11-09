@@ -22,7 +22,7 @@ data.raw["recipe"]["planetaris-press"].ingredients = {
 
 -- Condensing agricultural tower
 data.raw["recipe"]["condensing-agricultural-tower"].ingredients = {
-    {type = "item", name = "carbon-fiber", amount = 20},
+    {type = "item", name = "carbon-fiber", amount = 20, quality_min = "uncommon"},
     {type = "item", name = "processing-unit", amount = 25},
     {type = "item", name = "planetaris-glass-panel", amount = 10},
     {type = "item", name = "hyperlanes-sealant", amount = 10},

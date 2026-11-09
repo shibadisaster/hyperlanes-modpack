@@ -8,7 +8,7 @@ data.raw["technology"]["craptonite-processing"].essential = true
 
 -- Quality module 2
 data.raw["recipe"]["quality-module-2"].ingredients = {
-    {type = "item", name = "quality-module", amount = 4},
+    {type = "item", name = "quality-module", amount = 4, quality_min = "uncommon"},
     {type = "item", name = "advanced-circuit", amount = 5},
     {type = "item", name = "processing-unit", amount = 5},
     {type = "item", name = "planetaris-heavy-glass", amount = 2},

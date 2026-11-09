@@ -3,7 +3,7 @@ local utils = require("__hyperlanes-modpack__/utils")
 
 -- Lithium
 data.raw["recipe"]["lithium"].ingredients = {
-    {type = "item", name = "holmium-plate", amount = 1},
+    {type = "item", name = "holmium-plate", amount = 1, quality_min = "epic"},
     {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_stats = 1},
     {type = "fluid", name = "lithium-brine", amount = 50},
     {type = "fluid", name = "ammonia", amount = 50},

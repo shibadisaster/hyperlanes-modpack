@@ -18,6 +18,7 @@ table.insert(telesc_tech.prerequisites, "muluna-nanofoamed-polymers")
 data.raw["recipe"]["low-density-space-platform-foundation"].ingredients = {
     {type = "item", name = "low-density-structure", amount = 1},
     {type = "item", name = "aluminum-plate", amount = 5},
+    {type = "item", name = "steel-plate", amount = 5, quality_min = "uncommon"},
     {type = "item", name = "muluna-microcellular-plastic", amount = 5},
     {type = "item", name = "space-platform-foundation", amount = 1},
     {type = "fluid", name = "hyperlanes-advanced-material-microsuspension", amount = 5},
@@ -57,7 +58,7 @@ data.raw["recipe"]["rigor-module"].ingredients = {
 -- Space chest
 table.insert(
     data.raw["recipe"]["space-chest-muluna"].ingredients,
-    {type = "item", name = "steel-chest", amount = 1}
+    {type = "item", name = "steel-chest", amount = 1, quality_min = "uncommon"}
 )
 
 

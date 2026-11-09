@@ -14,7 +14,7 @@ local artilife_recipe = {
     },
     main_product = "hyperlanes-artificial-lifeform",
     allow_productivity = true,
-    categories = {"organic"}, -- incubation
+    categories = {"planetaris-pathologics"}, -- incubation
     auto_recycle = true
 }
 data:extend({artilife_recipe})

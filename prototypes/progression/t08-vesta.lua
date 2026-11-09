@@ -42,7 +42,7 @@ data:extend({oac_recipe})
 local op_recipe = {
     type = "recipe",
     name = "hyperlanes-osmium-plate",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
         {type = "item", name = "hyperlanes-osmium-algae-clump", amount = 5},
@@ -61,7 +61,7 @@ data:extend({op_recipe})
 local oip_recipe = {
     type = "recipe",
     name = "hyperlanes-osmiridium-alloy-plate",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
         {type = "item", name = "hyperlanes-osmium-plate", amount = 1},

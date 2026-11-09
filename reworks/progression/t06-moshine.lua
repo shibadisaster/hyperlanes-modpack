@@ -20,8 +20,8 @@ data.raw["recipe"]["petroleum-from-sand-sulfur-steam-carbon"].ingredients = {
 data.raw["recipe"]["glass"].ingredients = {
     {type = "item", name = "planetaris-heavy-glass", amount = 3},
     {type = "item", name = "planetaris-raw-diamond", amount = 3},
-    {type = "item", name = "silicon-carbide", amount = 5},
-    {type = "item", name = "carbon-fiber", amount = 5},
+    {type = "item", name = "silicon-carbide", amount = 5, quality_min = "uncommon"},
+    {type = "item", name = "carbon-fiber", amount = 5, quality_min = "uncommon"},
     {type = "fluid", name = "hyperlanes-superacid", amount = 20},
 }
 
@@ -229,7 +229,7 @@ data.raw["recipe"]["rigor-module-3"].main_product = "rigor-module-3"
 
 -- Quality module 3
 data.raw["recipe"]["quality-module-3"].ingredients = {
-    {type = "item", name = "quality-module-2", amount = 4},
+    {type = "item", name = "quality-module-2", amount = 4, quality_min = "rare"},
     {type = "item", name = "processing-unit", amount = 5},
     {type = "item", name = "planetaris-simulating-unit", amount = 5},
     {type = "item", name = "ai-tier-6", amount = 1},
