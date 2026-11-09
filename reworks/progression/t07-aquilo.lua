@@ -81,6 +81,10 @@ data.raw["recipe"]["fusion-reactor"].ingredients = {
 -- table.remove(data.raw["technology"]["fusion-reactor"].effects, 2)
 
 
+-- Big rocket silo
+data.raw["recipe"]["muluna-big-rocket-silo"].categories = {"advanced-crafting", "space-manufacturing"}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

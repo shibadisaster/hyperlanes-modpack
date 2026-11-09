@@ -34,7 +34,7 @@ data.raw["recipe"]["low-density-space-platform-foundation"].surface_conditions =
         max = 0,
     }
 }
-data.raw["recipe"]["low-density-space-platform-foundation"].categories = {"crafting-with-fluid"}
+data.raw["recipe"]["low-density-space-platform-foundation"].categories = {"crafting-with-fluid", "space-manufacturing"}
 
 data.raw["technology"]["low-density-space-platform-foundation"].prerequisites = {
     "muluna-nanofoamed-polymers",
@@ -59,6 +59,10 @@ table.insert(
     data.raw["recipe"]["space-chest-muluna"].ingredients,
     {type = "item", name = "steel-chest", amount = 1}
 )
+
+
+-- Crusher 2
+table.insert(data.raw["recipe"]["crusher-2"].categories, "space-manufacturing")
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗

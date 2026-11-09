@@ -20,6 +20,13 @@ data.raw["recipe"]["crusher"].ingredients = {
     {type = "item", name = "low-density-structure", amount = 20},
     {type = "item", name = "muluna-steam-crusher", amount = 1},
 }
+table.insert(data.raw["recipe"]["crusher"].categories, "space-manufacturing")
+
+
+-- Asteroid collector
+table.insert(data.raw["recipe"]["asteroid-collector"].categories, "space-manufacturing")
+
+
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
