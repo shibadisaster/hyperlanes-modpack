@@ -123,6 +123,28 @@ table.insert(
 )
 
 
+-- Super accumulator
+data.raw["recipe"]["accumulator-v2"].ingredients = {
+    {type = "item", name = "supercapacitor", amount = 60},
+    {type = "item", name = "zinc-solder", amount = 5},
+    {type = "item", name = "electric-coil", amount = 5},
+    {type = "item", name = "galvanized-steel-plate", amount = 10},
+    {type = "item", name = "big-accumulator", amount = 6},
+    {type = "fluid", name = "hyperlanes-superacid", amount = 100},
+}
+
+
+-- Solar matrix
+data.raw["recipe"]["solar-matrix"].ingredients = {
+    {type = "item", name = "planetaris-carbon-nanotube", amount = 10},
+    {type = "item", name = "zinc-solder", amount = 10},
+    {type = "item", name = "electric-coil", amount = 2},
+    {type = "item", name = "galvanized-steel-plate", amount = 5},
+    {type = "item", name = "big-solar-panel", amount = 10},
+    {type = "fluid", name = "nitrogen", amount = 100},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
