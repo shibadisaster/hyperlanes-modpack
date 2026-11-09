@@ -116,6 +116,13 @@ data.raw["recipe"]["mechanical-plant"].ingredients = {
 }
 
 
+-- Zinc pipe
+table.insert(
+    data.raw["recipe"]["zinc-pipe"].ingredients,
+    {type = "item", name = "pipe", amount = 1}
+)
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

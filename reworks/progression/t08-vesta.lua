@@ -203,6 +203,36 @@ data.raw["recipe"]["ske_fusion_framework"].ingredients = {
 data.raw["recipe"]["ske_fusion_framework"].categories = {"magnetics"}
 
 
+-- Plasma pipe
+data.raw["recipe"]["magnetic-pipe"].ingredients = {
+    {type = "item", name = "zinc-pipe", amount = 5},
+    {type = "item", name = "ske_ammonia_chilled_plate", amount = 10},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 5},
+    {type = "fluid", name = "ske_supermagnetic", amount = 50},
+    {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 100},
+}
+data.raw["recipe"]["magnetic-pipe"].results = {
+    {type = "item", name = "magnetic-pipe", amount = 5},
+}
+data.raw["recipe"]["magnetic-pipe-to-ground"].ingredients = {
+    {type = "item", name = "magnetic-pipe", amount = 10},
+    {type = "item", name = "ske_ammonia_chilled_plate", amount = 10},
+    {type = "fluid", name = "ske_supermagnetic", amount = 100},
+}
+
+
+-- Supermagnetic fluid
+data.raw["recipe"]["ske_supermagnetic"].ingredients = {
+    {type = "item", name = "hyperlanes-supercooled-magnet", amount = 1},
+    {type = "fluid", name = "electrolyte", amount = 10},
+    {type = "fluid", name = "helium", amount = 30},
+}
+data.raw["recipe"]["ske_supermagnetic"].results = {
+    {type = "item", name = "hyperlanes-supercooled-magnet", amount = 1, ignored_by_productivity = 1, independent_probability = 0.90},
+    {type = "fluid", name = "ske_supermagnetic", amount = 40},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
@@ -277,6 +307,14 @@ data.raw["technology"]["s2_plateworkings"].prerequisites = {
 }
 data.raw["technology"]["s2_plateworkings"].unit.ingredients = utils.t8_sp_paracelsin_vesta
 data.raw["technology"]["s2_plateworkings"].unit.count = utils.t8_spcost_bigtech
+
+data.raw["technology"]["s2_plasma_pipes"].prerequisites = {
+    "galvanization-science-pack",
+    "s1_gas_manipulation_science_pack",
+    "zinc-piping"
+}
+data.raw["technology"]["s2_plasma_pipes"].unit.ingredients = utils.t8_sp_paracelsin_vesta
+data.raw["technology"]["s2_plasma_pipes"].unit.count = utils.t8_spcost_bigtech
 
 -- Tellus + Vesta
 --      Transport belt capacity: unify this and make it repeatable, with 5x scaling
