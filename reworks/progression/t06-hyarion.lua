@@ -156,6 +156,48 @@ data.raw["recipe"]["planetaris-big-refraction-ray-collector"].ingredients = {
 data.raw["technology"]["planetaris-space-facilities-1"].essential = false
 
 
+-- Space manufacturer
+data.raw["recipe"]["planetaris-space-manufacturer"].ingredients = {
+    {type = "item", name = "planetaris-assembling-machine-4", amount = 1},
+    {type = "item", name = "planetaris-fiber-optics-cable", amount = 30},
+    {type = "item", name = "tungsten-plate", amount = 50},
+    {type = "item", name = "planetaris-simulating-unit", amount = 15},
+    {type = "item", name = "planetaris-crystalization-motor", amount = 10},
+    {type = "item", name = "planetaris-beryllium-plate", amount = 60},
+}
+
+
+-- Hyper belts
+data.raw["recipe"]["planetaris-hyper-transport-belt"].ingredients = {
+    {type = "item", name = "turbo-transport-belt", amount = 20},
+    {type = "item", name = "planetaris-crystalization-motor", amount = 5},
+    {type = "item", name = "ai-tier-8", amount = 1},
+}
+data.raw["recipe"]["planetaris-hyper-transport-belt"].results = {
+    {type = "item", name = "planetaris-hyper-transport-belt", amount = 20},
+}
+
+data.raw["recipe"]["planetaris-hyper-underground-belt"].ingredients = {
+    {type = "item", name = "turbo-underground-belt", amount = 20},
+    {type = "item", name = "planetaris-crystalization-motor", amount = 10},
+    {type = "item", name = "ai-tier-8", amount = 1},
+}
+data.raw["recipe"]["planetaris-hyper-underground-belt"].results = {
+    {type = "item", name = "planetaris-hyper-underground-belt", amount = 20},
+}
+
+
+data.raw["recipe"]["planetaris-hyper-splitter"].ingredients = {
+    {type = "item", name = "turbo-splitter", amount = 20},
+    {type = "item", name = "planetaris-simulating-unit", amount = 10},
+    {type = "item", name = "planetaris-crystalization-motor", amount = 5},
+    {type = "item", name = "ai-tier-8", amount = 2},
+}
+data.raw["recipe"]["planetaris-hyper-splitter"].results = {
+    {type = "item", name = "planetaris-hyper-splitter", amount = 20},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
