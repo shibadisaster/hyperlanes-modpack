@@ -54,6 +54,13 @@ data.raw["recipe"]["rigor-module"].ingredients = {
 }
 
 
+-- Space chest
+table.insert(
+    data.raw["recipe"]["space-chest-muluna"].ingredients,
+    {type = "item", name = "steel-chest", amount = 1}
+)
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

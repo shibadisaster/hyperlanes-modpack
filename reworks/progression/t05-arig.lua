@@ -89,6 +89,12 @@ data.raw["recipe"]["rigor-module-2"].ingredients = {
 }
 
 
+-- Big chest
+table.insert(
+    data.raw["recipe"]["planetaris-big-chest"].ingredients,
+    {type = "item", name = "steel-chest", amount = 4}
+)
+
 
 data.raw["technology"]["condensing-agricultural-tower"].essential = false
 data.raw["technology"]["planetaris-arig-rocket-part"].essential = false
