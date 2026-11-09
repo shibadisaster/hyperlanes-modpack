@@ -145,6 +145,16 @@ data.raw["recipe"]["solar-matrix"].ingredients = {
 }
 
 
+-- Fusion generator can't be placed here!
+table.insert(
+    data.raw["fusion-generator"]["fusion-generator"].surface_conditions,
+    {
+        property = "temperature",
+        min = 150,
+    }
+)
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
