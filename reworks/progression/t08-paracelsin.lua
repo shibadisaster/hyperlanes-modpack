@@ -97,7 +97,7 @@ data.raw["recipe"]["zinc-purification"].categories = {"electrochemistry", "elect
 -- Electrochemical plant
 data.raw["recipe"]["electrochemical-plant"].ingredients = {
     {type = "item", name = "electromagnetic-plant", amount = 1},
-    {type = "item", name = "chemical-plant", amount = 1},
+    {type = "item", name = "cryogenic-plant", amount = 1},
     {type = "item", name = "quantum-processor", amount = 30},
     {type = "item", name = "zinc-plate", amount = 25},
     {type = "item", name = "zinc-solder", amount = 20},

@@ -194,6 +194,15 @@ data.raw["technology"]["tellus-transport-belt-capacity-3"].max_level = "infinite
 data.raw["technology"]["tellus-transport-belt-capacity-3"].upgrade = true
 
 
+-- Bioassembler base productivity adjustment
+data.raw["assembling-machine"]["planetaris-bioassembler"].effect_receiver = {
+    base_effect = {
+        productivity = 0.4,
+        speed = -0.2
+    }
+}
+
+
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║

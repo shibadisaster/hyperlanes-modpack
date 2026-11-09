@@ -23,6 +23,10 @@ table.insert(utsp_tech.unit.ingredients, {"space-science-pack", 1})
 table.insert(data.raw["recipe"]["thruster"].categories, "space-manufacturing")
 
 
+-- Space platform
+table.insert(data.raw["recipe"]["space-platform-foundation"].categories, "space-manufacturing")
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

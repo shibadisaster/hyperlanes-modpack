@@ -65,6 +65,10 @@ table.insert(
 table.insert(data.raw["recipe"]["crusher-2"].categories, "space-manufacturing")
 
 
+-- LDSPF
+table.insert(data.raw["recipe"]["low-density-space-platform-foundation"].categories, "space-manufacturing")
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
