@@ -25,9 +25,9 @@ local micellfilter_recipe = {
     enabled = false,
     ingredients =
     {
-        {type = "item", name = "maraxsis-salt-filter", amount = 1},
+        {type = "item", name = "maraxsis-salt-filter", amount = 1, quality_min = "uncommon"},
         {type = "item", name = "maraxsis-glass-panes", amount = 1},
-        {type = "item", name = "muluna-microcellular-plastic", amount = 1},
+        {type = "item", name = "muluna-microcellular-plastic", amount = 1, quality_min = "legendary"},
         {type = "item", name = "planetaris-carbon-nanotube", amount = 5},
     },
     energy_required = 10.0,

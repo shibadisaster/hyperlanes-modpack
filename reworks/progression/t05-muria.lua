@@ -12,22 +12,22 @@ data.raw["recipe"]["molten-lead"].ingredients = {
 
 -- Acidworking plant
 data.raw["recipe"]["acidworking-plant"].ingredients = {
-    {type = "item", name = "tungsten-plate", amount = 20},
-    {type = "item", name = "processing-unit", amount = 20},
+    {type = "item", name = "tungsten-plate", amount = 20, quality_min = "uncommon"},
+    {type = "item", name = "processing-unit", amount = 20, quality_min = "uncommon"},
     {type = "item", name = "lead-plate", amount = 10},
     {type = "item", name = "refined-concrete", amount = 20},
-    {type = "item", name = "chemical-plant", amount = 3, quality_min = "uncommon"},
+    {type = "item", name = "chemical-plant", amount = 3},
     {type = "fluid", name = "chlorine", amount = 50},
 }
 
 -- Smelting plant
 data.raw["recipe"]["smelting-plant"].ingredients = {
     {type = "item", name = "aluminum-plate", amount = 20},
-    {type = "item", name = "processing-unit", amount = 20},
+    {type = "item", name = "processing-unit", amount = 20, quality_min = "uncommon"},
     {type = "item", name = "lead-plate", amount = 10},
     {type = "item", name = "refined-concrete", amount = 20},
     {type = "item", name = "foundry", amount = 1},
-    {type = "item", name = "electric-furnace", amount = 3, quality_min = "uncommon"},
+    {type = "item", name = "electric-furnace", amount = 3},
     {type = "fluid", name = "oxygen", amount = 50},
 }
 

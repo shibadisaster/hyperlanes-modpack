@@ -10,8 +10,8 @@ data.raw["technology"]["planetaris-tellus-rocket-silo"].essential = false
 
 -- Bioassembler
 data.raw["recipe"]["planetaris-bioassembler-seed"].ingredients = {
-    {type = "item", name = "planetaris-assembling-machine-4", amount = 1},
-    {type = "item", name = "biochamber", amount = 1},
+    {type = "item", name = "planetaris-assembling-machine-4", amount = 1, quality_min = "uncommon"},
+    {type = "item", name = "biochamber", amount = 1, quality_min = "epic"},
     {type = "item", name = "ai-tier-10", amount = 1},
     {type = "item", name = "planetaris-magnesium-sheet", amount = 20},
     {type = "item", name = "planetaris-crystalization-motor", amount = 20},
@@ -25,11 +25,11 @@ data.raw["recipe"]["planetaris-bioassembler-seed"].categories = {"organic"}
 
 -- Incubator
 data.raw["recipe"]["planetaris-incubator"].ingredients = {
-    {type = "item", name = "biochamber", amount = 1},
+    {type = "item", name = "biochamber", amount = 1, quality_min = "epic"},
     {type = "item", name = "ai-tier-10", amount = 1},
     {type = "item", name = "quantum-processor", amount = 20},
     {type = "item", name = "planetaris-magnesium-sheet", amount = 20},
-    {type = "item", name = "anti-corrosion-cladding", amount = 40},
+    {type = "item", name = "anti-corrosion-cladding", amount = 20, quality_min = "legendary"},
     {type = "item", name = "planetaris-root", amount = 50},
     {type = "fluid", name = "hyperlanes-bioslurry", amount = 50},
 }
@@ -38,10 +38,10 @@ data.raw["recipe"]["planetaris-incubator"].categories = {"organic"}
 
 -- Roots
 data.raw["recipe"]["planetaris-root"].ingredients = {
-    {type = "item", name = "cellulose", amount = 10},
+    {type = "item", name = "cellulose", amount = 10, quality_min = "legendary"},
     {type = "item", name = "planetaris-compost", amount = 20},
     {type = "item", name = "planetaris-magnesium-sheet", amount = 5},
-    {type = "item", name = "anti-corrosion-cladding", amount = 2},
+    {type = "item", name = "anti-corrosion-cladding", amount = 2, quality_min = "legendary"},
     {type = "fluid", name = "hyperlanes-bioslurry", amount = 5},
 }
 
@@ -53,7 +53,7 @@ data.raw["recipe"]["planetaris-root-filler"].ingredients = {
 
 data.raw["recipe"]["planetaris-root-to-ground"].ingredients = {
     {type = "item", name = "planetaris-root", amount = 10},
-    {type = "item", name = "cellulose", amount = 10},
+    {type = "item", name = "cellulose", amount = 10, quality_min = "legendary"},
 }
 
 data.raw["recipe"]["planetaris-root-pump"].ingredients = {
@@ -64,8 +64,8 @@ data.raw["recipe"]["planetaris-root-pump"].ingredients = {
 
 data.raw["recipe"]["planetaris-root-storage-tank"].ingredients = {
     {type = "item", name = "planetaris-root", amount = 5},
-    {type = "item", name = "cellulose", amount = 20},
-    {type = "item", name = "storage-tank", amount = 1},
+    {type = "item", name = "cellulose", amount = 20, quality_min = "legendary"},
+    {type = "item", name = "storage-tank", amount = 1, quality_min = "epic"},
 }
 
 
@@ -82,18 +82,18 @@ table.insert(
 
 -- Air purifier
 data.raw["recipe"]["planetaris-air-purifier"].ingredients = {
-    {type = "item", name = "scrubber", amount = 1},
+    {type = "item", name = "scrubber", amount = 1, quality_min = "epic"},
     {type = "item", name = "ai-tier-10", amount = 1},
     {type = "item", name = "quantum-processor", amount = 5},
     {type = "item", name = "planetaris-magnesium-sheet", amount = 10},
-    {type = "item", name = "anti-corrosion-cladding", amount = 10},
+    {type = "item", name = "anti-corrosion-cladding", amount = 10, quality_min = "legendary"},
     {type = "item", name = "planetaris-crystalization-motor", amount = 2},
 }
 
 
 -- Artificial soils
 data.raw["recipe"]["planetaris-artificial-chlorophyll-soil"].ingredients = {
-    {type = "item", name = "nutrients", amount = 5},
+    {type = "item", name = "nutrients", amount = 5, quality_min = "uncommon"},
     {type = "item", name = "planetaris-chloroplast-seed", amount = 2},
     {type = "item", name = "artificial-yumako-soil", amount = 5},
     {type = "fluid", name = "planetaris-seed-compound", amount = 20},
@@ -101,7 +101,7 @@ data.raw["recipe"]["planetaris-artificial-chlorophyll-soil"].ingredients = {
 }
 
 data.raw["recipe"]["planetaris-artificial-mycelia-soil"].ingredients = {
-    {type = "item", name = "nutrients", amount = 5},
+    {type = "item", name = "nutrients", amount = 5, quality_min = "uncommon"},
     {type = "item", name = "planetaris-myceliae-seed", amount = 2},
     {type = "item", name = "artificial-jellynut-soil", amount = 5},
     {type = "fluid", name = "planetaris-seed-compound", amount = 20},
@@ -111,7 +111,7 @@ data.raw["recipe"]["planetaris-artificial-mycelia-soil"].ingredients = {
 
 -- Overgrowth soils
 data.raw["recipe"]["planetaris-overgrowth-chlorophyll-soil"].ingredients = {
-    {type = "item", name = "nutrients", amount = 10},
+    {type = "item", name = "nutrients", amount = 10, quality_min = "rare"},
     {type = "item", name = "planetaris-magnesium-dust", amount = 50},
     {type = "item", name = "planetaris-chloroplast-seed", amount = 5},
     {type = "item", name = "planetaris-wasp-egg", amount = 10},
@@ -121,7 +121,7 @@ data.raw["recipe"]["planetaris-overgrowth-chlorophyll-soil"].ingredients = {
 }
 
 data.raw["recipe"]["planetaris-overgrowth-mycelia-soil"].ingredients = {
-    {type = "item", name = "nutrients", amount = 10},
+    {type = "item", name = "nutrients", amount = 10, quality_min = "rare"},
     {type = "item", name = "planetaris-magnesium-dust", amount = 50},
     {type = "item", name = "planetaris-myceliae-seed", amount = 5},
     {type = "item", name = "planetaris-wasp-egg", amount = 10},
@@ -181,7 +181,7 @@ data.raw["logistic-robot"]["planetaris-logistic-robowasp"].max_payload_size = 1
 data.raw["logistic-robot"]["planetaris-logistic-robowasp"].speed = 0.05 * 4.0
 
 data.raw["recipe"]["planetaris-logistic-robowasp"].ingredients = {
-    {type = "item", name = "lead-logistic-robot", amount = 1},
+    {type = "item", name = "lead-logistic-robot", amount = 1, quality_min = "rare"},
     {type = "item", name = "planetaris-artificial-heart", amount = 1},
     {type = "item", name = "planetaris-polimer-skin", amount = 1},
     {type = "item", name = "planetaris-magnesium-sheet", amount = 5},

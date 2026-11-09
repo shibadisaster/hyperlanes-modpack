@@ -20,8 +20,8 @@ data.raw["recipe"]["petroleum-from-sand-sulfur-steam-carbon"].ingredients = {
 data.raw["recipe"]["glass"].ingredients = {
     {type = "item", name = "planetaris-heavy-glass", amount = 3},
     {type = "item", name = "planetaris-raw-diamond", amount = 3},
-    {type = "item", name = "silicon-carbide", amount = 5, quality_min = "uncommon"},
-    {type = "item", name = "carbon-fiber", amount = 5, quality_min = "uncommon"},
+    {type = "item", name = "silicon-carbide", amount = 5, quality_min = "rare"},
+    {type = "item", name = "carbon-fiber", amount = 5, quality_min = "rare"},
     {type = "fluid", name = "hyperlanes-superacid", amount = 20},
 }
 
@@ -37,8 +37,8 @@ data.raw["recipe"]["magnet"].ingredients = {
 
 -- Advanced data cable
 data.raw["recipe"]["optical-cable"].ingredients = {
-    {type = "item", name = "muluna-data-cable", amount = 2},
-    {type = "item", name = "silicon-carbide", amount = 1},
+    {type = "item", name = "muluna-data-cable", amount = 2, quality_min = "rare"},
+    {type = "item", name = "silicon-carbide", amount = 1, quality_min = "rare"},
     {type = "item", name = "glass", amount = 1},
     {type = "item", name = "hyperlanes-sealant", amount = 1},
 }
@@ -79,13 +79,13 @@ data.raw["recipe"]["datacell-empty"].ingredients = {
     {type = "item", name = "magnet", amount = 1},
     {type = "item", name = "silicon-cell", amount = 1},
     {type = "item", name = "glass", amount = 1},
-    {type = "item", name = "processing-unit", amount = 1}
+    {type = "item", name = "processing-unit", amount = 1, quality_min = "rare"}
 }
 
 
 -- Cosmic scanner
 data.raw["recipe"]["moshine_cosmicscanner-construction-stage-1"].ingredients = {
-    {type = "item", name = "refined-concrete", amount = 1200},
+    {type = "item", name = "refined-concrete", amount = 1200, quality_min = "rare"},
     {type = "item", name = "tungsten-plate", amount = 600},
     {type = "item", name = "low-density-space-platform-foundation", amount = 500},
     {type = "item", name = "radar", amount = 50},
@@ -140,7 +140,7 @@ data.raw["recipe"]["data-processor"].categories = {
 data.raw["recipe"]["neural_computer"].ingredients = {
     {type = "item", name = "data-processor", amount = 1},
     {type = "item", name = "datacell-empty", amount = 100},
-    {type = "item", name = "processing-unit", amount = 50},
+    {type = "item", name = "processing-unit", amount = 50, quality_min = "rare"},
     {type = "item", name = "silicon-carbide", amount = 40},
     {type = "item", name = "magnet", amount = 20},
 }
@@ -149,7 +149,7 @@ data.raw["recipe"]["neural_computer"].ingredients = {
 -- Optical fiber storage tank
 data.raw["recipe"]["opticalfiber-storage-tank"].ingredients = {
     {type = "item", name = "datacell-empty", amount = 100},
-    {type = "item", name = "processing-unit", amount = 15},
+    {type = "item", name = "processing-unit", amount = 15, quality_min = "rare"},
     {type = "item", name = "optical-cable", amount = 5},
     {type = "fluid", name = "hyperlanes-superacid", amount = 50},
 }

@@ -6,7 +6,7 @@ data.raw["technology"]["s1_gas_manipulation_science_pack"].essential = true
 
 -- Ceramic
 data.raw["recipe"]["ceramic"].ingredients = {
-    {type = "item", name = "maraxsis-glass-panes", amount = 1},
+    {type = "item", name = "maraxsis-glass-panes", amount = 1, quality_min = "rare"},
     {type = "item", name = "foundation", amount = 1},
     {type = "fluid", name = "planetaris-pure-sand", amount = 100},
     {type = "fluid", name = "steam", amount = 150},
@@ -21,7 +21,7 @@ data.raw["recipe"]["ceramic"].categories = {"compressing"}
 data.raw["recipe"]["ske_mesh"].ingredients = {
     {type = "item", name = "ceramic", amount = 1},
     {type = "item", name = "planetaris-carbon-nanotube", amount = 5},
-    {type = "item", name = "carbon-fiber", amount = 10},
+    {type = "item", name = "carbon-fiber", amount = 10, quality_min = "legendary"},
 }
 
 
@@ -62,20 +62,20 @@ data.raw["recipe"]["ske_brine_vesta"].ingredients = {
 }
 
 
--- Nutrients from CO2 nerf
+-- Nutrients from CO2 rebalance
 data.raw["recipe"]["nutrients-from-co2"].ingredients = {
     {type = "fluid", name = "carbon-dioxide", amount = 1000},
     {type = "item", name = "algea_nutrient_clump", amount = 1},
 }
 data.raw["recipe"]["nutrients-from-co2"].results = {
-    {type = "item", name = "nutrients", amount = 10},
+    {type = "item", name = "nutrients", amount = 10, quality_min = "rare"},
     {type = "item", name = "algea_nutrient_clump", amount = 1, ignored_by_productivity = 1},
 }
 
 
 -- Water filter
 data.raw["recipe"]["ske_water_filter"].ingredients = {
-    {type = "item", name = "maraxsis-salt-filter", amount = 1},
+    {type = "item", name = "maraxsis-salt-filter", amount = 1, quality_min = "uncommon"},
     {type = "item", name = "ske_mesh", amount = 1},
     {type = "item", name = "ske_charcoal", amount = 1},
 }
@@ -83,9 +83,9 @@ data.raw["recipe"]["ske_water_filter"].ingredients = {
 
 -- Combustion furnace
 data.raw["recipe"]["vesta-combustion-furnace"].ingredients = {
-    {type = "item", name = "electric-furnace", amount = 1},
+    {type = "item", name = "electric-furnace", amount = 1, quality_min = "epic"},
     {type = "item", name = "flare-stack", amount = 1},
-    {type = "item", name = "lithium-plate", amount = 50},
+    {type = "item", name = "lithium-plate", amount = 50, quality_min = "uncommon"},
     {type = "item", name = "quantum-processor", amount = 10},
     {type = "item", name = "ske_algea_clump", amount = 2},
 }
@@ -93,9 +93,9 @@ data.raw["recipe"]["vesta-combustion-furnace"].ingredients = {
 
 -- Electrolyzer
 data.raw["recipe"]["vesta-electrolyzer"].ingredients = {
-    {type = "item", name = "electromagnetic-plant", amount = 1},
+    {type = "item", name = "electromagnetic-plant", amount = 1, quality_min = "epic"},
     {type = "item", name = "planetaris-bismuth-transistor", amount = 10},
-    {type = "item", name = "lithium-plate", amount = 50},
+    {type = "item", name = "lithium-plate", amount = 50, quality_min = "uncommon"},
     {type = "item", name = "ske_ammonia_chilled_plate", amount = 20},
     {type = "item", name = "quantum-processor", amount = 20},
     {type = "item", name = "superconductor", amount = 20},
@@ -104,9 +104,9 @@ data.raw["recipe"]["vesta-electrolyzer"].ingredients = {
 
 -- Heating conductor
 data.raw["recipe"]["vesta-heater"].ingredients = {
-    {type = "item", name = "heat-exchanger", amount = 2},
+    {type = "item", name = "heat-exchanger", amount = 2, quality_min = "epic"},
     {type = "item", name = "storage-tank", amount = 1},
-    {type = "item", name = "heat-pipe", amount = 50},
+    {type = "item", name = "heat-pipe", amount = 50, quality_min = "uncommon"},
     {type = "item", name = "ske_ammonia_chilled_plate", amount = 20},
     {type = "item", name = "quantum-processor", amount = 20},
     {type = "item", name = "ai-tier-10", amount = 1},
@@ -115,7 +115,7 @@ data.raw["recipe"]["vesta-heater"].ingredients = {
 
 -- Supermagnet
 data.raw["recipe"]["supermagnet"].ingredients = {
-    {type = "item", name = "electromagnetic-plant", amount = 1},
+    {type = "item", name = "electromagnetic-plant", amount = 1, quality_min = "epic"},
     {type = "item", name = "hyperlanes-supercooled-magnet", amount = 20},
     {type = "item", name = "ske_ammonia_chilled_plate", amount = 20},
     {type = "item", name = "iridium-plate", amount = 10},
@@ -128,9 +128,10 @@ data.raw["recipe"]["supermagnet"].ingredients = {
 
 -- Ammonia chilled plate
 data.raw["recipe"]["ske_ammonia_chilled_plate"].ingredients = {
-    {type = "item", name = "lead-plate", amount = 1},
-    {type = "item", name = "tungsten-plate", amount = 1},
-    {type = "item", name = "aluminum-plate", amount = 1},
+    {type = "item", name = "lead-plate", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "tungsten-plate", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "aluminum-plate", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "steel-plate", amount = 1},
     {type = "fluid", name = "ammonia", amount = 50},
 }
 
@@ -193,11 +194,11 @@ data.raw["recipe"]["fusion-construction-robot"].ingredients = {
 }
 
 data.raw["recipe"]["ske_fusion_framework"].ingredients = {
-    {type = "item", name = "flying-robot-frame", amount = 2},
+    {type = "item", name = "flying-robot-frame", amount = 2, quality_min = "legendary"},
     {type = "item", name = "quantum-processor", amount = 1},
     {type = "item", name = "planetaris-crystalization-motor", amount = 1},
     {type = "item", name = "ske_empty_dt_canister", amount = 2},
-    {type = "item", name = "accumulator", amount = 1},
+    {type = "item", name = "accumulator", amount = 1, quality_min = "legendary"},
     {type = "fluid", name = "ske_dt_fuel", amount = 200},
 }
 data.raw["recipe"]["ske_fusion_framework"].categories = {"magnetics"}

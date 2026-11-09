@@ -4,7 +4,7 @@ local utils = require("__hyperlanes-modpack__/utils")
 -- Pressure turbine
 data.raw["recipe"]["pressure-turbine"].ingredients = {
     {type = "item", name = "muluna-cycling-steam-turbine", amount = 1},
-    {type = "item", name = "pumpjack", amount = 1},
+    {type = "item", name = "pumpjack", amount = 1, quality_min = "legendary"},
     {type = "item", name = "planetaris-crystalization-motor", amount = 5},
     {type = "item", name = "aluminum-plate", amount = 50},
     {type = "item", name = "lithium-plate", amount = 20},
@@ -20,11 +20,11 @@ data.raw["recipe"]["pressure-turbine"].surface_conditions = {
 
 -- Fusion generator
 data.raw["recipe"]["fusion-generator"].ingredients = {
-    {type = "item", name = "tungsten-plate", amount = 100},
-    {type = "item", name = "lead-plate", amount = 50},
+    {type = "item", name = "tungsten-plate", amount = 100, quality_min = "epic"},
+    {type = "item", name = "lead-plate", amount = 50, quality_min = "uncommon"},
     {type = "item", name = "maraxsis-glass-panes", amount = 50},
     {type = "item", name = "quantum-processor", amount = 50},
-    {type = "item", name = "pressure-turbine", amount = 1},
+    {type = "item", name = "pressure-turbine", amount = 1, quality_min = "uncommon"},
 }
 
 
@@ -41,7 +41,7 @@ data.raw["recipe"]["sphalerite-processing"].ingredients = {
 
 data.raw["recipe"]["sphalerite-melting"].ingredients = {
     {type = "item", name = "sphalerite", amount = 50},
-    {type = "item", name = "calcite", amount = 20},
+    {type = "item", name = "calcite", amount = 20, quality_min = "legendary"},
     {type = "fluid", name = "steam", amount = 50},
     {type = "fluid", name = "hyperlanes-superacid", amount = 100},
 }
@@ -56,7 +56,7 @@ data.raw["recipe"]["tetrahedrite-processing"].ingredients = {
 
 data.raw["recipe"]["tetrahedrite-melting"].ingredients = {
     {type = "item", name = "tetrahedrite", amount = 50},
-    {type = "item", name = "calcite", amount = 20},
+    {type = "item", name = "calcite", amount = 20, quality_min = "legendary"},
     {type = "fluid", name = "steam", amount = 50},
     {type = "fluid", name = "hyperlanes-superacid", amount = 100},
 }
@@ -64,7 +64,7 @@ data.raw["recipe"]["tetrahedrite-melting"].ingredients = {
 
 -- Zinc leaching
 data.raw["recipe"]["zinc-leaching"].ingredients = {
-    {type = "item", name = "calcite", amount = 20},
+    {type = "item", name = "calcite", amount = 20, quality_min = "legendary"},
     {type = "fluid", name = "nitric-acid", amount = 40},
     {type = "fluid", name = "zinc-concentrate", amount = 40},
     {type = "fluid", name = "planetaris-aluminium", amount = 10},
@@ -96,10 +96,10 @@ data.raw["recipe"]["zinc-purification"].categories = {"electrochemistry", "elect
 
 -- Electrochemical plant
 data.raw["recipe"]["electrochemical-plant"].ingredients = {
-    {type = "item", name = "electromagnetic-plant", amount = 1},
-    {type = "item", name = "cryogenic-plant", amount = 1},
+    {type = "item", name = "electromagnetic-plant", amount = 1, quality_min = "epic"},
+    {type = "item", name = "chemical-plant", amount = 1, quality_min = "epic"},
     {type = "item", name = "quantum-processor", amount = 30},
-    {type = "item", name = "zinc-plate", amount = 25},
+    {type = "item", name = "zinc-plate", amount = 25, quality_min = "rare"},
     {type = "item", name = "zinc-solder", amount = 20},
     {type = "item", name = "ai-tier-10", amount = 1},
 }
@@ -107,10 +107,10 @@ data.raw["recipe"]["electrochemical-plant"].ingredients = {
 
 -- Mechanical plant
 data.raw["recipe"]["mechanical-plant"].ingredients = {
-    {type = "item", name = "planetaris-assembling-machine-4", amount = 2},
+    {type = "item", name = "planetaris-assembling-machine-4", amount = 2, quality_min = "rare"},
     {type = "item", name = "quantum-processor", amount = 30},
     {type = "item", name = "planetaris-crystalization-motor", amount = 30},
-    {type = "item", name = "zinc-plate", amount = 25},
+    {type = "item", name = "zinc-plate", amount = 25, quality_min = "rare"},
     {type = "item", name = "zinc-rivets", amount = 20},
     {type = "item", name = "ai-tier-10", amount = 1},
 }

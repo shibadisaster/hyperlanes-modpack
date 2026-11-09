@@ -6,8 +6,8 @@ data.raw["recipe"]["maraxsis-fish-food"].ingredients = {
     {type = "item", name = "maraxsis-coral", amount = 3},
     {type = "item", name = "maraxsis-tropical-fish", amount = 1},
     {type = "fluid", name = "planetaris-pure-sand", amount = 10},
-    {type = "item", name = "jelly", amount = 2},
-    {type = "item", name = "yumako-mash", amount = 1},
+    {type = "item", name = "jelly", amount = 2, quality_min = "uncommon"},
+    {type = "item", name = "yumako-mash", amount = 1, quality_min = "uncommon"},
     {type = "fluid", name = "hyperlanes-metamaterial-microsuspension", amount = 10},
 }
 
@@ -17,8 +17,8 @@ data.raw["recipe"]["maraxsis-conduit"].ingredients = {
     {type = "item", name = "maraxsis-glass-panes", amount = 25},
     {type = "item", name = "maraxsis-super-sealant-substance", amount = 15},
     {type = "item", name = "planetaris-simulating-unit", amount = 5},
-    {type = "item", name = "superconductor", amount = 25},
-    {type = "item", name = "beacon", amount = 1},
+    {type = "item", name = "superconductor", amount = 25, quality_min = "epic"},
+    {type = "item", name = "beacon", amount = 1, quality_min = "epic"},
     {type = "item", name = "ai-tier-8", amount = 1},
 }
 
@@ -27,7 +27,7 @@ data.raw["recipe"]["maraxsis-conduit"].ingredients = {
 data.raw["recipe"]["maraxsis-glass-panes"].ingredients = {
     {type = "item", name = "glass", amount = 3},
     {type = "item", name = "limestone", amount = 1},
-    {type = "item", name = "salt", amount = 2},
+    {type = "item", name = "salt", amount = 2, quality_min = "uncommon"},
     {type = "item", name = "hyperlanes-sealant", amount = 1},
     {type = "fluid", name = "planetaris-polishing-compound", amount = 10},
 }
@@ -37,6 +37,7 @@ data.raw["recipe"]["maraxsis-glass-panes"].ingredients = {
 data.raw["recipe"]["maraxsis-super-sealant-substance"].ingredients = {
     {type = "item", name = "sulfur", amount = 3},
     {type = "item", name = "hyperlanes-sealant", amount = 3},
+    {type = "item", name = "calcite", amount = 3, quality_min = "epic"},
     {type = "fluid", name = "heavy-oil", amount = 200},
     {type = "fluid", name = "hydrogen", amount = 100},
 }
@@ -47,7 +48,7 @@ data.raw["recipe"]["maraxsis-pressure-dome"].ingredients = {
     {type = "item", name = "maraxsis-glass-panes", amount = 1000},
     {type = "item", name = "tungsten-plate", amount = 100},
     {type = "item", name = "pipe", amount = 100},
-    {type = "item", name = "pump", amount = 20},
+    {type = "item", name = "pump", amount = 20, quality_min = "epic"},
     {type = "item", name = "hyperlanes-sealant", amount = 20},
 }
 
@@ -55,13 +56,13 @@ data.raw["recipe"]["maraxsis-pressure-dome"].ingredients = {
 -- Hydro plant
 data.raw["recipe"]["maraxsis-hydro-plant"].ingredients = {
     {type = "item", name = "planetaris-simulating-unit", amount = 10},
-    {type = "item", name = "tungsten-plate", amount = 50},
-    {type = "item", name = "pump", amount = 10},
+    {type = "item", name = "tungsten-plate", amount = 50, quality_min = "epic"},
+    {type = "item", name = "pump", amount = 10, quality_min = "epic"},
     {type = "item", name = "ai-tier-8", amount = 1},
     {type = "item", name = "glass", amount = 20},
-    {type = "item", name = "quality-module-3", amount = 1},
+    {type = "item", name = "quality-module-3", amount = 1, quality_min = "epic"},
     {type = "item", name = "flare-stack", amount = 1},
-    {type = "item", name = "chemical-plant", amount = 2},
+    {type = "item", name = "chemical-plant", amount = 2, quality_min = "rare"},
 }
 
 
@@ -74,7 +75,7 @@ table.insert(data.raw["recipe"]["empty-planetaris-polishing-compound-barrel"].ca
 data.raw["recipe"]["maraxsis-fishing-tower"].ingredients = {
     {type = "item", name = "maraxsis-coral", amount = 30},
     {type = "item", name = "maraxsis-glass-panes", amount = 30},
-    {type = "item", name = "agricultural-tower", amount = 1},
+    {type = "item", name = "agricultural-tower", amount = 1, quality_min = "rare"},
     {type = "item", name = "ai-tier-8", amount = 1},
     {type = "item", name = "planetaris-simulating-unit", amount = 10},
 }
@@ -82,11 +83,13 @@ data.raw["recipe"]["maraxsis-fishing-tower"].ingredients = {
 
 -- Sonar
 data.raw["recipe"]["maraxsis-sonar"].ingredients = {
-    {type = "item", name = "planetaris-electromagnetic-radar", amount = 1},
+    {type = "item", name = "planetaris-electromagnetic-radar", amount = 1, quality_min = "rare"},
     {type = "item", name = "maraxsis-glass-panes", amount = 20},
     {type = "item", name = "ai-tier-8", amount = 1},
     {type = "item", name = "planetaris-simulating-unit", amount = 20},
 }
+data.raw["radar"]["maraxsis-sonar"].max_distance_of_nearby_sector_revealed = 16
+data.raw["radar"]["maraxsis-sonar"].max_distance_of_sector_revealed = 64
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗

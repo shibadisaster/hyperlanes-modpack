@@ -8,8 +8,8 @@ local bioslurry_recipe = {
         {type = "item", name = "maraxsis-tropical-fish", amount = 1},
         {type = "item", name = "rubia-biofusion-science-pack", amount = 1},
         {type = "item", name = "planetaris-cactus", amount = 1},
-        {type = "item", name = "pentapod-egg", amount = 1},
-        {type = "item", name = "eschatotaxite-paste", amount = 1},
+        {type = "item", name = "pentapod-egg", amount = 1, quality_min = "rare"},
+        {type = "item", name = "eschatotaxite-paste", amount = 1, quality_min = "rare"},
     },
     energy_required = 5.0,
     results = {

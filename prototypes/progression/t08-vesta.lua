@@ -4,6 +4,7 @@ local aeratedwater_recipe = {
     enabled = false,
     ingredients =
     {
+        {type = "item", name = "nutrients", amount = 5, quality_min = "legendary"},
         {type = "fluid", name = "water", amount = 100},
         {type = "fluid", name = "carbon-dioxide", amount = 500},
     },

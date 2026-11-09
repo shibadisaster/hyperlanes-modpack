@@ -28,19 +28,19 @@ data.raw["recipe"]["fluoroketone"].ingredients = {
 data.raw["recipe"]["cryogenic-plant"].ingredients = {
     {type = "item", name = "planetaris-simulating-unit", amount = 20},
     {type = "item", name = "ai-tier-8", amount = 1},
-    {type = "item", name = "chemical-plant", amount = 2},
+    {type = "item", name = "chemical-plant", amount = 2, quality_min = "rare"},
     {type = "item", name = "lithium-plate", amount = 20},
-    {type = "item", name = "refined-concrete", amount = 50},
+    {type = "item", name = "refined-concrete", amount = 50, quality_min = "epic"},
     {type = "item", name = "glass", amount = 10},
-    {type = "item", name = "superconductor", amount = 20},
+    {type = "item", name = "superconductor", amount = 20, quality_min = "epic"},
 }
 
 
 -- Foundation
 data.raw["recipe"]["foundation"].ingredients = {
-    {type = "item", name = "landfill", amount = 5},
+    {type = "item", name = "landfill", amount = 5, quality_min = "epic"},
     {type = "item", name = "planetaris-carbon-nanotube", amount = 5},
-    {type = "item", name = "refined-concrete", amount = 10},
+    {type = "item", name = "refined-concrete", amount = 10, quality_min = "epic"},
     {type = "item", name = "glass", amount = 10},
     {type = "fluid", name = "fluoroketone-cold", amount = 20},
     {type = "fluid", name = "hyperlanes-metamaterial-microsuspension", amount = 10},
@@ -60,7 +60,7 @@ data.raw["recipe"]["quantum-processor"].ingredients = {
     {type = "item", name = "hyperlanes-loaded-simulating-unit", amount = 1},
     {type = "item", name = "superconductor", amount = 4},
     {type = "item", name = "planetaris-carbon-nanotube", amount = 4},
-    {type = "item", name = "lithium-plate", amount = 2},
+    {type = "item", name = "lithium-plate", amount = 2, quality_min = "uncommon"},
     {type = "item", name = "glass", amount = 2},
     {type = "fluid", name = "fluoroketone-cold", amount = 10},
     {type = "fluid", name = "planetaris-aluminium", amount = 10},
@@ -69,8 +69,8 @@ data.raw["recipe"]["quantum-processor"].ingredients = {
 
 -- Fusion reactor
 data.raw["recipe"]["fusion-reactor"].ingredients = {
-    {type = "item", name = "tungsten-plate", amount = 200},
-    {type = "item", name = "lead-plate", amount = 100},
+    {type = "item", name = "tungsten-plate", amount = 200, quality_min = "epic"},
+    {type = "item", name = "lead-plate", amount = 100, quality_min = "uncommon"},
     {type = "item", name = "glass", amount = 100},
     {type = "item", name = "quantum-processor", amount = 250},
     {type = "item", name = "cerys-mixed-oxide-reactor", amount = 1},

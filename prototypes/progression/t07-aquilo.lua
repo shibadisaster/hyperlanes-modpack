@@ -5,9 +5,9 @@ local sucomagnet_recipe = {
     enabled = false,
     ingredients =
     {
-        {type = "item", name = "magnet", amount = 2},
+        {type = "item", name = "magnet", amount = 2, quality_min = "epic"},
         {type = "item", name = "lithium-plate", amount = 4},
-        {type = "item", name = "superconductor", amount = 4},
+        {type = "item", name = "superconductor", amount = 4, quality_min = "epic"},
         {type = "fluid", name = "fluoroketone-cold", amount = 10},
     },
     energy_required = 10.0,

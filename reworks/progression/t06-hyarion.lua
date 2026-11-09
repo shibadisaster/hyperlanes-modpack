@@ -18,7 +18,7 @@ data.raw["technology"]["planetaris-polishing"].prerequisites = {"planetaris-meta
 
 -- Polishing compound
 data.raw["recipe"]["planetaris-polishing-compound"].ingredients = {
-    {type = "item", name = "iron-ore", amount = 20},
+    {type = "item", name = "iron-ore", amount = 20, quality_min = "rare"},
     {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1},
     {type = "fluid", name = "hyperlanes-metamaterial-microsuspension", amount = 10},
 }
@@ -40,20 +40,20 @@ table.insert(data.raw["recipe"]["planetaris-polished-sapphire"].ingredients, {ty
 
 -- Polisher
 data.raw["recipe"]["planetaris-polisher"].ingredients = {
-    {type = "item", name = "tungsten-plate", amount = 25},
-    {type = "item", name = "processing-unit", amount = 25},
+    {type = "item", name = "tungsten-plate", amount = 25, quality_min = "rare"},
+    {type = "item", name = "processing-unit", amount = 25, quality_min = "rare"},
     {type = "item", name = "planetaris-raw-quartz", amount = 50},
     {type = "item", name = "hyperlanes-sealant", amount = 5},
-    {type = "item", name = "centrifuge", amount = 1},
+    {type = "item", name = "centrifuge", amount = 1, quality_min = "uncommon"},
 }
 
 
 -- Geode mining drill
 data.raw["recipe"]["hyarion-geode-mining-drill"].ingredients = {
-    {type = "item", name = "tungsten-plate", amount = 10},
-    {type = "item", name = "processing-unit", amount = 5},
+    {type = "item", name = "tungsten-plate", amount = 10, quality_min = "rare"},
+    {type = "item", name = "processing-unit", amount = 5, quality_min = "rare"},
     {type = "item", name = "planetaris-polished-quartz", amount = 10},
-    {type = "item", name = "big-mining-drill", amount = 1},
+    {type = "item", name = "big-mining-drill", amount = 1, quality_min = "uncommon"},
 }
 
 
@@ -62,14 +62,14 @@ data.raw["recipe"]["planetaris-fiber-optics-cable"].ingredients = {
     {type = "item", name = "planetaris-heavy-glass", amount = 2},
     {type = "item", name = "planetaris-polished-diamond", amount = 1},
     {type = "item", name = "planetaris-polished-sapphire", amount = 1},
-    {type = "item", name = "muluna-data-cable", amount = 2},
+    {type = "item", name = "muluna-data-cable", amount = 2, quality_min = "rare"},
 }
 
 
 -- Silica
 data.raw["recipe"]["planetaris-silica"].ingredients = {
-    {type = "item", name = "calcite", amount = 1},
-    {type = "item", name = "silicon", amount = 1},
+    {type = "item", name = "calcite", amount = 1, quality_min = "rare"},
+    {type = "item", name = "silicon", amount = 1, quality_min = "rare"},
     {type = "item", name = "planetaris-raw-quartz", amount = 5},
     {type = "fluid", name = "sulfuric-acid", amount = 1},
 }
@@ -77,8 +77,8 @@ data.raw["recipe"]["planetaris-silica"].ingredients = {
 
 -- Crystallization motor
 data.raw["recipe"]["planetaris-crystalization-motor"].ingredients = {
-    {type = "item", name = "electric-engine-unit", amount = 1},
-    {type = "item", name = "processing-unit", amount = 3},
+    {type = "item", name = "electric-engine-unit", amount = 1, quality_min = "rare"},
+    {type = "item", name = "processing-unit", amount = 3, quality_min = "rare"},
     {type = "item", name = "planetaris-polished-emerald", amount = 5},
     {type = "item", name = "planetaris-polished-quartz", amount = 5},
     {type = "item", name = "planetaris-heavy-glass", amount = 1},
@@ -94,7 +94,7 @@ data.raw["recipe"]["planetaris-crystalization-motor"].surface_conditions = {
 
 -- Simulating unit
 data.raw["recipe"]["planetaris-simulating-unit"].ingredients = {
-    {type = "item", name = "processing-unit", amount = 1},
+    {type = "item", name = "processing-unit", amount = 1, quality_min = "rare"},
     {type = "item", name = "planetaris-silica", amount = 5},
     {type = "item", name = "planetaris-fiber-optics-cable", amount = 2},
     {type = "item", name = "supercapacitor", amount = 1},
@@ -110,6 +110,13 @@ data.raw["recipe"]["planetaris-simulating-unit"].surface_conditions = {
 
 
 -- Assembling machine 4
+data.raw["recipe"]["planetaris-assembling-machine-4"].ingredients = {
+    {type = "item", name = "assembling-machine-3", amount = 2, quality_min = "uncommon"},
+    {type = "item", name = "planetaris-simulating-unit", amount = 5},
+    {type = "item", name = "speed-module-3", amount = 2, quality_min = "rare"},
+    {type = "item", name = "steel-plate", amount = 50, quality_min = "rare"},
+    {type = "item", name = "planetaris-heavy-glass", amount = 5},
+}
 data.raw["recipe"]["planetaris-assembling-machine-4"].surface_conditions = {
     {
         property = "planetaris-crystalization-resistance",
@@ -132,15 +139,15 @@ data.raw["recipe"]["planetaris-nanoscale-lens"].ingredients = {
 
 
 -- Particle manipulator
-table.insert(data.raw["recipe"]["planetaris-particle-manipulator"].ingredients, {type = "item", name = "electromagnetic-plant", amount = 1})
+table.insert(data.raw["recipe"]["planetaris-particle-manipulator"].ingredients, {type = "item", name = "electromagnetic-plant", amount = 1, quality_min = "uncommon"})
 
 
 -- Refraction ray collectors
 data.raw["recipe"]["planetaris-refraction-ray-collector"].ingredients = {
-    {type = "item", name = "aluminum-plate", amount = 5},
+    {type = "item", name = "aluminum-plate", amount = 5, quality_min = "uncommon"},
     {type = "item", name = "copper-cable", amount = 10},
     {type = "item", name = "planetaris-raw-quartz", amount = 5},
-    {type = "item", name = "lightning-collector", amount = 1},
+    {type = "item", name = "lightning-collector", amount = 1, quality_min = "uncommon"},
 }
 
 data.raw["recipe"]["planetaris-big-refraction-ray-collector"].ingredients = {
@@ -160,7 +167,7 @@ data.raw["technology"]["planetaris-space-facilities-1"].essential = false
 data.raw["recipe"]["planetaris-space-manufacturer"].ingredients = {
     {type = "item", name = "planetaris-assembling-machine-4", amount = 1},
     {type = "item", name = "planetaris-fiber-optics-cable", amount = 30},
-    {type = "item", name = "tungsten-plate", amount = 50},
+    {type = "item", name = "tungsten-plate", amount = 50, quality_min = "rare"},
     {type = "item", name = "planetaris-simulating-unit", amount = 15},
     {type = "item", name = "planetaris-crystalization-motor", amount = 10},
     {type = "item", name = "planetaris-beryllium-plate", amount = 60},
