@@ -124,6 +124,12 @@ data.raw["technology"]["planetslib-rubia-cargo-drops"].unit.count = utils.t5_spc
 -- └─────────╜ └─────────╜ └────╜    └────╜ └─────────╜  └─────────╜ └─────────╜
 
 -- Arig + Muria
+data.raw["technology"]["rubia-long-bulk-inserter"].enabled = false
+data.raw["technology"]["rubia-long-bulk-inserter"].hidden = true
+data.raw["technology"]["rubia-long-stack-inserter"].enabled = false
+data.raw["technology"]["rubia-long-stack-inserter"].hidden = true
+data.raw["technology"]["planetaris-long-stack-inserter"].enabled = false
+data.raw["technology"]["planetaris-long-stack-inserter"].hidden = true
 -- refer to data-final-fixes
 
 -- Arig + Rubia
