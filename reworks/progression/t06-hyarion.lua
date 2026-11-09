@@ -198,6 +198,37 @@ data.raw["recipe"]["planetaris-hyper-splitter"].results = {
 }
 
 
+-- Carbon nanotube
+data.raw["recipe"]["planetaris-carbon-nanotube"].ingredients = {
+    {type = "item", name = "carbon", amount = 20},
+    {type = "item", name = "carbon-fiber", amount = 10},
+    {type = "item", name = "planetaris-polished-quartz", amount = 5},
+    {type = "fluid", name = "lava", amount = 50},
+    {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1},
+}
+data.raw["recipe"]["planetaris-carbon-nanotube"].results = {
+    {type = "item", name = "planetaris-carbon-nanotube", amount = 1},
+    {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98},
+}
+data.raw["recipe"]["planetaris-carbon-nanotube"].main_product = "planetaris-carbon-nanotube"
+
+
+-- Advanced carbon nanotube
+data.raw["recipe"]["planetaris-advanced-carbon-nanotube"].ingredients = {
+    {type = "item", name = "carbon", amount = 10},
+    {type = "item", name = "carbon-fiber", amount = 20},
+    {type = "item", name = "planetaris-polished-diamond", amount = 3},
+    {type = "fluid", name = "molten-copper", amount = 50},
+    {type = "fluid", name = "molten-iron", amount = 50},
+    {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1},
+}
+data.raw["recipe"]["planetaris-advanced-carbon-nanotube"].results = {
+    {type = "item", name = "planetaris-carbon-nanotube", amount = 3},
+    {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98},
+}
+data.raw["recipe"]["planetaris-advanced-carbon-nanotube"].main_product = "planetaris-carbon-nanotube"
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
