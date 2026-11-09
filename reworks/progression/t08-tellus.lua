@@ -189,6 +189,12 @@ data.raw["recipe"]["planetaris-logistic-robowasp"].ingredients = {
 data.raw["recipe"]["planetaris-logistic-robowasp"].categories = {"organic"}
 
 
+-- Belt stack size productivity
+data.raw["technology"]["tellus-transport-belt-capacity-3"].max_level = "infinite"
+data.raw["technology"]["tellus-transport-belt-capacity-3"].upgrade = true
+
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

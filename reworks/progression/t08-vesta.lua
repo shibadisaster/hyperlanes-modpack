@@ -320,7 +320,17 @@ data.raw["technology"]["s2_plasma_pipes"].unit.count = utils.t8_spcost_bigtech
 --      Transport belt capacity: unify this and make it repeatable, with 5x scaling
 data.raw["technology"]["tellus-transport-belt-capacity-3"].prerequisites = {
     "planetaris-pathological-science-pack",
-    "s1_gas_manipulation_science_pack"
+    "s1_gas_manipulation_science_pack",
+    "transport-belt-capacity-2"
 }
 data.raw["technology"]["tellus-transport-belt-capacity-3"].unit.ingredients = utils.t8_sp_tellus_vesta
-data.raw["technology"]["tellus-transport-belt-capacity-3"].unit.count = utils.t8_spcost_bigtech
+data.raw["technology"]["tellus-transport-belt-capacity-3"].unit.count_formula = "5^(L-3)*" .. utils.t8_spcost_tech
+data.raw["technology"]["tellus-transport-belt-capacity-3"].unit.count = nil
+
+table.insert(
+    data.raw["technology"]["tellus-transport-belt-capacity-3"].effects,
+    {
+        type = "bulk-inserter-capacity-bonus",
+        modifier = 1
+    }
+)
