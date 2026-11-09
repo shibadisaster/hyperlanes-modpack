@@ -21,6 +21,12 @@ table.insert(
     }
 )
 
+data.raw["recipe"]["quality-module"].ingredients = {
+    {type = "item", name = "advanced-circuit", amount = 5},
+    {type = "item", name = "processing-unit", amount = 5},
+    {type = "item", name = "superconductor", amount = 1},
+}
+
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║

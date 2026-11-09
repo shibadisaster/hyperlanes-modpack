@@ -47,6 +47,11 @@ data.raw["technology"]["rigor-module"].prerequisites = {
     "interstellar-science-pack",
     "modules"
 }
+data.raw["recipe"]["rigor-module"].ingredients = {
+    {type = "item", name = "advanced-circuit", amount = 5},
+    {type = "item", name = "processing-unit", amount = 5},
+    {type = "item", name = "uranium-235", amount = 1},
+}
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗

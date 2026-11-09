@@ -6,6 +6,15 @@ data.raw["technology"]["planetslib-rubia-cargo-drops"].essential = true
 data.raw["technology"]["craptonite-processing"].essential = true
 
 
+-- Quality module 2
+data.raw["recipe"]["quality-module-2"].ingredients = {
+    {type = "item", name = "quality-module", amount = 4},
+    {type = "item", name = "advanced-circuit", amount = 5},
+    {type = "item", name = "processing-unit", amount = 5},
+    {type = "item", name = "planetaris-heavy-glass", amount = 2},
+}
+
+
 -- Let's kill the stupid techs that kill people
 data.raw["technology"]["rubia-craptonite-cannister"].enabled = false
 data.raw["technology"]["rubia-craptonite-cannister"].hidden = true

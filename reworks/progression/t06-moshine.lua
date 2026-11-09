@@ -213,6 +213,33 @@ data.raw["technology"]["moshine-tech-ai-tier-8"].essential = true
 data.raw["technology"]["moshine-tech-ai-tier-10"].essential = true
 
 
+-- Rigor module 3
+data.raw["recipe"]["rigor-module-3"].ingredients = {
+    {type = "item", name = "rigor-module-2", amount = 4},
+    {type = "item", name = "processing-unit", amount = 5},
+    {type = "item", name = "planetaris-simulating-unit", amount = 5},
+    {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1},
+}
+data.raw["recipe"]["rigor-module-3"].results = {
+    {type = "item", name = "rigor-module-3", amount = 1},
+    {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.5},
+}
+data.raw["recipe"]["rigor-module-3"].main_product = "rigor-module-3"
+
+
+-- Quality module 3
+data.raw["recipe"]["quality-module-3"].ingredients = {
+    {type = "item", name = "quality-module-2", amount = 4},
+    {type = "item", name = "processing-unit", amount = 5},
+    {type = "item", name = "planetaris-simulating-unit", amount = 5},
+    {type = "item", name = "ai-tier-6", amount = 1},
+}
+data.raw["recipe"]["quality-module-3"].results = {
+    {type = "item", name = "quality-module-3", amount = 1},
+}
+data.raw["recipe"]["quality-module-3"].main_product = "quality-module-3"
+
+
 
 
 
@@ -293,3 +320,32 @@ data.raw["technology"]["moshine-tech-data-processor-building"].unit.count = util
 
 -- Hyper belts
 -- refer to data-final-fixes
+
+data.raw["technology"]["rigor-module-3"].prerequisites = {
+    "planetaris-refraction-science-pack",
+    "moshine-tech-ai-tier-8",
+    "rigor-module-2"
+}
+data.raw["technology"]["rigor-module-3"].unit.ingredients = utils.t7_sp
+data.raw["technology"]["rigor-module-3"].unit.count = utils.t6_spcost_bigtech
+
+
+-- Move quality 3 here
+data.raw["technology"]["quality-module-3"].prerequisites = {
+    "planetaris-refraction-science-pack",
+    "moshine-tech-ai-tier-8",
+    "quality-module-2"
+}
+data.raw["technology"]["quality-module-3"].unit.ingredients = utils.t6_sp_hyarion_refraction
+data.raw["technology"]["quality-module-3"].unit.count = utils.t6_spcost_bigtech
+table.insert(
+    data.raw["technology"]["quality-module-3"].effects,
+    {
+        type = "unlock-quality",
+        quality = "epic"
+    }
+)
+
+-- Kill epic quality tech
+data.raw["technology"]["epic-quality"].enabled = false
+data.raw["technology"]["epic-quality"].hidden = true

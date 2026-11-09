@@ -80,6 +80,15 @@ data.raw["recipe"]["planetaris-advanced-sand-sifting"].surface_conditions = {
 }
 
 
+-- Rigor module 2
+data.raw["recipe"]["rigor-module-2"].ingredients = {
+    {type = "item", name = "rigor-module", amount = 4},
+    {type = "item", name = "advanced-circuit", amount = 5},
+    {type = "item", name = "processing-unit", amount = 5},
+    {type = "item", name = "plutonium-238", amount = 2},
+}
+
+
 
 data.raw["technology"]["condensing-agricultural-tower"].essential = false
 data.raw["technology"]["planetaris-arig-rocket-part"].essential = false
@@ -132,3 +141,10 @@ data.raw["technology"]["planetaris-supported-solar-panel"].unit.count = utils.t5
 
 data.raw["technology"]["planetaris-raw-quartz-productivity"].unit.ingredients = utils.t5_sp_arig
 data.raw["technology"]["planetaris-raw-quartz-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t5_spcost_tech
+
+data.raw["technology"]["rigor-module-2"].prerequisites = {
+    "rigor-module",
+    "planetaris-compression-science"
+}
+data.raw["technology"]["rigor-module-2"].unit.ingredients = utils.t5_sp_arig
+data.raw["technology"]["rigor-module-2"].unit.count = utils.t5_spcost_bigtech
