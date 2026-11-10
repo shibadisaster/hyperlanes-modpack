@@ -29,3 +29,9 @@ data.raw["technology"]["planetaris-hyper-transport-belt"].prerequisites = {
 }
 data.raw["technology"]["planetaris-hyper-transport-belt"].unit.ingredients = utils.t7_sp
 data.raw["technology"]["planetaris-hyper-transport-belt"].unit.count = utils.t6_spcost_bigtech
+
+
+-- Data science
+for index, science_name in ipairs(utils.data_analysis_sciences) do
+    table.insert(data.raw["lab"]["neural_computer"].inputs, "hyperlanes-datacell-" .. science_name)
+end

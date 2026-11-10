@@ -188,7 +188,7 @@ data.raw["recipe"]["webbed_processor_tile"].ingredients = {
 -- equation.data
 data.raw["recipe"]["datacell-equation"].ingredients = {
     {type = "item", name = "datacell-empty", amount = 1},
-    {type = "fluid", name = "muluna-astronomical-data", amount = 120},
+    {type = "fluid", name = "muluna-astronomical-data", amount = 30},
 }
 
 

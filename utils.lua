@@ -249,6 +249,33 @@ table.insert(utils.t6_sp_hyarion, {"planetaris-polishing-science-pack", 1})
 utils.t6_sp_hyarion_refraction = table.deepcopy(utils.t6_sp_hyarion)
 table.insert(utils.t6_sp_hyarion_refraction, {"planetaris-refraction-science-pack", 1})
 
+utils.data_analysis_sciences = {
+    "automation",
+    "logistic",
+    "military",
+    "chemical",
+    "space",
+    "production",
+    "utility",
+    "electromagnetic",
+    "agricultural",
+    "metallurgic",
+    "cerysian",
+    "interstellar",
+    "planetaris-compression",
+    "acidworking",
+    "biorecycling",
+    "planetaris-polishing",
+    "planetaris-refraction",
+    "cryogenic",
+    "hydraulic",
+    "galvanization",
+    "planetaris-bioengineering",
+    "planetaris-pathological",
+    "gas-manipulation",
+    "promethium",
+}
+
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └─┐  ╓─╜ └┐  ╓───┐ ║ └┐  ╓───┐  ║      │  ╓───┐  ║ └──────┐  ║
