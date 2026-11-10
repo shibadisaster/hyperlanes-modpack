@@ -90,6 +90,8 @@ data.raw["recipe"]["maraxsis-sonar"].ingredients = {
 }
 data.raw["radar"]["maraxsis-sonar"].max_distance_of_nearby_sector_revealed = 16
 data.raw["radar"]["maraxsis-sonar"].max_distance_of_sector_revealed = 64
+data.raw["radar"]["maraxsis-sonar"].energy_per_nearby_scan = "6300kJ" -- consumes 900 kW, so we have this scan every 7 seconds (to roughly match up with the sound of the sonar :3)
+data.raw["radar"]["maraxsis-sonar"].energy_per_sector = "1575kJ"
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
