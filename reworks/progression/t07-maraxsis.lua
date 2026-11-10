@@ -183,6 +183,14 @@ data.raw["recipe"]["maraxsis-oversized-steam-turbine"].ingredients = {
 }
 
 
+-- Salt filter
+data.raw["recipe"]["maraxsis-salt-filter"].ingredients = {
+    {type = "item", name = "steel-plate", amount = 2, quality_min = "epic"},
+    {type = "item", name = "carbon-fiber", amount = 2, quality_min = "epic"},
+    {type = "item", name = "hyperlanes-sealant", amount = 1}
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

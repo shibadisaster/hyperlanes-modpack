@@ -65,6 +65,16 @@ data.raw["recipe"]["aqua-regia"].ingredients = {
 -- }
 
 
+-- Scrubber
+data.raw["recipe"]["scrubber"].ingredients = {
+    {type = "item", name = "iron-gear-wheel", amount = 15, quality_min = "uncommon"},
+    {type = "item", name = "carbon-fiber", amount = 10, quality_min = "uncommon"},
+    {type = "item", name = "lead-plate", amount = 10},
+    {type = "item", name = "anti-corrosion-cladding", amount = 10},
+    {type = "item", name = "pipe", amount = 5},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
