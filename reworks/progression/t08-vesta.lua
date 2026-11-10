@@ -234,6 +234,33 @@ data.raw["recipe"]["ske_supermagnetic"].results = {
 }
 
 
+-- Fusion thruster
+data.raw["recipe"]["ske_fusion_thruster"].ingredients = {
+    {type = "item", name = "thruster", amount = 1, quality_min = "epic"},
+    {type = "item", name = "vesta-heater", amount = 1, quality_min = "rare"},
+    {type = "item", name = "refined-concrete", amount = 500, quality_min = "legendary"},
+    {type = "item", name = "steel-plate", amount = 500, quality_min = "legendary"},
+    {type = "item", name = "quantum-processor", amount = 50},
+    {type = "item", name = "iridium-plate", amount = 10},
+    {type = "item", name = "hyperlanes-supercooled-magnet", amount = 10},
+    {type = "fluid", name = "ske_supermagnetic", amount = 100},
+}
+
+
+-- DT fuel
+data.raw["recipe"]["ske_dt_fuel"].ingredients = {
+    {type = "item", name = "fusion-power-cell", amount = 1, quality_min = "rare"},
+    {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1},
+    {type = "fluid", name = "tritium", amount = 25},
+    {type = "fluid", name = "deuterium", amount = 15},
+}
+data.raw["recipe"]["ske_dt_fuel"].results = {
+    {type = "fluid", name = "ske_dt_fuel", amount = 40},
+    {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98},
+}
+data.raw["recipe"]["ske_dt_fuel"].main_product = "ske_dt_fuel"
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

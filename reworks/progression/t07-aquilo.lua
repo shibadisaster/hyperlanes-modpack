@@ -83,6 +83,15 @@ data.raw["recipe"]["fusion-reactor"].ingredients = {
 
 -- Big rocket silo
 data.raw["recipe"]["muluna-big-rocket-silo"].categories = {"advanced-crafting", "space-manufacturing"}
+data.raw["recipe"]["muluna-big-rocket-silo"].ingredients = {
+    {type = "item", name = "rocket-silo", amount = 1, quality_min = "rare"},
+    {type = "item", name = "steel-plate", amount = 3000, quality_min = "epic"},
+    {type = "item", name = "refined-concrete", amount = 2000, quality_min = "epic"},
+    {type = "item", name = "foundation", amount = 100},
+    {type = "item", name = "pipe", amount = 300, quality_min = "epic"},
+    {type = "item", name = "quantum-processor", amount = 300},
+    {type = "item", name = "planetaris-crystalization-motor", amount = 100},
+}
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗

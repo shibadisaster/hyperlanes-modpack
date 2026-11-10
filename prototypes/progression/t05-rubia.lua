@@ -9,7 +9,7 @@ local metamicrosuspension_recipe = {
         {type = "item", name = "rubia-bacteria-A", amount = 3},
         {type = "item", name = "rubia-bacteria-B", amount = 3},
         {type = "item", name = "craptonite-frame", amount = 10},
-        {type = "item", name = "muluna-microcellular-plastic", amount = 10},
+        {type = "item", name = "muluna-microcellular-plastic", amount = 10, quality_min = "rare"},
     },
     energy_required = 30.0,
     results = {
