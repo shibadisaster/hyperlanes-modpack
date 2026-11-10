@@ -8,7 +8,7 @@ local elcatalyst_recipe = {
     enabled = false,
     ingredients =
     {
-        {type = "item", name = "alumina-crushed", amount = 20},
+        {type = "item", name = "alumina-crushed", amount = 20, quality_min = "uncommon"},
         {type = "item", name = "uranium-235", amount = 5},
         {type = "item", name = "plutonium-238", amount = 1},
         {type = "fluid", name = "ammonia", amount = 10},
@@ -53,7 +53,7 @@ local ammicrosuspension_recipe = {
         {type = "item", name = "tungsten-plate", amount = 10},
         {type = "item", name = "holmium-plate", amount = 10},
         {type = "item", name = "carbon-fiber", amount = 10},
-        {type = "item", name = "silicon", amount = 20},
+        {type = "item", name = "silicon", amount = 20, quality_min = "uncommon"},
         {type = "fluid", name = "water", amount = 100},
     },
     energy_required = 20.0,

@@ -46,7 +46,7 @@ data.raw["recipe"]["maraxsis-super-sealant-substance"].ingredients = {
 -- Pressure dome
 data.raw["recipe"]["maraxsis-pressure-dome"].ingredients = {
     {type = "item", name = "maraxsis-glass-panes", amount = 1000},
-    {type = "item", name = "tungsten-plate", amount = 100},
+    {type = "item", name = "tungsten-plate", amount = 100, quality_min = "epic"},
     {type = "item", name = "pipe", amount = 100},
     {type = "item", name = "pump", amount = 20, quality_min = "epic"},
     {type = "item", name = "hyperlanes-sealant", amount = 20},
@@ -92,6 +92,95 @@ data.raw["radar"]["maraxsis-sonar"].max_distance_of_nearby_sector_revealed = 16
 data.raw["radar"]["maraxsis-sonar"].max_distance_of_sector_revealed = 64
 data.raw["radar"]["maraxsis-sonar"].energy_per_nearby_scan = "6300kJ" -- consumes 900 kW, so we have this scan every 7 seconds (to roughly match up with the sound of the sonar :3)
 data.raw["radar"]["maraxsis-sonar"].energy_per_sector = "1575kJ"
+
+
+-- Ducts
+data.raw["recipe"]["duct-small"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 1, quality_min = "epic"},
+    {type = "item", name = "hyperlanes-sealant", amount = 1},
+}
+data.raw["recipe"]["duct-underground"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 15, quality_min = "epic"},
+    {type = "item", name = "hyperlanes-sealant", amount = 8},
+}
+data.raw["recipe"]["duct-t-junction"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 2, quality_min = "epic"},
+    {type = "item", name = "hyperlanes-sealant", amount = 1},
+}
+data.raw["recipe"]["duct-curve"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 2, quality_min = "epic"},
+    {type = "item", name = "hyperlanes-sealant", amount = 1},
+}
+data.raw["recipe"]["duct-cross"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 2, quality_min = "epic"},
+    {type = "item", name = "hyperlanes-sealant", amount = 1},
+}
+data.raw["recipe"]["non-return-duct"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 2, quality_min = "epic"},
+    {type = "item", name = "iron-gear-wheel", amount = 4, quality_min = "epic"},
+    {type = "item", name = "hyperlanes-sealant", amount = 1},
+}
+data.raw["recipe"]["duct-intake"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 6, quality_min = "epic"},
+    {type = "item", name = "pump", amount = 1, quality_min = "epic"},
+    {type = "item", name = "hyperlanes-sealant", amount = 3},
+}
+data.raw["recipe"]["duct-exhaust"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 6, quality_min = "epic"},
+    {type = "item", name = "pump", amount = 1, quality_min = "epic"},
+    {type = "item", name = "hyperlanes-sealant", amount = 3},
+}
+data.raw["recipe"]["maraxsis-trench-duct"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 100, quality_min = "epic"},
+    {type = "item", name = "pump", amount = 10, quality_min = "epic"},
+    {type = "item", name = "duct-small", amount = 100},
+    {type = "item", name = "hyperlanes-sealant", amount = 50},
+}
+
+
+-- Submarines
+data.raw["recipe"]["maraxsis-diesel-submarine"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 30, quality_min = "epic"},
+    {type = "item", name = "planetaris-simulating-unit", amount = 10},
+    {type = "item", name = "electric-engine-unit", amount = 10},
+    {type = "item", name = "pump", amount = 4, quality_min = "epic"},
+}
+
+data.raw["recipe"]["maraxsis-nuclear-submarine"].ingredients = {
+    {type = "item", name = "maraxsis-diesel-submarine", amount = 1},
+    {type = "item", name = "tungsten-plate", amount = 50, quality_min = "epic"},
+    {type = "item", name = "planetaris-simulating-unit", amount = 20},
+    {type = "item", name = "maraxsis-glass-panes", amount = 100},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 100},
+    {type = "item", name = "pump", amount = 8, quality_min = "epic"},
+    {type = "item", name = "nuclear-reactor", amount = 1},
+    {type = "item", name = "maraxsis-sonar", amount = 1},
+}
+
+
+-- Spidertron dock
+data.raw["recipe"]["sp-spidertron-dock"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 16, quality_min = "epic"},
+    {type = "item", name = "stack-inserter", amount = 4},
+}
+
+
+-- Geothermal generator
+data.raw["recipe"]["maraxsis-geothermal-generator"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 50, quality_min = "epic"},
+    {type = "item", name = "maraxsis-glass-panes", amount = 200},
+    {type = "item", name = "planetaris-simulating-unit", amount = 15},
+    {type = "item", name = "maraxsis-trench-duct", amount = 1},
+}
+
+
+-- Bigg steam turbine
+data.raw["recipe"]["maraxsis-oversized-steam-turbine"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 100, quality_min = "epic"},
+    {type = "item", name = "maraxsis-glass-panes", amount = 100},
+    {type = "item", name = "planetaris-simulating-unit", amount = 25},
+    {type = "item", name = "steam-turbine", amount = 3, quality_min = "rare"},
+}
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗

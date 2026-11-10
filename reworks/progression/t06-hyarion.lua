@@ -144,7 +144,7 @@ table.insert(data.raw["recipe"]["planetaris-particle-manipulator"].ingredients, 
 
 -- Refraction ray collectors
 data.raw["recipe"]["planetaris-refraction-ray-collector"].ingredients = {
-    {type = "item", name = "aluminum-plate", amount = 5, quality_min = "uncommon"},
+    {type = "item", name = "aluminum-plate", amount = 5, quality_min = "rare"},
     {type = "item", name = "copper-cable", amount = 10},
     {type = "item", name = "planetaris-raw-quartz", amount = 5},
     {type = "item", name = "lightning-collector", amount = 1, quality_min = "uncommon"},
@@ -152,8 +152,8 @@ data.raw["recipe"]["planetaris-refraction-ray-collector"].ingredients = {
 
 data.raw["recipe"]["planetaris-big-refraction-ray-collector"].ingredients = {
     {type = "item", name = "planetaris-heavy-glass", amount = 2},
-    {type = "item", name = "tungsten-plate", amount = 10},
-    {type = "item", name = "processing-unit", amount = 5},
+    {type = "item", name = "tungsten-plate", amount = 10, quality_min = "rare"},
+    {type = "item", name = "processing-unit", amount = 5, quality_min = "rare"},
     {type = "item", name = "planetaris-crystalization-motor", amount = 1},
     {type = "item", name = "planetaris-refraction-ray-collector", amount = 1},
 }
@@ -234,6 +234,25 @@ data.raw["recipe"]["planetaris-advanced-carbon-nanotube"].results = {
     {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98},
 }
 data.raw["recipe"]["planetaris-advanced-carbon-nanotube"].main_product = "planetaris-carbon-nanotube"
+
+
+-- EM radar
+data.raw["recipe"]["planetaris-electromagnetic-radar"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 35, quality_min = "rare"},
+    {type = "item", name = "planetaris-simulating-unit", amount = 20},
+    {type = "item", name = "planetaris-refractory-ceramics", amount = 10},
+    {type = "item", name = "planetaris-bismuth-transistor", amount = 10},
+    {type = "item", name = "radar", amount = 1},
+}
+
+
+-- Ruby laser
+data.raw["recipe"]["planetaris-ruby-laser-turret"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 20, quality_min = "rare"},
+    {type = "item", name = "advanced-circuit", amount = 5},
+    {type = "item", name = "planetaris-ruby-laser", amount = 2},
+    {type = "item", name = "laser-turret", amount = 5},
+}
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗

@@ -131,7 +131,7 @@ data.raw["recipe"]["ske_ammonia_chilled_plate"].ingredients = {
     {type = "item", name = "lead-plate", amount = 1, quality_min = "legendary"},
     {type = "item", name = "tungsten-plate", amount = 1, quality_min = "legendary"},
     {type = "item", name = "aluminum-plate", amount = 1, quality_min = "legendary"},
-    {type = "item", name = "steel-plate", amount = 1},
+    {type = "item", name = "steel-plate", amount = 1, quality_min = "legendary"},
     {type = "fluid", name = "ammonia", amount = 50},
 }
 

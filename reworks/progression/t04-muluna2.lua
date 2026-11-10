@@ -63,11 +63,29 @@ table.insert(
 
 
 -- Crusher 2
+data.raw["recipe"]["crusher-2"].ingredients = {
+    {type = "item", name = "aluminum-plate", amount = 10, quality_min = "uncommon"},
+    {type = "item", name = "uranium-238", amount = 2},
+    {type = "item", name = "tungsten-plate", amount = 10},
+    {type = "item", name = "crusher", amount = 1},
+    {type = "item", name = "speed-module-3", amount = 1},
+}
 table.insert(data.raw["recipe"]["crusher-2"].categories, "space-manufacturing")
 
 
 -- LDSPF
 table.insert(data.raw["recipe"]["low-density-space-platform-foundation"].categories, "space-manufacturing")
+
+
+-- Cycling steam turbine
+data.raw["recipe"]["muluna-cycling-steam-turbine"].ingredients = {
+    {type = "item", name = "aluminum-plate", amount = 10},
+    {type = "item", name = "tungsten-plate", amount = 10},
+    {type = "item", name = "superconductor", amount = 10},
+    {type = "item", name = "pipe", amount = 20},
+    {type = "item", name = "steam-turbine", amount = 1},
+    {type = "item", name = "quality-module", amount = 1},
+}
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗

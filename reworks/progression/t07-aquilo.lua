@@ -94,6 +94,46 @@ data.raw["recipe"]["muluna-big-rocket-silo"].ingredients = {
 }
 
 
+-- Railgun
+data.raw["recipe"]["railgun"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 10, quality_min = "epic"},
+    {type = "item", name = "superconductor", amount = 10, quality_min = "epic"},
+    {type = "item", name = "quantum-processor", amount = 20},
+    {type = "fluid", name = "fluoroketone-cold", amount = 10},
+}
+
+
+-- Railgun turret
+data.raw["recipe"]["railgun-turret"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 30, quality_min = "epic"},
+    {type = "item", name = "superconductor", amount = 50, quality_min = "epic"},
+    {type = "item", name = "carbon-fiber", amount = 20, quality_min = "epic"},
+    {type = "item", name = "quantum-processor", amount = 100},
+    {type = "fluid", name = "fluoroketone-cold", amount = 100},
+    {type = "item", name = "rubia-sniper-turret", amount = 1},
+}
+
+
+-- Fusion reactor equipment
+data.raw["recipe"]["fusion-reactor-equipment"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 250, quality_min = "epic"},
+    {type = "item", name = "supercapacitor", amount = 25, quality_min = "epic"},
+    {type = "item", name = "carbon-fiber", amount = 100, quality_min = "epic"},
+    {type = "item", name = "quantum-processor", amount = 250},
+    {type = "item", name = "fusion-power-cell", amount = 10},
+    {type = "item", name = "fission-reactor-equipment", amount = 1},
+}
+
+data.raw["recipe"]["fusion-reactor-equipment-from-mixed-oxide"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 250, quality_min = "epic"},
+    {type = "item", name = "supercapacitor", amount = 25, quality_min = "epic"},
+    {type = "item", name = "carbon-fiber", amount = 100, quality_min = "epic"},
+    {type = "item", name = "quantum-processor", amount = 250},
+    {type = "item", name = "fusion-power-cell", amount = 10},
+    {type = "item", name = "mixed-oxide-reactor-equipment", amount = 1},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

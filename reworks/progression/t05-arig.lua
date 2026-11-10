@@ -41,7 +41,7 @@ data.raw["recipe"]["condensing-agricultural-tower"].surface_conditions = {
 -- Heavy glass
 data.raw["recipe"]["planetaris-heavy-glass"].ingredients = {
     {type = "item", name = "planetaris-glass-panel", amount = 2},
-    {type = "item", name = "tungsten-plate", amount = 4},
+    {type = "item", name = "tungsten-plate", amount = 4, quality_min = "uncommon"},
     {type = "item", name = "silicon-carbide", amount = 2},
     {type = "item", name = "hyperlanes-sealant", amount = 4},
 }
