@@ -75,6 +75,14 @@ data.raw["recipe"]["scrubber"].ingredients = {
 }
 
 
+-- Hydrogen chloride
+data.raw["recipe"]["hydrogen-chloride"].ingredients = {
+    {type = "item", name = "copper-plate", amount = 1, quality_min = "uncommon"},
+    {type = "fluid", name = "chlorine", amount = 50},
+    {type = "fluid", name = "hydrogen", amount = 50},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

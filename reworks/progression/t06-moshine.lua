@@ -297,6 +297,30 @@ data.raw["recipe"]["space-train-battery-charging-station"].ingredients = {
 }
 
 
+-- Sun heat cooler
+data.raw["recipe"]["sun_heat_cooler_1"].ingredients = {
+    {type = "item", name = "ice", amount = 20, quality_min = "rare"},
+    {type = "item", name = "offshore-pump", amount = 1},
+}
+data.raw["recipe"]["sun_heat_cooler_2"].ingredients = {
+    {type = "item", name = "silicon-carbide", amount = 10, quality_min = "epic"},
+    {type = "item", name = "electric-engine-unit", amount = 5, quality_min = "epic"},
+    {type = "item", name = "energy-shield-equipment", amount = 1},
+    {type = "fluid", name = "fluoroketone-cold", amount = 10},
+    {type = "item", name = "sun_heat_cooler_1", amount = 1},
+}
+
+
+-- AI trainer
+data.raw["recipe"]["ai-trainer"].ingredients = {
+    {type = "item", name = "concrete", amount = 100, quality_min = "rare"},
+    {type = "item", name = "glass", amount = 100},
+    {type = "item", name = "processing-unit", amount = 50, quality_min = "rare"},
+    {type = "item", name = "model-stable", amount = 10},
+    {type = "item", name = "data-processor", amount = 1},
+    {type = "item", name = "model-unstable", amount = 1},
+}
+
 
 
 

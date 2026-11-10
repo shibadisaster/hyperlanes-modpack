@@ -154,6 +154,22 @@ table.insert(
     }
 )
 
+-- Zinc solder
+data.raw["recipe"]["zinc-solder"].ingredients = {
+    {type = "item", name = "copper-cable", amount = 4, quality_min = "legendary"},
+    {type = "item", name = "zinc-plate", amount = 4},
+}
+
+
+-- Electric coil
+data.raw["recipe"]["electric-coil"].ingredients = {
+    {type = "item", name = "iron-gear-wheel", amount = 5, quality_min = "legendary"},
+    {type = "item", name = "copper-cable", amount = 10, quality_min = "legendary"},
+    {type = "item", name = "zinc-rivets", amount = 5},
+    {type = "item", name = "zinc-solder", amount = 2},
+    {type = "fluid", name = "nitric-acid", amount = 20},
+}
+
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║

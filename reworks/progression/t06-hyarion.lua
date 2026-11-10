@@ -255,6 +255,15 @@ data.raw["recipe"]["planetaris-ruby-laser-turret"].ingredients = {
 }
 
 
+-- Bismuth transistor
+data.raw["recipe"]["planetaris-bismuth-transistor"].ingredients = {
+    {type = "item", name = "plastic-bar", amount = 5, quality_min = "rare"},
+    {type = "item", name = "copper-cable", amount = 20, quality_min = "rare"},
+    {type = "item", name = "planetaris-polished-bismuth", amount = 2},
+    {type = "fluid", name = "sulfuric-acid", amount = 50},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
