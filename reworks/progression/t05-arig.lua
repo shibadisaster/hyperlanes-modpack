@@ -92,7 +92,7 @@ data.raw["recipe"]["rigor-module-2"].ingredients = {
 -- Big chest
 table.insert(
     data.raw["recipe"]["planetaris-big-chest"].ingredients,
-    {type = "item", name = "steel-chest", amount = 4}
+    {type = "item", name = "steel-chest", amount = 4, quality_min = "uncommon"}
 )
 
 

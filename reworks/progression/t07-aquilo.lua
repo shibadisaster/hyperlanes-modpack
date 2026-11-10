@@ -134,6 +134,17 @@ data.raw["recipe"]["fusion-reactor-equipment-from-mixed-oxide"].ingredients = {
 }
 
 
+-- Railgun ammo
+data.raw["recipe"]["railgun-ammo"].ingredients = {
+    {type = "item", name = "steel-plate", amount = 5, quality_min = "uncommon"},
+    {type = "item", name = "copper-cable", amount = 10},
+    {type = "item", name = "explosives", amount = 2, quality_min = "uncommon"},
+}
+data.raw["recipe"]["railgun-ammo"].results = {
+    {type = "item", name = "railgun-ammo", amount = 1, quality_change = -1},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

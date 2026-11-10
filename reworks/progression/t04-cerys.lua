@@ -38,6 +38,16 @@ data.raw["recipe"]["cerys-radioactive-module-charged"].ingredients = {
 }
 
 
+-- Radiative heater (post-Aquilo)
+data.raw["recipe"]["cerys-radiative-heater"].ingredients = {
+    {type = "item", name = "plutonium-238", amount = 4, quality_min = "uncommon"},
+    {type = "item", name = "steel-plate", amount = 20, quality_min = "epic"},
+    {type = "item", name = "quantum-processor", amount = 10},
+    {type = "item", name = "refined-concrete", amount = 20, quality_min = "epic"},
+    {type = "item", name = "muluna-vacuum-heating-tower", amount = 1},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

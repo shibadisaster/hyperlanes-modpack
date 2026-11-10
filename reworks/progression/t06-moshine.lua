@@ -79,6 +79,7 @@ data.raw["recipe"]["datacell-empty"].ingredients = {
     {type = "item", name = "magnet", amount = 1},
     {type = "item", name = "silicon-cell", amount = 1},
     {type = "item", name = "glass", amount = 1},
+    {type = "item", name = "muluna-basic-hard-drive", amount = 1},
     {type = "item", name = "processing-unit", amount = 1, quality_min = "rare"}
 }
 

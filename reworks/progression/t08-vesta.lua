@@ -261,6 +261,19 @@ data.raw["recipe"]["ske_dt_fuel"].results = {
 data.raw["recipe"]["ske_dt_fuel"].main_product = "ske_dt_fuel"
 
 
+-- Fusion missile
+data.raw["recipe"]["fusion-missile"].ingredients = {
+    {type = "item", name = "steel-plate", amount = 5, quality_min = "uncommon"},
+    {type = "item", name = "copper-cable", amount = 10},
+    {type = "fluid", name = "fusion-plasma", amount = 5},
+}
+data.raw["recipe"]["fusion-missile"].results = {
+    {type = "item", name = "fusion-missile", amount = 5, quality_change = -1},
+    {type = "fluid", name = "fluoroketone-hot", amount = 5, ignored_by_productivity = 5},
+}
+
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
