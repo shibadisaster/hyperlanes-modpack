@@ -244,9 +244,9 @@ data.raw["recipe"]["quality-module-3"].main_product = "quality-module-3"
 -- Big solar panel
 data.raw["recipe"]["big-solar-panel"].ingredients = {
     {type = "item", name = "supercapacitor", amount = 30},
-    {type = "item", name = "silicon-cell", amount = 10},
+    {type = "item", name = "silicon-cell", amount = 10, quality_min = "rare"},
     {type = "item", name = "glass", amount = 5},
-    {type = "item", name = "refined-concrete", amount = 200},
+    {type = "item", name = "refined-concrete", amount = 200, quality_min = "rare"},
     {type = "item", name = "planetaris-advanced-solar-panel", amount = 8},
 }
 
@@ -254,9 +254,9 @@ data.raw["recipe"]["big-solar-panel"].ingredients = {
 -- Big accumulator
 data.raw["recipe"]["big-accumulator"].ingredients = {
     {type = "item", name = "supercapacitor", amount = 60},
-    {type = "item", name = "copper-cable", amount = 60},
+    {type = "item", name = "copper-cable", amount = 60, quality_min = "rare"},
     {type = "item", name = "magnet", amount = 10},
-    {type = "item", name = "refined-concrete", amount = 80},
+    {type = "item", name = "refined-concrete", amount = 80, quality_min = "rare"},
     {type = "item", name = "accumulator", amount = 12},
 }
 

@@ -6,8 +6,8 @@ data.raw["recipe"]["pressure-turbine"].ingredients = {
     {type = "item", name = "muluna-cycling-steam-turbine", amount = 1},
     {type = "item", name = "pumpjack", amount = 1, quality_min = "legendary"},
     {type = "item", name = "planetaris-crystalization-motor", amount = 5},
-    {type = "item", name = "aluminum-plate", amount = 50},
-    {type = "item", name = "lithium-plate", amount = 20},
+    {type = "item", name = "aluminum-plate", amount = 50, quality_min = "legendary"},
+    {type = "item", name = "lithium-plate", amount = 20, quality_min = "uncommon"},
 }
 data.raw["recipe"]["pressure-turbine"].surface_conditions = {
     {
@@ -125,7 +125,7 @@ table.insert(
 
 -- Super accumulator
 data.raw["recipe"]["accumulator-v2"].ingredients = {
-    {type = "item", name = "supercapacitor", amount = 60},
+    {type = "item", name = "supercapacitor", amount = 60, quality_min = "legendary"},
     {type = "item", name = "zinc-solder", amount = 5},
     {type = "item", name = "electric-coil", amount = 5},
     {type = "item", name = "galvanized-steel-plate", amount = 10},
