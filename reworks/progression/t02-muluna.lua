@@ -27,6 +27,44 @@ table.insert(data.raw["recipe"]["crusher"].categories, "space-manufacturing")
 table.insert(data.raw["recipe"]["asteroid-collector"].categories, "space-manufacturing")
 
 
+-- Dyes
+data.raw["recipe"]["planetaris-red-dye"].ingredients = {
+    {type = "item", name = "copper-ore", amount = 1}, -- copper is green actually but sure
+    {type = "item", name = "alumina-crushed", amount = 5},
+    {type = "fluid", name = "sulfuric-acid", amount = 20},
+}
+
+data.raw["recipe"]["planetaris-blue-dye"].ingredients = {
+    {type = "item", name = "iron-ore", amount = 1}, -- iron is red actually but sure
+    {type = "item", name = "alumina-crushed", amount = 5},
+    {type = "fluid", name = "sulfuric-acid", amount = 20},
+}
+
+data.raw["recipe"]["planetaris-green-dye"].ingredients = {
+    {type = "item", name = "muluna-sapling", amount = 1}, -- what
+    {type = "item", name = "alumina-crushed", amount = 5},
+    {type = "fluid", name = "sulfuric-acid", amount = 20},
+}
+
+data.raw["recipe"]["planetaris-yellow-dye"].ingredients = {
+    {type = "item", name = "sulfur", amount = 1},
+    {type = "item", name = "planetaris-red-dye", amount = 5},
+    {type = "item", name = "planetaris-green-dye", amount = 5},
+}
+
+data.raw["recipe"]["planetaris-cyan-dye"].ingredients = {
+    {type = "item", name = "oxide-asteroid-chunk", amount = 1},
+    {type = "item", name = "planetaris-blue-dye", amount = 5},
+    {type = "item", name = "planetaris-green-dye", amount = 5},
+}
+
+data.raw["recipe"]["planetaris-magenta-dye"].ingredients = {
+    {type = "fluid", name = "muluna-roboport-propellant", amount = 20},
+    {type = "item", name = "planetaris-blue-dye", amount = 5},
+    {type = "item", name = "planetaris-red-dye", amount = 5},
+}
+
+
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
@@ -67,3 +105,11 @@ data.raw["technology"]["muluna-rocket-buggy"].unit.count = utils.t2_spcost_tech
 
 data.raw["technology"]["muluna-silicon-processing"].unit.ingredients = utils.t2_sp_muluna_prod
 data.raw["technology"]["muluna-silicon-processing"].unit.count = utils.t2_spcost_smalltech
+
+data.raw["technology"]["planetaris-primary-dyes"].prerequisites = {"space-science-pack"}
+data.raw["technology"]["planetaris-primary-dyes"].unit.ingredients = utils.t2_sp_muluna
+data.raw["technology"]["planetaris-primary-dyes"].unit.count = utils.t2_spcost_tech
+
+data.raw["technology"]["planetaris-secondary-dyes"].prerequisites = {"planetaris-primary-dyes"}
+data.raw["technology"]["planetaris-secondary-dyes"].unit.ingredients = utils.t2_sp_muluna
+data.raw["technology"]["planetaris-secondary-dyes"].unit.count = utils.t2_spcost_tech

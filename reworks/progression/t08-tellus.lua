@@ -223,11 +223,11 @@ data.raw["technology"]["planetaris-pathogens"].unit.ingredients = utils.t8_sp_te
 data.raw["technology"]["planetaris-pathogens"].unit.count = utils.t8_spcost_smalltech
 
 -- Let's retier these maybe?
-data.raw["technology"]["planetaris-primary-dyes"].unit.ingredients = utils.t8_sp_tellus
-data.raw["technology"]["planetaris-primary-dyes"].unit.count = utils.t8_spcost_tech
+-- data.raw["technology"]["planetaris-primary-dyes"].unit.ingredients = utils.t8_sp_tellus
+-- data.raw["technology"]["planetaris-primary-dyes"].unit.count = utils.t8_spcost_tech
 
-data.raw["technology"]["planetaris-secondary-dyes"].unit.ingredients = utils.t8_sp_tellus_pathological
-data.raw["technology"]["planetaris-secondary-dyes"].unit.count = utils.t8_spcost_tech
+-- data.raw["technology"]["planetaris-secondary-dyes"].unit.ingredients = utils.t8_sp_tellus_pathological
+-- data.raw["technology"]["planetaris-secondary-dyes"].unit.count = utils.t8_spcost_tech
 
 -- Transport belts unified to combo tech with Vesta
 
