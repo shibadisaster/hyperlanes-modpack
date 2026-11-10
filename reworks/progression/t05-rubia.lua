@@ -52,6 +52,16 @@ data.raw["technology"]["rubia-craptonite-sunglasses"].hidden = true
 -- TODO: get rid of the HELL TECHNOLOGY that uses "69 unknown items" that we toss into the wind
 
 
+
+-- Long stack inserter
+data.raw["recipe"]["long-stack-inserter"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 4, quality_min = "uncommon"},
+    {type = "item", name = "carbon-fiber", amount = 5, quality_min = "uncommon"},
+    {type = "item", name = "processing-unit", amount = 2},
+    {type = "item", name = "long-handed-inserter", amount = 1},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
@@ -130,6 +140,13 @@ data.raw["technology"]["rubia-long-stack-inserter"].enabled = false
 data.raw["technology"]["rubia-long-stack-inserter"].hidden = true
 data.raw["technology"]["planetaris-long-stack-inserter"].enabled = false
 data.raw["technology"]["planetaris-long-stack-inserter"].hidden = true
+
+data.raw["recipe"]["planetaris-long-stack-inserter"].enabled = false
+data.raw["recipe"]["planetaris-long-stack-inserter"].hidden = true
+data.raw["recipe"]["rubia-long-stack-inserter"].enabled = false
+data.raw["recipe"]["rubia-long-stack-inserter"].hidden = true
+data.raw["recipe"]["rubia-long-bulk-inserter"].enabled = false
+data.raw["recipe"]["rubia-long-bulk-inserter"].hidden = true
 -- refer to data-final-fixes
 
 -- Arig + Rubia
