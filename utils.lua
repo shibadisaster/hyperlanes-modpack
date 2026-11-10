@@ -9,6 +9,93 @@ utils.placeholder_sp = {
 }
 
 
+-- Science order
+utils.science_order = {
+    ["automation-science-pack"] = "t01-a",
+    ["logistic-science-pack"] = "t01-b",
+    ["military-science-pack"] = "t01-c",
+    ["chemical-science-pack"] = "t01-d",
+    ["production-science-pack"] = "t02-b",
+    ["utility-science-pack"] = "t02-c",
+    ["space-science-pack"] = "t02-a",
+    ["metallurgic-science-pack"] = "t03-a",
+    ["agricultural-science-pack"] = "t03-b",
+    ["electromagnetic-science-pack"] = "t03-c",
+    ["cerysian-science-pack"] = "t04-a",
+    ["interstellar-science-pack"] = "t04-b",
+    ["planetaris-compression-science-pack"] = "t05-a",
+    ["biorecycling-science-pack"] = "t05-b",
+    ["rubia-biofusion-science-pack"] = "t05-c",
+    ["acidworking-science-pack"] = "t05-d",
+    ["planetaris-polishing-science-pack"] = "t06-a",
+    ["planetaris-refraction-science-pack"] = "t06-b",
+    ["cryogenic-science-pack"] = "t07-a",
+    ["hydraulic-science-pack"] = "t07-b",
+    ["gas-manipulation-science-pack"] = "t08-a",
+    ["planetaris-bioengineering-science-pack"] = "t08-b",
+    ["planetaris-pathological-science-pack"] = "t08-c",
+    ["galvanization-science-pack"] = "t08-d",
+    ["promethium-science-pack"] = "t09-a"
+}
+
+utils.progression_sciences = {
+    "automation-science-pack",
+    "logistic-science-pack",
+    "military-science-pack",
+    "chemical-science-pack",
+    "production-science-pack",
+    "utility-science-pack",
+    "space-science-pack",
+    "metallurgic-science-pack",
+    "agricultural-science-pack",
+    "electromagnetic-science-pack",
+    "interstellar-science-pack",
+    "planetaris-compression-science-pack",
+    "biorecycling-science-pack",
+    "acidworking-science-pack",
+    "planetaris-polishing-science-pack",
+    "planetaris-refraction-science-pack",
+    "cryogenic-science-pack",
+    "hydraulic-science-pack",
+    "gas-manipulation-science-pack",
+    "planetaris-bioengineering-science-pack",
+    "planetaris-pathological-science-pack",
+    "galvanization-science-pack",
+    "promethium-science-pack"
+}
+
+utils.all_sciences = {
+    "automation-science-pack",
+    "logistic-science-pack",
+    "military-science-pack",
+    "chemical-science-pack",
+    "production-science-pack",
+    "utility-science-pack",
+    "space-science-pack",
+    "metallurgic-science-pack",
+    "agricultural-science-pack",
+    "electromagnetic-science-pack",
+    "cerysian-science-pack",
+    "interstellar-science-pack",
+    "planetaris-compression-science-pack",
+    "biorecycling-science-pack",
+    "rubia-biofusion-science-pack",
+    "acidworking-science-pack",
+    "planetaris-polishing-science-pack",
+    "planetaris-refraction-science-pack",
+    "cryogenic-science-pack",
+    "hydraulic-science-pack",
+    "gas-manipulation-science-pack",
+    "planetaris-bioengineering-science-pack",
+    "planetaris-pathological-science-pack",
+    "galvanization-science-pack",
+    "promethium-science-pack"
+}
+
+
+
+
+
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗  ╒══╗ 
 -- │ ╓─┐  ╓─┐ ║ └─┐  ╓─╜ └┐  ╓───┐ ║ └┐  ╓───┐  ║      │  ╓───┐  ║ ╒╛  ║ 
 -- └─╜ │  ║ └─╜   │  ║    │  ║   └─╜  │  ║   │  ║      │  ║   │  ║ └┐  ║ 

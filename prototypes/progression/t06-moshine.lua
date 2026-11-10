@@ -126,7 +126,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         type = "fluid",
         name = "hyperlanes-" .. science_name .. "-data",
         subgroup = "data-fluid",
-        -- order = "d[cosmic-data]",
+        order = utils.science_order[science_name .. "-science-pack"],
         default_temperature = 15,
         gas_temperature = 0,
         base_color = {255, 63, 63},
@@ -156,7 +156,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         name = "hyperlanes-datacell-" .. science_name,
         icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
         subgroup = "moshine-datacells",
-        order = "b",
+        order = utils.science_order[science_name .. "-science-pack"],
         inventory_move_sound = item_sounds.module_inventory_move,
         pick_sound = item_sounds.module_inventory_pickup,
         drop_sound = item_sounds.module_inventory_move,
@@ -175,7 +175,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
         categories = {"data-processing"},
         subgroup = "moshine-datacells",
-        order = "a[moshine]-cb",
+        order = utils.science_order[science_name .. "-science-pack"],
         hide_from_player_crafting = true,
         energy_required = 1.0,
         ingredients = {
@@ -194,7 +194,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data-remove.png",
         categories = {"data-processing"},
         subgroup = "moshine-datacells",
-        order = "a[moshine]-cc",
+        order = utils.science_order[science_name .. "-science-pack"],
         hide_from_player_crafting = true,
         hide_from_stats = true,
         energy_required = 1.0,
@@ -227,7 +227,15 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
             {
                 type = "unlock-recipe",
                 recipe = "hyperlanes-datacell-remove-" .. science_name
-            }
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "hyperlanes-datacell-" .. science_name .. "-analyzed"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "hyperlanes-datacell-remove-" .. science_name .. "-analyzed"
+            },
         },
         research_trigger = {
             type = "craft-item",
@@ -235,7 +243,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
             count = 200
         },
         prerequisites = {"hyperlanes-data-analysis"},
-        order = "c-a",
+        order = utils.science_order[science_name .. "-science-pack"],
         essential = false
     }
     
@@ -255,7 +263,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
             time = 100000
         },
         prerequisites = {"hyperlanes-" .. science_name .. "-data-unlock"},
-        order = "c-a",
+        order = utils.science_order[science_name .. "-science-pack"],
         essential = false
     }
     local analyzing_plant = {
@@ -363,7 +371,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         type = "fluid",
         name = "hyperlanes-" .. science_name .. "-data-analyzed",
         subgroup = "data-fluid",
-        -- order = "d[cosmic-data]",
+        order = utils.science_order[science_name .. "-science-pack"],
         default_temperature = 15,
         gas_temperature = 0,
         base_color = {255, 63, 63},
@@ -377,7 +385,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         name = "hyperlanes-datacell-" .. science_name .. "-analyzed",
         icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
         subgroup = "moshine-datacells",
-        order = "b",
+        order = utils.science_order[science_name .. "-science-pack"],
         inventory_move_sound = item_sounds.module_inventory_move,
         pick_sound = item_sounds.module_inventory_pickup,
         drop_sound = item_sounds.module_inventory_move,
@@ -395,7 +403,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
         categories = {"data-processing"},
         subgroup = "moshine-datacells",
-        order = "a[moshine]-cb",
+        order = utils.science_order[science_name .. "-science-pack"],
         hide_from_player_crafting = true,
         energy_required = 1.0,
         ingredients = {
@@ -414,7 +422,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data-remove.png",
         categories = {"data-processing"},
         subgroup = "moshine-datacells",
-        order = "a[moshine]-cc",
+        order = utils.science_order[science_name .. "-science-pack"],
         hide_from_player_crafting = true,
         hide_from_stats = true,
         energy_required = 1.0,
@@ -751,7 +759,7 @@ local science_prod_bonuses = {
         "interstellar-science-pack",
         "planetaris-compression-science-pack",
         "biorecycling-science-pack",
-        "acidworking-science-pack",
+        "inert-acidworking-science-pack",
         "planetaris-polishing-science-pack",
         "planetaris-refraction-science-pack",
         "cryogenic-science-pack",
@@ -780,13 +788,3 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         end
     end
 end
-
-
-table.insert(
-    data.raw["technology"]["hyperlanes-military-data-infinite"].effects,
-    {
-        type = "change-recipe-productivity",
-        recipe = recipe_name,
-        change = science_prod_bonuses[science_name][1]
-    }
-)
