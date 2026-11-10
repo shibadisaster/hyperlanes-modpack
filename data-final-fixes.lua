@@ -33,5 +33,5 @@ data.raw["technology"]["planetaris-hyper-transport-belt"].unit.count = utils.t6_
 
 -- Data science
 for index, science_name in ipairs(utils.data_analysis_sciences) do
-    table.insert(data.raw["lab"]["neural_computer"].inputs, "hyperlanes-datacell-" .. science_name)
+    table.insert(data.raw["lab"]["neural_computer"].inputs, "hyperlanes-datacell-" .. science_name .. "-analyzed")
 end

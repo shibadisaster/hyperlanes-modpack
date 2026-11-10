@@ -265,6 +265,7 @@ utils.data_analysis_sciences = {
     "planetaris-compression",
     "acidworking",
     "biorecycling",
+    "rubia-biofusion",
     "planetaris-polishing",
     "planetaris-refraction",
     "cryogenic",
