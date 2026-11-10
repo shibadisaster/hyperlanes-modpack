@@ -13,6 +13,18 @@ data.raw["recipe"]["foundry"].ingredients = {
 }
 
 
+-- Quality condenser
+data.raw["recipe"]["quality-condenser-forked"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 200},
+    {type = "item", name = "carbon-fiber", amount = 200},
+    {type = "item", name = "superconductor", amount = 200},
+    {type = "item", name = "steel-plate", amount = 100, quality_min = "uncommon"},
+    {type = "item", name = "copper-cable", amount = 100, quality_min = "uncommon"},
+    {type = "item", name = "aluminum-plate", amount = 100, quality_min = "uncommon"},
+    {type = "item", name = "centrifuge", amount = 1, quality_min = "uncommon"},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
@@ -75,6 +87,13 @@ data.raw["technology"]["quality-module"].prerequisites = {
 data.raw["technology"]["quality-module"].unit.ingredients = utils.t3_sp_fulgora_gleba
 data.raw["technology"]["quality-module"].unit.count = utils.t3_spcost_bigtech
 table.remove(data.raw["technology"]["quality-module"].effects, 3) -- Remove Rare quality unlock
+
+--  Quality condenser
+data.raw["technology"]["quality-condenser-forked"].prerequisites = {
+    "quality-module"
+}
+data.raw["technology"]["quality-condenser-forked"].unit.ingredients = utils.t3_sp_fulgora_gleba
+data.raw["technology"]["quality-condenser-forked"].unit.count = utils.t3_spcost_bigtech
 
 -- Gleba + Vulcanus
 data.raw["technology"]["asteroid-reprocessing"].prerequisites = {
