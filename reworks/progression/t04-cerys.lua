@@ -29,6 +29,15 @@ table.remove(data.raw["technology"]["cerys-mixed-oxide-reactors"].effects, 2)
 table.remove(data.raw["technology"]["cerys-fulgoran-cryogenics"].effects, 6)
 
 
+-- Radioactive module
+data.raw["recipe"]["cerys-radioactive-module-charged"].ingredients = {
+    {type = "item", name = "uranium-235", amount = 4},
+    {type = "item", name = "superconductor", amount = 4, quality_min = "uncommon"},
+    {type = "item", name = "productivity-module-2", amount = 8},
+    {type = "fluid", name = "nitric-acid", amount = 25},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

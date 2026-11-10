@@ -17,7 +17,7 @@ table.insert(telesc_tech.prerequisites, "muluna-nanofoamed-polymers")
 -- Low density space platform foundation
 data.raw["recipe"]["low-density-space-platform-foundation"].ingredients = {
     {type = "item", name = "low-density-structure", amount = 1},
-    {type = "item", name = "aluminum-plate", amount = 5},
+    {type = "item", name = "aluminum-plate", amount = 5, quality_min = "uncommon"},
     {type = "item", name = "steel-plate", amount = 5, quality_min = "uncommon"},
     {type = "item", name = "muluna-microcellular-plastic", amount = 5},
     {type = "item", name = "space-platform-foundation", amount = 1},
@@ -79,12 +79,23 @@ table.insert(data.raw["recipe"]["low-density-space-platform-foundation"].categor
 
 -- Cycling steam turbine
 data.raw["recipe"]["muluna-cycling-steam-turbine"].ingredients = {
-    {type = "item", name = "aluminum-plate", amount = 10},
+    {type = "item", name = "aluminum-plate", amount = 10, quality_min = "uncommon"},
     {type = "item", name = "tungsten-plate", amount = 10},
     {type = "item", name = "superconductor", amount = 10},
     {type = "item", name = "pipe", amount = 20},
     {type = "item", name = "steam-turbine", amount = 1},
     {type = "item", name = "quality-module", amount = 1},
+}
+
+
+-- Satellite radar
+data.raw["recipe"]["muluna-satellite-radar"].ingredients = {
+    {type = "item", name = "processing-unit", amount = 500},
+    {type = "item", name = "aluminum-plate", amount = 500, quality_min = "uncommon"},
+    {type = "item", name = "superconductor", amount = 500},
+    {type = "item", name = "silicon-cell", amount = 100},
+    {type = "item", name = "muluna-telescope", amount = 50},
+    {type = "item", name = "radar", amount = 250},
 }
 
 

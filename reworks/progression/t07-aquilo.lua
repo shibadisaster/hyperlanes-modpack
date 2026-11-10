@@ -58,7 +58,7 @@ data.raw["recipe"]["ice-platform"].ingredients = {
 -- Quantum processor
 data.raw["recipe"]["quantum-processor"].ingredients = {
     {type = "item", name = "hyperlanes-loaded-simulating-unit", amount = 1},
-    {type = "item", name = "superconductor", amount = 4},
+    {type = "item", name = "superconductor", amount = 4, quality_min = "epic"},
     {type = "item", name = "planetaris-carbon-nanotube", amount = 4},
     {type = "item", name = "lithium-plate", amount = 2, quality_min = "uncommon"},
     {type = "item", name = "glass", amount = 2},

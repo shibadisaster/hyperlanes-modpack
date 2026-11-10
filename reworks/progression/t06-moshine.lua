@@ -3,7 +3,7 @@ local utils = require("__hyperlanes-modpack__/utils")
 
 -- Sand unification
 data.raw["recipe"]["concrete-from-molten-iron-and-sand"].ingredients = {
-    {type = "fluid", name = "planetaris-sand", amount = 60},
+    {type = "item", name = "planetaris-sand-barrel", amount = 1},
     {type = "fluid", name = "molten-iron", amount = 20},
     {type = "fluid", name = "water", amount = 100},
 }
@@ -178,7 +178,7 @@ data.raw["recipe"]["opticalfiber-storage-tank"].categories = {
 -- Webbed processor
 data.raw["recipe"]["webbed_processor_tile"].ingredients = {
     {type = "item", name = "low-density-space-platform-foundation", amount = 1},
-    {type = "item", name = "processing-unit", amount = 1},
+    {type = "item", name = "processing-unit", amount = 1, quality_min = "rare"},
     {type = "item", name = "optical-cable", amount = 1},
     {type = "item", name = "model-stable", amount = 1},
 }
@@ -258,6 +258,41 @@ data.raw["recipe"]["big-accumulator"].ingredients = {
     {type = "item", name = "magnet", amount = 10},
     {type = "item", name = "refined-concrete", amount = 80},
     {type = "item", name = "accumulator", amount = 12},
+}
+
+
+-- Space locomotive
+data.raw["recipe"]["space-locomotive"].ingredients = {
+    {type = "item", name = "steel-plate", amount = 20, quality_min = "rare"},
+    {type = "item", name = "processing-unit", amount = 20, quality_min = "rare"},
+    {type = "item", name = "superconductor", amount = 10},
+    {type = "item", name = "supercapacitor", amount = 5},
+    {type = "item", name = "magnet", amount = 5},
+    {type = "item", name = "locomotive", amount = 1},
+}
+
+data.raw["recipe"]["space-cargo-wagon"].ingredients = {
+    {type = "item", name = "steel-plate", amount = 20, quality_min = "rare"},
+    {type = "item", name = "processing-unit", amount = 10, quality_min = "rare"},
+    {type = "item", name = "superconductor", amount = 10},
+    {type = "item", name = "magnet", amount = 5},
+    {type = "item", name = "cargo-wagon", amount = 1},
+}
+
+data.raw["recipe"]["space-fluid-wagon"].ingredients = {
+    {type = "item", name = "steel-plate", amount = 20, quality_min = "rare"},
+    {type = "item", name = "processing-unit", amount = 10, quality_min = "rare"},
+    {type = "item", name = "superconductor", amount = 10},
+    {type = "item", name = "magnet", amount = 5},
+    {type = "item", name = "fluid-wagon", amount = 1},
+}
+
+data.raw["recipe"]["space-train-battery-charging-station"].ingredients = {
+    {type = "item", name = "steel-plate", amount = 20, quality_min = "rare"},
+    {type = "item", name = "processing-unit", amount = 10, quality_min = "rare"},
+    {type = "item", name = "holmium-plate", amount = 2},
+    {type = "item", name = "superconductor", amount = 5},
+    {type = "item", name = "battery", amount = 10, quality_min = "rare"},
 }
 
 
