@@ -114,7 +114,7 @@ for index, category_name in ipairs(utils.launch_categories) do
             table.insert(upgrade_data, {
                 handler = "hyperlanes-rubia-launching-" .. category_name .. "-bonus",
                 technology_name = "hyperlanes-launching-" .. category_name .. "-1",
-                modifier_icon = {icon="__space-age__/graphics/icons/biochamber.png"},
+                modifier_icon = {icon=utils.launch_effect_icons[category_name]},
                 entity_names = utils.launch_building_associations[category_name],
                 module_effects = {
                     speed = 0.10,
@@ -133,3 +133,37 @@ if data and data.raw and data.raw.module and table_size(data.raw.module) > 0 the
     local mupgrades = require("__machine-upgrades__.lib.technology-maker")
     mupgrades.handle_modifier_data(upgrade_data)
 end
+
+
+-- Personal launching effects
+table.insert(
+    data.raw["technology"]["hyperlanes-launching-personal-1"].effects,
+    {
+        type = "character-mining-speed",
+        modifier = 0.2
+    }
+)
+
+table.insert(
+    data.raw["technology"]["hyperlanes-launching-personal-1"].effects,
+    {
+        type = "character-running-speed",
+        modifier = 0.2
+    }
+)
+
+table.insert(
+    data.raw["technology"]["hyperlanes-launching-personal-1"].effects,
+    {
+        type = "character-crafting-speed",
+        modifier = 0.2
+    }
+)
+
+table.insert(
+    data.raw["technology"]["hyperlanes-launching-personal-1"].effects,
+    {
+        type = "character-inventory-slots-bonus",
+        modifier = 10
+    }
+)

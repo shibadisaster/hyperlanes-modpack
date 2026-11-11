@@ -420,6 +420,21 @@ utils.launch_building_associations = {
     },
     ["personal"] = {}
 }
+utils.launch_effect_icons = {
+    ["assembling"] = "__base__/graphics/icons/assembling-machine-3.png",
+    ["mining"] = "__space-age__/graphics/icons/big-mining-drill.png",
+    ["extraction"] = "__base__/graphics/icons/pumpjack.png",
+    ["crushing"] = "__space-age__/graphics/icons/crusher.png",
+    ["smelting"] = "__base__/graphics/icons/electric-furnace.png",
+    ["research"] = "__base__/graphics/icons/lab.png",
+    ["recycling"] = "__recycler__/graphics/icons/recycler.png",
+    ["materials"] = "__planetaris-arig__/graphics/icons/press.png",
+    ["chemistry"] = "__base__/graphics/icons/chemical-plant.png",
+    ["magnetics"] = "__space-age__/graphics/icons/electromagnetic-plant.png",
+    ["cultivation"] = "__space-age__/graphics/icons/biochamber.png",
+    ["radioactivity"] = "__base__/graphics/icons/centrifuge.png",
+    ["personal"] = "__space-age__/graphics/icons/mech-armor.png"
+}
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
