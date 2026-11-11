@@ -172,7 +172,7 @@ data.raw["recipe"]["electric-coil"].ingredients = {
 
 
 -- Casting galvanized steel
-data.raw["recipe"]["casting-galvanized-steel"].ingredients = {
+data.raw["recipe"]["casting-galvanized-steel-plate"].ingredients = {
     {type = "item", name = "carbon", amount = 3, quality_min = "legendary"},
     {type = "item", name = "zinc", amount = 3},
     {type = "fluid", name = "molten-iron", amount = 150},

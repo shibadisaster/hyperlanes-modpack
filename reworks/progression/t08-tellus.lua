@@ -205,7 +205,7 @@ data.raw["assembling-machine"]["planetaris-bioassembler"].effect_receiver = {
 -- Three long handed inserter
 data.raw["recipe"]["planetaris-three-long-handed-inserter"].ingredients = {
     {type = "item", name = "iron-plate", amount = 10, quality_min = "legendary"},
-    {type = "item", name = "planetaris-magnesium-plate", amount = 10},
+    {type = "item", name = "planetaris-magnesium-sheet", amount = 10},
     {type = "item", name = "long-handed-inserter", amount = 1},
 }
 
