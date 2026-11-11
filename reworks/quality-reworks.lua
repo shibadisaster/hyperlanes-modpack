@@ -1,14 +1,19 @@
 data.raw["quality"]["legendary"].next = "mythic"
-data.raw["quality"]["legendary"].next_probability = 0.01
-data.raw["quality"]["legendary"].chain_probability = 0.001
+data.raw["quality"]["legendary"].next_probability = 0.0
+data.raw["quality"]["legendary"].chain_probability = 0.0
 
 data.raw["quality"]["broken"].next = "normal"
 data.raw["quality"]["broken"].next_probability = 10.0 -- 10x as likely to upgrade quality
 data.raw["quality"]["broken"].chain_probability = 0.0
 
 data.raw["quality"]["mythic"].next = "ethereal"
-data.raw["quality"]["mythic"].next_probability = 0.01
-data.raw["quality"]["mythic"].chain_probability = 0.001
+data.raw["quality"]["mythic"].next_probability = 0.0
+data.raw["quality"]["mythic"].chain_probability = 0.0
+
+table.insert(data.raw["technology"]["speed-module"].effects, {
+    type = "unlock-quality",
+    quality = "broken"
+})
 
 
 -- Quality degradation
@@ -153,3 +158,117 @@ data.raw["mining-drill"]["pumpjack"].quality_affects_module_slots = true
 
 data.raw["beacon"]["beacon"].quality_affects_module_slots = true
 data.raw["beacon"]["maraxsis-conduit"].quality_affects_module_slots = true
+
+
+-- Enable negative quality
+data.raw["lab"]["lab"].effect_receiver = data.raw["lab"]["lab"].effect_receiver or {}
+data.raw["lab"]["lab"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["lab"]["biolab"].effect_receiver = data.raw["lab"]["biolab"].effect_receiver or {}
+data.raw["lab"]["biolab"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["lab"]["cerys-lab"].effect_receiver = data.raw["lab"]["cerys-lab"].effect_receiver or {}
+data.raw["lab"]["cerys-lab"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["lab"]["neural_computer"].effect_receiver = data.raw["lab"]["neural_computer"].effect_receiver or {}
+data.raw["lab"]["neural_computer"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["lab"]["cryolab"].effect_receiver = data.raw["lab"]["cryolab"].effect_receiver or {}
+data.raw["lab"]["cryolab"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+
+data.raw["mining-drill"]["electric-mining-drill"].effect_receiver = data.raw["mining-drill"]["electric-mining-drill"].effect_receiver or {}
+data.raw["mining-drill"]["electric-mining-drill"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["mining-drill"]["big-mining-drill"].effect_receiver = data.raw["mining-drill"]["big-mining-drill"].effect_receiver or {}
+data.raw["mining-drill"]["big-mining-drill"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["mining-drill"]["hyarion-geode-mining-drill"].effect_receiver = data.raw["mining-drill"]["hyarion-geode-mining-drill"].effect_receiver or {}
+data.raw["mining-drill"]["hyarion-geode-mining-drill"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+
+data.raw["mining-drill"]["pumpjack"].effect_receiver = data.raw["mining-drill"]["pumpjack"].effect_receiver or {}
+data.raw["mining-drill"]["pumpjack"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["mining-drill"]["pressure-turbine"].effect_receiver = data.raw["mining-drill"]["pressure-turbine"].effect_receiver or {}
+data.raw["mining-drill"]["pressure-turbine"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["oil-refinery"].effect_receiver = data.raw["assembling-machine"]["oil-refinery"].effect_receiver or {}
+data.raw["assembling-machine"]["oil-refinery"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+
+data.raw["assembling-machine"]["assembling-machine-1"].effect_receiver = data.raw["assembling-machine"]["assembling-machine-1"].effect_receiver or {}
+data.raw["assembling-machine"]["assembling-machine-1"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["assembling-machine-2"].effect_receiver = data.raw["assembling-machine"]["assembling-machine-2"].effect_receiver or {}
+data.raw["assembling-machine"]["assembling-machine-2"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["assembling-machine-3"].effect_receiver = data.raw["assembling-machine"]["assembling-machine-3"].effect_receiver or {}
+data.raw["assembling-machine"]["assembling-machine-3"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["planetaris-assembling-machine-4"].effect_receiver = data.raw["assembling-machine"]["planetaris-assembling-machine-4"].effect_receiver or {}
+data.raw["assembling-machine"]["planetaris-assembling-machine-4"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["planetaris-space-manufacturer"].effect_receiver = data.raw["assembling-machine"]["planetaris-space-manufacturer"].effect_receiver or {}
+data.raw["assembling-machine"]["planetaris-space-manufacturer"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["maraxsis-hydro-plant"].effect_receiver = data.raw["assembling-machine"]["maraxsis-hydro-plant"].effect_receiver or {}
+data.raw["assembling-machine"]["maraxsis-hydro-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["mechanical-plant"].effect_receiver = data.raw["assembling-machine"]["mechanical-plant"].effect_receiver or {}
+data.raw["assembling-machine"]["mechanical-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["planetaris-bioassembler"].effect_receiver = data.raw["assembling-machine"]["planetaris-bioassembler"].effect_receiver or {}
+data.raw["assembling-machine"]["planetaris-bioassembler"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+
+data.raw["furnace"]["stone-furnace"].effect_receiver = data.raw["furnace"]["stone-furnace"].effect_receiver or {}
+data.raw["furnace"]["stone-furnace"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["furnace"]["steel-furnace"].effect_receiver = data.raw["furnace"]["steel-furnace"].effect_receiver or {}
+data.raw["furnace"]["steel-furnace"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["furnace"]["electric-furnace"].effect_receiver = data.raw["furnace"]["electric-furnace"].effect_receiver or {}
+data.raw["furnace"]["electric-furnace"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["foundry"].effect_receiver = data.raw["assembling-machine"]["foundry"].effect_receiver or {}
+data.raw["assembling-machine"]["foundry"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["smelting-plant"].effect_receiver = data.raw["assembling-machine"]["smelting-plant"].effect_receiver or {}
+data.raw["assembling-machine"]["smelting-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["vesta-combustion-furnace"].effect_receiver = data.raw["assembling-machine"]["vesta-combustion-furnace"].effect_receiver or {}
+data.raw["assembling-machine"]["vesta-combustion-furnace"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+
+data.raw["assembling-machine"]["muluna-steam-crusher"].effect_receiver = data.raw["assembling-machine"]["muluna-steam-crusher"].effect_receiver or {}
+data.raw["assembling-machine"]["muluna-steam-crusher"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["crusher"].effect_receiver = data.raw["assembling-machine"]["crusher"].effect_receiver or {}
+data.raw["assembling-machine"]["crusher"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["crusher-2"].effect_receiver = data.raw["assembling-machine"]["crusher-2"].effect_receiver or {}
+data.raw["assembling-machine"]["crusher-2"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["furnace"]["panglia_crusher"].effect_receiver = data.raw["furnace"]["panglia_crusher"].effect_receiver or {}
+data.raw["furnace"]["panglia_crusher"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+
+data.raw["furnace"]["recycler"].effect_receiver = data.raw["furnace"]["recycler"].effect_receiver or {}
+data.raw["furnace"]["recycler"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["biorecycling-plant"].effect_receiver = data.raw["assembling-machine"]["biorecycling-plant"].effect_receiver or {}
+data.raw["assembling-machine"]["biorecycling-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+
+data.raw["assembling-machine"]["planetaris-press"].effect_receiver = data.raw["assembling-machine"]["planetaris-press"].effect_receiver or {}
+data.raw["assembling-machine"]["planetaris-press"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["planetaris-sifter"].effect_receiver = data.raw["assembling-machine"]["planetaris-sifter"].effect_receiver or {}
+data.raw["assembling-machine"]["planetaris-sifter"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["planetaris-polisher"].effect_receiver = data.raw["assembling-machine"]["planetaris-polisher"].effect_receiver or {}
+data.raw["assembling-machine"]["planetaris-polisher"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["planetaris-particle-manipulator"].effect_receiver = data.raw["assembling-machine"]["planetaris-particle-manipulator"].effect_receiver or {}
+data.raw["assembling-machine"]["planetaris-particle-manipulator"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["planetaris-refraction-plant"].effect_receiver = data.raw["assembling-machine"]["planetaris-refraction-plant"].effect_receiver or {}
+data.raw["assembling-machine"]["planetaris-refraction-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+
+data.raw["assembling-machine"]["chemical-plant"].effect_receiver = data.raw["assembling-machine"]["chemical-plant"].effect_receiver or {}
+data.raw["assembling-machine"]["chemical-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["acidworking-plant"].effect_receiver = data.raw["assembling-machine"]["acidworking-plant"].effect_receiver or {}
+data.raw["assembling-machine"]["acidworking-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["cryogenic-plant"].effect_receiver = data.raw["assembling-machine"]["cryogenic-plant"].effect_receiver or {}
+data.raw["assembling-machine"]["cryogenic-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["electrochemical-plant"].effect_receiver = data.raw["assembling-machine"]["electrochemical-plant"].effect_receiver or {}
+data.raw["assembling-machine"]["electrochemical-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["vesta-heater"].effect_receiver = data.raw["assembling-machine"]["vesta-heater"].effect_receiver or {}
+data.raw["assembling-machine"]["vesta-heater"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+
+data.raw["assembling-machine"]["electromagnetic-plant"].effect_receiver = data.raw["assembling-machine"]["electromagnetic-plant"].effect_receiver or {}
+data.raw["assembling-machine"]["electromagnetic-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["vesta-electrolyzer"].effect_receiver = data.raw["assembling-machine"]["vesta-electrolyzer"].effect_receiver or {}
+data.raw["assembling-machine"]["vesta-electrolyzer"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["supermagnet"].effect_receiver = data.raw["assembling-machine"]["supermagnet"].effect_receiver or {}
+data.raw["assembling-machine"]["supermagnet"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+
+data.raw["assembling-machine"]["biochamber"].effect_receiver = data.raw["assembling-machine"]["biochamber"].effect_receiver or {}
+data.raw["assembling-machine"]["biochamber"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["biovat"].effect_receiver = data.raw["assembling-machine"]["biovat"].effect_receiver or {}
+data.raw["assembling-machine"]["biovat"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["planetaris-incubator"].effect_receiver = data.raw["assembling-machine"]["planetaris-incubator"].effect_receiver or {}
+data.raw["assembling-machine"]["planetaris-incubator"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+
+data.raw["assembling-machine"]["centrifuge"].effect_receiver = data.raw["assembling-machine"]["centrifuge"].effect_receiver or {}
+data.raw["assembling-machine"]["centrifuge"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["cerys-fulgoran-cryogenic-plant"].effect_receiver = data.raw["assembling-machine"]["cerys-fulgoran-cryogenic-plant"].effect_receiver or {}
+data.raw["assembling-machine"]["cerys-fulgoran-cryogenic-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["cerys-fulgoran-crusher"].effect_receiver = data.raw["assembling-machine"]["cerys-fulgoran-crusher"].effect_receiver or {}
+data.raw["assembling-machine"]["cerys-fulgoran-crusher"].effect_receiver.quality_limits = {low = -1000, high = 1000}
