@@ -56,12 +56,13 @@ data:extend({launching_tech})
 for index, category_name in ipairs(utils.launch_categories) do
     local launch_item_tech = {
         type = "technology",
-        name = "hyperlanes-launching-" .. category_name .. "-1",
+        name = "hyperlanes-launching-" .. category_name,
         icon_size = 256,
         icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
         effects = {},
         research_trigger = {
             type = "craft-item",
+            -- item = {name = "yeet-" .. utils.resources_to_launch[category_name], quality = "broken", comparator = "="},
             item = "yeet-" .. utils.resources_to_launch[category_name],
             count = utils.resource_base_cost[category_name]
         },
@@ -113,7 +114,7 @@ for index, category_name in ipairs(utils.launch_categories) do
         if #utils.launch_building_associations[category_name] > 0 then
             table.insert(upgrade_data, {
                 handler = "hyperlanes-rubia-launching-" .. category_name .. "-bonus",
-                technology_name = "hyperlanes-launching-" .. category_name .. "-1",
+                technology_name = "hyperlanes-launching-" .. category_name,
                 modifier_icon = {icon=utils.launch_effect_icons[category_name]},
                 entity_names = utils.launch_building_associations[category_name],
                 module_effects = {
@@ -137,7 +138,7 @@ end
 
 -- Personal launching effects
 table.insert(
-    data.raw["technology"]["hyperlanes-launching-personal-1"].effects,
+    data.raw["technology"]["hyperlanes-launching-personal"].effects,
     {
         type = "character-mining-speed",
         modifier = 0.2
@@ -145,7 +146,7 @@ table.insert(
 )
 
 table.insert(
-    data.raw["technology"]["hyperlanes-launching-personal-1"].effects,
+    data.raw["technology"]["hyperlanes-launching-personal"].effects,
     {
         type = "character-running-speed",
         modifier = 0.2
@@ -153,7 +154,7 @@ table.insert(
 )
 
 table.insert(
-    data.raw["technology"]["hyperlanes-launching-personal-1"].effects,
+    data.raw["technology"]["hyperlanes-launching-personal"].effects,
     {
         type = "character-crafting-speed",
         modifier = 0.2
@@ -161,7 +162,7 @@ table.insert(
 )
 
 table.insert(
-    data.raw["technology"]["hyperlanes-launching-personal-1"].effects,
+    data.raw["technology"]["hyperlanes-launching-personal"].effects,
     {
         type = "character-inventory-slots-bonus",
         modifier = 10
