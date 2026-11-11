@@ -85,3 +85,18 @@ local level7quality_tech = {
     essential = true
 }
 data:extend({level7quality_tech})
+
+
+local level0quality = {
+    type = "quality",
+    name = "broken",
+    level = 0,
+    color = {116, 58, 36},
+    order = "a",
+    next = "normal",
+    next_probability = 0.0,
+    chain_probability = 0.0,
+    subgroup = "qualities",
+    icon = "__hyperlanes-modpack__/graphics/icons/q0.png",
+}
+data:extend({level0quality})
