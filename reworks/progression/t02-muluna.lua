@@ -33,36 +33,42 @@ data.raw["recipe"]["planetaris-red-dye"].ingredients = {
     {type = "item", name = "alumina-crushed", amount = 5},
     {type = "fluid", name = "sulfuric-acid", amount = 20},
 }
+data.raw["recipe"]["planetaris-red-dye"].categories = {"chemistry"}
 
 data.raw["recipe"]["planetaris-blue-dye"].ingredients = {
     {type = "item", name = "iron-ore", amount = 1}, -- iron is red actually but sure
     {type = "item", name = "alumina-crushed", amount = 5},
     {type = "fluid", name = "sulfuric-acid", amount = 20},
 }
+data.raw["recipe"]["planetaris-blue-dye"].categories = {"chemistry"}
 
 data.raw["recipe"]["planetaris-green-dye"].ingredients = {
     {type = "item", name = "muluna-sapling", amount = 1}, -- what
     {type = "item", name = "alumina-crushed", amount = 5},
     {type = "fluid", name = "sulfuric-acid", amount = 20},
 }
+data.raw["recipe"]["planetaris-green-dye"].categories = {"chemistry"}
 
 data.raw["recipe"]["planetaris-yellow-dye"].ingredients = {
     {type = "item", name = "sulfur", amount = 1},
     {type = "item", name = "planetaris-red-dye", amount = 5},
     {type = "item", name = "planetaris-green-dye", amount = 5},
 }
+data.raw["recipe"]["planetaris-yellow-dye"].categories = {"chemistry"}
 
 data.raw["recipe"]["planetaris-cyan-dye"].ingredients = {
     {type = "item", name = "oxide-asteroid-chunk", amount = 1},
     {type = "item", name = "planetaris-blue-dye", amount = 5},
     {type = "item", name = "planetaris-green-dye", amount = 5},
 }
+data.raw["recipe"]["planetaris-cyan-dye"].categories = {"chemistry"}
 
 data.raw["recipe"]["planetaris-magenta-dye"].ingredients = {
     {type = "fluid", name = "muluna-roboport-propellant", amount = 20},
     {type = "item", name = "planetaris-blue-dye", amount = 5},
     {type = "item", name = "planetaris-red-dye", amount = 5},
 }
+data.raw["recipe"]["planetaris-magenta-dye"].categories = {"chemistry"}
 
 
 

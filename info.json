@@ -27,7 +27,8 @@
         "alien-biomes",
         "Return-Inserter",
         "quality-down-binning",
-        "quality-condenser-forked"
+        "quality-condenser-forked",
+        "machine-upgrades"
     ],
     "description": "Factorio modpack made with the goal of creating a Space Age experience with a focus on long-term progression, mod cohesion, and interplanetary logistics!",
     "license": "MIT"

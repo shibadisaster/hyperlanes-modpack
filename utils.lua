@@ -296,6 +296,42 @@ table.insert(utils.t5_sp_muria_rubia, {"acidworking-science-pack", 1})
 table.insert(utils.t5_sp_muria_rubia, {"biorecycling-science-pack", 1})
 
 
+-- Launching
+utils.launch_categories = {
+    "assembling",
+    "mining",
+    "extraction",
+    "crushing",
+    "smelting",
+    "research",
+    "recycling",
+    "materials",
+    "chemistry",
+    "magnetics",
+    "cultivation",
+    "radioactivity",
+    "data",
+    "personal"
+}
+utils.resources_to_launch = {
+    "iron-ore",
+    "copper-plate",
+    "metallic-asteroid-chunk",
+    "electronic-circuit",
+    "advanced-circuit",
+    "processing-unit"
+}
+utils.resource_base_cost = {
+    ["iron-ore"] = 10000,
+    ["copper-plate"] = 10000,
+    ["metallic-asteroid-chunk"] = 2000,
+    ["electronic-circuit"] = 10000,
+    ["advanced-circuit"] = 5000,
+    ["processing-unit"] = 2500
+}
+utils.level_scaling = 3
+
+
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └─┐  ╓─╜ └┐  ╓───┐ ║ └┐  ╓───┐  ║      │  ╓───┐  ║ │  ╓──────╜
 -- └─╜ │  ║ └─╜   │  ║    │  ║   └─╜  │  ║   │  ║      │  ║   │  ║ │  ║       
