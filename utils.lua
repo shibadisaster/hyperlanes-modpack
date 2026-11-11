@@ -310,26 +310,116 @@ utils.launch_categories = {
     "magnetics",
     "cultivation",
     "radioactivity",
-    "data",
     "personal"
 }
 utils.resources_to_launch = {
-    "iron-ore",
-    "copper-plate",
-    "metallic-asteroid-chunk",
-    "electronic-circuit",
-    "advanced-circuit",
-    "processing-unit"
+    ["assembling"] = "inserter",
+    ["mining"] = "copper-ore",
+    ["extraction"] = "crude-oil-barrel",
+    ["crushing"] = "metallic-asteroid-chunk",
+    ["smelting"] = "stone-brick",
+    ["research"] = "automation-science-pack",
+    ["recycling"] = "scrap",
+    ["materials"] = "carbon",
+    ["chemistry"] = "solid-fuel",
+    ["magnetics"] = "iron-plate",
+    ["cultivation"] = "wood",
+    ["radioactivity"] = "uranium-238",
+    ["personal"] = "raw-fish"
 }
 utils.resource_base_cost = {
-    ["iron-ore"] = 10000,
-    ["copper-plate"] = 10000,
-    ["metallic-asteroid-chunk"] = 2000,
-    ["electronic-circuit"] = 10000,
-    ["advanced-circuit"] = 5000,
-    ["processing-unit"] = 2500
+    ["assembling"] = 10000 * 5,
+    ["mining"] = 70000 * 5,
+    ["extraction"] = 50000 * 5,
+    ["crushing"] = 20000 * 5,
+    ["smelting"] = 30000 * 5,
+    ["research"] = 3000 * 5,
+    ["recycling"] = 30000 * 5,
+    ["materials"] = 20000 * 5,
+    ["chemistry"] = 10000 * 5,
+    ["magnetics"] = 50000 * 5,
+    ["cultivation"] = 5000 * 5,
+    ["radioactivity"] = 5000 * 5,
+    ["personal"] = 2000 * 5
 }
 utils.level_scaling = 3
+utils.launch_building_associations = {
+    ["assembling"] = {
+        "assembling-machine-1",
+        "assembling-machine-2",
+        "assembling-machine-3",
+        "planetaris-assembling-machine-4",
+        "planetaris-space-manufacturer",
+        "maraxsis-hydro-plant",
+        "mechanical-plant",
+        "planetaris-bioassembler"
+    },
+    ["mining"] = {
+        "burner-mining-drill",
+        "electric-mining-drill",
+        "big-mining-drill",
+        "hyarion-geode-mining-drill"
+    },
+    ["extraction"] = {
+        "pumpjack",
+        "pressure-turbine",
+        "oil-refinery"
+    },
+    ["crushing"] = {
+        "muluna-steam-crusher",
+        "crusher",
+        "crusher-2",
+        "panglia_crusher"
+    },
+    ["smelting"] = {
+        "stone-furnace",
+        "steel-furnace",
+        "electric-furnace",
+        "foundry",
+        "smelting-plant",
+        "vesta-combustion-furnace"
+    },
+    ["research"] = {
+        "lab",
+        "biolab",
+        "cerys-lab",
+        "neural_computer",
+    },
+    ["recycling"] = {
+        "recycler",
+        "biorecycling-plant"
+    },
+    ["materials"] = {
+        "planetaris-press",
+        "planetaris-sifter",
+        "planetaris-polisher",
+        "planetaris-particle-manipulator",
+        "planetaris-refraction-plant"
+    },
+    ["chemistry"] = {
+        "chemical-plant",
+        "acidworking-plant",
+        "cryogenic-plant",
+        "electrochemical-plant",
+        "vesta-heater"
+    },
+    ["magnetics"] = {
+        "electromagnetic-plant",
+        "vesta-electrolyzer",
+        "supermagnet"
+    },
+    ["cultivation"] = {
+        "biochamber",
+        "biovat",
+        "planetaris-incubator"
+    },
+    ["radioactivity"] = {
+        "centrifuge",
+        "cerys-fulgoran-cryogenic-plant",
+        "cerys-fulgoran-crusher"
+    },
+    ["personal"] = {}
+}
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗

@@ -243,7 +243,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
             count = 200
         },
         prerequisites = {"hyperlanes-data-analysis"},
-        order = utils.science_order[science_name .. "-science-pack"],
+        order = "zzz-data-analysis-" .. utils.science_order[science_name .. "-science-pack"],
         essential = false
     }
     
@@ -263,7 +263,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
             time = 100000
         },
         prerequisites = {"hyperlanes-" .. science_name .. "-data-unlock"},
-        order = utils.science_order[science_name .. "-science-pack"],
+        order = "zzz-data-analysis-" .. utils.science_order[science_name .. "-science-pack"],
         essential = false
     }
     local analyzing_plant = {
@@ -467,6 +467,13 @@ local science_prod_bonuses = {
         "assembling-machine-2",
         "assembling-machine-3",
         "planetaris-assembling-machine-4",
+        "burner-inserter",
+        "inserter",
+        "fast-inserter",
+        "bulk-inserter",
+        "stack-inserter",
+        "long-handed-inserter",
+        "long-stack-inserter"
     },
     ["logistic"] = {
         0.02,
@@ -649,7 +656,8 @@ local science_prod_bonuses = {
         "hydrogen-chloride-from-biter-egg",
         "hyperlanes-purified-lead",
         "hyperlanes-superacid",
-        "acidworking-plant"
+        "acidworking-plant",
+        "smelting-plant"
     },
     ["biorecycling"] = {
         0.02,

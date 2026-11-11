@@ -57,12 +57,11 @@ data.raw["recipe"]["aqua-regia"].ingredients = {
 
 
 -- Smelting plant base productivity adjustment
--- data.raw["assembling-machine"]["smelting-plant"].effect_receiver = {
---     base_effect = {
---         productivity = 0.5,
---         speed = -0.2
---     }
--- }
+data.raw["assembling-machine"]["smelting-plant"].effect_receiver = {
+    base_effect = {
+        productivity = 0.6
+    }
+}
 
 
 -- Scrubber
