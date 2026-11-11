@@ -171,6 +171,15 @@ data.raw["recipe"]["electric-coil"].ingredients = {
 }
 
 
+-- Casting galvanized steel
+data.raw["recipe"]["casting-galvanized-steel"].ingredients = {
+    {type = "item", name = "carbon", amount = 3, quality_min = "legendary"},
+    {type = "item", name = "zinc", amount = 3},
+    {type = "fluid", name = "molten-iron", amount = 150},
+    {type = "fluid", name = "nitrogen", amount = 20},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

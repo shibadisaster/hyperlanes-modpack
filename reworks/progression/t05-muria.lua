@@ -90,6 +90,15 @@ data.raw["assembling-machine"]["biovat"].effect_receiver = {
 }
 data.raw["assembling-machine"]["biovat"].crafting_speed = 0.75
 
+-- Biovat
+data.raw["recipe"]["biovat"].ingredients = {
+    {type = "item", name = "biochamber", amount = 1},
+    {type = "item", name = "copper-plate", amount = 10, quality_min = "uncommon"},
+    {type = "item", name = "processing-unit", amount = 5},
+    {type = "item", name = "nutrients", amount = 5},
+    {type = "item", name = "eschatotaxite-sprout", amount = 5},
+}
+
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║

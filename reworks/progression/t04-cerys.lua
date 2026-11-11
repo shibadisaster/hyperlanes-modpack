@@ -48,6 +48,13 @@ data.raw["recipe"]["cerys-radiative-heater"].ingredients = {
 }
 
 
+-- Radiation-proof inserter
+data.raw["recipe"]["cerys-radiation-proof-inserter"].ingredients = {
+    {type = "item", name = "uranium-238", amount = 1, quality_min = "uncommon"},
+    {type = "item", name = "inserter", amount = 1},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
