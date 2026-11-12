@@ -276,3 +276,15 @@ local t9_time_crystal_b = {
     spoil_result = "hyperlanes-time-crystal-a"
 }
 data:extend({t9_time_crystal_b})
+
+
+-- Unstable substrate
+local t9_unstable_substrate = {
+    type = "item",
+    name = "hyperlanes-unstable-substrate",
+    icon = "__hyperlanes-modpack__/graphics/icons/antimatter-particulate.png",
+    stack_size = 100,
+    weight = 1 * kg,
+    spoil_ticks = 2 * 60
+}
+data:extend({t9_unstable_substrate})

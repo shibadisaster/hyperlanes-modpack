@@ -753,7 +753,7 @@ local science_prod_bonuses = {
         "vesta-foundation"
     },
     ["promethium"] = {
-        0.02,
+        0.05,
         "automation-science-pack",
         "logistic-science-pack",
         "military-science-pack",

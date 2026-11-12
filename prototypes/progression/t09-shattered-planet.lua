@@ -77,3 +77,52 @@ local ap_restab_recipe = {
     auto_recycle = false
 }
 data:extend({ap_restab_recipe})
+
+
+-- Time crystal
+local time_crystal_recipe = {
+    type = "recipe",
+    name = "hyperlanes-time-crystal-a",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "planetaris-polished-diamond", amount = 4, quality_min = "legendary"},
+        {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1, quality_min = "legendary"},
+        {type = "item", name = "hyperlanes-antimatter-particulate", amount = 20},
+        {type = "fluid", name = "planetaris-pure-light", amount = 20}
+    },
+    energy_required = 10.0,
+    results = {
+        {type = "item", name = "hyperlanes-time-crystal-a", amount = 1, reset_freshness_on_craft = true},
+        {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1, ignored_by_productivity = 1, quality_min = "legendary", independent_probability = 0.98},
+    },
+    main_product = "hyperlanes-time-crystal-a",
+    allow_productivity = true,
+    categories = {"refraction"},
+    auto_recycle = false
+}
+data:extend({time_crystal_recipe})
+
+
+-- Unstable substrate
+local us_recipe = {
+    type = "recipe",
+    name = "hyperlanes-unstable-substrate",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "hyperlanes-time-crystal-b", amount = 1},
+        {type = "item", name = "hyperlanes-antimatter-particulate", amount = 2, spoil_weight = 0.0},
+        {type = "fluid", name = "water", amount = 5},
+    },
+    energy_required = 0.8,
+    results = {
+        {type = "item", name = "hyperlanes-time-crystal-b", amount = 1, ignored_by_productivity = 1},
+        {type = "item", name = "hyperlanes-unstable-substrate", amount = 1, reset_freshness_on_craft = true},
+    },
+    main_product = "hyperlanes-unstable-substrate",
+    allow_productivity = true,
+    categories = {"crafting-with-fluid"},
+    auto_recycle = false
+}
+data:extend({us_recipe})
