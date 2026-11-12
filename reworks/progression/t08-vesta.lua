@@ -106,7 +106,7 @@ data.raw["recipe"]["vesta-electrolyzer"].ingredients = {
 data.raw["recipe"]["vesta-heater"].ingredients = {
     {type = "item", name = "heat-exchanger", amount = 2, quality_min = "epic"},
     {type = "item", name = "storage-tank", amount = 1, quality_min = "legendary"},
-    {type = "item", name = "heat-pipe", amount = 50, quality_min = "uncommon"},
+    {type = "item", name = "heat-pipe", amount = 50, quality_min = "legendary"},
     {type = "item", name = "ske_ammonia_chilled_plate", amount = 20},
     {type = "item", name = "quantum-processor", amount = 20},
     {type = "item", name = "ai-tier-10", amount = 1},

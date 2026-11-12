@@ -135,7 +135,11 @@ data.raw["recipe"]["planetaris-nanoscale-lens"].ingredients = {
 
 
 -- Refraction plant
--- table.insert(data.raw["recipe"]["planetaris-refraction-plant"].ingredients, {type = "item", name = "electromagnetic-plant", amount = 1})
+-- data.raw["recipe"]["planetaris-particle-manipulator"]
+
+
+-- Refraction generator
+
 
 
 -- Particle manipulator

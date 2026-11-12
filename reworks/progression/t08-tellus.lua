@@ -195,10 +195,9 @@ data.raw["technology"]["tellus-transport-belt-capacity-3"].upgrade = true
 
 
 -- Bioassembler base productivity adjustment
-data.raw["assembling-machine"]["planetaris-bioassembler"].effect_receiver = {
-    base_effect = {
-        productivity = 0.4
-    }
+data.raw["assembling-machine"]["planetaris-bioassembler"].effect_receiver = data.raw["assembling-machine"]["planetaris-bioassembler"].effect_receiver or {}
+data.raw["assembling-machine"]["planetaris-bioassembler"].effect_receiver.base_effect = {
+    productivity = 0.4
 }
 
 

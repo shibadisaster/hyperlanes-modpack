@@ -226,3 +226,14 @@ local t7_losimunit = {
     weight = 10 * kg
 }
 data:extend({t7_losimunit})
+
+
+-- Antimatter chunk
+local t9_antimatter_chunk = {
+    type = "item",
+    name = "hyperlanes-antimatter-chunk",
+    icon = "__hyperlanes-modpack__/graphics/icons/antimatter-chunk.png",
+    stack_size = 1,
+    weight = 100 * kg
+}
+data:extend({t9_antimatter_chunk})

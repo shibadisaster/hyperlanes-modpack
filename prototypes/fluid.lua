@@ -122,3 +122,13 @@ local t8_aerated_water = {
     fuel_value = "1MJ"
 }
 data:extend({t8_aerated_water})
+
+
+-- Antimatter
+-- local t9_antimatter = table.deepcopy(data.raw["fluid"]["fusion-plasma"])
+-- t9_antimatter.name = "hyperlanes-antimatter"
+-- t9_antimatter.icon = "__hyperlanes-modpack__/graphics/icons/aerated-water.png"
+-- t9_antimatter.base_color = {0, 0, 0}
+-- t9_antimatter.flow_color = {255, 255, 255}
+-- t9_antimatter.visualization_color = {0, 0, 0}
+-- data:extend({t9_antimatter})

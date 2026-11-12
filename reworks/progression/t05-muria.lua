@@ -57,10 +57,9 @@ data.raw["recipe"]["aqua-regia"].ingredients = {
 
 
 -- Smelting plant base productivity adjustment
-data.raw["assembling-machine"]["smelting-plant"].effect_receiver = {
-    base_effect = {
-        productivity = 0.6
-    }
+data.raw["assembling-machine"]["smelting-plant"].effect_receiver = data.raw["assembling-machine"]["smelting-plant"].effect_receiver or {}
+data.raw["assembling-machine"]["smelting-plant"].effect_receiver.base_effect = {
+    productivity = 0.6
 }
 
 
@@ -83,10 +82,9 @@ data.raw["recipe"]["hydrogen-chloride"].ingredients = {
 
 
 -- Biovat rebalance, they are much slower than Biochambers but have better productivity
-data.raw["assembling-machine"]["biovat"].effect_receiver = {
-    base_effect = {
-        productivity = 0.6
-    }
+data.raw["assembling-machine"]["biovat"].effect_receiver = data.raw["assembling-machine"]["biovat"].effect_receiver or {}
+data.raw["assembling-machine"]["biovat"].effect_receiver.base_effect = {
+    productivity = 0.6
 }
 data.raw["assembling-machine"]["biovat"].crafting_speed = 0.75
 

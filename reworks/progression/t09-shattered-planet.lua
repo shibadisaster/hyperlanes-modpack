@@ -11,10 +11,9 @@ data.raw["lab"]["cryolab"].surface_conditions = {
         max = 0.0
     }
 }
-data.raw["lab"]["cryolab"].effect_receiver = {
-    base_effect = {
-        productivity = 0.25
-    }
+data.raw["lab"]["cryolab"].effect_receiver = data.raw["lab"]["cryolab"].effect_receiver or {}
+data.raw["lab"]["cryolab"].effect_receiver.base_effect = {
+    productivity = 0.25
 }
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
