@@ -126,3 +126,74 @@ local us_recipe = {
     auto_recycle = false
 }
 data:extend({us_recipe})
+
+
+-- Module 5s
+local speed_5_recipe = {
+    type = "recipe",
+    name = "hyperlanes-speed-module-5",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "cerys-overclock-module", amount = 1, quality_min = "legendary"},
+        {type = "item", name = "quantum-processor", amount = 5, quality_min = "rare"},
+        {type = "item", name = "hyperlanes-antimatter-chunk", amount = 1},
+        {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 100},
+        {type = "item", name = "electric-coil", amount = 3, quality_min = "uncommon"},
+    },
+    energy_required = 10.0,
+    results = {
+        {type = "item", name = "hyperlanes-speed-module-5", amount = 1},
+    },
+    main_product = "hyperlanes-speed-module-5",
+    allow_productivity = true,
+    categories = {"magnetics"},
+    auto_recycle = false
+}
+data:extend({speed_5_recipe})
+
+local productivity_5_recipe = {
+    type = "recipe",
+    name = "hyperlanes-productivity-module-5",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "cerys-radioactive-module-charged", amount = 1, quality_min = "legendary"},
+        {type = "item", name = "quantum-processor", amount = 5, quality_min = "rare"},
+        {type = "item", name = "hyperlanes-antimatter-chunk", amount = 1},
+        {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 100},
+        {type = "item", name = "planetaris-wasp-egg", amount = 3, quality_min = "uncommon"},
+    },
+    energy_required = 10.0,
+    results = {
+        {type = "item", name = "hyperlanes-productivity-module-5", amount = 1},
+    },
+    main_product = "hyperlanes-productivity-module-5",
+    allow_productivity = true,
+    categories = {"magnetics"},
+    auto_recycle = false
+}
+data:extend({productivity_5_recipe})
+
+local efficiency_5_recipe = {
+    type = "recipe",
+    name = "hyperlanes-efficiency-module-5",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "rubia-efficiency-module4", amount = 1, quality_min = "legendary"},
+        {type = "item", name = "quantum-processor", amount = 5, quality_min = "rare"},
+        {type = "item", name = "hyperlanes-antimatter-chunk", amount = 1},
+        {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 100},
+        {type = "item", name = "ske_algea_clump_rare", amount = 3, quality_min = "uncommon"},
+    },
+    energy_required = 10.0,
+    results = {
+        {type = "item", name = "hyperlanes-efficiency-module-5", amount = 1},
+    },
+    main_product = "hyperlanes-efficiency-module-5",
+    allow_productivity = true,
+    categories = {"magnetics"},
+    auto_recycle = false
+}
+data:extend({efficiency_5_recipe})

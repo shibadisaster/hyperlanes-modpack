@@ -288,3 +288,35 @@ local t9_unstable_substrate = {
     spoil_ticks = 2 * 60
 }
 data:extend({t9_unstable_substrate})
+
+
+-- Tier 5 modules
+local speed_5 = table.deepcopy(data.raw["module"]["cerys-overclock-module"])
+speed_5.name = "hyperlanes-speed-module-5"
+speed_5.order = "a[speed]-e[speed-module-5]"
+speed_5.effect.speed = 1.5
+speed_5.effect.pollution = 0.0
+speed_5.effect.consumption = 0.7
+speed_5.effect.productivity = 0.0
+speed_5.effect.quality = 0.0
+data:extend({speed_5})
+
+local prod_5 = table.deepcopy(data.raw["module"]["productivity-module-3"])
+prod_5.name = "hyperlanes-productivity-module-5"
+prod_5.order = "c[productivity]-e[productivity-module-5]"
+prod_5.effect.speed = 0.0
+prod_5.effect.pollution = 0.0
+prod_5.effect.consumption = 0.5
+prod_5.effect.productivity = 0.2
+prod_5.effect.quality = 0.0
+data:extend({prod_5})
+
+local eff_5 = table.deepcopy(data.raw["module"]["rubia-efficiency-module4"])
+eff_5.name = "hyperlanes-efficiency-module-5"
+eff_5.order = "c[efficiency]-e[efficiency-module-5]"
+eff_5.effect.speed = 0.0
+eff_5.effect.pollution = -0.5
+eff_5.effect.consumption = -1.5
+eff_5.effect.productivity = 0.0
+eff_5.effect.quality = 0.0
+data:extend({eff_5})
