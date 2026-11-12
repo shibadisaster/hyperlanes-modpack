@@ -391,15 +391,18 @@ local quality_4_tech = {
         {
             type = "unlock-recipe",
             recipe = "hyperlanes-quality-module-4"
+        },
+        {
+            type = "unlock-quality",
+            quality = "mythic"
         }
     },
-    unit =
-    {
+    unit = {
         count = utils.t9_spcost_bigtech,
         ingredients = utils.t9_sp,
         time = 60
     },
-    prerequisites = {"hyperlanes-antimatter-processing"},
+    prerequisites = {"hyperlanes-antimatter-processing", "legendary-quality"},
     order = "c-a",
     essential = false
 }

@@ -17,3 +17,6 @@ data.raw["technology"]["panglia_collect_dna_pentapod"].essential = false
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
 -- refer to data-final-fixes
+
+data.raw["technology"]["panglia_crusher"].unit.ingredients = utils.t10_sp
+data.raw["technology"]["panglia_crusher"].unit.count = utils.t10_spcost_smalltech

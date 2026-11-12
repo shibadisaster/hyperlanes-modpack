@@ -39,28 +39,28 @@ local level7quality = {
 data:extend({level7quality})
 
 
-local level6quality_tech = {
-    type = "technology",
-    name = "hyperlanes-quality-6",
-    icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
-    effects = {
-        {
-            type = "unlock-quality",
-            quality = "mythic"
-        }
-    },
-    unit =
-    {
-        count = utils.t9_spcost_bigtech,
-        ingredients = utils.t9_sp,
-        time = 60
-    },
-    prerequisites = {"hyperlanes-t9-epp","legendary-quality"},
-    order = "c-a",
-    essential = false
-}
-data:extend({level6quality_tech})
+-- local level6quality_tech = {
+--     type = "technology",
+--     name = "hyperlanes-quality-6",
+--     icon_size = 256,
+--     icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+--     effects = {
+--         {
+--             type = "unlock-quality",
+--             quality = "mythic"
+--         }
+--     },
+--     unit =
+--     {
+--         count = utils.t9_spcost_bigtech,
+--         ingredients = utils.t9_sp,
+--         time = 60
+--     },
+--     prerequisites = {"hyperlanes-t9-epp","legendary-quality"},
+--     order = "c-a",
+--     essential = false
+-- }
+-- data:extend({level6quality_tech})
 
 
 local level7quality_tech = {
@@ -80,7 +80,7 @@ local level7quality_tech = {
         ingredients = utils.t10_sp,
         time = 60
     },
-    prerequisites = {"panglia_sentient_processor","hyperlanes-quality-6"},
+    prerequisites = {"panglia_sentient_processor","hyperlanes-quality-module-4"},
     order = "c-a",
     essential = false
 }
