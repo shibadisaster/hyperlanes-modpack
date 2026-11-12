@@ -1,3 +1,6 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
+
 -- Antimatter chunk
 local ac_recipe = {
     type = "recipe",
@@ -197,3 +200,160 @@ local efficiency_5_recipe = {
     auto_recycle = false
 }
 data:extend({efficiency_5_recipe})
+
+
+-- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
+-- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
+-- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
+--     │  ║      │  ╚══╗    │  ║         │  ╚══╛  ║  │  ╚══════╗
+--     │  ║      │  ╓──╜    │  ║         │  ╓──┐  ║  └──────┐  ║
+--     │  ║      │  ║   ╒═╗ │  ║    ╒═╗  │  ║  │  ║  ╒═╗    │  ║
+--    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
+--    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
+local antimatter_chunk_tech = {
+    type = "technology",
+    name = "hyperlanes-antimatter-chunk",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-antimatter-chunk"
+        }
+    },
+    research_trigger = {
+        type = "craft-item",
+        item = "promethium-asteroid-chunk",
+        count = 1
+    },
+    prerequisites = {"stellar-discovery-solar-system-edge"},
+    order = "c-a",
+    essential = false
+}
+data:extend({antimatter_chunk_tech})
+
+
+local productivity_5_tech = {
+    type = "technology",
+    name = "hyperlanes-productivity-module-5",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-productivity-module-5"
+        }
+    },
+    unit =
+    {
+        count = utils.t9_spcost_bigtech,
+        ingredients = utils.t9_sp,
+        time = 60
+    },
+    prerequisites = {"hyperlanes-antimatter-chunk"},
+    order = "c-a",
+    essential = false
+}
+data:extend({productivity_5_tech})
+
+
+local speed_5_tech = {
+    type = "technology",
+    name = "hyperlanes-speed-module-5",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-speed-module-5"
+        }
+    },
+    unit =
+    {
+        count = utils.t9_spcost_bigtech,
+        ingredients = utils.t9_sp,
+        time = 60
+    },
+    prerequisites = {"hyperlanes-antimatter-chunk"},
+    order = "c-a",
+    essential = false
+}
+data:extend({speed_5_tech})
+
+
+local efficiency_5_tech = {
+    type = "technology",
+    name = "hyperlanes-efficiency-module-5",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-efficiency-module-5"
+        }
+    },
+    unit =
+    {
+        count = utils.t9_spcost_bigtech,
+        ingredients = utils.t9_sp,
+        time = 60
+    },
+    prerequisites = {"hyperlanes-antimatter-chunk"},
+    order = "c-a",
+    essential = false
+}
+data:extend({efficiency_5_tech})
+
+
+local antimatter_processing_tech = {
+    type = "technology",
+    name = "hyperlanes-antimatter-processing",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-antimatter-particulate"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-antimatter-particulate-restabilization"
+        }
+    },
+    research_trigger = {
+        type = "craft-item",
+        item = "hyperlanes-antimatter-chunk",
+        count = 1
+    },
+    prerequisites = {"hyperlanes-antimatter-chunk"},
+    order = "c-a",
+    essential = false
+}
+data:extend({antimatter_processing_tech})
+
+
+local time_crystal_tech = {
+    type = "technology",
+    name = "hyperlanes-time-crystal",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-time-crystal-a"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-unstable-substrate"
+        }
+    },
+    research_trigger = {
+        type = "craft-item",
+        item = "hyperlanes-antimatter-particulate",
+        count = 100
+    },
+    prerequisites = {"hyperlanes-antimatter-processing"},
+    order = "c-a",
+    essential = false
+}
+data:extend({time_crystal_tech})

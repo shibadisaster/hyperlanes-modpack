@@ -58,7 +58,7 @@ local level6quality_tech = {
     },
     prerequisites = {"hyperlanes-t9-epp","legendary-quality"},
     order = "c-a",
-    essential = true
+    essential = false
 }
 data:extend({level6quality_tech})
 
@@ -82,7 +82,7 @@ local level7quality_tech = {
     },
     prerequisites = {"panglia_sentient_processor","hyperlanes-quality-6"},
     order = "c-a",
-    essential = true
+    essential = false
 }
 data:extend({level7quality_tech})
 
