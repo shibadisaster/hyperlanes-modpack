@@ -320,3 +320,13 @@ eff_5.effect.consumption = -1.5
 eff_5.effect.productivity = 0.0
 eff_5.effect.quality = 0.0
 data:extend({eff_5})
+
+local quality_4 = table.deepcopy(data.raw["module"]["quality-module-3"])
+quality_4.name = "hyperlanes-quality-module-4"
+quality_4.order = "d[quality]-d[quality-module-4]"
+quality_4.effect.speed = 0.0
+quality_4.effect.pollution = 0.0
+quality_4.effect.consumption = 0.0
+quality_4.effect.productivity = 0.0
+quality_4.effect.quality = 0.0375
+data:extend({quality_4})

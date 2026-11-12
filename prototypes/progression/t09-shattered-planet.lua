@@ -201,6 +201,29 @@ local efficiency_5_recipe = {
 }
 data:extend({efficiency_5_recipe})
 
+local quality_4_recipe = {
+    type = "recipe",
+    name = "hyperlanes-quality-module-4",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "quality-module-3", amount = 1, quality_min = "legendary"},
+        {type = "item", name = "quantum-processor", amount = 10, quality_min = "epic"},
+        {type = "item", name = "hyperlanes-antimatter-particulate", amount = 50},
+        {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 200},
+        {type = "item", name = "promethium-asteroid-chunk", amount = 3, quality_min = "rare"},
+    },
+    energy_required = 10.0,
+    results = {
+        {type = "item", name = "hyperlanes-quality-module-4", amount = 1},
+    },
+    main_product = "hyperlanes-quality-module-4",
+    allow_productivity = true,
+    categories = {"magnetics"},
+    auto_recycle = false
+}
+data:extend({quality_4_recipe})
+
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
@@ -357,3 +380,27 @@ local time_crystal_tech = {
     essential = false
 }
 data:extend({time_crystal_tech})
+
+
+local quality_4_tech = {
+    type = "technology",
+    name = "hyperlanes-quality-module-4",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-quality-module-4"
+        }
+    },
+    unit =
+    {
+        count = utils.t9_spcost_bigtech,
+        ingredients = utils.t9_sp,
+        time = 60
+    },
+    prerequisites = {"hyperlanes-antimatter-processing"},
+    order = "c-a",
+    essential = false
+}
+data:extend({quality_4_tech})
