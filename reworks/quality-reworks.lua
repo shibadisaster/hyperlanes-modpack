@@ -142,6 +142,7 @@ data.raw["quality"]["broken"].module_consumption_multiplier = 0.1
 data.raw["quality"]["broken"].module_pollution_multiplier = 0.1
 data.raw["quality"]["broken"].module_productivity_multiplier = 0.1
 data.raw["quality"]["broken"].module_quality_multiplier = 0.1
+data.raw["quality"]["broken"].science_capacity_multiplier = 0.1
 
 
 -- Targets for quality bonuses

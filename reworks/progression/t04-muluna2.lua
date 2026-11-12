@@ -99,6 +99,10 @@ data.raw["recipe"]["muluna-satellite-radar"].ingredients = {
 }
 
 
+-- Space chest nerf
+-- data.raw["container"]["space-chest-muluna"].inventory_size = 3
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

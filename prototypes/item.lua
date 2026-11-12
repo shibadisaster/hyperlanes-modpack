@@ -234,6 +234,45 @@ local t9_antimatter_chunk = {
     name = "hyperlanes-antimatter-chunk",
     icon = "__hyperlanes-modpack__/graphics/icons/antimatter-chunk.png",
     stack_size = 1,
-    weight = 100 * kg
+    weight = 100 * kg,
+    spoil_ticks = 30 * 60
 }
 data:extend({t9_antimatter_chunk})
+
+
+-- Antimatter particulate
+local t9_antimatter_particulate = {
+    type = "item",
+    name = "hyperlanes-antimatter-particulate",
+    icon = "__hyperlanes-modpack__/graphics/icons/antimatter-particulate.png",
+    stack_size = 100,
+    weight = 1 * kg,
+    spoil_ticks = 30 * 60
+}
+data:extend({t9_antimatter_particulate})
+
+
+-- Time crystal A
+local t9_time_crystal_a = {
+    type = "item",
+    name = "hyperlanes-time-crystal-a",
+    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png",
+    stack_size = 1,
+    weight = 100 * kg,
+    spoil_ticks = 1 * 60,
+    spoil_result = "hyperlanes-time-crystal-b"
+}
+data:extend({t9_time_crystal_a})
+
+
+-- Time crystal B
+local t9_time_crystal_b = {
+    type = "item",
+    name = "hyperlanes-time-crystal-b",
+    icon = "__space-age__/graphics/icons/carbonic-asteroid-chunk.png",
+    stack_size = 1,
+    weight = 100 * kg,
+    spoil_ticks = 1 * 60,
+    spoil_result = "hyperlanes-time-crystal-a"
+}
+data:extend({t9_time_crystal_b})
