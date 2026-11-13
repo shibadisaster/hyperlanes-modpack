@@ -65,7 +65,7 @@ data:extend({level7quality})
 
 local level7quality_tech = {
     type = "technology",
-    name = "hyperlanes-quality-7",
+    name = "hyperlanes-ethereal-quality",
     icon_size = 256,
     icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
     effects = {

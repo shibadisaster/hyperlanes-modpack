@@ -235,7 +235,37 @@ local t9_antimatter_chunk = {
     icon = "__hyperlanes-modpack__/graphics/icons/antimatter-chunk.png",
     stack_size = 1,
     weight = 100 * kg,
-    spoil_ticks = 30 * 60
+    spoil_ticks = 30 * 60,
+    spoil_to_trigger_result = {
+        items_per_trigger = 1,
+        trigger = {
+            {
+                type = "direct",
+                action_delivery = {
+                    type = "instant",
+                    target_effects = {
+                        {
+                            type = "create-entity",
+                            entity_name = "model-unstable-explosion"
+                        }
+                    }
+                }
+            },
+            {
+                type = "area",
+                radius = 1,
+                action_delivery = {
+                    type = "instant",
+                    target_effects = {
+                        {
+                            type = "damage",
+                            damage = {amount = 0, type = "explosion"}
+                        }
+                    }
+                }
+            },
+        }
+    }
 }
 data:extend({t9_antimatter_chunk})
 
@@ -247,7 +277,37 @@ local t9_antimatter_particulate = {
     icon = "__hyperlanes-modpack__/graphics/icons/antimatter-particulate.png",
     stack_size = 100,
     weight = 1 * kg,
-    spoil_ticks = 30 * 60
+    spoil_ticks = 30 * 60,
+    spoil_to_trigger_result = {
+        items_per_trigger = 20,
+        trigger = {
+            {
+                type = "direct",
+                action_delivery = {
+                    type = "instant",
+                    target_effects = {
+                        {
+                            type = "create-entity",
+                            entity_name = "model-unstable-explosion"
+                        }
+                    }
+                }
+            },
+            {
+                type = "area",
+                radius = 1,
+                action_delivery = {
+                    type = "instant",
+                    target_effects = {
+                        {
+                            type = "damage",
+                            damage = {amount = 0, type = "explosion"}
+                        }
+                    }
+                }
+            },
+        }
+    }
 }
 data:extend({t9_antimatter_particulate})
 
@@ -285,7 +345,37 @@ local t9_unstable_substrate = {
     icon = "__hyperlanes-modpack__/graphics/icons/antimatter-particulate.png",
     stack_size = 100,
     weight = 1 * kg,
-    spoil_ticks = 2 * 60
+    spoil_ticks = 2 * 60,
+    spoil_to_trigger_result = {
+        items_per_trigger = 1,
+        trigger = {
+            {
+                type = "direct",
+                action_delivery = {
+                    type = "instant",
+                    target_effects = {
+                        {
+                            type = "create-entity",
+                            entity_name = "model-unstable-explosion"
+                        }
+                    }
+                }
+            },
+            {
+                type = "area",
+                radius = 1,
+                action_delivery = {
+                    type = "instant",
+                    target_effects = {
+                        {
+                            type = "damage",
+                            damage = {amount = 0, type = "explosion"}
+                        }
+                    }
+                }
+            },
+        }
+    }
 }
 data:extend({t9_unstable_substrate})
 
