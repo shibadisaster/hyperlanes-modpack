@@ -112,6 +112,11 @@ data.raw["technology"]["planetaris-arig-rocket-part"].essential = false
 data.raw["technology"]["planet-discovery-arig"].unit.ingredients = utils.t5_sp
 data.raw["technology"]["planet-discovery-arig"].unit.count = utils.t5_spcost_planet
 
+table.insert(data.raw["technology"]["planetaris-sand-sifting"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-sand-to-planetaris-sand"
+})
+
 data.raw["technology"]["planetaris-arig-roboport"].unit.ingredients = utils.t5_sp_arig
 data.raw["technology"]["planetaris-arig-roboport"].unit.count = utils.t5_spcost_tech
 
