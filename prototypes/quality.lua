@@ -80,7 +80,7 @@ local level7quality_tech = {
         ingredients = utils.t10_sp,
         time = 60
     },
-    prerequisites = {"panglia_sentient_processor","hyperlanes-quality-module-4"},
+    prerequisites = {"hyperlanes-victory","hyperlanes-quality-module-4"},
     order = "c-a",
     essential = false
 }

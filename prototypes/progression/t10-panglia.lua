@@ -9,6 +9,30 @@ local utils = require("__hyperlanes-modpack__/utils")
 -- ╒╛  ╚═══╛ ║ ╒╛  ╚╗  └┐    ║  ╒╛  ╚═══╛ ║ ╒═╛  ╚═╗ │  ╚══╛  ║  ╒╛  ╚╗╒╛  ╚╗    ╒╛  ╚╗   
 -- └─────────╜ └────╜   └────╜  └─────────╜ └──────╜ └────────╜  └────╜└────╜    └────╜   
 
+local enlightenment_tech = {
+    type = "technology",
+    name = "hyperlanes-enlightenment",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-enlightened-processor"
+        }
+    },
+    unit =
+    {
+        count = utils.t10_spcost_bigtech,
+        ingredients = utils.t10_sp,
+        time = 60
+    },
+    prerequisites = {"panglia_sentient_processor"},
+    order = "c-a",
+    essential = true
+}
+data:extend({enlightenment_tech})
+
+
 for index, science_name in ipairs(utils.data_analysis_sciences) do
     local enlightenment_step = {
         type = "item",
@@ -71,6 +95,11 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     end
 
     data:extend({enlightenment_step, enlightenment_step_recipe})
+
+    table.insert(data.raw["technology"]["hyperlanes-enlightenment"].effects, {
+        type = "unlock-recipe",
+        recipe = "hyperlanes-enlightened-processor-step-" .. index
+    })
 end
 
 
@@ -96,3 +125,29 @@ local enlightenment_recipe = {
 }
 
 data:extend({enlightenment_recipe})
+
+
+-- ╒════╗    ╒════╗ ╒══════╗ ╒═════════╗ ╒══════════╗ ╒═════════╗ ╒══════════╗ ╒════╗╒════╗ ╒══╗
+-- └┐  ╓╜    └┐  ╓╜ └─┐  ╓─╜ │  ╓────┐ ║ │ ╓─┐  ╓─┐ ║ │  ╓───┐  ║ └┐  ╓───┐  ║ └┐  ╓╜└┐  ╓╜ │  ║
+--  └┐ ╚╗    ╒╛ ╓╜    │  ║   │  ║    └─╜ └─╜ │  ║ └─╜ │  ║   │  ║  │  ║   │  ║  │  ║  │  ║  │  ║
+--   └┐ ╚╗  ╒╛ ╓╜     │  ║   │  ║            │  ║     │  ║   │  ║  │  ╚═══╛  ║  │  ╚══╛  ║  │  ║
+--    └┐ ╚╗╒╛ ╓╜      │  ║   │  ║            │  ║     │  ║   │  ║  │  ╓┐  ╓──╜  └──┐  ╓──╜  │  ║
+--     └┐ ╚╛ ╓╜       │  ║   │  ║    ╒═╗     │  ║     │  ║   │  ║  │  ║└┐ ╚╗       │  ║     └──╜
+--      └┐  ╓╜      ╒═╛  ╚═╗ │  ╚════╛ ║    ╒╛  ╚╗    │  ╚═══╛  ║ ╒╛  ╚╗└┐ ╚═╗    ╒╛  ╚╗    ╒══╗
+--       └──╜       └──────╜ └─────────╜    └────╜    └─────────╜ └────╜ └───╜    └────╜    └──╜
+
+local victory_tech = {
+    type = "technology",
+    name = "hyperlanes-victory",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    effects = {},
+    research_trigger = {
+        type = "send-item-to-orbit",
+        item = "hyperlanes-enlightened-processor"
+    },
+    prerequisites = {"hyperlanes-enlightenment"},
+    order = "c-a",
+    essential = true
+}
+data:extend({victory_tech})
