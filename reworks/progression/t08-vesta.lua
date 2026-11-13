@@ -261,6 +261,10 @@ data.raw["recipe"]["ske_dt_fuel"].results = {
 data.raw["recipe"]["ske_dt_fuel"].main_product = "ske_dt_fuel"
 
 
+-- Fuel value rebalance
+data.raw["item"]["ske_dt_fuel_cell"].fuel_value = "100.0GJ"
+
+
 -- Fusion missile
 data.raw["recipe"]["fusion-missile"].ingredients = {
     {type = "item", name = "steel-plate", amount = 5, quality_min = "uncommon"},
@@ -270,6 +274,15 @@ data.raw["recipe"]["fusion-missile"].ingredients = {
 data.raw["recipe"]["fusion-missile"].results = {
     {type = "item", name = "fusion-missile", amount = 5, quality_change = -1},
     {type = "fluid", name = "fluoroketone-hot", amount = 5, ignored_by_productivity = 5},
+}
+
+
+-- Gas manipulation science pack
+data.raw["recipe"]["gas-manipulation-science-pack"].ingredients = {
+    {type = "item", name = "carbon", amount = 5, quality_min = "legendary"},
+    {type = "item", name = "iridium-plate", amount = 5},
+    {type = "item", name = "ske_algea_clump", amount = 5},
+    {type = "fluid", name = "deuterium", amount = 25},
 }
 
 

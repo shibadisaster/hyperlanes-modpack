@@ -45,7 +45,7 @@ data.raw["recipe"]["promethium-science-pack"].ingredients = {
 data.raw["recipe"]["promethium-science-pack"].energy_required = 0.8
 data.raw["recipe"]["promethium-science-pack"].results = {
     {type = "item", name = "hyperlanes-time-crystal-a", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98},
-    {type = "item", name = "promethium-science-pack", amount = 10},
+    {type = "item", name = "promethium-science-pack", amount = 10, always_fresh = true, reset_freshness_on_craft = true},
 }
 data.raw["recipe"]["promethium-science-pack"].surface_conditions = {
     {

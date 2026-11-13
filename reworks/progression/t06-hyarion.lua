@@ -66,10 +66,10 @@ data.raw["recipe"]["planetaris-fiber-optics-cable"].ingredients = {
 }
 
 
--- Silica
+-- Silica (accessible in T5)
 data.raw["recipe"]["planetaris-silica"].ingredients = {
-    {type = "item", name = "calcite", amount = 1, quality_min = "rare"},
-    {type = "item", name = "silicon", amount = 1, quality_min = "rare"},
+    {type = "item", name = "calcite", amount = 1, quality_min = "uncommon"},
+    {type = "item", name = "silicon", amount = 1, quality_min = "uncommon"},
     {type = "item", name = "planetaris-raw-quartz", amount = 5},
     {type = "fluid", name = "sulfuric-acid", amount = 1},
 }

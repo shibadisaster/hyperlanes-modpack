@@ -80,7 +80,7 @@ data.raw["recipe"]["zinc-leaching"].main_product = "dirty-zinc-solution"
 
 -- Zinc purification
 data.raw["recipe"]["zinc-purification"].ingredients = {
-    {type = "item", name = "planetaris-bismuth-transistor", amount = 2},
+    {type = "item", name = "planetaris-bismuth-transistor", amount = 2, quality_min = "rare"},
     {type = "item", name = "hyperlanes-microcellular-filter", amount = 1},
     {type = "fluid", name = "dirty-zinc-solution", amount = 20},
     {type = "fluid", name = "steam", amount = 20},
@@ -88,7 +88,7 @@ data.raw["recipe"]["zinc-purification"].ingredients = {
 data.raw["recipe"]["zinc-purification"].results = {
     {type = "item", name = "stone", amount_min = 5, amount_max = 20},
     {type = "item", name = "hyperlanes-microcellular-filter", amount = 1, independent_probability = 0.95, ignored_by_productivity = 1},
-    {type = "item", name = "planetaris-bismuth-transistor", amount = 1, ignored_by_productivity = 1},
+    {type = "item", name = "planetaris-bismuth-transistor", amount = 1, ignored_by_productivity = 1, quality_min = "rare"},
     {type = "fluid", name = "zinc-solution", amount = 20},
 }
 data.raw["recipe"]["zinc-purification"].categories = {"electrochemistry", "electromagnetics"}
@@ -177,6 +177,13 @@ data.raw["recipe"]["casting-galvanized-steel-plate"].ingredients = {
     {type = "item", name = "zinc", amount = 3},
     {type = "fluid", name = "molten-iron", amount = 150},
     {type = "fluid", name = "nitrogen", amount = 20},
+}
+
+
+-- Zinc rivets
+data.raw["recipe"]["zinc-rivets"].ingredients = {
+    {type = "item", name = "iron-stick", amount = 2, quality_min = "legendary"},
+    {type = "item", name = "zinc-plate", amount = 2},
 }
 
 

@@ -125,7 +125,7 @@ local us_recipe = {
     },
     main_product = "hyperlanes-unstable-substrate",
     allow_productivity = true,
-    categories = {"crafting-with-fluid"},
+    categories = {"particle-manipulation"},
     auto_recycle = false
 }
 data:extend({us_recipe})

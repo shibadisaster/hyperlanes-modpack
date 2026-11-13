@@ -35,7 +35,7 @@ data.raw["recipe"]["maraxsis-glass-panes"].ingredients = {
 
 -- Super sealant substance
 data.raw["recipe"]["maraxsis-super-sealant-substance"].ingredients = {
-    {type = "item", name = "sulfur", amount = 3},
+    {type = "item", name = "sulfur", amount = 3, quality_min = "epic"},
     {type = "item", name = "hyperlanes-sealant", amount = 3},
     {type = "item", name = "calcite", amount = 3, quality_min = "epic"},
     {type = "fluid", name = "heavy-oil", amount = 200},

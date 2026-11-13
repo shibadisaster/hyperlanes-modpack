@@ -18,7 +18,7 @@ data.raw["recipe"]["lithium"].main_product = "lithium"
 -- Fluoroketone
 data.raw["recipe"]["fluoroketone"].ingredients = {
     {type = "item", name = "lithium", amount = 1},
-    {type = "item", name = "methane-ice", amount = 10},
+    {type = "item", name = "methane-ice", amount = 10, quality_min = "epic"},
     {type = "fluid", name = "fluorine", amount = 50},
     {type = "fluid", name = "ammonia", amount = 50},
 }
