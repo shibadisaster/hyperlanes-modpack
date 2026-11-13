@@ -71,6 +71,10 @@ data.raw["recipe"]["planetaris-magenta-dye"].ingredients = {
 data.raw["recipe"]["planetaris-magenta-dye"].categories = {"chemistry"}
 
 
+-- Anorthite chunk
+data.raw["item"]["anorthite-chunk"].order = "d[hyperlanes]-e[chunk]-" .. utils.planet_tier_orders["muluna"]
+data.raw["item"]["muluna-lunar-regolith"].order = "zzz"
+
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗

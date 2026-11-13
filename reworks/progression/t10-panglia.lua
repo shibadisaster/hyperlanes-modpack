@@ -78,7 +78,12 @@ table.insert(data.raw["wall"]["snouz_wall_hull"].resistances, {
 })
 
 
--- Focused gun turret removed
+-- Focused gun turret
+data.raw["recipe"]["snouz_long_electric_gun_turret"].ingredients = {
+    {type = "item", name = "gun-turret", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "panglia_panglite_fiber", amount = 5},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 5, quality_min = "legendary"},
+}
 
 
 -- Hypercrusher
@@ -263,8 +268,8 @@ data.raw["technology"]["panglia_universe_precursor_volcanic"].prerequisites = {"
 data.raw["technology"]["snouz_wall_hull"].prerequisites = {"panglia_panglite_fiber"}
 
 data.raw["technology"]["snouz_long_electric_gun_turret"].prerequisites = {"panglia_panglite_fiber"}
-data.raw["technology"]["snouz_long_electric_gun_turret"].enabled = false
-data.raw["technology"]["snouz_long_electric_gun_turret"].hidden = true
+-- data.raw["technology"]["snouz_long_electric_gun_turret"].enabled = false
+-- data.raw["technology"]["snouz_long_electric_gun_turret"].hidden = true
 
 data.raw["technology"]["panglia_simulation_chamber"].prerequisites = {"panglia_dna_manipulation_phasetwo_tech"}
 

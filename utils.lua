@@ -92,6 +92,67 @@ utils.all_sciences = {
     "promethium-science-pack"
 }
 
+utils.planets = {
+    "nauvis",
+    "muluna",
+    "fulgora",
+    "gleba",
+    "vulcanus",
+    "cerys",
+    "arig",
+    "muria",
+    "rubia",
+    "hyarion",
+    "moshine",
+    "aquilo",
+    "maraxsis",
+    "paracelsin",
+    "tellus",
+    "vesta",
+    "panglia"
+}
+
+utils.planet_tier_associations = {
+    ["nauvis"] = 1,
+    ["muluna"] = 2,
+    ["fulgora"] = 3,
+    ["gleba"] = 3,
+    ["vulcanus"] = 3,
+    ["cerys"] = 4,
+    ["arig"] = 5,
+    ["muria"] = 5,
+    ["rubia"] = 5,
+    ["hyarion"] = 6,
+    ["moshine"] = 6,
+    ["aquilo"] = 7,
+    ["maraxsis"] = 7,
+    ["paracelsin"] = 8,
+    ["tellus"] = 8,
+    ["vesta"] = 8,
+    ["panglia"] = 10
+}
+
+utils.planet_tier_orders = {
+    ["nauvis"] = "a",
+    ["muluna"] = "b",
+    ["fulgora"] = "c",
+    ["gleba"] = "c",
+    ["vulcanus"] = "c",
+    ["cerys"] = "d",
+    ["arig"] = "e",
+    ["muria"] = "e",
+    ["rubia"] = "e",
+    ["hyarion"] = "f",
+    ["moshine"] = "f",
+    ["aquilo"] = "g",
+    ["maraxsis"] = "g",
+    ["paracelsin"] = "h",
+    ["tellus"] = "h",
+    ["vesta"] = "h",
+    ["panglia"] = "j"
+}
+
+
 
 
 

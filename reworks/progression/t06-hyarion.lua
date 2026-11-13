@@ -269,7 +269,13 @@ data.raw["recipe"]["planetaris-bismuth-transistor"].ingredients = {
 
 
 -- Hyper belts
--- data.raw["transport-belt"][""]
+data.raw["transport-belt"]["planetaris-hyper-transport-belt"].speed = 0.1875
+data.raw["underground-belt"]["planetaris-hyper-underground-belt"].speed = 0.1875
+data.raw["splitter"]["planetaris-hyper-splitter"].speed = 0.1875
+
+
+-- Bismuth asteroid
+data.raw["item"]["bismuth-asteroid-chunk"].order = "d[hyperlanes]-e[chunk]-" .. utils.planet_tier_orders["hyarion"]
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗

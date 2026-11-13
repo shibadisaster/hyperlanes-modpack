@@ -1,3 +1,9 @@
+require("prototypes.technology.epps")
+require("prototypes.quality")
+require("prototypes.item")
+require("prototypes.fluid")
+require("prototypes.asteroid")
+
 require("prototypes.progression.t01-nauvis")
 require("prototypes.progression.t02-muluna")
 require("prototypes.progression.t03-fulgora")
@@ -17,8 +23,3 @@ require("prototypes.progression.t08-tellus")
 require("prototypes.progression.t08-vesta")
 require("prototypes.progression.t09-shattered-planet")
 require("prototypes.progression.t10-panglia")
-
-require("prototypes.technology.epps")
-require("prototypes.quality")
-require("prototypes.item")
-require("prototypes.fluid")

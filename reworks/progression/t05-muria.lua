@@ -71,6 +71,11 @@ data.raw["recipe"]["scrubber"].ingredients = {
     {type = "item", name = "anti-corrosion-cladding", amount = 10},
     {type = "item", name = "pipe", amount = 5},
 }
+table.insert(data.raw["recipe"]["gleban-air-scrubbing"].surface_conditions, {
+    property = "planetaris-pollen-corrosion",
+    min = 0.0,
+    max = 49.0
+})
 
 
 -- Hydrogen chloride
