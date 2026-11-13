@@ -7,11 +7,6 @@ data.raw["technology"]["panglia_collect_dna_demolisher"].essential = false
 data.raw["technology"]["panglia_collect_dna_pentapod"].essential = false
 
 
--- Hull
-data.raw["wall"]["snouz_wall_hull"].max_health = 1000
-data.raw["wall"]["snouz_wall_hull"].healing_per_tick = 10.0 / 60.0
-
-
 -- Panglite multiplication
 data.raw["recipe"]["panglia_panglite"].categories = {"leadworking"}
 data.raw["recipe"]["panglia_panglite"].ingredients = {
@@ -66,6 +61,88 @@ data.raw["recipe"]["panglia_panglite_glass"].ingredients = {
 }
 
 
+-- Spaceship hull
+data.raw["recipe"]["snouz_wall_hull"].ingredients = {
+    {type = "item", name = "panglia_panglite_fiber", amount = 5},
+    {type = "item", name = "low-density-space-platform-foundation", amount = 1},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 2, quality_min = "mythic"},
+    {type = "item", name = "craptonite-wall", amount = 1, quality_min = "mythic"},
+}
+data.raw["recipe"]["snouz_wall_hull"].categories = {"space-manufacturing"}
+
+data.raw["wall"]["snouz_wall_hull"].max_health = 1000
+data.raw["wall"]["snouz_wall_hull"].healing_per_tick = 10.0 / 60.0
+table.insert(data.raw["wall"]["snouz_wall_hull"].resistances, {
+    type = "rubia-kinetic",
+    percent = 100
+})
+
+
+-- Focused gun turret removed
+
+
+-- Hypercrusher
+data.raw["recipe"]["panglia_crusher"].ingredients = {
+    {type = "item", name = "crusher-2", amount = 1, quality_min = "mythic"},
+    {type = "item", name = "planetaris-sifter", amount = 1, quality_min = "mythic"},
+    {type = "item", name = "panglia_panglite_fiber", amount = 10},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 10, quality_min = "mythic"},
+    {type = "item", name = "quantum-processor", amount = 10, quality_min = "mythic"},
+}
+
+-- Universe precursor
+data.raw["recipe"]["universe_precursor"].ingredients = {
+    {type = "item", name = "panglia_dust", amount = 101},
+    {type = "item", name = "hyperlanes-antimatter-particulate", amount = 100},
+    {type = "item", name = "metallic-asteroid-chunk", amount = 1, quality_min = "mythic"},
+    {type = "item", name = "carbonic-asteroid-chunk", amount = 1, quality_min = "mythic"},
+    {type = "item", name = "oxide-asteroid-chunk", amount = 1, quality_min = "mythic"},
+    {type = "item", name = "panglia_panglite_fiber", amount = 10},
+    {type = "fluid", name = "panglia_branbalite_slurry", amount = 20},
+}
+data.raw["recipe"]["universe_precursor"].categories = {"particle-manipulation"}
+data.raw["technology"]["panglia_universe_precursor"].effects = {
+    {
+        type = "unlock-recipe",
+        recipe = "universe_precursor"
+    }
+}
+table.remove(data.raw["technology"]["matter_printer-technology"].effects, 2)
+
+
+-- Volcanic universe precursor
+data.raw["recipe"]["panglia_universe_precursor_volcanic"].ingredients = {
+    {type = "item", name = "universe_precursor", amount = 1},
+    {type = "fluid", name = "lava", amount = 100},
+}
+
+
+-- Cosmic incubator
+data.raw["recipe"]["matter_printer"].ingredients = {
+    {type = "item", name = "centrifuge", amount = 1, quality_min = "mythic"},
+    {type = "item", name = "datacell-cosmic-data", amount = 100},
+    {type = "item", name = "panglia_panglite_glass", amount = 50},
+    {type = "item", name = "hyperlanes-antimatter-particulate", amount = 100},
+    {type = "item", name = "panglia_dust", amount = 100},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 200, quality_min = "mythic"},
+    {type = "item", name = "quantum-processor", amount = 200, quality_min = "mythic"},
+}
+data.raw["recipe"]["matter_printer"].categories = {"mechanics"}
+
+
+-- DNA scanner
+data.raw["recipe"]["panglia_dna_scanner"].ingredients = {
+    {type = "item", name = "cryolab", amount = 1},
+    {type = "item", name = "planetaris-ruby-laser-turret", amount = 4, quality_min = "mythic"},
+    {type = "item", name = "panglia_panglite_glass", amount = 20},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 100, quality_min = "mythic"},
+    {type = "item", name = "quantum-processor", amount = 100, quality_min = "mythic"},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 20, quality_min = "mythic"},
+    {type = "fluid", name = "hyperlanes-bioslurry", amount = 100},
+}
+data.raw["recipe"]["panglia_dna_scanner"].categories = {"mechanics"}
+
+
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
@@ -114,6 +191,8 @@ data.raw["technology"]["panglia_universe_precursor_volcanic"].prerequisites = {"
 data.raw["technology"]["snouz_wall_hull"].prerequisites = {"panglia_panglite_fiber"}
 
 data.raw["technology"]["snouz_long_electric_gun_turret"].prerequisites = {"panglia_panglite_fiber"}
+data.raw["technology"]["snouz_long_electric_gun_turret"].enabled = false
+data.raw["technology"]["snouz_long_electric_gun_turret"].hidden = true
 
 data.raw["technology"]["panglia_simulation_chamber"].prerequisites = {"panglia_dna_manipulation_phasetwo_tech"}
 
