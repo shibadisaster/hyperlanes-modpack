@@ -32,15 +32,15 @@ data.raw["recipe"]["panglia_branbalite_slurry"].ingredients = {
 data.raw["recipe"]["panglia_timewarp_data_maker"].ingredients = {
     {type = "item", name = "data-processor", amount = 1},
     {type = "item", name = "panglia_panglite", amount = 50},
-    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 50, quality_min = "mythic"},
-    {type = "item", name = "quantum-processor", amount = 50, quality_min = "mythic"},
-    {type = "item", name = "maraxsis-super-sealant-substance", amount = 50, quality_min = "mythic"},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 50, quality_min = "legendary"},
+    {type = "item", name = "quantum-processor", amount = 50, quality_min = "legendary"},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 50, quality_min = "legendary"},
 }
 
 
 -- Panglite fiber
 data.raw["recipe"]["panglia_panglite_fiber"].ingredients = {
-    {type = "item", name = "ske_mesh", amount = 20, quality_min = "mythic"},
+    {type = "item", name = "ske_mesh", amount = 20, quality_min = "legendary"},
     {type = "item", name = "panglia_panglite", amount = 50},
     {type = "item", name = "plutonium-239", amount = 10},
     {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1},
@@ -54,9 +54,9 @@ data.raw["recipe"]["panglia_panglite_fiber"].results = {
 
 -- Panglite glass
 data.raw["recipe"]["panglia_panglite_glass"].ingredients = {
-    {type = "item", name = "maraxsis-glass-panes", amount = 1, quality_min = "mythic"},
-    {type = "item", name = "maraxsis-super-sealant-substance", amount = 2, quality_min = "mythic"},
-    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 5, quality_min = "mythic"},
+    {type = "item", name = "maraxsis-glass-panes", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 2, quality_min = "legendary"},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 5, quality_min = "legendary"},
     {type = "item", name = "panglia_panglite", amount = 10},
 }
 
@@ -65,8 +65,8 @@ data.raw["recipe"]["panglia_panglite_glass"].ingredients = {
 data.raw["recipe"]["snouz_wall_hull"].ingredients = {
     {type = "item", name = "panglia_panglite_fiber", amount = 5},
     {type = "item", name = "low-density-space-platform-foundation", amount = 1},
-    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 2, quality_min = "mythic"},
-    {type = "item", name = "craptonite-wall", amount = 1, quality_min = "mythic"},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 2, quality_min = "legendary"},
+    {type = "item", name = "craptonite-wall", amount = 1, quality_min = "legendary"},
 }
 data.raw["recipe"]["snouz_wall_hull"].categories = {"space-manufacturing"}
 
@@ -83,20 +83,20 @@ table.insert(data.raw["wall"]["snouz_wall_hull"].resistances, {
 
 -- Hypercrusher
 data.raw["recipe"]["panglia_crusher"].ingredients = {
-    {type = "item", name = "crusher-2", amount = 1, quality_min = "mythic"},
-    {type = "item", name = "planetaris-sifter", amount = 1, quality_min = "mythic"},
+    {type = "item", name = "crusher-2", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "planetaris-sifter", amount = 1, quality_min = "legendary"},
     {type = "item", name = "panglia_panglite_fiber", amount = 10},
-    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 10, quality_min = "mythic"},
-    {type = "item", name = "quantum-processor", amount = 10, quality_min = "mythic"},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 10, quality_min = "legendary"},
+    {type = "item", name = "quantum-processor", amount = 10, quality_min = "legendary"},
 }
 
 -- Universe precursor
 data.raw["recipe"]["universe_precursor"].ingredients = {
     {type = "item", name = "panglia_dust", amount = 101},
     {type = "item", name = "hyperlanes-antimatter-particulate", amount = 100},
-    {type = "item", name = "metallic-asteroid-chunk", amount = 1, quality_min = "mythic"},
-    {type = "item", name = "carbonic-asteroid-chunk", amount = 1, quality_min = "mythic"},
-    {type = "item", name = "oxide-asteroid-chunk", amount = 1, quality_min = "mythic"},
+    {type = "item", name = "metallic-asteroid-chunk", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "carbonic-asteroid-chunk", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "oxide-asteroid-chunk", amount = 1, quality_min = "legendary"},
     {type = "item", name = "panglia_panglite_fiber", amount = 10},
     {type = "fluid", name = "panglia_branbalite_slurry", amount = 20},
 }
@@ -119,13 +119,13 @@ data.raw["recipe"]["panglia_universe_precursor_volcanic"].ingredients = {
 
 -- Cosmic incubator
 data.raw["recipe"]["matter_printer"].ingredients = {
-    {type = "item", name = "centrifuge", amount = 1, quality_min = "mythic"},
+    {type = "item", name = "centrifuge", amount = 1, quality_min = "legendary"},
     {type = "item", name = "datacell-cosmic-data", amount = 100},
     {type = "item", name = "panglia_panglite_glass", amount = 50},
     {type = "item", name = "hyperlanes-antimatter-particulate", amount = 100},
     {type = "item", name = "panglia_dust", amount = 100},
-    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 200, quality_min = "mythic"},
-    {type = "item", name = "quantum-processor", amount = 200, quality_min = "mythic"},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 200, quality_min = "legendary"},
+    {type = "item", name = "quantum-processor", amount = 200, quality_min = "legendary"},
 }
 data.raw["recipe"]["matter_printer"].categories = {"mechanics"}
 
@@ -133,14 +133,87 @@ data.raw["recipe"]["matter_printer"].categories = {"mechanics"}
 -- DNA scanner
 data.raw["recipe"]["panglia_dna_scanner"].ingredients = {
     {type = "item", name = "cryolab", amount = 1},
-    {type = "item", name = "planetaris-ruby-laser-turret", amount = 4, quality_min = "mythic"},
+    {type = "item", name = "planetaris-ruby-laser-turret", amount = 4, quality_min = "legendary"},
     {type = "item", name = "panglia_panglite_glass", amount = 20},
-    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 100, quality_min = "mythic"},
-    {type = "item", name = "quantum-processor", amount = 100, quality_min = "mythic"},
-    {type = "item", name = "maraxsis-super-sealant-substance", amount = 20, quality_min = "mythic"},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 100, quality_min = "legendary"},
+    {type = "item", name = "quantum-processor", amount = 100, quality_min = "legendary"},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 20, quality_min = "legendary"},
     {type = "fluid", name = "hyperlanes-bioslurry", amount = 100},
 }
 data.raw["recipe"]["panglia_dna_scanner"].categories = {"mechanics"}
+
+
+-- DNA builder
+data.raw["recipe"]["panglia_dna_builder"].ingredients = {
+    {type = "item", name = "panglia_dna_scanner", amount = 1},
+    {type = "item", name = "biovat", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "hyperlanes-artificial-lifeform", amount = 1},
+    {type = "item", name = "ai-tier-10", amount = 3, quality_min = "legendary"},
+    {type = "item", name = "planetaris-crystalization-motor", amount = 20, quality_min = "legendary"},
+    {type = "item", name = "datacell-dna-raw", amount = 100},
+    {type = "item", name = "datacell-dna-sequenced", amount = 50},
+    {type = "fluid", name = "panglia_branbalite_slurry", amount = 200},
+}
+
+
+-- Cloned specimen embryo candidate
+-- data.raw["recipe"]["panglia_cloned_specimen_embryo_candidate"].ingredients = {
+--     {type = "item", name = "hyperlanes-artificial-lifeform", amount = 1, quality_min = "uncommon"},
+--     {type = "fluid", name = "dna_sequenced_data", amount = 10},
+-- }
+-- guys. im scared. im scared to touch this chain its too crazy
+
+
+-- Simulation chamber
+data.raw["recipe"]["simulation_chamber"].ingredients = {
+    {type = "item", name = "panglia_dna_scanner", amount = 1},
+    {type = "item", name = "planetaris-incubator", amount = 1},
+    {type = "item", name = "biovat", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "ai-tier-10", amount = 3, quality_min = "legendary"},
+    {type = "item", name = "planetaris-simulating-unit", amount = 20, quality_min = "legendary"},
+    {type = "item", name = "hyperlanes-artificial-lifeform", amount = 1},
+    {type = "item", name = "panglia_panglite_fiber", amount = 100},
+    {type = "fluid", name = "panglia_branbalite_slurry", amount = 200},
+}
+
+
+-- Synaptic assembler
+data.raw["recipe"]["thinking-brain"].ingredients = {
+    {type = "item", name = "planetaris-bioassembler-seed", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "panglia_cloned_specimen_body_3_genius", amount = 1},
+    {type = "item", name = "simulation_chamber", amount = 1},
+    {type = "item", name = "data-processor", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "ai-tier-10", amount = 3, quality_min = "legendary"},
+    {type = "item", name = "hyperlanes-antimatter-particulate", amount = 100},
+    {type = "item", name = "hyperlanes-time-crystal-b", amount = 1},
+    {type = "fluid", name = "panglia_branbalite_slurry", amount = 200},
+}
+data.raw["assembling-machine"]["thinking-brain"].effect_receiver = data.raw["assembling-machine"]["thinking-brain"].effect_receiver or {}
+data.raw["assembling-machine"]["thinking-brain"].effect_receiver.base_effect = {
+    productivity = 1.0,
+    quality = 0.5
+}
+data.raw["assembling-machine"]["thinking-brain"].crafting_speed = 4.0
+
+
+-- Sentient processor
+data.raw["recipe"]["panglia_sentient_processor"].ingredients = {
+    {type = "item", name = "panglia_cloned_specimen_body_3", amount = 1, quality_min = "uncommon"},
+    {type = "item", name = "quantum-processor", amount = 10, quality_min = "legendary"},
+    {type = "item", name = "ai-tier-10", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "panglia_panglite_fiber", amount = 5},
+    {type = "item", name = "hyperlanes-time-crystal-a", amount = 1},
+    {type = "fluid", name = "panglia_branbalite_slurry", amount = 200},
+}
+
+
+-- Asteroid collector mk2
+data.raw["recipe"]["snouz_better_asteroid_collector"].ingredients = {
+    {type = "item", name = "asteroid-collector", amount = 5, quality_min = "legendary"},
+    {type = "item", name = "panglia_sentient_processor", amount = 1},
+    {type = "item", name = "planetaris-crystalization-motor", amount = 50, quality_min = "legendary"},
+    {type = "fluid", name = "fluoroketone-cold", amount = 6},
+}
 
 
 
