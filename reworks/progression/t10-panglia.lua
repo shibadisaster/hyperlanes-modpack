@@ -12,6 +12,61 @@ data.raw["wall"]["snouz_wall_hull"].max_health = 1000
 data.raw["wall"]["snouz_wall_hull"].healing_per_tick = 10.0 / 60.0
 
 
+-- Panglite multiplication
+data.raw["recipe"]["panglia_panglite"].categories = {"leadworking"}
+data.raw["recipe"]["panglia_panglite"].ingredients = {
+    {type = "item", name = "panglia_panglite", amount = 5},
+    {type = "item", name = "hyperlanes-antimatter-particulate", amount = 2},
+    {type = "item", name = "hyperlanes-time-crystal-a", amount = 1},
+}
+data.raw["recipe"]["panglia_panglite"].results = {
+    {type = "item", name = "panglia_panglite", amount_min = 2, amount_max = 4},
+    {type = "item", name = "hyperlanes-time-crystal-a", amount = 1, ignored_by_productivity = 1},
+}
+
+
+-- Branbalite slurry
+data.raw["recipe"]["panglia_branbalite_slurry"].ingredients = {
+    {type = "item", name = "panglia_branbalite", amount = 1},
+    {type = "fluid", name = "hyperlanes-bioslurry", amount = 100},
+    {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 5},
+}
+
+
+-- Timewarp analyzer
+data.raw["recipe"]["panglia_timewarp_data_maker"].ingredients = {
+    {type = "item", name = "data-processor", amount = 1},
+    {type = "item", name = "panglia_panglite", amount = 50},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 50, quality_min = "mythic"},
+    {type = "item", name = "quantum-processor", amount = 50, quality_min = "mythic"},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 50, quality_min = "mythic"},
+}
+
+
+-- Panglite fiber
+data.raw["recipe"]["panglia_panglite_fiber"].ingredients = {
+    {type = "item", name = "ske_mesh", amount = 20, quality_min = "mythic"},
+    {type = "item", name = "panglia_panglite", amount = 50},
+    {type = "item", name = "plutonium-239", amount = 10},
+    {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1},
+}
+data.raw["recipe"]["panglia_panglite_fiber"].results = {
+    {type = "item", name = "panglia_panglite_fiber", amount = 20},
+    {type = "item", name = "plutonium-238", amount = 5, quality_change = 1},
+    {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.98},
+}
+
+
+-- Panglite glass
+data.raw["recipe"]["panglia_panglite_glass"].ingredients = {
+    {type = "item", name = "maraxsis-glass-panes", amount = 1, quality_min = "mythic"},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 2, quality_min = "mythic"},
+    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 5, quality_min = "mythic"},
+    {type = "item", name = "panglia_panglite", amount = 10},
+}
+
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
@@ -61,3 +116,5 @@ data.raw["technology"]["snouz_wall_hull"].prerequisites = {"panglia_panglite_fib
 data.raw["technology"]["snouz_long_electric_gun_turret"].prerequisites = {"panglia_panglite_fiber"}
 
 data.raw["technology"]["panglia_simulation_chamber"].prerequisites = {"panglia_dna_manipulation_phasetwo_tech"}
+
+data.raw["technology"]["snouz_better_asteroid_collector"].prerequisites = {"panglia_sentient_processor"}
