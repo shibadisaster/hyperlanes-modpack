@@ -203,7 +203,6 @@ data.raw["recipe"]["panglia_sentient_processor"].ingredients = {
     {type = "item", name = "ai-tier-10", amount = 1, quality_min = "legendary"},
     {type = "item", name = "panglia_panglite_fiber", amount = 5},
     {type = "item", name = "hyperlanes-time-crystal-a", amount = 1},
-    {type = "fluid", name = "panglia_branbalite_slurry", amount = 200},
 }
 
 

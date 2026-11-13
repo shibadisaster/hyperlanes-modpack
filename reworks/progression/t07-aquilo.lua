@@ -45,6 +45,9 @@ data.raw["recipe"]["foundation"].ingredients = {
     {type = "fluid", name = "fluoroketone-cold", amount = 20},
     {type = "fluid", name = "hyperlanes-metamaterial-microsuspension", amount = 10},
 }
+data.raw["recipe"]["foundation"].results = {
+    {type = "item", name = "foundation", amount = 5},
+}
 
 
 -- Ice platform
