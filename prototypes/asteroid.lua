@@ -276,7 +276,24 @@ for index, planet_name in ipairs(utils.planets) do
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
-            icon = "__hyperlanes-modpack__/graphics/icons/q1.png",
+            -- icon = "__hyperlanes-modpack__/graphics/icons/q1.png",
+            icons = {
+                {
+                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                },
+                {
+                    icon = "__base__/graphics/icons/arrows/up-arrow.png",
+                    shift = {0, 6},
+                    scale = 0.20,
+                    floating = true
+                },
+                {
+                    icon = "__hyperlanes-modpack__/graphics/icons/q1.png",
+                    shift = {0, -6},
+                    scale = 0.25,
+                    floating = true
+                }
+            },
             ingredients = {
                 {type = "item", name = asteroid_name, amount = 1, quality_min = "broken", quality_max = "broken"},
                 {type = "fluid", name = "water", amount = math.ceil(data_base * (data_req_mult_per_quality ^ -1) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1))}
@@ -299,7 +316,24 @@ for index, planet_name in ipairs(utils.planets) do
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
-            icon = "__hyperlanes-modpack__/graphics/icons/q2.png",
+            -- icon = "__hyperlanes-modpack__/graphics/icons/q2.png",
+            icons = {
+                {
+                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                },
+                {
+                    icon = "__base__/graphics/icons/arrows/up-arrow.png",
+                    shift = {0, 6},
+                    scale = 0.20,
+                    floating = true
+                },
+                {
+                    icon = "__hyperlanes-modpack__/graphics/icons/q2.png",
+                    shift = {0, -6},
+                    scale = 0.25,
+                    floating = true
+                }
+            },
             ingredients = {
                 {type = "item", name = asteroid_name, amount = 1, quality_min = "normal", quality_max = "normal"},
                 {type = "fluid", name = "muluna-astronomical-data", amount = math.ceil(data_base * (data_req_mult_per_quality ^ 0) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1)), fluidbox_index = 30}
@@ -322,7 +356,24 @@ for index, planet_name in ipairs(utils.planets) do
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
-            icon = "__hyperlanes-modpack__/graphics/icons/q3.png",
+            -- icon = "__hyperlanes-modpack__/graphics/icons/q3.png",
+            icons = {
+                {
+                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                },
+                {
+                    icon = "__base__/graphics/icons/arrows/up-arrow.png",
+                    shift = {0, 6},
+                    scale = 0.20,
+                    floating = true
+                },
+                {
+                    icon = "__hyperlanes-modpack__/graphics/icons/q3.png",
+                    shift = {0, -6},
+                    scale = 0.25,
+                    floating = true
+                }
+            },
             ingredients = {
                 {type = "item", name = asteroid_name, amount = 1, quality_min = "uncommon", quality_max = "uncommon"},
                 {type = "fluid", name = "muluna-astronomical-data", amount = math.ceil(data_base * (data_req_mult_per_quality ^ 1) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1)), fluidbox_index = 30}
@@ -345,7 +396,24 @@ for index, planet_name in ipairs(utils.planets) do
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
-            icon = "__hyperlanes-modpack__/graphics/icons/q4.png",
+            -- icon = "__hyperlanes-modpack__/graphics/icons/q4.png",
+            icons = {
+                {
+                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                },
+                {
+                    icon = "__base__/graphics/icons/arrows/up-arrow.png",
+                    shift = {0, 6},
+                    scale = 0.20,
+                    floating = true
+                },
+                {
+                    icon = "__hyperlanes-modpack__/graphics/icons/q4.png",
+                    shift = {0, -6},
+                    scale = 0.25,
+                    floating = true
+                }
+            },
             ingredients = {
                 {type = "item", name = asteroid_name, amount = 1, quality_min = "rare", quality_max = "rare"},
                 {type = "fluid", name = "solved-equation-data", amount = math.ceil(data_base * (data_req_mult_per_quality ^ 2) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1)), fluidbox_index = 30},
@@ -368,7 +436,24 @@ for index, planet_name in ipairs(utils.planets) do
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
-            icon = "__hyperlanes-modpack__/graphics/icons/q5.png",
+            -- icon = "__hyperlanes-modpack__/graphics/icons/q5.png",
+            icons = {
+                {
+                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                },
+                {
+                    icon = "__base__/graphics/icons/arrows/up-arrow.png",
+                    shift = {0, 6},
+                    scale = 0.20,
+                    floating = true
+                },
+                {
+                    icon = "__hyperlanes-modpack__/graphics/icons/q5.png",
+                    shift = {0, -6},
+                    scale = 0.25,
+                    floating = true
+                }
+            },
             ingredients = {
                 {type = "item", name = asteroid_name, amount = 1, quality_min = "epic", quality_max = "epic"},
                 {type = "fluid", name = "cosmic-data", amount = math.ceil(data_base * (data_req_mult_per_quality ^ 3) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1)), fluidbox_index = 30}
@@ -391,7 +476,24 @@ for index, planet_name in ipairs(utils.planets) do
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
-            icon = "__hyperlanes-modpack__/graphics/icons/q6.png",
+            -- icon = "__hyperlanes-modpack__/graphics/icons/q6.png",
+            icons = {
+                {
+                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                },
+                {
+                    icon = "__base__/graphics/icons/arrows/up-arrow.png",
+                    shift = {0, 6},
+                    scale = 0.20,
+                    floating = true
+                },
+                {
+                    icon = "__hyperlanes-modpack__/graphics/icons/q6.png",
+                    shift = {0, -6},
+                    scale = 0.25,
+                    floating = true
+                }
+            },
             ingredients = {
                 {type = "item", name = asteroid_name, amount = 1, quality_min = "legendary", quality_max = "legendary"},
                 {type = "fluid", name = "cosmic-data", amount = math.ceil(data_base * (data_req_mult_per_quality ^ 4) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1)), fluidbox_index = 30}
@@ -414,7 +516,24 @@ for index, planet_name in ipairs(utils.planets) do
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
-            icon = "__hyperlanes-modpack__/graphics/icons/q7.png",
+            -- icon = "__hyperlanes-modpack__/graphics/icons/q7.png",
+            icons = {
+                {
+                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                },
+                {
+                    icon = "__base__/graphics/icons/arrows/up-arrow.png",
+                    shift = {0, 6},
+                    scale = 0.20,
+                    floating = true
+                },
+                {
+                    icon = "__hyperlanes-modpack__/graphics/icons/q7.png",
+                    shift = {0, -6},
+                    scale = 0.25,
+                    floating = true
+                }
+            },
             ingredients = {
                 {type = "item", name = asteroid_name, amount = 1, quality_min = "mythic", quality_max = "mythic"},
                 {type = "fluid", name = "timewarp_data", amount = math.ceil(data_base * (data_req_mult_per_quality ^ 5) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1)), fluidbox_index = 30}
