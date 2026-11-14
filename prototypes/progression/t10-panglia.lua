@@ -37,7 +37,18 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local enlightenment_step = {
         type = "item",
         name = "hyperlanes-enlightened-processor-step-" .. index,
-        icon = "__panglia_planet__/graphics/icons/panglia_sentient_processor.png",
+        -- icon = "__panglia_planet__/graphics/icons/panglia_sentient_processor.png",
+        icons = {
+            {
+                icon = "__panglia_planet__/graphics/icons/panglia_sentient_processor.png",
+            },
+            {
+                icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
+                shift = {0, -8},
+                scale = 0.25,
+                floating = true
+            },
+        },
         -- subgroup = "moshine-datacells",
         -- order = utils.science_order[science_name .. "-science-pack"],
         -- inventory_move_sound = item_sounds.module_inventory_move,
@@ -51,6 +62,23 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         type = "recipe",
         name = "hyperlanes-enlightened-processor-step-" .. index,
         enabled = false,
+        icons = {
+            {
+                icon = "__panglia_planet__/graphics/icons/panglia_sentient_processor.png",
+            },
+            {
+                icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
+                shift = {0, -12},
+                scale = 0.25,
+                floating = true
+            },
+            {
+                icon = "__base__/graphics/icons/arrows/down-arrow.png",
+                shift = {0, -6},
+                scale = 0.20,
+                floating = true
+            },
+        },
         ingredients =
         {
             {type = "item", name = "panglia_sentient_processor", amount = 1, quality_min = "legendary"},
@@ -64,7 +92,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         allow_productivity = false,
         categories = {"data-processing"},
         auto_recycle = true,
-        main_product = "hyperlanes-enlightened-processor-step-" .. index
+        -- main_product = "hyperlanes-enlightened-processor-step-" .. index
     }
 
     if index > 1 then
