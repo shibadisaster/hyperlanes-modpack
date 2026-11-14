@@ -22,7 +22,8 @@ local planet_asteroid_crushing_results = {
         {type = "item", name = "hyperlanes-cerys-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
     },
     ["arig"] = {
-        {type = "item", name = "stone", amount = 30},
+        {type = "item", name = "stone", amount = 20},
+        {type = "item", name = "planetaris-sandstone-foundation", amount = 10},
         {type = "item", name = "hyperlanes-arig-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
     },
     ["muria"] = {
@@ -35,13 +36,36 @@ local planet_asteroid_crushing_results = {
         {type = "item", name = "hyperlanes-rubia-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
     },
     ["hyarion"] = nil,
-    ["moshine"] = nil,
-    ["aquilo"] = nil,
-    ["maraxsis"] = nil,
-    ["paracelsin"] = nil,
-    ["tellus"] = nil,
-    ["vesta"] = nil,
-    ["panglia"] = nil
+    ["moshine"] = {
+        {type = "item", name = "neodymium", amount = 20},
+        {type = "item", name = "hyperlanes-moshine-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
+    },
+    ["aquilo"] = {
+        {type = "item", name = "ice-platform", amount = 20},
+        {type = "item", name = "hyperlanes-aquilo-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
+    },
+    ["maraxsis"] = {
+        {type = "item", name = "limestone", amount = 20},
+        {type = "item", name = "hyperlanes-maraxsis-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
+    },
+    ["paracelsin"] = {
+        {type = "item", name = "sphalerite", amount = 10},
+        {type = "item", name = "tetrahedrite", amount = 10},
+        {type = "item", name = "hyperlanes-paracelsin-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
+    },
+    ["tellus"] = {
+        {type = "item", name = "planetaris-chloroplast-fruit", amount = 10},
+        {type = "item", name = "planetaris-mushroom-cap", amount = 10},
+        {type = "item", name = "hyperlanes-tellus-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
+    },
+    ["vesta"] = {
+        {type = "item", name = "ske_algea_clump", amount = 15},
+        {type = "item", name = "hyperlanes-vesta-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
+    },
+    ["panglia"] = {
+        {type = "item", name = "panglia_panglite", amount = 20},
+        {type = "item", name = "hyperlanes-panglia-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
+    }
 }
 
 local planet_advanced_asteroid_crushing_results = {
@@ -65,14 +89,15 @@ local planet_advanced_asteroid_crushing_results = {
     },
     ["cerys"] = {
         {type = "item", name = "cerys-nuclear-scrap", amount = 5},
-        {type = "item", name = "plutonium-239", amount = 2},
+        {type = "item", name = "plutonium-239", amount = 1},
         {type = "item", name = "plutonium-238", amount = 1, independent_probability = 0.20},
         {type = "item", name = "hyperlanes-cerys-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
     },
     ["arig"] = {
-        {type = "item", name = "stone", amount = 15},
+        {type = "item", name = "stone", amount = 10},
+        {type = "item", name = "planetaris-sandstone-foundation", amount = 5},
         {type = "item", name = "planetaris-cactus", amount = 5},
-        {type = "item", name = "hyperlanes-cerys-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
+        {type = "item", name = "hyperlanes-arig-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
     },
     ["muria"] = {
         {type = "item", name = "acidophile-lichen", amount = 5},
@@ -87,13 +112,45 @@ local planet_advanced_asteroid_crushing_results = {
         {type = "item", name = "hyperlanes-rubia-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
     },
     ["hyarion"] = nil,
-    ["moshine"] = nil,
-    ["aquilo"] = nil,
-    ["maraxsis"] = nil,
-    ["paracelsin"] = nil,
-    ["tellus"] = nil,
-    ["vesta"] = nil,
-    ["panglia"] = nil
+    ["moshine"] = {
+        {type = "item", name = "neodymium", amount = 10},
+        {type = "item", name = "datacell-raw-data", amount = 1},
+        {type = "item", name = "hyperlanes-moshine-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
+    },
+    ["aquilo"] = {
+        {type = "item", name = "ice-platform", amount = 10},
+        {type = "item", name = "lithium", amount = 4},
+        {type = "item", name = "hyperlanes-aquilo-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
+    },
+    ["maraxsis"] = {
+        {type = "item", name = "limestone", amount = 10},
+        {type = "item", name = "salt", amount = 3},
+        {type = "item", name = "maraxsis-coral", amount = 3},
+        {type = "item", name = "hyperlanes-maraxsis-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
+    },
+    ["paracelsin"] = {
+        {type = "item", name = "sphalerite", amount = 5},
+        {type = "item", name = "tetrahedrite", amount = 5},
+        {type = "item", name = "zinc", amount = 1},
+        {type = "item", name = "hyperlanes-paracelsin-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
+    },
+    ["tellus"] = {
+        {type = "item", name = "planetaris-chloroplast-fruit", amount = 5},
+        {type = "item", name = "planetaris-mushroom-cap", amount = 5},
+        {type = "item", name = "planetaris-wasp-egg", amount = 1},
+        {type = "item", name = "hyperlanes-tellus-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
+    },
+    ["vesta"] = {
+        {type = "item", name = "ske_algea_clump", amount = 5},
+        {type = "item", name = "ske_algea_clump_rare", amount = 1},
+        {type = "item", name = "ske_ammonia_chilled_plate", amount = 1},
+        {type = "item", name = "hyperlanes-vesta-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
+    },
+    ["panglia"] = {
+        {type = "item", name = "panglia_panglite", amount = 10},
+        {type = "item", name = "datacell-timewarp_data", amount = 1},
+        {type = "item", name = "hyperlanes-panglia-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
+    }
 }
 
 
