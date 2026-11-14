@@ -154,6 +154,27 @@ local planet_advanced_asteroid_crushing_results = {
 }
 
 
+local planet_associated_asteroids = {
+    ["nauvis"] = {"metallic-asteroid-chunk", "carbonic-asteroid-chunk", "oxide-asteroid-chunk"},
+    ["muluna"] = {"anorthite-chunk"},
+    ["fulgora"] = {"hyperlanes-fulgora-asteroid-chunk"},
+    ["gleba"] = {"hyperlanes-gleba-asteroid-chunk"},
+    ["vulcanus"] = {"hyperlanes-vulcanus-asteroid-chunk"},
+    ["cerys"] = {"hyperlanes-cerys-asteroid-chunk"},
+    ["arig"] = {"hyperlanes-arig-asteroid-chunk"},
+    ["muria"] = {"hyperlanes-muria-asteroid-chunk"},
+    ["rubia"] = {"hyperlanes-rubia-asteroid-chunk"},
+    ["hyarion"] = {"bismuth-asteroid-chunk"},
+    ["moshine"] = {"hyperlanes-moshine-asteroid-chunk"},
+    ["aquilo"] = {"hyperlanes-aquilo-asteroid-chunk"},
+    ["maraxsis"] = {"hyperlanes-maraxsis-asteroid-chunk"},
+    ["paracelsin"] = {"hyperlanes-paracelsin-asteroid-chunk"},
+    ["tellus"] = {"hyperlanes-tellus-asteroid-chunk"},
+    ["vesta"] = {"hyperlanes-vesta-asteroid-chunk"},
+    ["panglia"] = {"hyperlanes-panglia-asteroid-chunk"}
+}
+
+
 
 
 
@@ -184,7 +205,6 @@ for index, planet_name in ipairs(utils.planets) do
 
 
     -- Recipes
-
     if planet_asteroid_crushing_results[planet_name] ~= nil then
         local asteroid_chunk_crushing = {
             type = "recipe",
@@ -231,4 +251,188 @@ for index, planet_name in ipairs(utils.planets) do
 
     data:extend({asteroid_chunk_item, asteroid_chunk})
     :: continue ::
+end
+
+
+-- ╒════╗ ╒════╗ ╒══════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗ ╒════╗      ╒══════╗  ╒════╗   ╒════╗ ╒════════╗ 
+-- └┐  ╓╜ └┐  ╓╜ └┐  ╓───┐  ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║ └┐  ╓╜      └─┐  ╓─╜  │    ╚╗  └┐  ╓╜ │  ╓───┐ ║ 
+--  │  ║   │  ║   │  ║   │  ║ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜  │  ║         │  ║    │  ╟┐ ╚╗  │  ║  │  ║   └─╜ 
+--  │  ║   │  ║   │  ╚═══╛  ║ │  ║         │  ╚══╛  ║  │  ║         │  ║         │  ║    │  ║└┐ ╚╗ │  ║  │  ║       
+--  │  ║   │  ║   │  ╓──────╜ │  ║         └──┐  ╓──╜  │  ║         │  ║         │  ║    │  ║ └┐ ╚╗│  ║  │  ║ ╒════╗
+--  │  ║   │  ║   │  ║        │  ║    ╒═╗     │  ║     │  ║    ╒═╗  │  ║   ╒═╗   │  ║    │  ║  └┐ ╚╡  ║  │  ║ └┐  ╓╜
+--  │  ╚═══╛  ║  ╒╛  ╚╗       │  ╚════╛ ║    ╒╛  ╚╗    │  ╚════╛ ║ ╒╛  ╚═══╛ ║ ╒═╛  ╚═╗ ╒╛  ╚╗  └┐    ║  │  ╚══╛  ║ 
+--  └─────────╜  └────╜       └─────────╜    └────╜    └─────────╜ └─────────╜ └──────╜ └────╜   └────╜  └────────╜ 
+
+
+local data_base = 5
+local data_req_mult_per_tier = 1.35
+local data_req_mult_per_quality = 1.75
+
+for index, planet_name in ipairs(utils.planets) do
+    for index2, asteroid_name in ipairs(planet_associated_asteroids[planet_name]) do
+        local asteroid_chunk_upcycle_broken_to_normal = {
+            type = "recipe",
+            name = asteroid_name .. "-upcycling-q0-to-q1",
+            enabled = false,
+            subgroup = "space-crushing",
+            order = "b-a-z-c",
+            icon = "__hyperlanes-modpack__/graphics/icons/q1.png",
+            ingredients = {
+                {type = "item", name = asteroid_name, amount = 1, quality_min = "broken", quality_max = "broken"},
+                {type = "fluid", name = "water", amount = math.ceil(data_base * (data_req_mult_per_quality ^ -1) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1))}
+            },
+            energy_required = 2.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
+            results = {
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal"},
+            },
+            main_product = asteroid_name,
+            allow_productivity = false,
+            categories = {"muluna-crusher-2"},
+            auto_recycle = false,
+            allow_decomposition = false
+        }
+
+        local asteroid_chunk_upcycle_normal_to_uncommon = {
+            type = "recipe",
+            name = asteroid_name .. "-upcycling-q1-to-q2",
+            enabled = false,
+            subgroup = "space-crushing",
+            order = "b-a-z-c",
+            icon = "__hyperlanes-modpack__/graphics/icons/q2.png",
+            ingredients = {
+                {type = "item", name = asteroid_name, amount = 1, quality_min = "normal", quality_max = "normal"},
+                {type = "fluid", name = "muluna-astronomical-data", amount = math.ceil(data_base * (data_req_mult_per_quality ^ 0) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1)), fluidbox_index = 30}
+            },
+            energy_required = 3.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
+            results = {
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "uncommon", quality_max = "uncommon"},
+            },
+            main_product = asteroid_name,
+            allow_productivity = false,
+            categories = {"muluna-crusher-2"},
+            auto_recycle = false,
+            allow_decomposition = false
+        }
+
+        local asteroid_chunk_upcycle_uncommon_to_rare = {
+            type = "recipe",
+            name = asteroid_name .. "-upcycling-q2-to-q3",
+            enabled = false,
+            subgroup = "space-crushing",
+            order = "b-a-z-c",
+            icon = "__hyperlanes-modpack__/graphics/icons/q3.png",
+            ingredients = {
+                {type = "item", name = asteroid_name, amount = 1, quality_min = "uncommon", quality_max = "uncommon"},
+                {type = "fluid", name = "muluna-astronomical-data", amount = math.ceil(data_base * (data_req_mult_per_quality ^ 1) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1)), fluidbox_index = 30}
+            },
+            energy_required = 4.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
+            results = {
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "rare", quality_max = "rare"},
+            },
+            main_product = asteroid_name,
+            allow_productivity = false,
+            categories = {"muluna-crusher-2"},
+            auto_recycle = false,
+            allow_decomposition = false
+        }
+
+        local asteroid_chunk_upcycle_rare_to_epic = {
+            type = "recipe",
+            name = asteroid_name .. "-upcycling-q3-to-q4",
+            enabled = false,
+            subgroup = "space-crushing",
+            order = "b-a-z-c",
+            icon = "__hyperlanes-modpack__/graphics/icons/q4.png",
+            ingredients = {
+                {type = "item", name = asteroid_name, amount = 1, quality_min = "rare", quality_max = "rare"},
+                {type = "fluid", name = "solved-equation-data", amount = math.ceil(data_base * (data_req_mult_per_quality ^ 2) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1)), fluidbox_index = 30},
+            },
+            energy_required = 5.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
+            results = {
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "epic", quality_max = "epic"},
+            },
+            main_product = asteroid_name,
+            allow_productivity = false,
+            categories = {"muluna-crusher-2"},
+            auto_recycle = false,
+            allow_decomposition = false
+        }
+
+        local asteroid_chunk_upcycle_epic_to_legendary = {
+            type = "recipe",
+            name = asteroid_name .. "-upcycling-q4-to-q5",
+            enabled = false,
+            subgroup = "space-crushing",
+            order = "b-a-z-c",
+            icon = "__hyperlanes-modpack__/graphics/icons/q5.png",
+            ingredients = {
+                {type = "item", name = asteroid_name, amount = 1, quality_min = "epic", quality_max = "epic"},
+                {type = "fluid", name = "cosmic-data", amount = math.ceil(data_base * (data_req_mult_per_quality ^ 3) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1)), fluidbox_index = 30}
+            },
+            energy_required = 6.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
+            results = {
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "legendary", quality_max = "legendary"},
+            },
+            main_product = asteroid_name,
+            allow_productivity = false,
+            categories = {"muluna-crusher-2"},
+            auto_recycle = false,
+            allow_decomposition = false
+        }
+
+        local asteroid_chunk_upcycle_legendary_to_mythic = {
+            type = "recipe",
+            name = asteroid_name .. "-upcycling-q5-to-q6",
+            enabled = false,
+            subgroup = "space-crushing",
+            order = "b-a-z-c",
+            icon = "__hyperlanes-modpack__/graphics/icons/q6.png",
+            ingredients = {
+                {type = "item", name = asteroid_name, amount = 1, quality_min = "legendary", quality_max = "legendary"},
+                {type = "fluid", name = "cosmic-data", amount = math.ceil(data_base * (data_req_mult_per_quality ^ 4) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1)), fluidbox_index = 30}
+            },
+            energy_required = 7.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
+            results = {
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "mythic", quality_max = "mythic"},
+            },
+            main_product = asteroid_name,
+            allow_productivity = false,
+            categories = {"muluna-crusher-2"},
+            auto_recycle = false,
+            allow_decomposition = false
+        }
+
+        local asteroid_chunk_upcycle_mythic_to_ethereal = {
+            type = "recipe",
+            name = asteroid_name .. "-upcycling-q6-to-q7",
+            enabled = false,
+            subgroup = "space-crushing",
+            order = "b-a-z-c",
+            icon = "__hyperlanes-modpack__/graphics/icons/q7.png",
+            ingredients = {
+                {type = "item", name = asteroid_name, amount = 1, quality_min = "mythic", quality_max = "mythic"},
+                {type = "fluid", name = "timewarp_data", amount = math.ceil(data_base * (data_req_mult_per_quality ^ 5) * data_req_mult_per_tier ^ (utils.planet_tier_associations[planet_name] - 1)), fluidbox_index = 30}
+            },
+            energy_required = 8.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
+            results = {
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "ethereal", quality_max = "ethereal"},
+            },
+            main_product = asteroid_name,
+            allow_productivity = false,
+            categories = {"muluna-crusher-2"},
+            auto_recycle = false,
+            allow_decomposition = false
+        }
+
+
+        data:extend({
+            asteroid_chunk_upcycle_broken_to_normal,
+            asteroid_chunk_upcycle_normal_to_uncommon,
+            asteroid_chunk_upcycle_uncommon_to_rare,
+            asteroid_chunk_upcycle_rare_to_epic,
+            asteroid_chunk_upcycle_epic_to_legendary,
+            asteroid_chunk_upcycle_legendary_to_mythic,
+            asteroid_chunk_upcycle_mythic_to_ethereal,
+        })
+    end
 end
