@@ -264,7 +264,7 @@ end
 --  └─────────╜  └────╜       └─────────╜    └────╜    └─────────╜ └─────────╜ └──────╜ └────╜   └────╜  └────────╜ 
 
 
-local data_base = 5
+local data_base = 0.5
 local data_req_mult_per_tier = 1.35
 local data_req_mult_per_quality = 1.75
 
@@ -283,7 +283,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 2.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal"},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "broken", quality_max = "broken", independent_probability = 0.40},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal", independent_probability = 0.10},
             },
             main_product = asteroid_name,
             allow_productivity = false,
@@ -305,7 +306,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 3.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "uncommon", quality_max = "uncommon"},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal", independent_probability = 0.40},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "uncommon", quality_max = "uncommon", independent_probability = 0.10},
             },
             main_product = asteroid_name,
             allow_productivity = false,
@@ -327,7 +329,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 4.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "rare", quality_max = "rare"},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "uncommon", quality_max = "uncommon", independent_probability = 0.40},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "rare", quality_max = "rare", independent_probability = 0.10},
             },
             main_product = asteroid_name,
             allow_productivity = false,
@@ -349,7 +352,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 5.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "epic", quality_max = "epic"},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "rare", quality_max = "rare", independent_probability = 0.40},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "epic", quality_max = "epic", independent_probability = 0.10},
             },
             main_product = asteroid_name,
             allow_productivity = false,
@@ -371,7 +375,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 6.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "legendary", quality_max = "legendary"},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "epic", quality_max = "epic", independent_probability = 0.40},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "legendary", quality_max = "legendary", independent_probability = 0.10},
             },
             main_product = asteroid_name,
             allow_productivity = false,
@@ -393,7 +398,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 7.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "mythic", quality_max = "mythic"},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "legendary", quality_max = "legendary", independent_probability = 0.40},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "mythic", quality_max = "mythic", independent_probability = 0.10},
             },
             main_product = asteroid_name,
             allow_productivity = false,
@@ -415,7 +421,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 8.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "ethereal", quality_max = "ethereal"},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "mythic", quality_max = "mythic", independent_probability = 0.40},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "ethereal", quality_max = "ethereal", independent_probability = 0.10},
             },
             main_product = asteroid_name,
             allow_productivity = false,
