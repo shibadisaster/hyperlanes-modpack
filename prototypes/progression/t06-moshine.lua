@@ -131,7 +131,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         gas_temperature = 0,
         base_color = {255, 63, 63},
         flow_color = {255, 63, 63},
-        icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
+        icon = "__hyperlanes-modpack__/graphics/icons/data/automation.png",
         auto_barrel = false,
         draw_as_glow = true,
     }
@@ -376,7 +376,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         gas_temperature = 0,
         base_color = {255, 63, 63},
         flow_color = {255, 63, 63},
-        icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
+        icon = "__hyperlanes-modpack__/graphics/icons/data/automation-analyzed.png",
         auto_barrel = false,
         draw_as_glow = true,
     }

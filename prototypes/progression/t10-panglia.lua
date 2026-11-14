@@ -92,7 +92,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         allow_productivity = false,
         categories = {"data-processing"},
         auto_recycle = true,
-        -- main_product = "hyperlanes-enlightened-processor-step-" .. index
+        main_product = "hyperlanes-enlightened-processor-step-" .. index
     }
 
     if index > 1 then
