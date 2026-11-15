@@ -566,6 +566,34 @@ utils.data_analysis_sciences = {
     "promethium",
 }
 
+utils.data_analysis_sciences_technology_associations = {
+    ["automation"]                  = "automation-science-pack",
+    ["logistic"]                    = "logistic-science-pack",
+    ["military"]                    = "military-science-pack",
+    ["chemical"]                    = "chemical-science-pack",
+    ["space"]                       = "space-science-pack",
+    ["production"]                  = "production-science-pack",
+    ["utility"]                     = "utility-science-pack",
+    ["electromagnetic"]             = "electromagnetic-science-pack",
+    ["agricultural"]                = "agricultural-science-pack",
+    ["metallurgic"]                 = "metallurgic-science-pack",
+    ["cerysian"]                    = "cerysian-science-pack",
+    ["interstellar"]                = "interstellar-science-pack",
+    ["planetaris-compression"]      = "planetaris-compression-science",
+    ["acidworking"]                 = "acidworking-science-pack",
+    ["biorecycling"]                = "craptonite-processing",
+    ["rubia-biofusion"]             = "rubia-biofusion-science-pack",
+    ["planetaris-polishing"]        = "planetaris-polishing-science-pack",
+    ["planetaris-refraction"]       = "planetaris-refraction-science-pack",
+    ["cryogenic"]                   = "cryogenic-science-pack",
+    ["hydraulic"]                   = "hydraulic-science-pack",
+    ["galvanization"]               = "galvanization-science-pack",
+    ["planetaris-bioengineering"]   = "planetaris-bioengineering-science-pack",
+    ["planetaris-pathological"]     = "planetaris-pathological-science-pack",
+    ["gas-manipulation"]            = "s1_gas_manipulation_science_pack",
+    ["promethium"]                  = "promethium-science-pack",
+}
+
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗      ╒═════════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └─┐  ╓─╜ └┐  ╓───┐ ║ └┐  ╓───┐  ║      │  ╓───┐  ║ └──────┐  ║

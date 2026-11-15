@@ -268,7 +268,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
             item = {name = science_name .. "-science-pack", quality = "rare", comparator = ">="},
             count = 200
         },
-        prerequisites = {"hyperlanes-data-analysis"},
+        prerequisites = {"hyperlanes-data-analysis", utils.data_analysis_sciences_technology_associations[science_name]},
         order = "zzz-data-analysis-" .. utils.science_order[science_name .. "-science-pack"],
         essential = false
     }
