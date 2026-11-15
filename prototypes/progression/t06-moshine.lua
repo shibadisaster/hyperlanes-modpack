@@ -154,7 +154,16 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local datacell = {
         type = "item",
         name = "hyperlanes-datacell-" .. science_name,
-        icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
+        -- icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
+        icons = {
+            {
+                icon = "__Moshine__/graphics/icons/data/datacell-empty.png"
+            },
+            {
+                icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. ".png",
+                scale = 0.30
+            },
+        },
         subgroup = "moshine-datacells",
         order = utils.science_order[science_name .. "-science-pack"],
         inventory_move_sound = item_sounds.module_inventory_move,
@@ -172,7 +181,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local datacell_recipe = {
         type = "recipe",
         name = "hyperlanes-datacell-" .. science_name,
-        icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
+        -- icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
         categories = {"data-processing"},
         subgroup = "moshine-datacells",
         order = utils.science_order[science_name .. "-science-pack"],
@@ -191,7 +200,24 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local emptying_datacell_recipe = {
         type = "recipe",
         name = "hyperlanes-datacell-remove-" .. science_name,
-        icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data-remove.png",
+        -- icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data-remove.png",
+        icons = {
+            {
+                icon = "__hyperlanes-modpack__/graphics/icons/empty.png",
+            },
+            {
+                icon = "__Moshine__/graphics/icons/data/datacell-empty.png",
+                scale = 0.35,
+                shift = {-4, -4},
+                floating = true
+            },
+            {
+                icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. ".png",
+                scale = 0.42,
+                shift = {4, 4},
+                floating = true,
+            },
+        },
         categories = {"data-processing"},
         subgroup = "moshine-datacells",
         order = utils.science_order[science_name .. "-science-pack"],
@@ -246,7 +272,6 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         order = "zzz-data-analysis-" .. utils.science_order[science_name .. "-science-pack"],
         essential = false
     }
-    
     local data_infinite_tech = {
         type = "technology",
         name = "hyperlanes-" .. science_name .. "-data-infinite",
@@ -363,9 +388,6 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     }
 
     table.insert(data.raw["agricultural-tower"]["processing-grid"].accepted_seeds, "hyperlanes-datacell-" .. science_name)
-    
-
-
 
     local analyzed_data_fluid = {
         type = "fluid",
@@ -383,7 +405,16 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local analyzed_datacell = {
         type = "item",
         name = "hyperlanes-datacell-" .. science_name .. "-analyzed",
-        icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
+        -- icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
+        icons = {
+            {
+                icon = "__Moshine__/graphics/icons/data/datacell-empty.png"
+            },
+            {
+                icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. "-analyzed.png",
+                scale = 0.30
+            },
+        },
         subgroup = "moshine-datacells",
         order = utils.science_order[science_name .. "-science-pack"],
         inventory_move_sound = item_sounds.module_inventory_move,
@@ -400,7 +431,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local analyzed_datacell_recipe = {
         type = "recipe",
         name = "hyperlanes-datacell-" .. science_name .. "-analyzed",
-        icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
+        -- icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
         categories = {"data-processing"},
         subgroup = "moshine-datacells",
         order = utils.science_order[science_name .. "-science-pack"],
@@ -419,7 +450,24 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local analyzed_emptying_datacell_recipe = {
         type = "recipe",
         name = "hyperlanes-datacell-remove-" .. science_name .. "-analyzed",
-        icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data-remove.png",
+        -- icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data-remove.png",
+        icons = {
+            {
+                icon = "__hyperlanes-modpack__/graphics/icons/empty.png",
+            },
+            {
+                icon = "__Moshine__/graphics/icons/data/datacell-empty.png",
+                scale = 0.35,
+                shift = {-4, -4},
+                floating = true
+            },
+            {
+                icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. "-analyzed.png",
+                scale = 0.42,
+                shift = {4, 4},
+                floating = true,
+            },
+        },
         categories = {"data-processing"},
         subgroup = "moshine-datacells",
         order = utils.science_order[science_name .. "-science-pack"],

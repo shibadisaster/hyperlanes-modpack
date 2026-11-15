@@ -43,7 +43,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
                 icon = "__panglia_planet__/graphics/icons/panglia_sentient_processor.png",
             },
             {
-                icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
+                icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. "-analyzed.png",
                 shift = {0, -8},
                 scale = 0.25,
                 floating = true
@@ -67,7 +67,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
                 icon = "__panglia_planet__/graphics/icons/panglia_sentient_processor.png",
             },
             {
-                icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
+                icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. "-analyzed.png",
                 shift = {0, -12},
                 scale = 0.25,
                 floating = true
