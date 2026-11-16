@@ -56,6 +56,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         -- drop_sound = item_sounds.module_inventory_move,
         stack_size = 50,
         weight = 10.0*kg,
+        subgroup = "hyperlanes-enlightenment"
     }
 
     local enlightenment_step_recipe = {

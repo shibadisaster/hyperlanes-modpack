@@ -733,3 +733,17 @@ for index, planet_name in ipairs(utils.planets) do
         })
     end
 end
+
+
+-- Remove original upcycling recipes
+data.raw["recipe"]["muluna-metallic-asteroid-chunk-upcycling"].enabled = false
+data.raw["recipe"]["muluna-metallic-asteroid-chunk-upcycling"].hidden = true
+
+data.raw["recipe"]["muluna-carbonic-asteroid-chunk-upcycling"].enabled = false
+data.raw["recipe"]["muluna-carbonic-asteroid-chunk-upcycling"].hidden = true
+
+data.raw["recipe"]["muluna-oxide-asteroid-chunk-upcycling"].enabled = false
+data.raw["recipe"]["muluna-oxide-asteroid-chunk-upcycling"].hidden = true
+
+data.raw["recipe"]["muluna-anorthite-chunk-upcycling"].enabled = false
+data.raw["recipe"]["muluna-anorthite-chunk-upcycling"].hidden = true

@@ -1,3 +1,12 @@
+local enlightenment_subgroup = {
+    type = "item-subgroup",
+    name = "hyperlanes-enlightenment",
+    group = "intermediate-products",
+    order = "zzzz"
+}
+data:extend({enlightenment_subgroup})
+
+
 -- Magnet
 local t3_magnet = {
     type = "item",
@@ -11,6 +20,7 @@ local t3_magnet = {
     },
     stack_size = 50,
     weight = 5*kg,
+    subgroup = "fulgora-processes"
 }
 data:extend({t3_magnet})
 
@@ -29,7 +39,8 @@ local t7_magnet = {
     stack_size = 50,
     weight = 10*kg,
     spoil_ticks = 300 * 60,
-    spoil_result = "magnet"
+    spoil_result = "magnet",
+    subgroup = "aquilo-processes"
 }
 data:extend({t7_magnet})
 
@@ -41,6 +52,7 @@ local t4_catalyst = {
     icon = "__hyperlanes-modpack__/graphics/icons/elementary-catalyst.png",
     stack_size = 100,
     weight = 1*kg,
+    subgroup = "cerys-processes"
 }
 data:extend({t4_catalyst})
 
@@ -51,7 +63,8 @@ local t4_activated_catalyst = {
     stack_size = 100,
     weight = 1*kg,
     spoil_ticks = 180 * 60,
-    spoil_result = "hyperlanes-elementary-catalyst"
+    spoil_result = "hyperlanes-elementary-catalyst",
+    subgroup = "cerys-processes"
 }
 data:extend({t4_activated_catalyst})
 
@@ -94,7 +107,8 @@ local t7_catalyst = {
                 }
             },
         }
-    }
+    },
+    subgroup = "aquilo-processes"
 }
 data:extend({t7_catalyst})
 
@@ -110,7 +124,8 @@ local t8_osmium_clump = {
     -- pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     -- drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 50,
-    weight = 1 * kg
+    weight = 1 * kg,
+    subgroup = "vesta-items-organic"
 }
 data:extend({t8_osmium_clump})
 
@@ -126,7 +141,8 @@ local t8_osmium_plate = {
     -- pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     -- drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 100,
-    weight = 4 * kg
+    weight = 4 * kg,
+    subgroup = "vesta-items-artificial"
 }
 data:extend({t8_osmium_plate})
 
@@ -142,7 +158,8 @@ local t8_osmiridium_alloy_plate = {
     -- pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     -- drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 100,
-    weight = 5 * kg
+    weight = 5 * kg,
+    subgroup = "vesta-items-artificial"
 }
 data:extend({t8_osmiridium_alloy_plate})
 
@@ -153,7 +170,8 @@ local t8_artificial_lifeform = {
     name = "hyperlanes-artificial-lifeform",
     icon = "__hyperlanes-modpack__/graphics/icons/artificial-lifeform.png",
     stack_size = 100,
-    weight = 10 * kg
+    weight = 10 * kg,
+    subgroup = "tellus-advanced-processes"
 }
 data:extend({t8_artificial_lifeform})
 
@@ -164,7 +182,8 @@ local t8_microcellular_filter = {
     name = "hyperlanes-microcellular-filter",
     icon = "__hyperlanes-modpack__/graphics/icons/microcellular-filter.png",
     stack_size = 100,
-    weight = 5 * kg
+    weight = 5 * kg,
+    subgroup = "paracelsin-processes"
 }
 data:extend({t8_microcellular_filter})
 
@@ -180,7 +199,8 @@ local t10_enlightened_processor = {
     -- pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     -- drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 100,
-    weight = 10 * kg
+    weight = 10 * kg,
+    subgroup = "hyperlanes-enlightenment"
 }
 data:extend({t10_enlightened_processor})
 
@@ -196,7 +216,8 @@ local t5_sealant = {
     -- pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     -- drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 100,
-    weight = 10 * kg
+    weight = 10 * kg,
+    subgroup = "arig-processes"
 }
 data:extend({t5_sealant})
 
@@ -212,7 +233,8 @@ local t5_purified_lead = {
     -- pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     -- drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 50,
-    weight = 10 * kg
+    weight = 10 * kg,
+    subgroup = "muria-acidworking"
 }
 data:extend({t5_purified_lead})
 
@@ -223,7 +245,8 @@ local t7_losimunit = {
     name = "hyperlanes-loaded-simulating-unit",
     icon = "__hyperlanes-modpack__/graphics/icons/loaded-simulating-unit.png",
     stack_size = 100,
-    weight = 10 * kg
+    weight = 10 * kg,
+    subgroup = "aquilo-processes"
 }
 data:extend({t7_losimunit})
 
@@ -265,7 +288,8 @@ local t9_antimatter_chunk = {
                 }
             },
         }
-    }
+    },
+    subgroup = "space-processing"
 }
 data:extend({t9_antimatter_chunk})
 
@@ -307,7 +331,8 @@ local t9_antimatter_particulate = {
                 }
             },
         }
-    }
+    },
+    subgroup = "space-processing"
 }
 data:extend({t9_antimatter_particulate})
 
@@ -320,7 +345,8 @@ local t9_time_crystal_a = {
     stack_size = 1,
     weight = 100 * kg,
     spoil_ticks = 1 * 60,
-    spoil_result = "hyperlanes-time-crystal-b"
+    spoil_result = "hyperlanes-time-crystal-b",
+    subgroup = "space-processing"
 }
 data:extend({t9_time_crystal_a})
 
@@ -333,7 +359,8 @@ local t9_time_crystal_b = {
     stack_size = 1,
     weight = 100 * kg,
     spoil_ticks = 1 * 60,
-    spoil_result = "hyperlanes-time-crystal-a"
+    spoil_result = "hyperlanes-time-crystal-a",
+    subgroup = "space-processing"
 }
 data:extend({t9_time_crystal_b})
 
@@ -375,7 +402,8 @@ local t9_unstable_substrate = {
                 }
             },
         }
-    }
+    },
+    subgroup = "space-processing"
 }
 data:extend({t9_unstable_substrate})
 

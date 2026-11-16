@@ -14,7 +14,8 @@ local t4_advanced_material_microsuspension = {
     visualization_color = {130, 110, 160},
     draw_as_glow = true,
     auto_barrel = true,
-    fuel_value = "1MJ"
+    fuel_value = "1MJ",
+    subgroup = "fluid"
 }
 data:extend({t4_advanced_material_microsuspension})
 
@@ -35,7 +36,8 @@ local t5_metamaterial_microsuspension = {
     visualization_color = {230, 170, 160},
     draw_as_glow = true,
     auto_barrel = true,
-    fuel_value = "1MJ"
+    fuel_value = "1MJ",
+    subgroup = "fluid"
 }
 data:extend({t5_metamaterial_microsuspension})
 
@@ -56,7 +58,8 @@ local t5_superacid = {
     visualization_color = {190, 120, 30},
     draw_as_glow = true,
     auto_barrel = true,
-    fuel_value = "1MJ"
+    fuel_value = "1MJ",
+    subgroup = "fluid"
 }
 data:extend({t5_superacid})
 
@@ -77,7 +80,8 @@ local t7_bioslurry = {
     visualization_color = {140, 240, 60},
     draw_as_glow = true,
     auto_barrel = true,
-    fuel_value = "1MJ"
+    fuel_value = "1MJ",
+    subgroup = "fluid"
 }
 data:extend({t7_bioslurry})
 
@@ -98,7 +102,8 @@ local t8_bose_einstein_condensate = {
     visualization_color = {210, 200, 255},
     draw_as_glow = true,
     auto_barrel = true,
-    fuel_value = "1MJ"
+    fuel_value = "1MJ",
+    subgroup = "fluid"
 }
 data:extend({t8_bose_einstein_condensate})
 
@@ -119,7 +124,8 @@ local t8_aerated_water = {
     visualization_color = {50, 150, 130},
     draw_as_glow = true,
     auto_barrel = true,
-    fuel_value = "1MJ"
+    fuel_value = "1MJ",
+    subgroup = "fluid"
 }
 data:extend({t8_aerated_water})
 
