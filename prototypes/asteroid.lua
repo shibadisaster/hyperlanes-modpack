@@ -228,19 +228,19 @@ local asteroid_chunk_replace_graphics = {
     ["hyperlanes-fulgora-asteroid-chunk"] = true,
     ["hyperlanes-gleba-asteroid-chunk"] = true,
     ["hyperlanes-vulcanus-asteroid-chunk"] = true,
-    ["hyperlanes-cerys-asteroid-chunk"] = false,
-    ["hyperlanes-arig-asteroid-chunk"] = false,
-    ["hyperlanes-muria-asteroid-chunk"] = false,
-    ["hyperlanes-rubia-asteroid-chunk"] = false,
+    ["hyperlanes-cerys-asteroid-chunk"] = true,
+    ["hyperlanes-arig-asteroid-chunk"] = true,
+    ["hyperlanes-muria-asteroid-chunk"] = true,
+    ["hyperlanes-rubia-asteroid-chunk"] = true,
     ["bismuth-asteroid-chunk"] = false,
-    ["hyperlanes-moshine-asteroid-chunk"] = false,
-    ["hyperlanes-aquilo-asteroid-chunk"] = false,
-    ["hyperlanes-maraxsis-asteroid-chunk"] = false,
-    ["hyperlanes-paracelsin-asteroid-chunk"] = false,
-    ["hyperlanes-tellus-asteroid-chunk"] = false,
-    ["hyperlanes-vesta-asteroid-chunk"] = false,
+    ["hyperlanes-moshine-asteroid-chunk"] = true,
+    ["hyperlanes-aquilo-asteroid-chunk"] = true,
+    ["hyperlanes-maraxsis-asteroid-chunk"] = true,
+    ["hyperlanes-paracelsin-asteroid-chunk"] = true,
+    ["hyperlanes-tellus-asteroid-chunk"] = true,
+    ["hyperlanes-vesta-asteroid-chunk"] = true,
     ["promethium-asteroid-chunk"] = false,
-    ["hyperlanes-panglia-asteroid-chunk"] = false
+    ["hyperlanes-panglia-asteroid-chunk"] = true
 }
 
 
