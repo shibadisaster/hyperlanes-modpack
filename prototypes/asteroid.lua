@@ -193,29 +193,31 @@ local asteroids = {
     "hyperlanes-paracelsin-asteroid-chunk",
     "hyperlanes-tellus-asteroid-chunk",
     "hyperlanes-vesta-asteroid-chunk",
-    "hyperlanes-panglia-asteroid-chunk"
+    "promethium-asteroid-chunk",
+    "hyperlanes-panglia-asteroid-chunk",
 }
 
 local asteroid_item_graphics = {
-    ["metallic-asteroid-chunk"] = nil,
-    ["carbonic-asteroid-chunk"] = nil,
-    ["oxide-asteroid-chunk"] = nil,
-    ["anorthite-chunk"] = nil,
-    ["hyperlanes-fulgora-asteroid-chunk"] = nil,
-    ["hyperlanes-gleba-asteroid-chunk"] = nil,
-    ["hyperlanes-vulcanus-asteroid-chunk"] = nil,
-    ["hyperlanes-cerys-asteroid-chunk"] = nil,
-    ["hyperlanes-arig-asteroid-chunk"] = nil,
-    ["hyperlanes-muria-asteroid-chunk"] = nil,
-    ["hyperlanes-rubia-asteroid-chunk"] = nil,
-    ["bismuth-asteroid-chunk"] = nil,
-    ["hyperlanes-moshine-asteroid-chunk"] = nil,
-    ["hyperlanes-aquilo-asteroid-chunk"] = nil,
-    ["hyperlanes-maraxsis-asteroid-chunk"] = nil,
-    ["hyperlanes-paracelsin-asteroid-chunk"] = nil,
-    ["hyperlanes-tellus-asteroid-chunk"] = nil,
-    ["hyperlanes-vesta-asteroid-chunk"] = nil,
-    ["hyperlanes-panglia-asteroid-chunk"] = nil
+    ["metallic-asteroid-chunk"] = "__space-age__/graphics/icons/metallic-asteroid-chunk.png",
+    ["carbonic-asteroid-chunk"] = "__space-age__/graphics/icons/carbonic-asteroid-chunk.png",
+    ["oxide-asteroid-chunk"] = "__space-age__/graphics/icons/oxide-asteroid-chunk.png",
+    ["anorthite-chunk"] = "__muluna-graphics__/graphics/icons/asteroid-chunks/anorthite-chunk.png",
+    ["hyperlanes-fulgora-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/fulgora.png",
+    ["hyperlanes-gleba-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/gleba.png",
+    ["hyperlanes-vulcanus-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/vulcanus.png",
+    ["hyperlanes-cerys-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/cerys.png",
+    ["hyperlanes-arig-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/arig.png",
+    ["hyperlanes-muria-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/muria.png",
+    ["hyperlanes-rubia-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/rubia.png",
+    ["bismuth-asteroid-chunk"] = "__planetaris-hyarion__/graphics/icons/bismuth-asteroid-chunk.png",
+    ["hyperlanes-moshine-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/moshine.png",
+    ["hyperlanes-aquilo-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/aquilo.png",
+    ["hyperlanes-maraxsis-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/maraxsis.png",
+    ["hyperlanes-paracelsin-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/paracelsin.png",
+    ["hyperlanes-tellus-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/tellus.png",
+    ["hyperlanes-vesta-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/vesta.png",
+    ["promethium-asteroid-chunk"] = "__space-age__/graphics/icons/promethium-asteroid-chunk.png",
+    ["hyperlanes-panglia-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/panglia.png"
 }
 
 
@@ -232,6 +234,7 @@ for index, planet_name in ipairs(utils.planets) do
     local asteroid_chunk_item = table.deepcopy(data.raw["item"]["metallic-asteroid-chunk"])
     asteroid_chunk_item.name = "hyperlanes-" .. planet_name .. "-asteroid-chunk"
     asteroid_chunk_item.order = "d[hyperlanes]-e[chunk]-" .. utils.planet_tier_orders[planet_name]
+    asteroid_chunk_item.icon = asteroid_item_graphics["hyperlanes-" .. planet_name .. "-asteroid-chunk"]
 
     -- Asteroid chunk    
     local asteroid_chunk = table.deepcopy(data.raw["asteroid-chunk"]["metallic-asteroid-chunk"])
@@ -323,7 +326,7 @@ for index, planet_name in ipairs(utils.planets) do
             -- icon = "__hyperlanes-modpack__/graphics/icons/q1.png",
             icons = {
                 {
-                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                    icon = asteroid_item_graphics[asteroid_name]
                 },
                 {
                     icon = "__base__/graphics/icons/arrows/up-arrow.png",
@@ -363,7 +366,7 @@ for index, planet_name in ipairs(utils.planets) do
             -- icon = "__hyperlanes-modpack__/graphics/icons/q2.png",
             icons = {
                 {
-                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                    icon = asteroid_item_graphics[asteroid_name]
                 },
                 {
                     icon = "__base__/graphics/icons/arrows/up-arrow.png",
@@ -403,7 +406,7 @@ for index, planet_name in ipairs(utils.planets) do
             -- icon = "__hyperlanes-modpack__/graphics/icons/q3.png",
             icons = {
                 {
-                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                    icon = asteroid_item_graphics[asteroid_name]
                 },
                 {
                     icon = "__base__/graphics/icons/arrows/up-arrow.png",
@@ -443,7 +446,7 @@ for index, planet_name in ipairs(utils.planets) do
             -- icon = "__hyperlanes-modpack__/graphics/icons/q4.png",
             icons = {
                 {
-                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                    icon = asteroid_item_graphics[asteroid_name]
                 },
                 {
                     icon = "__base__/graphics/icons/arrows/up-arrow.png",
@@ -483,7 +486,7 @@ for index, planet_name in ipairs(utils.planets) do
             -- icon = "__hyperlanes-modpack__/graphics/icons/q5.png",
             icons = {
                 {
-                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                    icon = asteroid_item_graphics[asteroid_name]
                 },
                 {
                     icon = "__base__/graphics/icons/arrows/up-arrow.png",
@@ -523,7 +526,7 @@ for index, planet_name in ipairs(utils.planets) do
             -- icon = "__hyperlanes-modpack__/graphics/icons/q6.png",
             icons = {
                 {
-                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                    icon = asteroid_item_graphics[asteroid_name]
                 },
                 {
                     icon = "__base__/graphics/icons/arrows/up-arrow.png",
@@ -563,7 +566,7 @@ for index, planet_name in ipairs(utils.planets) do
             -- icon = "__hyperlanes-modpack__/graphics/icons/q7.png",
             icons = {
                 {
-                    icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png"
+                    icon = asteroid_item_graphics[asteroid_name]
                 },
                 {
                     icon = "__base__/graphics/icons/arrows/up-arrow.png",
