@@ -174,6 +174,50 @@ local planet_associated_asteroids = {
     ["panglia"] = {"hyperlanes-panglia-asteroid-chunk"}
 }
 
+local asteroids = {
+    "metallic-asteroid-chunk",
+    "carbonic-asteroid-chunk",
+    "oxide-asteroid-chunk",
+    "anorthite-chunk",
+    "hyperlanes-fulgora-asteroid-chunk",
+    "hyperlanes-gleba-asteroid-chunk",
+    "hyperlanes-vulcanus-asteroid-chunk",
+    "hyperlanes-cerys-asteroid-chunk",
+    "hyperlanes-arig-asteroid-chunk",
+    "hyperlanes-muria-asteroid-chunk",
+    "hyperlanes-rubia-asteroid-chunk",
+    "bismuth-asteroid-chunk",
+    "hyperlanes-moshine-asteroid-chunk",
+    "hyperlanes-aquilo-asteroid-chunk",
+    "hyperlanes-maraxsis-asteroid-chunk",
+    "hyperlanes-paracelsin-asteroid-chunk",
+    "hyperlanes-tellus-asteroid-chunk",
+    "hyperlanes-vesta-asteroid-chunk",
+    "hyperlanes-panglia-asteroid-chunk"
+}
+
+local asteroid_item_graphics = {
+    ["metallic-asteroid-chunk"] = nil,
+    ["carbonic-asteroid-chunk"] = nil,
+    ["oxide-asteroid-chunk"] = nil,
+    ["anorthite-chunk"] = nil,
+    ["hyperlanes-fulgora-asteroid-chunk"] = nil,
+    ["hyperlanes-gleba-asteroid-chunk"] = nil,
+    ["hyperlanes-vulcanus-asteroid-chunk"] = nil,
+    ["hyperlanes-cerys-asteroid-chunk"] = nil,
+    ["hyperlanes-arig-asteroid-chunk"] = nil,
+    ["hyperlanes-muria-asteroid-chunk"] = nil,
+    ["hyperlanes-rubia-asteroid-chunk"] = nil,
+    ["bismuth-asteroid-chunk"] = nil,
+    ["hyperlanes-moshine-asteroid-chunk"] = nil,
+    ["hyperlanes-aquilo-asteroid-chunk"] = nil,
+    ["hyperlanes-maraxsis-asteroid-chunk"] = nil,
+    ["hyperlanes-paracelsin-asteroid-chunk"] = nil,
+    ["hyperlanes-tellus-asteroid-chunk"] = nil,
+    ["hyperlanes-vesta-asteroid-chunk"] = nil,
+    ["hyperlanes-panglia-asteroid-chunk"] = nil
+}
+
 
 
 

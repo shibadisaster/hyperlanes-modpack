@@ -161,7 +161,8 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
             },
             {
                 icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. ".png",
-                scale = 0.30
+                scale = 0.275,
+                shift = {0, -2.5}
             },
         },
         subgroup = "moshine-datacells",
@@ -412,7 +413,8 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
             },
             {
                 icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. "-analyzed.png",
-                scale = 0.30
+                scale = 0.275,
+                shift = {0, -2.5}
             },
         },
         subgroup = "moshine-datacells",

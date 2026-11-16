@@ -42,3 +42,17 @@ end
 for index, science_name in ipairs(utils.data_analysis_sciences) do
     table.insert(data.raw["lab"]["neural_computer"].inputs, "hyperlanes-datacell-" .. science_name .. "-analyzed")
 end
+
+
+-- Tweak muluna datacell graphic slightly
+data.raw["item"]["datacell-empty-astronomical-data"].icon = nil
+data.raw["item"]["datacell-empty-astronomical-data"].icons = {
+    {
+        icon = "__Moshine__/graphics/icons/data/datacell-empty.png"
+    },
+    {
+        icon = "__muluna-graphics__/graphics/icons/raw-astronomical-data.png",
+        scale = 0.375,
+        shift = {0, -2.5}
+    },
+}
