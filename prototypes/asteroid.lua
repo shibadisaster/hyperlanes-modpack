@@ -220,6 +220,29 @@ local asteroid_item_graphics = {
     ["hyperlanes-panglia-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/panglia.png"
 }
 
+local asteroid_chunk_replace_graphics = {
+    ["metallic-asteroid-chunk"] = false,
+    ["carbonic-asteroid-chunk"] = false,
+    ["oxide-asteroid-chunk"] = false,
+    ["anorthite-chunk"] = false,
+    ["hyperlanes-fulgora-asteroid-chunk"] = true,
+    ["hyperlanes-gleba-asteroid-chunk"] = true,
+    ["hyperlanes-vulcanus-asteroid-chunk"] = true,
+    ["hyperlanes-cerys-asteroid-chunk"] = false,
+    ["hyperlanes-arig-asteroid-chunk"] = false,
+    ["hyperlanes-muria-asteroid-chunk"] = false,
+    ["hyperlanes-rubia-asteroid-chunk"] = false,
+    ["bismuth-asteroid-chunk"] = false,
+    ["hyperlanes-moshine-asteroid-chunk"] = false,
+    ["hyperlanes-aquilo-asteroid-chunk"] = false,
+    ["hyperlanes-maraxsis-asteroid-chunk"] = false,
+    ["hyperlanes-paracelsin-asteroid-chunk"] = false,
+    ["hyperlanes-tellus-asteroid-chunk"] = false,
+    ["hyperlanes-vesta-asteroid-chunk"] = false,
+    ["promethium-asteroid-chunk"] = false,
+    ["hyperlanes-panglia-asteroid-chunk"] = false
+}
+
 
 
 
@@ -241,12 +264,52 @@ for index, planet_name in ipairs(utils.planets) do
     asteroid_chunk.name = "hyperlanes-" .. planet_name .. "-asteroid-chunk"
     asteroid_chunk.minable.result = "hyperlanes-" .. planet_name .. "-asteroid-chunk"
 
+    if asteroid_chunk_replace_graphics[asteroid_chunk.name] then
+        asteroid_chunk.graphics_set.variations = {
+            {
+                color_texture = {
+                    filename = "__hyperlanes-modpack__/graphics/asteroids/" .. planet_name .. "/color-1.png",
+                    size = 50,
+                    scale = 0.75
+                },
+                normal_map = {
+                    filename = "__hyperlanes-modpack__/graphics/asteroids/" .. planet_name .. "/normal-1.png",
+                    size = 50,
+                    scale = 0.75
+                },
+                roughness_map = {
+                    filename = "__hyperlanes-modpack__/graphics/asteroids/" .. planet_name .. "/roughness-1.png",
+                    size = 50,
+                    scale = 0.75
+                },
+            },
+            {
+                color_texture = {
+                    filename = "__hyperlanes-modpack__/graphics/asteroids/" .. planet_name .. "/color-2.png",
+                    size = 50,
+                    scale = 0.75
+                },
+                normal_map = {
+                    filename = "__hyperlanes-modpack__/graphics/asteroids/" .. planet_name .. "/normal-2.png",
+                    size = 50,
+                    scale = 0.75
+                },
+                roughness_map = {
+                    filename = "__hyperlanes-modpack__/graphics/asteroids/" .. planet_name .. "/roughness-2.png",
+                    size = 50,
+                    scale = 0.75
+                },
+            }
+        }
+    end
+
+
     -- Add this to planet asteroid_spawn_definitions
     data.raw["planet"][planet_name].asteroid_spawn_definitions = data.raw["planet"][planet_name].asteroid_spawn_definitions or {}
     table.insert(data.raw["planet"][planet_name].asteroid_spawn_definitions, {
         type = "asteroid-chunk",
         asteroid = "hyperlanes-" .. planet_name .. "-asteroid-chunk",
-        probability = 0.0100,
+        probability = 0.0100 * 10,
         speed = 0.01666666666
     })
 
@@ -350,7 +413,7 @@ for index, planet_name in ipairs(utils.planets) do
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "broken", quality_max = "broken", independent_probability = 0.40},
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal", independent_probability = 0.10},
             },
-            main_product = asteroid_name,
+            -- main_product = asteroid_name,
             allow_productivity = false,
             categories = {"muluna-crusher-2"},
             auto_recycle = false,
@@ -390,7 +453,7 @@ for index, planet_name in ipairs(utils.planets) do
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal", independent_probability = 0.40},
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "uncommon", quality_max = "uncommon", independent_probability = 0.10},
             },
-            main_product = asteroid_name,
+            -- main_product = asteroid_name,
             allow_productivity = false,
             categories = {"muluna-crusher-2"},
             auto_recycle = false,
@@ -430,7 +493,7 @@ for index, planet_name in ipairs(utils.planets) do
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "uncommon", quality_max = "uncommon", independent_probability = 0.40},
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "rare", quality_max = "rare", independent_probability = 0.10},
             },
-            main_product = asteroid_name,
+            -- main_product = asteroid_name,
             allow_productivity = false,
             categories = {"muluna-crusher-2"},
             auto_recycle = false,
@@ -470,7 +533,7 @@ for index, planet_name in ipairs(utils.planets) do
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "rare", quality_max = "rare", independent_probability = 0.40},
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "epic", quality_max = "epic", independent_probability = 0.10},
             },
-            main_product = asteroid_name,
+            -- main_product = asteroid_name,
             allow_productivity = false,
             categories = {"muluna-crusher-2"},
             auto_recycle = false,
@@ -510,7 +573,7 @@ for index, planet_name in ipairs(utils.planets) do
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "epic", quality_max = "epic", independent_probability = 0.40},
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "legendary", quality_max = "legendary", independent_probability = 0.10},
             },
-            main_product = asteroid_name,
+            -- main_product = asteroid_name,
             allow_productivity = false,
             categories = {"muluna-crusher-2"},
             auto_recycle = false,
@@ -550,7 +613,7 @@ for index, planet_name in ipairs(utils.planets) do
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "legendary", quality_max = "legendary", independent_probability = 0.40},
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "mythic", quality_max = "mythic", independent_probability = 0.10},
             },
-            main_product = asteroid_name,
+            -- main_product = asteroid_name,
             allow_productivity = false,
             categories = {"muluna-crusher-2"},
             auto_recycle = false,
@@ -590,7 +653,7 @@ for index, planet_name in ipairs(utils.planets) do
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "mythic", quality_max = "mythic", independent_probability = 0.40},
                 {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "ethereal", quality_max = "ethereal", independent_probability = 0.10},
             },
-            main_product = asteroid_name,
+            -- main_product = asteroid_name,
             allow_productivity = false,
             categories = {"muluna-crusher-2"},
             auto_recycle = false,
