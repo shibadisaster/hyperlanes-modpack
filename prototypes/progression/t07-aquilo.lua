@@ -26,6 +26,15 @@ local recooling_sucomagnet_recipe = {
     type = "recipe",
     name = "hyperlanes-supercooled-magnet-recooling",
     enabled = false,
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/icons/recirculation.png"
+        },
+        {
+            icon = data.raw["item"]["hyperlanes-supercooled-magnet"].icon,
+            scale = 0.375
+        }
+    },
     ingredients =
     {
         {type = "item", name = "hyperlanes-supercooled-magnet", amount = 1},
@@ -72,6 +81,14 @@ local recooling_voca_recipe = {
     type = "recipe",
     name = "hyperlanes-volatile-catalyst-recooling",
     enabled = false,
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/icons/recirculation.png"
+        },
+        {
+            icon = data.raw["item"]["hyperlanes-volatile-catalyst"].icon
+        }
+    },
     ingredients =
     {
         {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1},

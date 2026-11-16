@@ -65,6 +65,15 @@ local ap_restab_recipe = {
     type = "recipe",
     name = "hyperlanes-antimatter-particulate-restabilization",
     enabled = false,
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/icons/recirculation.png"
+        },
+        {
+            icon = data.raw["item"]["hyperlanes-antimatter-particulate"].icon,
+            scale = 0.375
+        }
+    },
     ingredients =
     {
         {type = "item", name = "hyperlanes-antimatter-particulate", amount = 20},

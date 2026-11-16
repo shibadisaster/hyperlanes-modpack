@@ -34,6 +34,8 @@ primed_tier_8.name = "hyperlanes-ai-tier-8-primed"
 primed_tier_8.effect = {
     speed = 10.24 / 2.0
 }
+primed_tier_8.icon = "__hyperlanes-modpack__/graphics/icons/tier-8-primed.png"
+primed_tier_8.icons = nil
 data:extend({primed_tier_8})
 
 local primed_tier_9 = table.deepcopy(data.raw["module"]["ai-tier-9"])
@@ -41,6 +43,8 @@ primed_tier_9.name = "hyperlanes-ai-tier-9-primed"
 primed_tier_9.effect = {
     speed = 14.58 / 2.0
 }
+primed_tier_9.icon = "__hyperlanes-modpack__/graphics/icons/tier-9-primed.png"
+primed_tier_9.icons = nil
 data:extend({primed_tier_9})
 
 -- Primed tier 8
