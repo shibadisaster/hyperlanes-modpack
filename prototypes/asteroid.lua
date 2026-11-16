@@ -309,7 +309,7 @@ for index, planet_name in ipairs(utils.planets) do
     table.insert(data.raw["planet"][planet_name].asteroid_spawn_definitions, {
         type = "asteroid-chunk",
         asteroid = "hyperlanes-" .. planet_name .. "-asteroid-chunk",
-        probability = 0.0100 * 10,
+        probability = 0.0150,
         speed = 0.01666666666
     })
 
@@ -322,13 +322,22 @@ for index, planet_name in ipairs(utils.planets) do
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
+            icons = {
+                {
+                    icon = asteroid_item_graphics["hyperlanes-" .. planet_name .. "-asteroid-chunk"]
+                },
+                {
+                    icon = "__hyperlanes-modpack__/graphics/icons/crushing.png"
+                }
+            },
             ingredients =
             {
                 {type = "item", name = "hyperlanes-" .. planet_name .. "-asteroid-chunk", amount = 1},
             },
             energy_required = 2.0,
             results = table.deepcopy(planet_asteroid_crushing_results[planet_name]),
-            main_product = "hyperlanes-" .. planet_name .. "-asteroid-chunk",
+            -- main_product = "hyperlanes-" .. planet_name .. "-asteroid-chunk",
+            -- main_product = planet_asteroid_crushing_results[planet_name][1].name,
             allow_productivity = true,
             categories = {"crushing"},
             auto_recycle = false,
@@ -341,13 +350,22 @@ for index, planet_name in ipairs(utils.planets) do
             enabled = false,
             subgroup = "space-crushing",
             order = "c-a-z-c",
+            icons = {
+                {
+                    icon = asteroid_item_graphics["hyperlanes-" .. planet_name .. "-asteroid-chunk"]
+                },
+                {
+                    icon = "__hyperlanes-modpack__/graphics/icons/advanced-crushing.png"
+                }
+            },
             ingredients =
             {
                 {type = "item", name = "hyperlanes-" .. planet_name .. "-asteroid-chunk", amount = 1},
             },
             energy_required = 5.0,
             results = table.deepcopy(planet_advanced_asteroid_crushing_results[planet_name]),
-            main_product = "hyperlanes-" .. planet_name .. "-asteroid-chunk",
+            -- main_product = "hyperlanes-" .. planet_name .. "-asteroid-chunk",
+            -- main_product = planet_asteroid_crushing_results[planet_name][1].name,
             allow_productivity = true,
             categories = {"crushing"},
             auto_recycle = false,
@@ -362,6 +380,49 @@ for index, planet_name in ipairs(utils.planets) do
     data:extend({asteroid_chunk_item, asteroid_chunk})
     :: continue ::
 end
+
+
+-- Advanced asteroid processing icons
+data.raw["recipe"]["advanced-metallic-asteroid-crushing"].icon = nil
+data.raw["recipe"]["advanced-metallic-asteroid-crushing"].icons = {
+    {
+        icon = asteroid_item_graphics["metallic-asteroid-chunk"]
+    },
+    {
+        icon = "__hyperlanes-modpack__/graphics/icons/advanced-crushing.png"
+    }
+}
+
+data.raw["recipe"]["advanced-carbonic-asteroid-crushing"].icon = nil
+data.raw["recipe"]["advanced-carbonic-asteroid-crushing"].icons = {
+    {
+        icon = asteroid_item_graphics["carbonic-asteroid-chunk"]
+    },
+    {
+        icon = "__hyperlanes-modpack__/graphics/icons/advanced-crushing.png"
+    }
+}
+
+data.raw["recipe"]["advanced-oxide-asteroid-crushing"].icon = nil
+data.raw["recipe"]["advanced-oxide-asteroid-crushing"].icons = {
+    {
+        icon = asteroid_item_graphics["oxide-asteroid-chunk"]
+    },
+    {
+        icon = "__hyperlanes-modpack__/graphics/icons/advanced-crushing.png"
+    }
+}
+
+data.raw["recipe"]["advanced-anorthite-crushing"].icon = nil
+data.raw["recipe"]["advanced-anorthite-crushing"].icons = {
+    {
+        icon = asteroid_item_graphics["anorthite-chunk"]
+    },
+    {
+        icon = "__hyperlanes-modpack__/graphics/icons/advanced-crushing.png"
+    }
+}
+
 
 
 -- ╒════╗ ╒════╗ ╒══════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗ ╒════╗      ╒══════╗  ╒════╗   ╒════╗ ╒════════╗ 
