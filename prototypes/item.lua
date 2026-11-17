@@ -168,7 +168,7 @@ data:extend({t8_osmiridium_alloy_plate})
 local t8_artificial_lifeform = {
     type = "item",
     name = "hyperlanes-artificial-lifeform",
-    icon = "__hyperlanes-modpack__/graphics/icons/artificial-lifeform.png",
+    icon = "__hyperlanes-modpack__/graphics/icons/artificial-lifeform-rimlight.png",
     stack_size = 100,
     weight = 10 * kg,
     subgroup = "tellus-advanced-processes"
@@ -417,6 +417,7 @@ speed_5.effect.pollution = 0.0
 speed_5.effect.consumption = 0.7
 speed_5.effect.productivity = 0.0
 speed_5.effect.quality = 0.0
+speed_5.icon = "__hyperlanes-modpack__/graphics/icons/speed-5.png"
 data:extend({speed_5})
 
 local prod_5 = table.deepcopy(data.raw["module"]["productivity-module-3"])
@@ -427,6 +428,7 @@ prod_5.effect.pollution = 0.0
 prod_5.effect.consumption = 0.5
 prod_5.effect.productivity = 0.2
 prod_5.effect.quality = 0.0
+prod_5.icon = "__hyperlanes-modpack__/graphics/icons/prod-5.png"
 data:extend({prod_5})
 
 local eff_5 = table.deepcopy(data.raw["module"]["rubia-efficiency-module4"])
@@ -437,6 +439,7 @@ eff_5.effect.pollution = -0.5
 eff_5.effect.consumption = -1.5
 eff_5.effect.productivity = 0.0
 eff_5.effect.quality = 0.0
+eff_5.icon = "__hyperlanes-modpack__/graphics/icons/efficiency-5.png"
 data:extend({eff_5})
 
 local quality_4 = table.deepcopy(data.raw["module"]["quality-module-3"])
@@ -447,4 +450,5 @@ quality_4.effect.pollution = 0.0
 quality_4.effect.consumption = 0.0
 quality_4.effect.productivity = 0.0
 quality_4.effect.quality = 0.0375
+quality_4.icon = "__hyperlanes-modpack__/graphics/icons/quality-4.png"
 data:extend({quality_4})

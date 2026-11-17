@@ -62,6 +62,10 @@ data.raw["recipe"]["long-stack-inserter"].ingredients = {
 }
 
 
+-- Redesign eff4 module
+data.raw["module"]["rubia-efficiency-module4"].icon = "__hyperlanes-modpack__/graphics/icons/efficiency-4.png"
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
