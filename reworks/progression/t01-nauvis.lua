@@ -27,6 +27,13 @@ table.insert(data.raw["recipe"]["thruster"].categories, "space-manufacturing")
 table.insert(data.raw["recipe"]["space-platform-foundation"].categories, "space-manufacturing")
 
 
+-- Speed mod rebalance (including overclock if changed)
+data.raw["module"]["speed-module"].effect.quality = -0.005
+data.raw["module"]["speed-module-2"].effect.quality = -0.010
+data.raw["module"]["speed-module-3"].effect.quality = -0.0125
+-- Overclock mod is -5% which is 2 qual3s, no need to change
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

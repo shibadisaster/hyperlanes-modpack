@@ -246,7 +246,7 @@ local antimatter_chunk_tech = {
     type = "technology",
     name = "hyperlanes-antimatter-chunk",
     icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icon = "__hyperlanes-modpack__/graphics/technology/antimatter-chunk.png",
     effects = {
         {
             type = "unlock-recipe",
@@ -269,7 +269,7 @@ local productivity_5_tech = {
     type = "technology",
     name = "hyperlanes-productivity-module-5",
     icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icon = "__hyperlanes-modpack__/graphics/technology/productivity-5.png",
     effects = {
         {
             type = "unlock-recipe",
@@ -293,7 +293,7 @@ local speed_5_tech = {
     type = "technology",
     name = "hyperlanes-speed-module-5",
     icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icon = "__hyperlanes-modpack__/graphics/technology/speed-5.png",
     effects = {
         {
             type = "unlock-recipe",
@@ -317,7 +317,7 @@ local efficiency_5_tech = {
     type = "technology",
     name = "hyperlanes-efficiency-module-5",
     icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icon = "__hyperlanes-modpack__/graphics/technology/efficiency-5.png",
     effects = {
         {
             type = "unlock-recipe",
@@ -341,7 +341,7 @@ local antimatter_processing_tech = {
     type = "technology",
     name = "hyperlanes-antimatter-processing",
     icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icon = "__hyperlanes-modpack__/graphics/technology/antimatter-processing.png",
     effects = {
         {
             type = "unlock-recipe",
@@ -368,7 +368,7 @@ local time_crystal_tech = {
     type = "technology",
     name = "hyperlanes-time-crystal",
     icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icon = "__hyperlanes-modpack__/graphics/technology/time-crystal.png",
     effects = {
         {
             type = "unlock-recipe",
@@ -395,7 +395,7 @@ local quality_4_tech = {
     type = "technology",
     name = "hyperlanes-quality-module-4",
     icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icon = "__hyperlanes-modpack__/graphics/technology/quality-4.png",
     effects = {
         {
             type = "unlock-recipe",
