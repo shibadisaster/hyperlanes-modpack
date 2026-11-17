@@ -202,6 +202,11 @@ data.raw["technology"]["planet-discovery-paracelsin"].unit.count = utils.t8_spco
 data.raw["technology"]["advanced-repair-device"].unit.ingredients = utils.t8_sp_paracelsin
 data.raw["technology"]["advanced-repair-device"].unit.count = utils.t8_spcost_tech
 
+table.insert(data.raw["technology"]["zinc-extraction"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-microcellular-filter"
+})
+
 data.raw["technology"]["concrete-productivity"].unit.ingredients = utils.t8_sp_paracelsin
 data.raw["technology"]["concrete-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t8_spcost_tech
 

@@ -389,6 +389,16 @@ data.raw["technology"]["moshine-tech-data-processor-building"].unit.count = util
  
 -- move sun_heat_cooler_2_tech
 
+table.insert(data.raw["technology"]["moshine-tech-ai-tier-9"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-ai-tier-8-primed"
+})
+
+table.insert(data.raw["technology"]["moshine-tech-ai-tier-10"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-ai-tier-9-primed"
+})
+
 
 -- ╒═════════╗ ╒═════════╗  ╒════════════╗  ╒═════════╗  ╒═════════╗ ╒═════════╗
 -- │  ╓────┐ ║ │  ╓───┐  ║  │  ╓─┐  ╓─┐  ║  └┐  ╓───┐ ╚╗ │  ╓───┐  ║ │  ╓────┐ ║

@@ -1,3 +1,5 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
 -- Supercooled magnet
 local sucomagnet_recipe = {
     type = "recipe",
@@ -124,3 +126,65 @@ local losim_recipe = {
     auto_recycle = true
 }
 data:extend({losim_recipe})
+
+
+-- Tech for unlocking Volatile catalyst
+local voca_tech = {
+    type = "technology",
+    name = "hyperlanes-volatile-catalyst",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/volatile-catalyst.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-volatile-catalyst"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-volatile-catalyst-recooling"
+        },
+    },
+    unit =
+    {
+        count = utils.t7_spcost_smalltech,
+        ingredients = utils.t7_sp_aquilo,
+        time = 60
+    },
+    prerequisites = {"cryogenic-science-pack"},
+    order = "c-a",
+    essential = false
+}
+data:extend({voca_tech})
+
+
+-- Tech for unlocking Supercooled magnet
+local sucomagnet_tech = {
+    type = "technology",
+    name = "hyperlanes-supercooled-magnet",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/supercooled-magnet.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-supercooled-magnet"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-supercooled-magnet-recooling"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-supercooled-magnet-recooling-paracelsin"
+        },
+    },
+    unit =
+    {
+        count = utils.t7_spcost_smalltech,
+        ingredients = utils.t7_sp_aquilo,
+        time = 60
+    },
+    prerequisites = {"cryogenic-science-pack"},
+    order = "c-a",
+    essential = false
+}
+data:extend({sucomagnet_tech})

@@ -1,3 +1,5 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
 local aeratedwater_recipe = {
     type = "recipe",
     name = "hyperlanes-aerated-water",
@@ -79,3 +81,36 @@ local oip_recipe = {
     auto_recycle = true
 }
 data:extend({oip_recipe})
+
+
+-- Tech for unlocking Osmium stuff
+local osmium_tech = {
+    type = "technology",
+    name = "hyperlanes-osmium",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-osmium-algae-clump"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-osmium-plate"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-osmiridium-alloy-plate"
+        },
+    },
+    unit =
+    {
+        count = utils.t8_spcost_smalltech,
+        ingredients = utils.t8_sp_vesta,
+        time = 60
+    },
+    prerequisites = {"s1_gas_manipulation_science_pack"},
+    order = "c-a",
+    essential = false
+}
+data:extend({osmium_tech})

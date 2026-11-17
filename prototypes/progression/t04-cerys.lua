@@ -71,8 +71,8 @@ data:extend({ammicrosuspension_recipe})
 local amms = {
     type = "technology",
     name = "hyperlanes-advanced-material-microsuspension",
-    icon_size = 64,
-    icon = "__hyperlanes-modpack__/graphics/icons/advanced-material-microsuspension.png",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/advanced-material-microsuspension.png",
     effects = {
         {
             type = "unlock-recipe",
@@ -96,8 +96,8 @@ data:extend({amms})
 local elca = {
     type = "technology",
     name = "hyperlanes-elementary-catalyst",
-    icon_size = 64,
-    icon = "__hyperlanes-modpack__/graphics/icons/elementary-catalyst.png",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/elementary-catalyst.png",
     effects = {
         {
             type = "unlock-recipe",

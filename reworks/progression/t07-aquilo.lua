@@ -166,6 +166,10 @@ data.raw["technology"]["captive-biter-spawner"].unit.count = utils.t7_spcost_tec
 data.raw["technology"]["foundation"].unit.ingredients = utils.t7_sp_aquilo
 data.raw["technology"]["foundation"].unit.count = utils.t7_spcost_bigtech
 
+table.insert(data.raw["technology"]["quantum-processor"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-loaded-simulating-unit"
+})
 data.raw["technology"]["quantum-processor"].unit.ingredients = utils.t7_sp_aquilo
 data.raw["technology"]["quantum-processor"].unit.count = utils.t7_spcost_tech
 

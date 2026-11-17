@@ -1,3 +1,5 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
 -- Sealant
 local sealant_recipe = {
     type = "recipe",
@@ -26,3 +28,26 @@ local sealant_recipe = {
     }
 }
 data:extend({sealant_recipe})
+
+
+-- Tech for unlocking Sealant
+local sealant_tech = {
+    type = "technology",
+    name = "hyperlanes-sealant",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/sealant.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-sealant"
+        }
+    },
+    research_trigger = {
+        type = "craft-item",
+        item = "planetaris-sand-barrel"
+    },
+    prerequisites = {"planet-discovery-arig"},
+    order = "c-a",
+    essential = false
+}
+data:extend({sealant_tech})
