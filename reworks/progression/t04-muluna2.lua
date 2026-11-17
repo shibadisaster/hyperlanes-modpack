@@ -149,3 +149,14 @@ data.raw["technology"]["space-chest-muluna"].unit.count = utils.t4_spcost_tech
 
 data.raw["technology"]["rigor-module"].unit.ingredients = utils.t4_sp_muluna
 data.raw["technology"]["rigor-module"].unit.count = utils.t4_spcost_bigtech
+
+for index, asteroid_name in ipairs(utils.upcyclable_asteroids) do
+    table.insert(data.raw["technology"]["muluna-asteroid-upcycling"].effects, {
+        type = "unlock-recipe",
+        recipe = asteroid_name .. "-upcycling-q0-to-q1"
+    })
+    table.insert(data.raw["technology"]["muluna-asteroid-upcycling"].effects, {
+        type = "unlock-recipe",
+        recipe = asteroid_name .. "-upcycling-q1-to-q2"
+    })
+end

@@ -174,29 +174,6 @@ local planet_associated_asteroids = {
     ["panglia"] = {"hyperlanes-panglia-asteroid-chunk"}
 }
 
-local asteroids = {
-    "metallic-asteroid-chunk",
-    "carbonic-asteroid-chunk",
-    "oxide-asteroid-chunk",
-    "anorthite-chunk",
-    "hyperlanes-fulgora-asteroid-chunk",
-    "hyperlanes-gleba-asteroid-chunk",
-    "hyperlanes-vulcanus-asteroid-chunk",
-    "hyperlanes-cerys-asteroid-chunk",
-    "hyperlanes-arig-asteroid-chunk",
-    "hyperlanes-muria-asteroid-chunk",
-    "hyperlanes-rubia-asteroid-chunk",
-    "bismuth-asteroid-chunk",
-    "hyperlanes-moshine-asteroid-chunk",
-    "hyperlanes-aquilo-asteroid-chunk",
-    "hyperlanes-maraxsis-asteroid-chunk",
-    "hyperlanes-paracelsin-asteroid-chunk",
-    "hyperlanes-tellus-asteroid-chunk",
-    "hyperlanes-vesta-asteroid-chunk",
-    "promethium-asteroid-chunk",
-    "hyperlanes-panglia-asteroid-chunk",
-}
-
 local asteroid_item_graphics = {
     ["metallic-asteroid-chunk"] = "__space-age__/graphics/icons/metallic-asteroid-chunk.png",
     ["carbonic-asteroid-chunk"] = "__space-age__/graphics/icons/carbonic-asteroid-chunk.png",
@@ -747,3 +724,131 @@ data.raw["recipe"]["muluna-oxide-asteroid-chunk-upcycling"].hidden = true
 
 data.raw["recipe"]["muluna-anorthite-chunk-upcycling"].enabled = false
 data.raw["recipe"]["muluna-anorthite-chunk-upcycling"].hidden = true
+
+
+
+-- Upcycling techs connected to each quality
+local q3_upcycling_tech = {
+    type = "technology",
+    name = "hyperlanes-upcycling-q2-to-q3",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
+    effects = {},
+    unit =
+    {
+        count = utils.t5_spcost_bigtech,
+        ingredients = utils.t5_sp_arig_rubia,
+        time = 60
+    },
+    prerequisites = {"quality-module-2", "muluna-asteroid-upcycling"},
+    order = "c-a",
+    essential = false
+}
+data:extend({q3_upcycling_tech})
+
+for index, asteroid_name in ipairs(utils.upcyclable_asteroids) do
+    table.insert(data.raw["technology"]["hyperlanes-upcycling-q2-to-q3"].effects, {
+        type = "unlock-recipe",
+        recipe = asteroid_name .. "-upcycling-q2-to-q3"
+    })
+end
+
+local q4_upcycling_tech = {
+    type = "technology",
+    name = "hyperlanes-upcycling-q3-to-q4",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
+    effects = {},
+    unit =
+    {
+        count = utils.t6_spcost_bigtech,
+        ingredients = utils.t6_sp_hyarion_refraction,
+        time = 60
+    },
+    prerequisites = {"quality-module-3", "hyperlanes-upcycling-q2-to-q3"},
+    order = "c-a",
+    essential = false
+}
+data:extend({q4_upcycling_tech})
+
+for index, asteroid_name in ipairs(utils.upcyclable_asteroids) do
+    table.insert(data.raw["technology"]["hyperlanes-upcycling-q3-to-q4"].effects, {
+        type = "unlock-recipe",
+        recipe = asteroid_name .. "-upcycling-q3-to-q4"
+    })
+end
+
+local q5_upcycling_tech = {
+    type = "technology",
+    name = "hyperlanes-upcycling-q4-to-q5",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
+    effects = {},
+    unit =
+    {
+        count = utils.t7_spcost_bigtech,
+        ingredients = utils.t7_sp_maraxsis,
+        time = 60
+    },
+    prerequisites = {"legendary-quality", "hyperlanes-upcycling-q3-to-q4"},
+    order = "c-a",
+    essential = false
+}
+data:extend({q5_upcycling_tech})
+
+for index, asteroid_name in ipairs(utils.upcyclable_asteroids) do
+    table.insert(data.raw["technology"]["hyperlanes-upcycling-q4-to-q5"].effects, {
+        type = "unlock-recipe",
+        recipe = asteroid_name .. "-upcycling-q4-to-q5"
+    })
+end
+
+local q6_upcycling_tech = {
+    type = "technology",
+    name = "hyperlanes-upcycling-q5-to-q6",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
+    effects = {},
+    unit =
+    {
+        count = utils.t9_spcost_bigtech,
+        ingredients = utils.t9_sp,
+        time = 60
+    },
+    prerequisites = {"hyperlanes-quality-module-4", "hyperlanes-upcycling-q4-to-q5"},
+    order = "c-a",
+    essential = false
+}
+data:extend({q6_upcycling_tech})
+
+for index, asteroid_name in ipairs(utils.upcyclable_asteroids) do
+    table.insert(data.raw["technology"]["hyperlanes-upcycling-q5-to-q6"].effects, {
+        type = "unlock-recipe",
+        recipe = asteroid_name .. "-upcycling-q5-to-q6"
+    })
+end
+
+local q7_upcycling_tech = {
+    type = "technology",
+    name = "hyperlanes-upcycling-q6-to-q7",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
+    effects = {},
+    unit =
+    {
+        count = utils.t10_spcost_bigtech,
+        ingredients = utils.t10_sp,
+        time = 60
+    },
+    prerequisites = {"hyperlanes-ethereal-quality", "hyperlanes-upcycling-q5-to-q6"},
+    order = "c-a",
+    essential = false
+}
+data:extend({q7_upcycling_tech})
+
+for index, asteroid_name in ipairs(utils.upcyclable_asteroids) do
+    table.insert(data.raw["technology"]["hyperlanes-upcycling-q6-to-q7"].effects, {
+        type = "unlock-recipe",
+        recipe = asteroid_name .. "-upcycling-q6-to-q7"
+    })
+end

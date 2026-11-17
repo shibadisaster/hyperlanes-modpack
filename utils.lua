@@ -152,6 +152,50 @@ utils.planet_tier_orders = {
     ["panglia"] = "j"
 }
 
+utils.asteroids = {
+    "metallic-asteroid-chunk",
+    "carbonic-asteroid-chunk",
+    "oxide-asteroid-chunk",
+    "anorthite-chunk",
+    "hyperlanes-fulgora-asteroid-chunk",
+    "hyperlanes-gleba-asteroid-chunk",
+    "hyperlanes-vulcanus-asteroid-chunk",
+    "hyperlanes-cerys-asteroid-chunk",
+    "hyperlanes-arig-asteroid-chunk",
+    "hyperlanes-muria-asteroid-chunk",
+    "hyperlanes-rubia-asteroid-chunk",
+    "bismuth-asteroid-chunk",
+    "hyperlanes-moshine-asteroid-chunk",
+    "hyperlanes-aquilo-asteroid-chunk",
+    "hyperlanes-maraxsis-asteroid-chunk",
+    "hyperlanes-paracelsin-asteroid-chunk",
+    "hyperlanes-tellus-asteroid-chunk",
+    "hyperlanes-vesta-asteroid-chunk",
+    "promethium-asteroid-chunk",
+    "hyperlanes-panglia-asteroid-chunk",
+}
+
+utils.upcyclable_asteroids = {
+    "metallic-asteroid-chunk",
+    "carbonic-asteroid-chunk",
+    "oxide-asteroid-chunk",
+    "anorthite-chunk",
+    "hyperlanes-fulgora-asteroid-chunk",
+    "hyperlanes-gleba-asteroid-chunk",
+    "hyperlanes-vulcanus-asteroid-chunk",
+    "hyperlanes-cerys-asteroid-chunk",
+    "hyperlanes-arig-asteroid-chunk",
+    "hyperlanes-muria-asteroid-chunk",
+    "hyperlanes-rubia-asteroid-chunk",
+    "bismuth-asteroid-chunk",
+    "hyperlanes-moshine-asteroid-chunk",
+    "hyperlanes-aquilo-asteroid-chunk",
+    "hyperlanes-maraxsis-asteroid-chunk",
+    "hyperlanes-paracelsin-asteroid-chunk",
+    "hyperlanes-tellus-asteroid-chunk",
+    "hyperlanes-vesta-asteroid-chunk",
+    "hyperlanes-panglia-asteroid-chunk",
+}
 
 
 
