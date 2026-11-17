@@ -1,3 +1,5 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
 local recooling_sucomagnet_paracelsin_recipe = {
     type = "recipe",
     name = "hyperlanes-supercooled-magnet-recooling-paracelsin",
@@ -72,3 +74,28 @@ local bec_recipe = {
     auto_recycle = true
 }
 data:extend({bec_recipe})
+
+
+-- Tech for unlocking BEC
+local bec_tech = {
+    type = "technology",
+    name = "hyperlanes-bose-einstein-condensate",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/bose-einstein-condensate.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-bose-einstein-condensate"
+        },
+    },
+    unit =
+    {
+        count = utils.t8_spcost_smalltech,
+        ingredients = utils.t8_sp_paracelsin,
+        time = 60
+    },
+    prerequisites = {"galvanization-science-pack"},
+    order = "c-a",
+    essential = false
+}
+data:extend({bec_tech})

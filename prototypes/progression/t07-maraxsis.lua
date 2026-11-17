@@ -1,3 +1,5 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
 -- Bioslurry
 local bioslurry_recipe = {
     type = "recipe",
@@ -27,3 +29,28 @@ local bioslurry_recipe = {
     }
 }
 data:extend({bioslurry_recipe})
+
+
+-- Tech for unlocking Bioslurry
+local bs_tech = {
+    type = "technology",
+    name = "hyperlanes-bioslurry",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/bioslurry.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-bioslurry"
+        },
+    },
+    unit =
+    {
+        count = utils.t7_spcost_smalltech,
+        ingredients = utils.t7_sp_maraxsis,
+        time = 60
+    },
+    prerequisites = {"maraxsis-project-seadragon"},
+    order = "c-a",
+    essential = false
+}
+data:extend({bs_tech})

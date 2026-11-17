@@ -1,3 +1,5 @@
+local utils = require("__hyperlanes-modpack__/utils")
+
 -- Superacid
 local superacid_recipe = {
     type = "recipe",
@@ -43,3 +45,28 @@ local purified_lead_recipe = {
     auto_recycle = true
 }
 data:extend({purified_lead_recipe})
+
+
+-- Tech for unlocking Superacid
+local sa_tech = {
+    type = "technology",
+    name = "hyperlanes-superacid",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/superacid.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-superacid"
+        },
+    },
+    unit =
+    {
+        count = utils.t5_spcost_smalltech,
+        ingredients = utils.t5_sp_muria,
+        time = 60
+    },
+    prerequisites = {"acidworking-science-pack"},
+    order = "c-a",
+    essential = false
+}
+data:extend({sa_tech})

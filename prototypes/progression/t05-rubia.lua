@@ -24,6 +24,31 @@ local metamicrosuspension_recipe = {
 data:extend({metamicrosuspension_recipe})
 
 
+-- Tech for unlocking Metamaterial microsuspension
+local mmm_tech = {
+    type = "technology",
+    name = "hyperlanes-metamaterial-microsuspension",
+    icon_size = 256,
+    icon = "__hyperlanes-modpack__/graphics/technology/metamaterial-microsuspension.png",
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "hyperlanes-metamaterial-microsuspension"
+        },
+    },
+    unit =
+    {
+        count = utils.t5_spcost_smalltech,
+        ingredients = utils.t5_sp_rubia,
+        time = 60
+    },
+    prerequisites = {"planetslib-rubia-cargo-drops"},
+    order = "c-a",
+    essential = false
+}
+data:extend({mmm_tech})
+
+
 -- ╒════╗       ╒════════╗  ╒════╗ ╒════╗  ╒════╗   ╒════╗ ╒═════════╗ ╒════╗╒════╗ ╒══════╗  ╒════╗   ╒════╗ ╒════════╗ 
 -- └┐  ╓╜       │  ╓──┐  ║  └┐  ╓╜ └┐  ╓╜  │    ╚╗  └┐  ╓╜ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ └─┐  ╓─╜  │    ╚╗  └┐  ╓╜ │  ╓───┐ ║ 
 --  │  ║        │  ║  │  ║   │  ║   │  ║   │  ╟┐ ╚╗  │  ║  │  ║    └─╜  │  ║  │  ║    │  ║    │  ╟┐ ╚╗  │  ║  │  ║   └─╜ 

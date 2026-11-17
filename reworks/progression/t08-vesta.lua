@@ -333,6 +333,11 @@ data.raw["technology"]["s2_transport-belt-capacity-vesta"].hidden = true
 data.raw["technology"]["s2_worker-robots-storage-vesta"].unit.ingredients = utils.t8_sp_vesta
 data.raw["technology"]["s2_worker-robots-storage-vesta"].unit.count = utils.t8_spcost_bigtech
 
+table.insert(data.raw["technology"]["ske_working_with_gases"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-aerated-water"
+})
+
 
 
 

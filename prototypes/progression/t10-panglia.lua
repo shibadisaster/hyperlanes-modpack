@@ -13,7 +13,7 @@ local enlightenment_tech = {
     type = "technology",
     name = "hyperlanes-enlightenment",
     icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icon = "__hyperlanes-modpack__/graphics/technology/enlightenment.png",
     effects = {
         {
             type = "unlock-recipe",
