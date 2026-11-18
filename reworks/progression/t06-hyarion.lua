@@ -278,6 +278,13 @@ data.raw["splitter"]["planetaris-hyper-splitter"].speed = 0.1875
 data.raw["item"]["bismuth-asteroid-chunk"].order = "d[hyperlanes]-e[chunk]-" .. utils.planet_tier_orders["hyarion"]
 
 
+-- Polisher technology
+data.raw["technology"]["planetaris-polishing"].research_trigger = {
+    type = "build-entity",
+    entity = "planetaris-refraction-ray-collector"
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜

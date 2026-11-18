@@ -55,6 +55,16 @@ data.raw["recipe"]["cerys-radiation-proof-inserter"].ingredients = {
 }
 
 
+-- Mixed-oxide reactor
+data.raw["recipe"]["mixed-oxide-reactor-equipment"].ingredients = {
+    {type = "item", name = "fission-reactor-equipment", amount = 1},
+    {type = "item", name = "processing-unit", amount = 200},
+    {type = "item", name = "low-density-structure", amount = 50},
+    {type = "item", name = "plutonium-238", amount = 10},
+    {type = "item", name = "plutonium-239", amount = 10},
+}
+
+
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
 -- └─╜ │  ║ └─╜  │  ║   └─╜ │  ║    └─╜  │  ║  │  ║  │  ║    └─╜
