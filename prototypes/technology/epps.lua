@@ -4,8 +4,19 @@ local utils = require("__hyperlanes-modpack__/utils")
 local t2_epp = {
     type = "technology",
     name = "hyperlanes-t2-epp",
-    icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    -- icon_size = 256,
+    -- icon = "__hyperlanes-modpack__/graphics/technology/t2.png",
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/epp-tech-base.png",
+            icon_size = 256
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/t2.png",
+            icon_size = 256,
+            floating = true
+        }
+    },
     effects = {},
     unit =
     {
@@ -23,8 +34,17 @@ data:extend({t2_epp})
 local t3_epp = {
     type = "technology",
     name = "hyperlanes-t3-epp",
-    icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/epp-tech-base.png",
+            icon_size = 256
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/t3.png",
+            icon_size = 256,
+            floating = true
+        }
+    },
     effects = {},
     unit =
     {
@@ -42,8 +62,17 @@ data:extend({t3_epp})
 local t4_epp = {
     type = "technology",
     name = "hyperlanes-t4-epp",
-    icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/epp-tech-base.png",
+            icon_size = 256
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/t4.png",
+            icon_size = 256,
+            floating = true
+        }
+    },
     effects = {},
     unit =
     {
@@ -61,8 +90,17 @@ data:extend({t4_epp})
 local t5_epp = {
     type = "technology",
     name = "hyperlanes-t5-epp",
-    icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/epp-tech-base.png",
+            icon_size = 256
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/t5.png",
+            icon_size = 256,
+            floating = true
+        }
+    },
     effects = {},
     unit =
     {
@@ -80,8 +118,17 @@ data:extend({t5_epp})
 local t6_epp = {
     type = "technology",
     name = "hyperlanes-t6-epp",
-    icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/epp-tech-base.png",
+            icon_size = 256
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/t6.png",
+            icon_size = 256,
+            floating = true
+        }
+    },
     effects = {},
     unit =
     {
@@ -99,8 +146,17 @@ data:extend({t6_epp})
 local t7_epp = {
     type = "technology",
     name = "hyperlanes-t7-epp",
-    icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/epp-tech-base.png",
+            icon_size = 256
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/t7.png",
+            icon_size = 256,
+            floating = true
+        }
+    },
     effects = {},
     unit =
     {
@@ -118,8 +174,17 @@ data:extend({t7_epp})
 local t8_epp = {
     type = "technology",
     name = "hyperlanes-t8-epp",
-    icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/epp-tech-base.png",
+            icon_size = 256
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/t8.png",
+            icon_size = 256,
+            floating = true
+        }
+    },
     effects = {},
     unit =
     {
@@ -137,8 +202,17 @@ data:extend({t8_epp})
 local t9_epp = {
     type = "technology",
     name = "hyperlanes-t9-epp",
-    icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/epp-tech-base.png",
+            icon_size = 256
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/t9.png",
+            icon_size = 256,
+            floating = true
+        }
+    },
     effects = {},
     unit =
     {
@@ -160,8 +234,17 @@ data:extend({t9_epp})
 local t10_epp = {
     type = "technology",
     name = "hyperlanes-t10-epp",
-    icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/epp-tech-base.png",
+            icon_size = 256
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/t10.png",
+            icon_size = 256,
+            floating = true
+        }
+    },
     effects = {},
     unit =
     {

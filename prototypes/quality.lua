@@ -67,7 +67,7 @@ local level7quality_tech = {
     type = "technology",
     name = "hyperlanes-ethereal-quality",
     icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icon = "__hyperlanes-modpack__/graphics/technology/q7.png",
     effects = {
         {
             type = "unlock-quality",
