@@ -111,7 +111,14 @@ local planet_advanced_asteroid_crushing_results = {
         {type = "item", name = "rubia-bacteria-B", amount = 2},
         {type = "item", name = "hyperlanes-rubia-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
     },
-    ["hyarion"] = nil,
+    ["hyarion"] = {
+        {type = "item", name = "planetaris_raw_bismuth", amount = 1},
+        {type = "item", name = "planetaris-polished-ruby", amount = 1, independent_probability = 0.5},
+        {type = "item", name = "planetaris-polished-sapphire", amount = 1, independent_probability = 0.5},
+        {type = "item", name = "planetaris-polished-emerald", amount = 1, independent_probability = 0.5},
+        {type = "item", name = "planetaris-polished-diamond", amount = 1, independent_probability = 0.5},
+        {type = "item", name = "bismuth-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
+    },
     ["moshine"] = {
         {type = "item", name = "neodymium", amount = 10},
         {type = "item", name = "datacell-raw-data", amount = 1},
@@ -852,3 +859,82 @@ for index, asteroid_name in ipairs(utils.upcyclable_asteroids) do
         recipe = asteroid_name .. "-upcycling-q6-to-q7"
     })
 end
+
+
+
+
+
+
+
+-- Bismuth asteroid chunk advanced crushing
+local bis_advanced_asteroid_chunk_crushing = {
+    type = "recipe",
+    name = "hyperlanes-advanced-bismuth-asteroid-crushing",
+    enabled = false,
+    subgroup = "space-crushing",
+    order = "c-a-z-c",
+    icons = {
+        {
+            icon = asteroid_item_graphics["bismuth-asteroid-chunk"]
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/icons/advanced-crushing.png"
+        }
+    },
+    ingredients =
+    {
+        {type = "item", name = "bismuth-asteroid-chunk", amount = 1},
+    },
+    energy_required = 5.0,
+    results = planet_advanced_asteroid_crushing_results["hyarion"],
+    -- main_product = "hyperlanes-" .. planet_name .. "-asteroid-chunk",
+    -- main_product = planet_asteroid_crushing_results[planet_name][1].name,
+    allow_productivity = true,
+    categories = {"crushing"},
+    auto_recycle = false,
+    allow_decomposition = false
+}
+
+data:extend({bis_advanced_asteroid_chunk_crushing})
+
+
+
+
+
+
+local crushing_unlocks = {
+    ["hyperlanes-fulgora-asteroid-chunk"] = "electromagnetic-science-pack",
+    ["hyperlanes-gleba-asteroid-chunk"] = "agricultural-science-pack",
+    ["hyperlanes-vulcanus-asteroid-chunk"] = "metallurgic-science-pack",
+    ["hyperlanes-cerys-asteroid-chunk"] = "cerysian-science-pack",
+    ["hyperlanes-arig-asteroid-chunk"] = "planetaris-compression-science",
+    ["hyperlanes-muria-asteroid-chunk"] = "acidworking-science-pack",
+    ["hyperlanes-rubia-asteroid-chunk"] = "planetslib-rubia-cargo-drops",
+    ["bismuth-asteroid-chunk"] = nil,
+    ["hyperlanes-moshine-asteroid-chunk"] = "moshine-tech-ai-tier-8",
+    ["hyperlanes-aquilo-asteroid-chunk"] = "cryogenic-science-pack",
+    ["hyperlanes-maraxsis-asteroid-chunk"] = "hydraulic-science-pack",
+    ["hyperlanes-paracelsin-asteroid-chunk"] = "galvanization-science-pack",
+    ["hyperlanes-tellus-asteroid-chunk"] = "planetaris-pathological-science-pack",
+    ["hyperlanes-vesta-asteroid-chunk"] = "s1_gas_manipulation_science_pack",
+    ["hyperlanes-panglia-asteroid-chunk"] = "hyperlanes-victory"
+}
+
+
+local advanced_crushing_unlocks = {
+    ["hyperlanes-fulgora-asteroid-chunk"] = "planetslib-rubia-cargo-drops",
+    ["hyperlanes-gleba-asteroid-chunk"] = "acidworking-science-pack",
+    ["hyperlanes-vulcanus-asteroid-chunk"] = "planetaris-compression-science",
+    ["hyperlanes-cerys-asteroid-chunk"] = "planetaris-refraction-science-pack",
+    ["hyperlanes-arig-asteroid-chunk"] = "hydraulic-science-pack",
+    ["hyperlanes-muria-asteroid-chunk"] = "cryogenic-science-pack",
+    ["hyperlanes-rubia-asteroid-chunk"] = "hydraulic-science-pack",
+    ["bismuth-asteroid-chunk"] = "galvanization-science-pack",
+    ["hyperlanes-moshine-asteroid-chunk"] = "s1_gas_manipulation_science_pack",
+    ["hyperlanes-aquilo-asteroid-chunk"] = "planetaris-bioengineering-science-pack",
+    ["hyperlanes-maraxsis-asteroid-chunk"] = "planetaris-pathological-science-pack",
+    ["hyperlanes-paracelsin-asteroid-chunk"] = "promethium-science-pack",
+    ["hyperlanes-tellus-asteroid-chunk"] = "promethium-science-pack",
+    ["hyperlanes-vesta-asteroid-chunk"] = "promethium-science-pack",
+    ["hyperlanes-panglia-asteroid-chunk"] = "hyperlanes-victory"
+}

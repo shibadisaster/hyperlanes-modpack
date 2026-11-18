@@ -666,10 +666,6 @@ local science_prod_bonuses = {
     },
     ["interstellar"] = {
         0.02,
-        "muluna-metallic-asteroid-chunk-upcycling",
-        "muluna-carbonic-asteroid-chunk-upcycling",
-        "muluna-oxide-asteroid-chunk-upcycling",
-        "muluna-anorthite-chunk-upcycling",
         "muluna-microcellular-plastic",
         "muluna-telescope-observation-nauvis",
         "muluna-telescope-observation-vulcanus",
