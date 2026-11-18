@@ -56,3 +56,9 @@ data.raw["item"]["datacell-empty-astronomical-data"].icons = {
         shift = {0, -2.5}
     },
 }
+
+
+-- Launch tech icons use yeet icons
+-- for index, category_name in ipairs(utils.launch_categories) do
+--     data.raw["technology"]["hyperlanes-launching-" .. category_name].icons[2].icon = data.raw["item"]["yeet-" .. utils.resources_to_launch[category_name]].icon
+-- end

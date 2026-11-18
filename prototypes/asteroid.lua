@@ -1072,8 +1072,24 @@ for index, asteroid_name in ipairs(crushable_asteroids) do
         local tech = {
             type = "technology",
             name = crushing_recipe_name[asteroid_name],
-            icon_size = 256,
-            icon = crushing_recipe_name[asteroid_name].icon,
+            -- icon_size = 256,
+            -- icon = crushing_recipe_name[asteroid_name].icon,
+            icons = {
+                {
+                    icon = "__hyperlanes-modpack__/graphics/technology/empty.png",
+                    icon_size = 256
+                },
+                {
+                    icon = asteroid_item_graphics[asteroid_name],
+                    icon_size = 64,
+                    scale = 1.0
+                },
+                {
+                    icon = "__hyperlanes-modpack__/graphics/icons/crushing.png",
+                    icon_size = 64,
+                    scale = 1.0
+                }
+            },
             effects = {
                 {
                     type = "unlock-recipe",
@@ -1099,8 +1115,24 @@ for index, asteroid_name in ipairs(crushable_asteroids) do
     local tech = {
         type = "technology",
         name = advanced_crushing_recipe_name[asteroid_name],
-        icon_size = 256,
-        icon = advanced_crushing_recipe_name[asteroid_name].icon,
+        -- icon_size = 256,
+        -- icon = advanced_crushing_recipe_name[asteroid_name].icon,
+        icons = {
+            {
+                icon = "__hyperlanes-modpack__/graphics/technology/empty.png",
+                icon_size = 256
+            },
+            {
+                icon = asteroid_item_graphics[asteroid_name],
+                icon_size = 64,
+                scale = 1.0
+            },
+            {
+                icon = "__hyperlanes-modpack__/graphics/icons/advanced-crushing.png",
+                icon_size = 64,
+                scale = 1.0
+            }
+        },
         effects = {
             {
                 type = "unlock-recipe",

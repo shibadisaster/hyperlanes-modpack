@@ -432,6 +432,21 @@ utils.resources_to_launch = {
     ["radioactivity"] = "uranium-238",
     ["personal"] = "raw-fish"
 }
+utils.resources_to_launch_icons = {
+    ["assembling"] = "__base__/graphics/icons/inserter.png",
+    ["mining"] = "__base__/graphics/icons/copper-ore.png",
+    ["extraction"] = "__base__/graphics/icons/fluid/crude-oil.png",
+    ["crushing"] = "__space-age__/graphics/icons/metallic-asteroid-chunk.png",
+    ["smelting"] = "__base__/graphics/icons/stone-brick.png",
+    ["research"] = "__base__/graphics/icons/automation-science-pack.png",
+    ["recycling"] = "__space-age__/graphics/icons/scrap.png",
+    ["materials"] = "__space-age__/graphics/icons/carbon.png",
+    ["chemistry"] = "__base__/graphics/icons/solid-fuel.png",
+    ["magnetics"] = "__base__/graphics/icons/iron-plate.png",
+    ["cultivation"] = "__base__/graphics/icons/wood.png",
+    ["radioactivity"] = "__base__/graphics/icons/uranium-238.png",
+    ["personal"] = "__base__/graphics/icons/fish.png"
+}
 utils.resource_base_cost = {
     ["assembling"] = 10000,
     ["mining"] = 70000,

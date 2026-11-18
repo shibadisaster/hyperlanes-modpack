@@ -82,8 +82,33 @@ for index, category_name in ipairs(utils.launch_categories) do
     local launch_item_tech = {
         type = "technology",
         name = "hyperlanes-launching-" .. category_name,
-        icon_size = 256,
-        icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+        -- icon_size = 256,
+        -- icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+        icons = {
+            {
+                icon = "__hyperlanes-modpack__/graphics/technology/empty.png",
+                icon_size = 256
+            },
+            {
+                -- icon = data.raw["item"]["yeet-" .. utils.resources_to_launch[category_name]].icon,
+                icon = "__rubia-assets__/graphics/icons/yeet-base.png", -- we have to reconstruct the icon manually
+                icon_size = 64,
+                scale = 1.0
+            },
+            {
+                -- icon = data.raw["item"]["yeet-" .. utils.resources_to_launch[category_name]].icon,
+                -- icon = data.raw["item"][utils.resources_to_launch[category_name]].icon,
+                icon = utils.resources_to_launch_icons[category_name],
+                icon_size = 64,
+                scale = 0.5
+            },
+            {
+                -- icon = data.raw["item"]["yeet-" .. utils.resources_to_launch[category_name]].icon,
+                icon = "__rubia-assets__/graphics/icons/yeet-base-foreground.png", -- we have to reconstruct the icon manually
+                icon_size = 64,
+                scale = 1.0
+            },
+        },
         effects = {},
         research_trigger = {
             type = "craft-item",
