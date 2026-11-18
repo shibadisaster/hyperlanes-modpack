@@ -220,6 +220,72 @@ data.raw["recipe"]["snouz_better_asteroid_collector"].ingredients = {
 }
 
 
+-- ╒═════════╗ ╒═════════╗ ╒═════════╗  ╒════════════╗  ╒══════╗ ╒═════════╗      ╒══════╗  ╒════╗   ╒════╗ ╒═════════╗    
+-- │  ╓────┐ ║ │  ╓───┐  ║ │  ╓────┐ ║  │  ╓─┐  ╓─┐  ║  └─┐  ╓─╜ │  ╓────┐ ║      └─┐  ╓─╜  │    ╚╗  └┐  ╓╜ │  ╓────┐ ║    
+-- │  ║    └─╜ │  ║   │  ║ │  ║    └─╜  │  ║ │  ║ │  ║    │  ║   │  ║    └─╜        │  ║    │  ╟┐ ╚╗  │  ║  │  ║    └─╜    
+-- │  ║        │  ║   │  ║ │  ╚══════╗  │  ║ │  ║ │  ║    │  ║   │  ║               │  ║    │  ║└┐ ╚╗ │  ║  │  ║           
+-- │  ║        │  ║   │  ║ └──────┐  ║  │  ║ │  ║ │  ║    │  ║   │  ║               │  ║    │  ║ └┐ ╚╗│  ║  │  ║           
+-- │  ║    ╒═╗ │  ║   │  ║ ╒═╗    │  ║  │  ║ └──╜ │  ║    │  ║   │  ║    ╒═╗        │  ║    │  ║  └┐ ╚╡  ║  │  ║    ╒═╗    
+-- │  ╚════╛ ║ │  ╚═══╛  ║ │ ╚════╛  ║ ╒╛  ╚╗    ╒╛  ╚╗ ╒═╛  ╚═╗ │  ╚════╛ ║      ╒═╛  ╚═╗ ╒╛  ╚╗  └┐    ║  │  ╚════╛ ║ ╒═╗
+-- └─────────╜ └─────────╜ └─────────╜ └────╜    └────╜ └──────╜ └─────────╜      └──────╜ └────╜   └────╜  └─────────╜ └─╜
+local cosmic_incubator_recipes = {
+    "cosmic_incubator_recipe_nauvis",
+    "cosmic_incubator_recipe_muluna",
+    "panglia_universe_precursor_2_result",
+    "cosmic_incubator_recipe_vulcanus",
+    "cosmic_incubator_recipe_gleba",
+    "cosmic_incubator_recipe_maraxsis-trench",
+    "cosmic_incubator_recipe_fulgora",
+    "cosmic_incubator_recipe_cerys",
+    "cosmic_incubator_recipe_maraxsis",
+    "cosmic_incubator_recipe_aquilo",
+    "cosmic_incubator_recipe_moshine",
+    "cosmic_incubator_recipe_paracelsin",
+    "cosmic_incubator_recipe_arig",
+    "cosmic_incubator_recipe_hyarion",
+    "cosmic_incubator_recipe_tellus",
+    "cosmic_incubator_recipe_vesta",
+    "cosmic_incubator_recipe_muria",
+    "cosmic_incubator_recipe_rubia",
+}
+
+local cosmic_incubator_recipes_results = {
+    ["cosmic_incubator_recipe_nauvis"] = {"metallic-asteroid-chunk", "carbonic-asteroid-chunk", "oxide-asteroid-chunk"},
+    ["cosmic_incubator_recipe_muluna"] = {"anorthite-chunk"},
+    ["panglia_universe_precursor_2_result"] = {"hyperlanes-panglia-asteroid-chunk"},
+    ["cosmic_incubator_recipe_vulcanus"] = {"hyperlanes-vulcanus-asteroid-chunk"},
+    ["cosmic_incubator_recipe_gleba"] = {"hyperlanes-gleba-asteroid-chunk"},
+    ["cosmic_incubator_recipe_maraxsis-trench"] = {"stone"},
+    ["cosmic_incubator_recipe_fulgora"] = {"hyperlanes-fulgora-asteroid-chunk"},
+    ["cosmic_incubator_recipe_cerys"] = {"hyperlanes-cerys-asteroid-chunk"},
+    ["cosmic_incubator_recipe_maraxsis"] = {"hyperlanes-maraxsis-asteroid-chunk"},
+    ["cosmic_incubator_recipe_aquilo"] = {"hyperlanes-aquilo-asteroid-chunk"},
+    ["cosmic_incubator_recipe_moshine"] = {"hyperlanes-moshine-asteroid-chunk"},
+    ["cosmic_incubator_recipe_paracelsin"] = {"hyperlanes-paracelsin-asteroid-chunk"},
+    ["cosmic_incubator_recipe_arig"] = {"hyperlanes-arig-asteroid-chunk"},
+    ["cosmic_incubator_recipe_hyarion"] = {"bismuth-asteroid-chunk"},
+    ["cosmic_incubator_recipe_tellus"] = {"hyperlanes-tellus-asteroid-chunk"},
+    ["cosmic_incubator_recipe_vesta"] = {"hyperlanes-vesta-asteroid-chunk"},
+    ["cosmic_incubator_recipe_muria"] = {"hyperlanes-muria-asteroid-chunk"},
+    ["cosmic_incubator_recipe_rubia"] = {"hyperlanes-rubia-asteroid-chunk"},
+}
+
+
+for index, recipe_name in ipairs(cosmic_incubator_recipes) do
+    data.raw["recipe"][recipe_name].energy_required = 60.0
+    data.raw["recipe"][recipe_name].results = {}
+    for index, result_item_name in ipairs(cosmic_incubator_recipes_results[recipe_name]) do
+        table.insert(data.raw["recipe"][recipe_name].results, {type = "item", name = result_item_name, amount_min = 0, amount_max = 200, quality_change = 0})
+        table.insert(data.raw["recipe"][recipe_name].results, {type = "item", name = result_item_name, amount_min = 0, amount_max = 50, quality_change = 1})
+        table.insert(data.raw["recipe"][recipe_name].results, {type = "item", name = result_item_name, amount_min = 0, amount_max = 12, quality_change = 2})
+        table.insert(data.raw["recipe"][recipe_name].results, {type = "item", name = result_item_name, amount_min = 0, amount_max = 3, quality_change = 3})
+        table.insert(data.raw["recipe"][recipe_name].results, {type = "item", name = result_item_name, amount_min = 0, amount_max = 1, quality_change = 4})
+    end
+end
+
+
+
+
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
