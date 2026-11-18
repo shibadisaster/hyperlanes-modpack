@@ -920,6 +920,23 @@ local crushing_unlocks = {
     ["hyperlanes-panglia-asteroid-chunk"] = "hyperlanes-victory"
 }
 
+local crushable_asteroids = {
+    "hyperlanes-fulgora-asteroid-chunk",
+    "hyperlanes-gleba-asteroid-chunk",
+    "hyperlanes-vulcanus-asteroid-chunk",
+    "hyperlanes-cerys-asteroid-chunk",
+    "hyperlanes-arig-asteroid-chunk",
+    "hyperlanes-muria-asteroid-chunk",
+    "hyperlanes-rubia-asteroid-chunk",
+    "bismuth-asteroid-chunk",
+    "hyperlanes-moshine-asteroid-chunk",
+    "hyperlanes-aquilo-asteroid-chunk",
+    "hyperlanes-maraxsis-asteroid-chunk",
+    "hyperlanes-paracelsin-asteroid-chunk",
+    "hyperlanes-tellus-asteroid-chunk",
+    "hyperlanes-vesta-asteroid-chunk",
+    "hyperlanes-panglia-asteroid-chunk"
+}
 
 local advanced_crushing_unlocks = {
     ["hyperlanes-fulgora-asteroid-chunk"] = "planetslib-rubia-cargo-drops",
@@ -938,3 +955,93 @@ local advanced_crushing_unlocks = {
     ["hyperlanes-vesta-asteroid-chunk"] = "promethium-science-pack",
     ["hyperlanes-panglia-asteroid-chunk"] = "hyperlanes-victory"
 }
+
+local crushing_recipe_name = {
+    ["hyperlanes-fulgora-asteroid-chunk"] = "hyperlanes-fulgora-asteroid-crushing",
+    ["hyperlanes-gleba-asteroid-chunk"] = "hyperlanes-gleba-asteroid-crushing",
+    ["hyperlanes-vulcanus-asteroid-chunk"] = "hyperlanes-vulcanus-asteroid-crushing",
+    ["hyperlanes-cerys-asteroid-chunk"] = "hyperlanes-cerys-asteroid-crushing",
+    ["hyperlanes-arig-asteroid-chunk"] = "hyperlanes-arig-asteroid-crushing",
+    ["hyperlanes-muria-asteroid-chunk"] = "hyperlanes-muria-asteroid-crushing",
+    ["hyperlanes-rubia-asteroid-chunk"] = "hyperlanes-rubia-asteroid-crushing",
+    ["bismuth-asteroid-chunk"] = nil,
+    ["hyperlanes-moshine-asteroid-chunk"] = "hyperlanes-moshine-asteroid-crushing",
+    ["hyperlanes-aquilo-asteroid-chunk"] = "hyperlanes-aquilo-asteroid-crushing",
+    ["hyperlanes-maraxsis-asteroid-chunk"] = "hyperlanes-maraxsis-asteroid-crushing",
+    ["hyperlanes-paracelsin-asteroid-chunk"] = "hyperlanes-paracelsin-asteroid-crushing",
+    ["hyperlanes-tellus-asteroid-chunk"] = "hyperlanes-tellus-asteroid-crushing",
+    ["hyperlanes-vesta-asteroid-chunk"] = "hyperlanes-vesta-asteroid-crushing",
+    ["hyperlanes-panglia-asteroid-chunk"] = "hyperlanes-panglia-asteroid-crushing"
+}
+
+local advanced_crushing_recipe_name = {
+    ["hyperlanes-fulgora-asteroid-chunk"] = "hyperlanes-advanced-fulgora-asteroid-crushing",
+    ["hyperlanes-gleba-asteroid-chunk"] = "hyperlanes-advanced-gleba-asteroid-crushing",
+    ["hyperlanes-vulcanus-asteroid-chunk"] = "hyperlanes-advanced-vulcanus-asteroid-crushing",
+    ["hyperlanes-cerys-asteroid-chunk"] = "hyperlanes-advanced-cerys-asteroid-crushing",
+    ["hyperlanes-arig-asteroid-chunk"] = "hyperlanes-advanced-arig-asteroid-crushing",
+    ["hyperlanes-muria-asteroid-chunk"] = "hyperlanes-advanced-muria-asteroid-crushing",
+    ["hyperlanes-rubia-asteroid-chunk"] = "hyperlanes-advanced-rubia-asteroid-crushing",
+    ["bismuth-asteroid-chunk"] = "hyperlanes-advanced-bismuth-asteroid-crushing",
+    ["hyperlanes-moshine-asteroid-chunk"] = "hyperlanes-advanced-moshine-asteroid-crushing",
+    ["hyperlanes-aquilo-asteroid-chunk"] = "hyperlanes-advanced-aquilo-asteroid-crushing",
+    ["hyperlanes-maraxsis-asteroid-chunk"] = "hyperlanes-advanced-maraxsis-asteroid-crushing",
+    ["hyperlanes-paracelsin-asteroid-chunk"] = "hyperlanes-advanced-paracelsin-asteroid-crushing",
+    ["hyperlanes-tellus-asteroid-chunk"] = "hyperlanes-advanced-tellus-asteroid-crushing",
+    ["hyperlanes-vesta-asteroid-chunk"] = "hyperlanes-advanced-vesta-asteroid-crushing",
+    ["hyperlanes-panglia-asteroid-chunk"] = "hyperlanes-advanced-panglia-asteroid-crushing"
+}
+
+
+for index, asteroid_name in ipairs(crushable_asteroids) do
+    if asteroid_name ~= "bismuth-asteroid-chunk" then
+        local tech = {
+            type = "technology",
+            name = crushing_recipe_name[asteroid_name],
+            icon_size = 256,
+            icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
+            effects = {
+                {
+                    type = "unlock-recipe",
+                    recipe = crushing_recipe_name[asteroid_name]
+                }
+            },
+            unit =
+            {
+                count = utils.t3_spcost_bigtech,
+                ingredients = utils.t3_sp,
+                time = 60
+            },
+            prerequisites = {crushing_unlocks[asteroid_name]},
+            order = "c-a",
+            essential = false
+        }
+        data:extend({tech})
+    end
+end
+
+
+for index, asteroid_name in ipairs(crushable_asteroids) do
+    local tech = {
+        type = "technology",
+        name = advanced_crushing_recipe_name[asteroid_name],
+        icon_size = 256,
+        icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = advanced_crushing_recipe_name[asteroid_name]
+            }
+        },
+        unit =
+        {
+            count = utils.t3_spcost_bigtech,
+            ingredients = utils.t3_sp,
+            time = 60
+        },
+        prerequisites = {advanced_crushing_unlocks[asteroid_name]},
+        order = "c-a",
+        essential = false
+    }
+    data:extend({tech})
+end
