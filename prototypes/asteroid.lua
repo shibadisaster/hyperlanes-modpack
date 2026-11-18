@@ -1076,7 +1076,7 @@ for index, asteroid_name in ipairs(crushable_asteroids) do
             -- icon = crushing_recipe_name[asteroid_name].icon,
             icons = {
                 {
-                    icon = "__hyperlanes-modpack__/graphics/technology/empty.png",
+                    icon = "__hyperlanes-modpack__/graphics/technology/crushing-base.png",
                     icon_size = 256
                 },
                 {
@@ -1119,7 +1119,7 @@ for index, asteroid_name in ipairs(crushable_asteroids) do
         -- icon = advanced_crushing_recipe_name[asteroid_name].icon,
         icons = {
             {
-                icon = "__hyperlanes-modpack__/graphics/technology/empty.png",
+                icon = "__hyperlanes-modpack__/graphics/technology/advanced-crushing-base.png",
                 icon_size = 256
             },
             {

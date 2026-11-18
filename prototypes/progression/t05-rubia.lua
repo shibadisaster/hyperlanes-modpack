@@ -86,12 +86,12 @@ for index, category_name in ipairs(utils.launch_categories) do
         -- icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
         icons = {
             {
-                icon = "__hyperlanes-modpack__/graphics/technology/empty.png",
+                icon = "__hyperlanes-modpack__/graphics/technology/launch-base.png",
                 icon_size = 256
             },
             {
                 -- icon = data.raw["item"]["yeet-" .. utils.resources_to_launch[category_name]].icon,
-                icon = "__rubia-assets__/graphics/icons/yeet-base.png", -- we have to reconstruct the icon manually
+                icon = "__hyperlanes-modpack__/graphics/icons/yeet-base-faded.png", -- we have to reconstruct the icon manually
                 icon_size = 64,
                 scale = 1.0
             },
@@ -100,11 +100,13 @@ for index, category_name in ipairs(utils.launch_categories) do
                 -- icon = data.raw["item"][utils.resources_to_launch[category_name]].icon,
                 icon = utils.resources_to_launch_icons[category_name],
                 icon_size = 64,
-                scale = 0.5
+                scale = 0.5,
+                floating = true,
+                shift = {16, -16}
             },
             {
                 -- icon = data.raw["item"]["yeet-" .. utils.resources_to_launch[category_name]].icon,
-                icon = "__rubia-assets__/graphics/icons/yeet-base-foreground.png", -- we have to reconstruct the icon manually
+                icon = "__hyperlanes-modpack__/graphics/icons/yeet-base-foreground-faded.png", -- we have to reconstruct the icon manually
                 icon_size = 64,
                 scale = 1.0
             },
