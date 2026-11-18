@@ -103,8 +103,25 @@ data:extend({prt9_recipe})
 local data_analysis_tech = {
     type = "technology",
     name = "hyperlanes-data-analysis",
-    icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    -- icon_size = 256,
+    -- icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/data-analysis-unlock-base.png",
+            icon_size = 256
+        },
+        {
+            icon = "__base__/graphics/icons/automation-science-pack.png",
+            icon_size = 64,
+            scale = 1.0
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/icons/q3.png",
+            icon_size = 64,
+            scale = 0.25,
+            shift = {0, 8}
+        },
+    },
     effects = {},
     unit =
     {
@@ -244,8 +261,19 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local data_unlock_tech = {
         type = "technology",
         name = "hyperlanes-" .. science_name .. "-data-unlock",
-        icon_size = 256,
-        icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+        -- icon_size = 256,
+        -- icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+        icons = {
+            {
+                icon = "__hyperlanes-modpack__/graphics/technology/data-analysis-base.png",
+                icon_size = 256
+            },
+            {
+                icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. ".png",
+                icon_size = 64,
+                scale = 1.0
+            },
+        },
         effects = {
             {
                 type = "unlock-recipe",
@@ -280,8 +308,19 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local data_infinite_tech = {
         type = "technology",
         name = "hyperlanes-" .. science_name .. "-data-infinite",
-        icon_size = 256,
-        icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+        -- icon_size = 256,
+        -- icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+        icons = {
+            {
+                icon = "__hyperlanes-modpack__/graphics/technology/data-analysis-base.png",
+                icon_size = 256
+            },
+            {
+                icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. "-analyzed.png",
+                icon_size = 64,
+                scale = 1.0
+            },
+        },
         effects = {},
         max_level = "infinite",
         unit =

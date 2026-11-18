@@ -62,8 +62,18 @@ data:extend({mmm_tech})
 local launching_tech = {
     type = "technology",
     name = "hyperlanes-launching-bonuses",
-    icon_size = 256,
-    icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    -- icon_size = 256,
+    -- icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
+    icons = {
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/launch-unlock-base.png",
+            icon_size = 256
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/technology/launch-unlock-focus.png", 
+            icon_size = 256,
+        },
+    },
     effects = {},
     unit =
     {
