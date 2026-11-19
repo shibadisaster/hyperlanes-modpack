@@ -45,7 +45,8 @@
         "+ blueprint-sandboxes",
         "+ interplanetary-power-grid",
         "+ floating-damage-text",
-        "+ discovery_tree"
+        "+ discovery_tree",
+        "+ Teleporters"
     ],
     "description": "Factorio modpack made with the goal of creating a Space Age experience with a focus on long-term progression, mod cohesion, and interplanetary logistics!",
     "license": "MIT"

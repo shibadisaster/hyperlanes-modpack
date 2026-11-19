@@ -252,6 +252,44 @@ data.raw["recipe"]["panglia_collect_dna_pentapod"].results = {
 }
 
 
+-- Interplanetary power grid Chrono pole
+data.raw["recipe"]["ipg-chrono-pole"].ingredients = {
+    {type = "item", name = "maraxsis-sonar", amount = 10},
+    {type = "item", name = "hyperlanes-enlightened-processor", amount = 3},
+    {type = "item", name = "panglia_sentient_processor", amount = 100},
+    {type = "item", name = "ai-tier-10", amount = 5, quality_min = "legendary"},
+    {type = "item", name = "galvanized-steel-plate", amount = 5000},
+    {type = "item", name = "panglia_panglite_glass", amount = 5000},
+    {type = "item", name = "planetaris-magnesium-sheet", amount = 5000, quality_min = "legendary"},
+    {type = "item", name = "steel-plate", amount = 5000, quality_min = "mythic"},
+    {type = "item", name = "panglia_branbalite_slurry-barrel", amount = 200},
+}
+data.raw["recipe"]["ipg-chrono-pole"].results = {
+    {type = "item", name = "ipg-chrono-pole", amount = 1, ignored_by_productivity = 1}
+}
+data.raw["recipe"]["ipg-chrono-pole"].allow_quality = false
+data.raw["recipe"]["ipg-chrono-pole"].categories = {"thinkingbrain"}
+
+
+-- Teleporter
+data.raw["recipe"]["teleporter"].ingredients = {
+    {type = "item", name = "maraxsis-sonar", amount = 10},
+    {type = "item", name = "hyperlanes-enlightened-processor", amount = 1},
+    {type = "item", name = "panglia_sentient_processor", amount = 50},
+    {type = "item", name = "ai-tier-10", amount = 3, quality_min = "legendary"},
+    {type = "item", name = "galvanized-steel-plate", amount = 1000},
+    {type = "item", name = "panglia_panglite_glass", amount = 1000},
+    {type = "item", name = "planetaris-magnesium-sheet", amount = 1000, quality_min = "legendary"},
+    {type = "item", name = "steel-plate", amount = 1000, quality_min = "mythic"},
+    {type = "item", name = "hyperlanes-bose-einstein-condensate-barrel", amount = 200},
+}
+data.raw["recipe"]["teleporter"].results = {
+    {type = "item", name = "teleporter", amount = 1, ignored_by_productivity = 1}
+}
+data.raw["recipe"]["teleporter"].allow_quality = false
+data.raw["recipe"]["teleporter"].categories = {"thinkingbrain"}
+
+
 -- ╒═════════╗ ╒═════════╗ ╒═════════╗  ╒════════════╗  ╒══════╗ ╒═════════╗      ╒══════╗  ╒════╗   ╒════╗ ╒═════════╗    
 -- │  ╓────┐ ║ │  ╓───┐  ║ │  ╓────┐ ║  │  ╓─┐  ╓─┐  ║  └─┐  ╓─╜ │  ╓────┐ ║      └─┐  ╓─╜  │    ╚╗  └┐  ╓╜ │  ╓────┐ ║    
 -- │  ║    └─╜ │  ║   │  ║ │  ║    └─╜  │  ║ │  ║ │  ║    │  ║   │  ║    └─╜        │  ║    │  ╟┐ ╚╗  │  ║  │  ║    └─╜    
@@ -372,3 +410,12 @@ data.raw["technology"]["snouz_long_electric_gun_turret"].prerequisites = {"pangl
 data.raw["technology"]["panglia_simulation_chamber"].prerequisites = {"panglia_dna_manipulation_phasetwo_tech"}
 
 data.raw["technology"]["snouz_better_asteroid_collector"].prerequisites = {"panglia_sentient_processor"}
+
+
+data.raw["technology"]["ipg-interplanetary-power-grid"].prerequisites = {"hyperlanes-victory"}
+data.raw["technology"]["ipg-interplanetary-power-grid"].unit.ingredients = utils.t10_sp
+data.raw["technology"]["ipg-interplanetary-power-grid"].unit.count = utils.t10_spcost_bigtech
+
+data.raw["technology"]["teleporter"].prerequisites = {"hyperlanes-victory"}
+data.raw["technology"]["teleporter"].unit.ingredients = utils.t10_sp
+data.raw["technology"]["teleporter"].unit.count = utils.t10_spcost_bigtech
