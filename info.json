@@ -53,7 +53,9 @@
         "+ sa-science-packs-fix",
         "+ Automatic_Train_Painter",
         "+ automatic-station-painter",
-        "+ light-overhaul"
+        "+ light-overhaul",
+        "+ NoRespawnGun-SpaceAge-fork",
+        "+ respawn-to-any-planet"
     ],
     "description": "Factorio modpack made with the goal of creating a Space Age experience with a focus on long-term progression, mod cohesion, and interplanetary logistics!",
     "license": "MIT"
