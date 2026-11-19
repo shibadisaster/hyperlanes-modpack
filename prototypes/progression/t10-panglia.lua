@@ -231,7 +231,7 @@ local dna_from_artificial_lifeform = {
             scale = 1.0
         },
         {
-            icon = "__hyperlanes-modpack__/graphics/icons/artificial-lifeform.png",
+            icon = "__hyperlanes-modpack__/graphics/icons/artificial-lifeform-rimlight.png",
             icon_size = 64,
             scale = 0.6666,
             floating = true,
