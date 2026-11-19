@@ -106,7 +106,6 @@ for index, category_name in ipairs(utils.launch_categories) do
                 scale = 1.0
             },
             {
-                -- icon = data.raw["item"]["yeet-" .. utils.resources_to_launch[category_name]].icon,
                 -- icon = data.raw["item"][utils.resources_to_launch[category_name]].icon,
                 icon = utils.resources_to_launch_icons[category_name],
                 icon_size = 64,

@@ -35,6 +35,10 @@ data.raw["technology"]["planetaris-hyper-transport-belt"].unit.count = utils.t6_
 -- Make Rubia launch researches use broken quality materials
 for index, category_name in ipairs(utils.launch_categories) do
     data.raw["technology"]["hyperlanes-launching-" .. category_name .. "-1"].research_trigger.item = {name = "yeet-" .. utils.resources_to_launch[category_name], quality = "broken", comparator = "="}
+    data.raw["technology"]["hyperlanes-launching-" .. category_name .. "-2"].research_trigger.item = {name = "yeet-" .. utils.resources_to_launch[category_name], quality = "broken", comparator = "="}
+    data.raw["technology"]["hyperlanes-launching-" .. category_name .. "-3"].research_trigger.item = {name = "yeet-" .. utils.resources_to_launch[category_name], quality = "broken", comparator = "="}
+    data.raw["technology"]["hyperlanes-launching-" .. category_name .. "-4"].research_trigger.item = {name = "yeet-" .. utils.resources_to_launch[category_name], quality = "broken", comparator = "="}
+    data.raw["technology"]["hyperlanes-launching-" .. category_name .. "-5"].research_trigger.item = {name = "yeet-" .. utils.resources_to_launch[category_name], quality = "broken", comparator = "="}
 end
 
 

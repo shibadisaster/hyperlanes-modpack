@@ -742,21 +742,32 @@ local q3_upcycling_tech = {
     -- icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
     icons = {
         {
-            icon = "__space-age__/graphics/technology/advanced-asteroid-processing.png",
-            icon_size = 256
+            icon = "__hyperlanes-modpack__/graphics/technology/upcycling-base.png",
+            icon_size = 256,
+            scale = 1.0
+        },
+        {
+            icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png",
+            icon_size = 64,
+            scale = 1.0
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/icons/q3.png",
+            icon_size = 64,
+            scale = 0.5
         },
         {
             icon = "__muluna-graphics__/graphics/icons/raw-astronomical-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(2.0),
-            shift = {43.84, -43.84},
+            scale = 2.00 / math.sqrt(2.0),
+            shift = {43.84 * 1.50, -43.84 * 1.50},
             floating = true
         },
         {
             icon = "__muluna-graphics__/graphics/icons/raw-astronomical-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(2.0),
-            shift = {-43.84, 43.84},
+            scale =  2.00 / math.sqrt(2.0),
+            shift = {-43.84 * 1.50, 43.84 * 1.50},
             floating = true
         },
     },
@@ -787,28 +798,39 @@ local q4_upcycling_tech = {
     -- icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
     icons = {
         {
-            icon = "__space-age__/graphics/technology/advanced-asteroid-processing.png",
-            icon_size = 256
+            icon = "__hyperlanes-modpack__/graphics/technology/upcycling-base.png",
+            icon_size = 256,
+            scale = 1.0
+        },
+        {
+            icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png",
+            icon_size = 64,
+            scale = 1.0
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/icons/q4.png",
+            icon_size = 64,
+            scale = 0.5
         },
         {
             icon = "__Moshine__/graphics/icons/data/solved-equation-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(3.0),
-            shift = {38.18, -38.18},
+            scale = 1.50 / math.sqrt(3.0),
+            shift = {38.18 * 1.50, -38.18 * 1.50},
             floating = true
         },
         {
             icon = "__Moshine__/graphics/icons/data/solved-equation-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(3.0),
-            shift = {-52.16, -13.98},
+            scale = 1.50 / math.sqrt(3.0),
+            shift = {-52.16 * 1.50, -13.98 * 1.50},
             floating = true
         },
         {
             icon = "__Moshine__/graphics/icons/data/solved-equation-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(3.0),
-            shift = {13.98, 52.16},
+            scale = 1.50 / math.sqrt(3.0),
+            shift = {13.98 * 1.50, 52.16 * 1.50},
             floating = true
         },
     },
@@ -839,35 +861,46 @@ local q5_upcycling_tech = {
     -- icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
     icons = {
         {
-            icon = "__space-age__/graphics/technology/advanced-asteroid-processing.png",
-            icon_size = 256
+            icon = "__hyperlanes-modpack__/graphics/technology/upcycling-base.png",
+            icon_size = 256,
+            scale = 1.0
+        },
+        {
+            icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png",
+            icon_size = 64,
+            scale = 1.0
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/icons/q5.png",
+            icon_size = 64,
+            scale = 0.5
         },
         {
             icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(4.0),
-            shift = {38.18, -38.18},
+            scale = 1.50 / math.sqrt(4.0),
+            shift = {38.18 * 1.50, -38.18 * 1.50},
             floating = true
         },
         {
             icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(4.0),
-            shift = {-38.18, -38.18},
+            scale = 1.50 / math.sqrt(4.0),
+            shift = {-38.18 * 1.50, -38.18 * 1.50},
             floating = true
         },
         {
             icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(4.0),
-            shift = {-38.18, 38.18},
+            scale = 1.50 / math.sqrt(4.0),
+            shift = {-38.18 * 1.50, 38.18 * 1.50},
             floating = true
         },
         {
             icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(4.0),
-            shift = {38.18, 38.18},
+            scale = 1.50 / math.sqrt(4.0),
+            shift = {38.18 * 1.50, 38.18 * 1.50},
             floating = true
         },
     },
@@ -898,42 +931,53 @@ local q6_upcycling_tech = {
     -- icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
     icons = {
         {
-            icon = "__space-age__/graphics/technology/advanced-asteroid-processing.png",
-            icon_size = 256
+            icon = "__hyperlanes-modpack__/graphics/technology/upcycling-base.png",
+            icon_size = 256,
+            scale = 1.0
+        },
+        {
+            icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png",
+            icon_size = 64,
+            scale = 1.0
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/icons/q6.png",
+            icon_size = 64,
+            scale = 0.5
         },
         {
             icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(5.0),
-            shift = {38.18, -38.18},
+            scale = 1.50 / math.sqrt(5.0),
+            shift = {38.18 * 1.50, -38.18 * 1.50},
             floating = true
         },
         {
             icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(5.0),
-            shift = {-24.52, -48.11},
+            scale = 1.50 / math.sqrt(5.0),
+            shift = {-24.52 * 1.50, -48.11 * 1.50},
             floating = true
         },
         {
             icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(5.0),
-            shift = {-53.34, 8.45},
+            scale = 1.50 / math.sqrt(5.0),
+            shift = {-53.34 * 1.50, 8.45 * 1.50},
             floating = true
         },
         {
             icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(5.0),
-            shift = {-8.45, 53.34},
+            scale = 1.50 / math.sqrt(5.0),
+            shift = {-8.45 * 1.50, 53.34 * 1.50},
             floating = true
         },
         {
             icon = "__Moshine__/graphics/icons/data/cosmic-data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(5.0),
-            shift = {48.11, 24.52},
+            scale = 1.50 / math.sqrt(5.0),
+            shift = {48.11 * 1.50, 24.52 * 1.50},
             floating = true
         },
     },
@@ -964,49 +1008,60 @@ local q7_upcycling_tech = {
     -- icon = "__hyperlanes-modpack__/graphics/technology/osmium.png",
     icons = {
         {
-            icon = "__space-age__/graphics/technology/advanced-asteroid-processing.png",
-            icon_size = 256
+            icon = "__hyperlanes-modpack__/graphics/technology/upcycling-base.png",
+            icon_size = 256,
+            scale = 1.0
+        },
+        {
+            icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png",
+            icon_size = 64,
+            scale = 1.0
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/icons/q7.png",
+            icon_size = 64,
+            scale = 0.5
         },
         {
             icon = "__panglia_planet__/graphics/icons/data/timewarp_data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(6.0),
-            shift = {38.18, -38.18},
+            scale = 1.50 / math.sqrt(6.0),
+            shift = {38.18 * 1.50, -38.18 * 1.50},
             floating = true
         },
         {
             icon = "__panglia_planet__/graphics/icons/data/timewarp_data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(6.0),
-            shift = {-13.98, -52.16},
+            scale = 1.50 / math.sqrt(6.0),
+            shift = {-13.98 * 1.50, -52.16 * 1.50},
             floating = true
         },
         {
             icon = "__panglia_planet__/graphics/icons/data/timewarp_data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(6.0),
-            shift = {-52.16, -13.98},
+            scale = 1.50 / math.sqrt(6.0),
+            shift = {-52.16 * 1.50, -13.98 * 1.50},
             floating = true
         },
         {
             icon = "__panglia_planet__/graphics/icons/data/timewarp_data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(6.0),
-            shift = {-38.18, 38.18},
+            scale = 1.50 / math.sqrt(6.0),
+            shift = {-38.18 * 1.50, 38.18 * 1.50},
             floating = true
         },
         {
             icon = "__panglia_planet__/graphics/icons/data/timewarp_data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(6.0),
-            shift = {13.98, 52.16},
+            scale = 1.50 / math.sqrt(6.0),
+            shift = {13.98 * 1.50, 52.16 * 1.50},
             floating = true
         },
         {
             icon = "__panglia_planet__/graphics/icons/data/timewarp_data.png",
             icon_size = 64,
-            scale = 0.90 / math.sqrt(6.0),
-            shift = {52.16, 13.98},
+            scale = 1.50 / math.sqrt(6.0),
+            shift = {52.16 * 1.50, 13.98 * 1.50},
             floating = true
         },
     },

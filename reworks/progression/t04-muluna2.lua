@@ -160,3 +160,29 @@ for index, asteroid_name in ipairs(utils.upcyclable_asteroids) do
         recipe = asteroid_name .. "-upcycling-q1-to-q2"
     })
 end
+
+data.raw["technology"]["muluna-asteroid-upcycling"].icon = nil
+data.raw["technology"]["muluna-asteroid-upcycling"].icons = {
+    {
+        icon = "__hyperlanes-modpack__/graphics/technology/upcycling-base.png",
+        icon_size = 256,
+        scale = 1.0
+    },
+    {
+        icon = "__space-age__/graphics/icons/metallic-asteroid-chunk.png",
+        icon_size = 64,
+        scale = 1.0
+    },
+    {
+        icon = "__hyperlanes-modpack__/graphics/icons/q2.png",
+        icon_size = 64,
+        scale = 0.5
+    },
+    {
+        icon = "__muluna-graphics__/graphics/icons/raw-astronomical-data.png",
+        icon_size = 64,
+        scale = 2.00 / math.sqrt(1.0),
+        shift = {43.84 * 1.50, -43.84 * 1.50},
+        floating = true
+    },
+}
