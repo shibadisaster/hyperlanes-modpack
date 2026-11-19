@@ -198,7 +198,7 @@ local t10_enlightened_processor = {
     -- inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
     -- pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     -- drop_sound = space_age_item_sounds.agriculture_inventory_move,
-    stack_size = 100,
+    stack_size = 50,
     weight = 10 * kg,
     subgroup = "hyperlanes-enlightenment"
 }
@@ -452,3 +452,40 @@ quality_4.effect.productivity = 0.0
 quality_4.effect.quality = 0.0375
 quality_4.icon = "__hyperlanes-modpack__/graphics/icons/quality-4.png"
 data:extend({quality_4})
+
+
+-- Rogue (?) processor
+local t10_rogue_processor = {
+    type = "item",
+    name = "hyperlanes-rogue-processor",
+    icon = "__hyperlanes-modpack__/graphics/icons/angry-processor.png",
+    -- subgroup = "vesta-items-organic",
+    -- order = "a[vesta-organics]-i[algea-clump-iridium]",
+    -- inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+    -- pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+    -- drop_sound = space_age_item_sounds.agriculture_inventory_move,
+    stack_size = 50,
+    weight = 10 * kg,
+    subgroup = data.raw["item"]["panglia_sentient_processor"].subgroup,
+    spoil_ticks = 10 * 60,
+    spoil_to_trigger_result = {
+        items_per_trigger = 10000,
+        trigger = {
+            {
+                type = "direct",
+                action_delivery = {
+                    type = "instant",
+                    target_effects = {
+                        {
+                            type = "create-entity",
+                            entity_name = "cerys-hydrogen-bomb-rocket",
+                            trigger_created_entity = true
+                        }
+                    }
+                }
+            },
+        }
+    },
+    -- spoil_result = nil
+}
+data:extend({t10_rogue_processor})

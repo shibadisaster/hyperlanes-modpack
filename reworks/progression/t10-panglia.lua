@@ -220,6 +220,11 @@ data.raw["recipe"]["snouz_better_asteroid_collector"].ingredients = {
 }
 
 
+-- Sentient processor gets angy
+data.raw["item"]["panglia_sentient_processor"].spoil_ticks = 30 * 60
+data.raw["item"]["panglia_sentient_processor"].spoil_result = "hyperlanes-rogue-processor"
+
+
 -- ╒═════════╗ ╒═════════╗ ╒═════════╗  ╒════════════╗  ╒══════╗ ╒═════════╗      ╒══════╗  ╒════╗   ╒════╗ ╒═════════╗    
 -- │  ╓────┐ ║ │  ╓───┐  ║ │  ╓────┐ ║  │  ╓─┐  ╓─┐  ║  └─┐  ╓─╜ │  ╓────┐ ║      └─┐  ╓─╜  │    ╚╗  └┐  ╓╜ │  ╓────┐ ║    
 -- │  ║    └─╜ │  ║   │  ║ │  ║    └─╜  │  ║ │  ║ │  ║    │  ║   │  ║    └─╜        │  ║    │  ╟┐ ╚╗  │  ║  │  ║    └─╜    

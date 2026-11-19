@@ -114,3 +114,21 @@ data:extend({t8_aerated_water})
 -- t9_antimatter.flow_color = {255, 255, 255}
 -- t9_antimatter.visualization_color = {0, 0, 0}
 -- data:extend({t9_antimatter})
+
+
+-- Sedative
+local t10_sedative = {
+    type = "fluid",
+    name = "hyperlanes-sedative",
+    icon = "__hyperlanes-modpack__/graphics/icons/peptobismol.png",
+    -- subgroup = "fluid",
+    -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
+    default_temperature = 15,
+    base_color = {249, 159, 201},
+    flow_color = {249, 159, 201},
+    visualization_color = {249, 159, 201},
+    draw_as_glow = true,
+    auto_barrel = true,
+    subgroup = "fluid"
+}
+data:extend({t10_sedative})

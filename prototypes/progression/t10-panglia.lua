@@ -56,8 +56,16 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         -- drop_sound = item_sounds.module_inventory_move,
         stack_size = 50,
         weight = 10.0*kg,
-        subgroup = "hyperlanes-enlightenment"
+        subgroup = "hyperlanes-enlightenment",
+        spoil_ticks = 30 * 60,
+        spoil_result = "hyperlanes-rogue-processor"
     }
+
+    if science_name == "promethium" then
+        enlightenment_step.spoil_ticks = nil
+        enlightenment_step.spoil_result = nil
+    end
+
 
     local enlightenment_step_recipe = {
         type = "recipe",
@@ -88,7 +96,8 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         },
         energy_required = 0.8,
         results = {
-            {type = "item", name = "hyperlanes-enlightened-processor-step-" .. index, amount = 1, independent_probability = 0.90},
+            {type = "item", name = "hyperlanes-enlightened-processor-step-" .. index, amount = 1, shared_probability = {min = 0.00, max = 0.80}, ignored_by_productivity = 1},
+            {type = "item", name = "hyperlanes-rogue-processor", amount = 1, shared_probability = {min = 0.80, max = 0.90}, ignored_by_productivity = 1},
         },
         allow_productivity = false,
         categories = {"data-processing"},
@@ -110,7 +119,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         )
         table.insert(
             enlightenment_step_recipe.results,
-            {type = "item", name = "hyperlanes-time-crystal-b", amount = 1}
+            {type = "item", name = "hyperlanes-time-crystal-b", amount = 1, ignored_by_productivity = 1}
         )
     else
         table.insert(
@@ -119,7 +128,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         )
         table.insert(
             enlightenment_step_recipe.results,
-            {type = "item", name = "hyperlanes-time-crystal-a", amount = 1}
+            {type = "item", name = "hyperlanes-time-crystal-a", amount = 1, ignored_by_productivity = 1}
         )
     end
 
@@ -146,7 +155,7 @@ local enlightenment_recipe = {
     },
     energy_required = 300.0,
     results = {
-        {type = "item", name = "hyperlanes-enlightened-processor", amount = 1},
+        {type = "item", name = "hyperlanes-enlightened-processor", amount = 1, ignored_by_productivity = 1},
     },
     allow_productivity = false,
     categories = {"thinkingbrain"},
@@ -154,6 +163,60 @@ local enlightenment_recipe = {
 }
 
 data:extend({enlightenment_recipe})
+
+
+-- CIA torture
+local sedative_recipe = {
+    type = "recipe",
+    name = "hyperlanes-sedative",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "planetaris-mushroom-cap", amount = 20, quality_min = "legendary"},
+        {type = "fluid", name = "panglia_branbalite_slurry", amount = 50},
+        {type = "fluid", name = "hyperlanes-superacid", amount = 10},
+    },
+    energy_required = 10.0,
+    results = {
+        {type = "fluid", name = "hyperlanes-sedative", amount = 100},
+    },
+    allow_productivity = true,
+    categories = {"chemistry"},
+    auto_recycle = true
+}
+
+data:extend({sedative_recipe})
+
+table.insert(data.raw["technology"]["panglia_sentient_processor"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-sedative"
+})
+
+
+local crime_against_humanity = {
+    type = "recipe",
+    name = "hyperlanes-sedate-sentient-processor",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "hyperlanes-rogue-processor", amount = 1},
+        {type = "fluid", name = "hyperlanes-sedative", amount = 10},
+    },
+    energy_required = 0.1,
+    results = {
+        {type = "item", name = "panglia_sentient_processor", amount = 1, ignored_by_productivity = 1, always_fresh = true},
+    },
+    allow_productivity = false,
+    categories = {"crafting-with-fluid"},
+    auto_recycle = true
+}
+
+data:extend({crime_against_humanity})
+
+table.insert(data.raw["technology"]["panglia_sentient_processor"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-sedate-sentient-processor"
+})
 
 
 -- ╒════╗    ╒════╗ ╒══════╗ ╒═════════╗ ╒══════════╗ ╒═════════╗ ╒══════════╗ ╒════╗╒════╗ ╒══╗
@@ -172,7 +235,7 @@ local victory_tech = {
     icon = "__hyperlanes-modpack__/graphics/technology/victory.png",
     effects = {},
     research_trigger = {
-        type = "send-item-to-orbit",
+        type = "craft-item",
         item = "hyperlanes-enlightened-processor"
     },
     prerequisites = {"hyperlanes-enlightenment"},
