@@ -5,16 +5,12 @@ local t4_advanced_material_microsuspension = {
     icon = "__hyperlanes-modpack__/graphics/icons/advanced-material-microsuspension.png",
     -- subgroup = "fluid",
     -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
-    default_temperature = 165,
-    max_temperature = 165,
-    gas_temperature = 165,
-    heat_capacity = "0.2kJ",
+    default_temperature = 15,
     base_color = {130, 110, 160},
     flow_color = {130, 110, 160},
     visualization_color = {130, 110, 160},
     draw_as_glow = true,
     auto_barrel = true,
-    fuel_value = "1MJ",
     subgroup = "fluid"
 }
 data:extend({t4_advanced_material_microsuspension})
@@ -27,16 +23,12 @@ local t5_metamaterial_microsuspension = {
     icon = "__hyperlanes-modpack__/graphics/icons/metamaterial-microsuspension.png",
     -- subgroup = "fluid",
     -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
-    default_temperature = 165,
-    max_temperature = 165,
-    gas_temperature = 165,
-    heat_capacity = "0.2kJ",
+    default_temperature = 15,
     base_color = {230, 170, 160},
     flow_color = {230, 170, 160},
     visualization_color = {230, 170, 160},
     draw_as_glow = true,
     auto_barrel = true,
-    fuel_value = "1MJ",
     subgroup = "fluid"
 }
 data:extend({t5_metamaterial_microsuspension})
@@ -49,16 +41,12 @@ local t5_superacid = {
     icon = "__hyperlanes-modpack__/graphics/icons/superacid.png",
     -- subgroup = "fluid",
     -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
-    default_temperature = 165,
-    max_temperature = 165,
-    gas_temperature = 165,
-    heat_capacity = "0.2kJ",
+    default_temperature = 15,
     base_color = {190, 120, 30},
     flow_color = {190, 120, 30},
     visualization_color = {190, 120, 30},
     draw_as_glow = true,
     auto_barrel = true,
-    fuel_value = "1MJ",
     subgroup = "fluid"
 }
 data:extend({t5_superacid})
@@ -71,16 +59,12 @@ local t7_bioslurry = {
     icon = "__hyperlanes-modpack__/graphics/icons/bioslurry.png",
     -- subgroup = "fluid",
     -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
-    default_temperature = 165,
-    max_temperature = 165,
-    gas_temperature = 165,
-    heat_capacity = "0.2kJ",
+    default_temperature = 15,
     base_color = {140, 240, 60},
     flow_color = {140, 240, 60},
     visualization_color = {140, 240, 60},
     draw_as_glow = true,
     auto_barrel = true,
-    fuel_value = "1MJ",
     subgroup = "fluid"
 }
 data:extend({t7_bioslurry})
@@ -93,16 +77,12 @@ local t8_bose_einstein_condensate = {
     icon = "__hyperlanes-modpack__/graphics/icons/bose-einstein-condensate.png",
     -- subgroup = "fluid",
     -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
-    default_temperature = 165,
-    max_temperature = 165,
-    gas_temperature = 165,
-    heat_capacity = "0.2kJ",
+    default_temperature = 15,
     base_color = {210, 200, 255},
     flow_color = {210, 200, 255},
     visualization_color = {210, 200, 255},
     draw_as_glow = true,
     auto_barrel = true,
-    fuel_value = "1MJ",
     subgroup = "fluid"
 }
 data:extend({t8_bose_einstein_condensate})
@@ -115,16 +95,12 @@ local t8_aerated_water = {
     icon = "__hyperlanes-modpack__/graphics/icons/aerated-water.png",
     -- subgroup = "fluid",
     -- order = "zzz[new-fluid]-s[panglia]-a[branbalite_slurry]",
-    default_temperature = 165,
-    max_temperature = 165,
-    gas_temperature = 165,
-    heat_capacity = "0.2kJ",
+    default_temperature = 15,
     base_color = {50, 150, 130},
     flow_color = {50, 150, 130},
     visualization_color = {50, 150, 130},
     draw_as_glow = true,
     auto_barrel = true,
-    fuel_value = "1MJ",
     subgroup = "fluid"
 }
 data:extend({t8_aerated_water})
