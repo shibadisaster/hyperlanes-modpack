@@ -240,8 +240,13 @@ data.raw["technology"]["zinc-piping"].unit.count = utils.t8_spcost_bigtech
 data.raw["technology"]["advanced-cryovolcanic-mixture-separation"].unit.ingredients = utils.t8_sp_paracelsin
 data.raw["technology"]["advanced-cryovolcanic-mixture-separation"].unit.count = utils.t8_spcost_tech
 
+
+
+-- These 2 are not playing nice because they have their COUNT_FORMULA SET INSTEAD OF COUNT
 data.raw["technology"]["fluorinated-uranium-processing"].unit.ingredients = utils.t8_sp_paracelsin
 data.raw["technology"]["fluorinated-uranium-processing"].unit.count = utils.t8_spcost_tech
+data.raw["technology"]["fluorinated-uranium-processing"].unit.count_formula = nil
 
 data.raw["technology"]["petroleum-gas-alkylation"].unit.ingredients = utils.t8_sp_paracelsin
 data.raw["technology"]["petroleum-gas-alkylation"].unit.count = utils.t8_spcost_bigtech
+data.raw["technology"]["petroleum-gas-alkylation"].unit.count_formula = nil

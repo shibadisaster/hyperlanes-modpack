@@ -7,7 +7,8 @@ local superacid_recipe = {
     enabled = false,
     ingredients = {
         {type = "fluid", name = "aqua-regia", amount = 200},
-        {type = "fluid", name = "sulfuric-acid", amount = 200},
+        {type = "fluid", name = "sulfuric-acid", amount = 100},
+        {type = "fluid", name = "hydrogen-fluoride", amount = 100},
         {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_stats = 1},
     },
     energy_required = 30.0,
