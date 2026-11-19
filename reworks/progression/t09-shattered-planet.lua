@@ -57,6 +57,12 @@ data.raw["recipe"]["promethium-science-pack"].surface_conditions = {
 data.raw["recipe"]["promethium-science-pack"].main_product = "promethium-science-pack"
 data.raw["recipe"]["promethium-science-pack"].categories = {"particle-manipulation"}
 
+data.raw["recipe"]["rubia-biofusion-promethium-science-pack"].enabled = false
+data.raw["recipe"]["rubia-biofusion-promethium-science-pack"].hidden = true
+
+data.raw["recipe"]["planetaris-promethium-science-pack"].enabled = false
+data.raw["recipe"]["planetaris-promethium-science-pack"].hidden = true
+
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
@@ -79,6 +85,7 @@ data.raw["technology"]["promethium-science-pack"].prerequisites = {"hyperlanes-t
 data.raw["technology"]["promethium-science-pack"].unit.ingredients = utils.t9_sp
 data.raw["technology"]["promethium-science-pack"].unit.count = utils.t9_spcost_bigtech
 table.remove(data.raw["technology"]["promethium-science-pack"].effects, 1)
+table.remove(data.raw["technology"]["promethium-science-pack"].effects, 2)
 
 data.raw["technology"]["cryolab"].prerequisites = {"hyperlanes-time-crystal"}
 data.raw["technology"]["cryolab"].unit.ingredients = utils.t9_sp
