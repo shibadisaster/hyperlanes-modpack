@@ -214,8 +214,8 @@ data.raw["assembling-machine"]["foundry"].effect_receiver = data.raw["assembling
 data.raw["assembling-machine"]["foundry"].effect_receiver.quality_limits = {low = -1000, high = 1000}
 data.raw["assembling-machine"]["smelting-plant"].effect_receiver = data.raw["assembling-machine"]["smelting-plant"].effect_receiver or {}
 data.raw["assembling-machine"]["smelting-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
-data.raw["assembling-machine"]["vesta-combustion-furnace"].effect_receiver = data.raw["assembling-machine"]["vesta-combustion-furnace"].effect_receiver or {}
-data.raw["assembling-machine"]["vesta-combustion-furnace"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["combustion-furnace"].effect_receiver = data.raw["assembling-machine"]["combustion-furnace"].effect_receiver or {}
+data.raw["assembling-machine"]["combustion-furnace"].effect_receiver.quality_limits = {low = -1000, high = 1000}
 
 data.raw["assembling-machine"]["muluna-steam-crusher"].effect_receiver = data.raw["assembling-machine"]["muluna-steam-crusher"].effect_receiver or {}
 data.raw["assembling-machine"]["muluna-steam-crusher"].effect_receiver.quality_limits = {low = -1000, high = 1000}
@@ -250,8 +250,8 @@ data.raw["assembling-machine"]["cryogenic-plant"].effect_receiver = data.raw["as
 data.raw["assembling-machine"]["cryogenic-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
 data.raw["assembling-machine"]["electrochemical-plant"].effect_receiver = data.raw["assembling-machine"]["electrochemical-plant"].effect_receiver or {}
 data.raw["assembling-machine"]["electrochemical-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}
-data.raw["assembling-machine"]["vesta-heater"].effect_receiver = data.raw["assembling-machine"]["vesta-heater"].effect_receiver or {}
-data.raw["assembling-machine"]["vesta-heater"].effect_receiver.quality_limits = {low = -1000, high = 1000}
+data.raw["assembling-machine"]["heating-conductor"].effect_receiver = data.raw["assembling-machine"]["heating-conductor"].effect_receiver or {}
+data.raw["assembling-machine"]["heating-conductor"].effect_receiver.quality_limits = {low = -1000, high = 1000}
 
 data.raw["assembling-machine"]["electromagnetic-plant"].effect_receiver = data.raw["assembling-machine"]["electromagnetic-plant"].effect_receiver or {}
 data.raw["assembling-machine"]["electromagnetic-plant"].effect_receiver.quality_limits = {low = -1000, high = 1000}

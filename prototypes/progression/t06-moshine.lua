@@ -739,7 +739,7 @@ local science_prod_bonuses = {
         "cerys-nitric-acid",
         "nitrogen-nitric-acid",
         "hydrogen-chloride",
-        "sulfur-chlorine-salt-redox",
+        "sulfur-chloride-salt-redox",
         "hydrogen-chloride-from-spoilage",
         "hydrogen-chloride-from-biter-egg",
         "hyperlanes-purified-lead",
@@ -837,7 +837,8 @@ local science_prod_bonuses = {
         "fluorofuel",
         "plasmafuel",
         "vesta-electrolyzer",
-        "vesta-combustion-furnace",
+        "combustion-furnace",
+        "heating-conductor",
         "vesta-foundation"
     },
     ["promethium"] = {

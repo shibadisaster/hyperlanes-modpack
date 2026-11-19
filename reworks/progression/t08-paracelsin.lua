@@ -216,8 +216,8 @@ data.raw["technology"]["galvanized-steel"].unit.count = utils.t8_spcost_smalltec
 -- Return inserter
 -- refer to data-final-fixes
 
-data.raw["technology"]["vaterite-formation"].unit.ingredients = utils.t8_sp_paracelsin
-data.raw["technology"]["vaterite-formation"].unit.count = utils.t8_spcost_tech
+-- data.raw["technology"]["vaterite-formation"].unit.ingredients = utils.t8_sp_paracelsin
+-- data.raw["technology"]["vaterite-formation"].unit.count = utils.t8_spcost_tech
 
 data.raw["technology"]["vaterite-processing-productivity"].unit.ingredients = utils.t8_sp_paracelsin
 data.raw["technology"]["vaterite-processing-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t8_spcost_tech

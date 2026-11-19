@@ -82,7 +82,7 @@ data.raw["recipe"]["ske_water_filter"].ingredients = {
 
 
 -- Combustion furnace
-data.raw["recipe"]["vesta-combustion-furnace"].ingredients = {
+data.raw["recipe"]["combustion-furnace"].ingredients = {
     {type = "item", name = "electric-furnace", amount = 1, quality_min = "epic"},
     {type = "item", name = "flare-stack", amount = 1},
     {type = "item", name = "lithium-plate", amount = 50, quality_min = "uncommon"},
@@ -103,7 +103,7 @@ data.raw["recipe"]["vesta-electrolyzer"].ingredients = {
 
 
 -- Heating conductor
-data.raw["recipe"]["vesta-heater"].ingredients = {
+data.raw["recipe"]["heating-conductor"].ingredients = {
     {type = "item", name = "heat-exchanger", amount = 2, quality_min = "epic"},
     {type = "item", name = "storage-tank", amount = 1, quality_min = "legendary"},
     {type = "item", name = "heat-pipe", amount = 50, quality_min = "legendary"},
@@ -237,7 +237,7 @@ data.raw["recipe"]["ske_supermagnetic"].results = {
 -- Fusion thruster
 data.raw["recipe"]["ske_fusion_thruster"].ingredients = {
     {type = "item", name = "thruster", amount = 1, quality_min = "epic"},
-    {type = "item", name = "vesta-heater", amount = 1, quality_min = "rare"},
+    {type = "item", name = "heating-conductor", amount = 1, quality_min = "rare"},
     {type = "item", name = "refined-concrete", amount = 500, quality_min = "legendary"},
     {type = "item", name = "steel-plate", amount = 500, quality_min = "legendary"},
     {type = "item", name = "quantum-processor", amount = 50},

@@ -192,7 +192,7 @@ data.raw["recipe"]["maraxsis-salt-filter"].ingredients = {
 
 
 -- Wyrm confinement
-data.raw["recipe"]["maraxsis-wyrm-confinement-cell"].ingredients = {
+data.raw["recipe"]["maraxsis-ooozma-confinement-cell"].ingredients = {
     {type = "item", name = "steel-plate", amount = 2, quality_min = "epic"},
     {type = "item", name = "tungsten-plate", amount = 1, quality_min = "epic"},
     {type = "item", name = "maraxsis-glass-panes", amount = 5}

@@ -525,7 +525,7 @@ utils.launch_building_associations = {
         "electric-furnace",
         "foundry",
         "smelting-plant",
-        "vesta-combustion-furnace"
+        "combustion-furnace"
     },
     ["research"] = {
         "lab",
@@ -549,7 +549,7 @@ utils.launch_building_associations = {
         "acidworking-plant",
         "cryogenic-plant",
         "electrochemical-plant",
-        "vesta-heater"
+        "heating-conductor"
     },
     ["magnetics"] = {
         "electromagnetic-plant",
