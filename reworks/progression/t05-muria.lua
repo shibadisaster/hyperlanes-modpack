@@ -189,3 +189,9 @@ table.insert(data.raw["technology"]["lead-processing"].effects, {
     type = "unlock-recipe",
     recipe = "hyperlanes-purified-lead"
 })
+
+data.raw["technology"]["advanced-acidworking-science-pack-activation"].unit.ingredients = utils.t5_sp_muria
+data.raw["technology"]["advanced-acidworking-science-pack-activation"].unit.count = utils.t5_spcost_bigtech
+
+data.raw["technology"]["casting-anti-corrosion-cladding"].unit.ingredients = utils.t5_sp_muria
+data.raw["technology"]["casting-anti-corrosion-cladding"].unit.count = utils.t5_spcost_tech

@@ -209,3 +209,6 @@ data.raw["technology"]["railgun-damage-1"].unit.count_formula = "2^(L-1)*" .. ut
 
 data.raw["technology"]["railgun-shooting-speed-1"].unit.ingredients = utils.t7_sp_aquilo
 data.raw["technology"]["railgun-shooting-speed-1"].unit.count_formula = "2^(L-1)*" .. utils.t7_spcost_tech
+
+data.raw["technology"]["murian-soil"].unit.ingredients = utils.t7_sp_aquilo
+data.raw["technology"]["murian-soil"].unit.count = utils.t7_spcost_bigtech

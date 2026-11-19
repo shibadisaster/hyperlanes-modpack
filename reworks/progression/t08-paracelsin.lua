@@ -236,3 +236,12 @@ data.raw["technology"]["solar-matrix"].unit.count = utils.t8_spcost_bigtech
 
 data.raw["technology"]["zinc-piping"].unit.ingredients = utils.t8_sp_paracelsin
 data.raw["technology"]["zinc-piping"].unit.count = utils.t8_spcost_bigtech
+
+data.raw["technology"]["advanced-cryovolcanic-mixture-separation"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["advanced-cryovolcanic-mixture-separation"].unit.count = utils.t8_spcost_tech
+
+data.raw["technology"]["fluorinated-uranium-processing"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["fluorinated-uranium-processing"].unit.count = utils.t8_spcost_tech
+
+data.raw["technology"]["petroleum-gas-alkylation"].unit.ingredients = utils.t8_sp_paracelsin
+data.raw["technology"]["petroleum-gas-alkylation"].unit.count = utils.t8_spcost_bigtech
