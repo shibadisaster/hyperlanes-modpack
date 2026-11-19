@@ -111,7 +111,7 @@ local data_analysis_tech = {
             icon_size = 256
         },
         {
-            icon = "__base__/graphics/icons/automation-science-pack.png",
+            icon = "__base__/graphics/icons/chemical-science-pack.png",
             icon_size = 64,
             scale = 1.0
         },
@@ -150,8 +150,8 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         order = utils.science_order[science_name .. "-science-pack"],
         default_temperature = 15,
         gas_temperature = 0,
-        base_color = {255, 63, 63},
-        flow_color = {255, 63, 63},
+        base_color = utils.science_colors[science_name .. "-science-pack"],
+        flow_color = utils.science_colors[science_name .. "-science-pack"],
         icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. ".png",
         auto_barrel = false,
         draw_as_glow = true,
@@ -266,7 +266,8 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         icons = {
             {
                 icon = "__hyperlanes-modpack__/graphics/technology/data-analysis-base.png",
-                icon_size = 256
+                icon_size = 256,
+                tint = utils.science_colors[science_name .. "-science-pack"]
             },
             {
                 icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. ".png",
@@ -313,7 +314,8 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         icons = {
             {
                 icon = "__hyperlanes-modpack__/graphics/technology/data-analysis-base.png",
-                icon_size = 256
+                icon_size = 256,
+                tint = utils.science_colors[science_name .. "-science-pack"]
             },
             {
                 icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. "-analyzed.png",
@@ -440,8 +442,8 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         order = utils.science_order[science_name .. "-science-pack"],
         default_temperature = 15,
         gas_temperature = 0,
-        base_color = {255, 63, 63},
-        flow_color = {255, 63, 63},
+        base_color = utils.science_colors[science_name .. "-science-pack"],
+        flow_color = utils.science_colors[science_name .. "-science-pack"],
         icon = "__hyperlanes-modpack__/graphics/icons/data/" .. science_name .. "-analyzed.png",
         auto_barrel = false,
         draw_as_glow = true,

@@ -38,6 +38,34 @@ utils.science_order = {
     ["promethium-science-pack"] = "t09-a"
 }
 
+utils.science_colors = {
+    ["automation-science-pack"] = {255, 63, 63},
+    ["logistic-science-pack"] = {63, 255, 63},
+    ["military-science-pack"] = {95, 95, 95},
+    ["chemical-science-pack"] = {0, 230, 253},
+    ["production-science-pack"] = {255, 29, 215},
+    ["utility-science-pack"] = {255, 255, 23},
+    ["space-science-pack"] = {207, 207, 207},
+    ["metallurgic-science-pack"] = {255, 162, 12},
+    ["agricultural-science-pack"] = {184, 221, 0},
+    ["electromagnetic-science-pack"] = {255, 52, 120},
+    ["cerysian-science-pack"] = {0, 253, 171},
+    ["interstellar-science-pack"] = {150, 150, 150},
+    ["planetaris-compression-science-pack"] = {208, 190, 115},
+    ["biorecycling-science-pack"] = {182, 128, 61},
+    ["rubia-biofusion-science-pack"] = {184, 168, 0},
+    ["acidworking-science-pack"] = {154, 255, 96},
+    ["planetaris-polishing-science-pack"] = {168, 177, 208},
+    ["planetaris-refraction-science-pack"] = {255, 255, 255},
+    ["cryogenic-science-pack"] = {95, 63, 255},
+    ["hydraulic-science-pack"] = {0, 188, 225},
+    ["gas-manipulation-science-pack"] = {210, 176, 255},
+    ["planetaris-bioengineering-science-pack"] = {216, 229, 79},
+    ["planetaris-pathological-science-pack"] = {227, 144, 57},
+    ["galvanization-science-pack"] = {160, 35, 0},
+    ["promethium-science-pack"] = {12, 4, 123}
+}
+
 utils.progression_sciences = {
     "automation-science-pack",
     "logistic-science-pack",
