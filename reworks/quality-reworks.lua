@@ -104,9 +104,9 @@ data.raw["quality"]["mythic"].lab_module_slots_bonus = 5
 data.raw["quality"]["ethereal"].lab_module_slots_bonus = 6
 
 data.raw["quality"]["broken"].localised_name = "Broken"
-data.raw["quality"]["uncommon"].localised_name = "Industrial-grade"
-data.raw["quality"]["rare"].localised_name = "grumpy"
-data.raw["quality"]["epic"].localised_name = "angry"
+data.raw["quality"]["uncommon"].localised_name = "Enhanced"
+data.raw["quality"]["rare"].localised_name = "Industrial-grade"
+data.raw["quality"]["epic"].localised_name = "Precision-grade"
 data.raw["quality"]["legendary"].localised_name = "Space-grade"
 data.raw["quality"]["mythic"].localised_name = "Interstellar-grade"
 data.raw["quality"]["ethereal"].localised_name = "Perfected"
