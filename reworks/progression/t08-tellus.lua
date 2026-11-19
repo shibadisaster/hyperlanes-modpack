@@ -209,6 +209,18 @@ data.raw["recipe"]["planetaris-three-long-handed-inserter"].ingredients = {
 }
 
 
+-- Preservation unit
+data.raw["recipe"]["planetaris-preservation-unit"].ingredients = {
+    {type = "item", name = "cryogenic-plant", amount = 1, quality_min = "epic"},
+    {type = "item", name = "planetaris-beryllium-plate", amount = 100},
+    {type = "item", name = "quantum-processor", amount = 100},
+    {type = "item", name = "planetaris-magnesium-sheet", amount = 50},
+    {type = "item", name = "galvanized-steel-plate", amount = 100},
+    {type = "item", name = "planetaris-bismuth-transistor", amount = 50},
+    {type = "item", name = "hyperlanes-bose-einstein-condensate-barrel", amount = 10},
+}
+
+
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║

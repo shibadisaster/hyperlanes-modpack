@@ -219,6 +219,47 @@ table.insert(data.raw["technology"]["panglia_sentient_processor"].effects, {
 })
 
 
+-- Raw DNA from Artificial lifeform
+local dna_from_artificial_lifeform = {
+    type = "recipe",
+    name = "hyperlanes-collect-dna-artificial-lifeform",
+    enabled = false,
+    icons = {
+        {
+            icon = "__panglia_planet__/graphics/icons/data/dna-raw-data.png",
+            icon_size = 64,
+            scale = 1.0
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/icons/artificial-lifeform.png",
+            icon_size = 64,
+            scale = 0.6666,
+            floating = true,
+            shift = {12, 12}
+        }
+    },
+    ingredients =
+    {
+        {type = "item", name = "hyperlanes-artificial-lifeform", amount = 1},
+    },
+    energy_required = 60.0,
+    results = {
+        {type = "item", name = "spoilage", amount = 1},
+        {type = "fluid", name = "dna_raw_data", amount_min = 604, amount_max = 5403},
+    },
+    allow_productivity = true,
+    categories = {"dna_scanning"},
+    auto_recycle = true
+}
+
+data:extend({dna_from_artificial_lifeform})
+
+table.insert(data.raw["technology"]["panglia_dna_unfolding"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-collect-dna-artificial-lifeform"
+})
+
+
 -- ╒════╗    ╒════╗ ╒══════╗ ╒═════════╗ ╒══════════╗ ╒═════════╗ ╒══════════╗ ╒════╗╒════╗ ╒══╗
 -- └┐  ╓╜    └┐  ╓╜ └─┐  ╓─╜ │  ╓────┐ ║ │ ╓─┐  ╓─┐ ║ │  ╓───┐  ║ └┐  ╓───┐  ║ └┐  ╓╜└┐  ╓╜ │  ║
 --  └┐ ╚╗    ╒╛ ╓╜    │  ║   │  ║    └─╜ └─╜ │  ║ └─╜ │  ║   │  ║  │  ║   │  ║  │  ║  │  ║  │  ║

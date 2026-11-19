@@ -225,6 +225,33 @@ data.raw["item"]["panglia_sentient_processor"].spoil_ticks = 30 * 60
 data.raw["item"]["panglia_sentient_processor"].spoil_result = "hyperlanes-rogue-processor"
 
 
+-- Raw DNA recipe rebalance
+data.raw["recipe"]["panglia_collect_dna_fish"].results = {
+    {type = "item", name = "spoilage", amount = 1},
+    {type = "fluid", name = "dna_raw_data", amount_min = 1, amount_max = 3},
+}
+
+data.raw["recipe"]["panglia_collect_dna_biter"].results = {
+    {type = "item", name = "spoilage", amount = 1},
+    {type = "fluid", name = "dna_raw_data", amount_min = 2, amount_max = 12},
+}
+
+data.raw["recipe"]["panglia_collect_dna_biter_egg"].results = {
+    {type = "item", name = "spoilage", amount = 1},
+    {type = "fluid", name = "dna_raw_data", amount_min = 4, amount_max = 35},
+}
+
+data.raw["recipe"]["panglia_collect_dna_demolisher"].results = {
+    {type = "item", name = "stone", amount_min = 17, amount_max = 32},
+    {type = "fluid", name = "dna_raw_data", amount_min = 105, amount_max = 532},
+}
+
+data.raw["recipe"]["panglia_collect_dna_pentapod"].results = {
+    {type = "item", name = "spoilage", amount = 1},
+    {type = "fluid", name = "dna_raw_data", amount_min = 3, amount_max = 29},
+}
+
+
 -- ╒═════════╗ ╒═════════╗ ╒═════════╗  ╒════════════╗  ╒══════╗ ╒═════════╗      ╒══════╗  ╒════╗   ╒════╗ ╒═════════╗    
 -- │  ╓────┐ ║ │  ╓───┐  ║ │  ╓────┐ ║  │  ╓─┐  ╓─┐  ║  └─┐  ╓─╜ │  ╓────┐ ║      └─┐  ╓─╜  │    ╚╗  └┐  ╓╜ │  ╓────┐ ║    
 -- │  ║    └─╜ │  ║   │  ║ │  ║    └─╜  │  ║ │  ║ │  ║    │  ║   │  ║    └─╜        │  ║    │  ╟┐ ╚╗  │  ║  │  ║    └─╜    
