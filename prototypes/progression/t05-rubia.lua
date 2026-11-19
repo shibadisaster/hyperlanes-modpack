@@ -91,7 +91,7 @@ data:extend({launching_tech})
 for index, category_name in ipairs(utils.launch_categories) do
     local launch_item_tech = {
         type = "technology",
-        name = "hyperlanes-launching-" .. category_name,
+        name = "hyperlanes-launching-" .. category_name .. "-1",
         -- icon_size = 256,
         -- icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
         icons = {
@@ -134,25 +134,52 @@ for index, category_name in ipairs(utils.launch_categories) do
     }
     data:extend({launch_item_tech})
 
-    -- for level = 2, 5, 1 do
-    --     local ext_launch_item_tech = {
-    --         type = "technology",
-    --         name = "hyperlanes-launching-" .. category_name .. "-" .. level,
-    --         icon_size = 256,
-    --         icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
-    --         effects = {},
-    --         research_trigger = {
-    --             type = "craft-item",
-    --             item = "yeet-" .. utils.resources_to_launch[category_name],
-    --             count = utils.resource_base_cost[category_name] * utils.level_scaling ^ (level - 1)
-    --         },
-    --         prerequisites = {"hyperlanes-launching-" .. category_name .. "-" .. (level - 1)},
-    --         order = "zzz-launching",
-    --         essential = false,
-    --         upgrade = true
-    --     }
-    --     data:extend({ext_launch_item_tech})
-    -- end
+
+    -- Post-l1 techs
+    for level = 2, 5, 1 do
+        local ext_launch_item_tech = {
+            type = "technology",
+            name = "hyperlanes-launching-" .. category_name .. "-" .. level,
+            icons = {
+                {
+                    icon = "__hyperlanes-modpack__/graphics/technology/launch-base.png",
+                    icon_size = 256
+                },
+                {
+                    -- icon = data.raw["item"]["yeet-" .. utils.resources_to_launch[category_name]].icon,
+                    icon = "__hyperlanes-modpack__/graphics/icons/yeet-base-faded.png", -- we have to reconstruct the icon manually
+                    icon_size = 64,
+                    scale = 1.0
+                },
+                {
+                    -- icon = data.raw["item"]["yeet-" .. utils.resources_to_launch[category_name]].icon,
+                    -- icon = data.raw["item"][utils.resources_to_launch[category_name]].icon,
+                    icon = utils.resources_to_launch_icons[category_name],
+                    icon_size = 64,
+                    scale = 0.5,
+                    floating = true,
+                    shift = {16, -16}
+                },
+                {
+                    -- icon = data.raw["item"]["yeet-" .. utils.resources_to_launch[category_name]].icon,
+                    icon = "__hyperlanes-modpack__/graphics/icons/yeet-base-foreground-faded.png", -- we have to reconstruct the icon manually
+                    icon_size = 64,
+                    scale = 1.0
+                },
+            },
+            effects = {},
+            research_trigger = {
+                type = "craft-item",
+                item = "yeet-" .. utils.resources_to_launch[category_name],
+                count = utils.resource_base_cost[category_name] * utils.level_scaling ^ (level - 1)
+            },
+            prerequisites = {"hyperlanes-launching-" .. category_name .. "-" .. (level - 1)},
+            order = "zzz-launching",
+            essential = false,
+            upgrade = true
+        }
+        data:extend({ext_launch_item_tech})
+    end
 end
 
 
@@ -172,17 +199,17 @@ local upgrade_data = {}
     -- }
 
 for index, category_name in ipairs(utils.launch_categories) do
-    for level = 1, 1, 1 do
+    for level = 1, 5, 1 do
         if #utils.launch_building_associations[category_name] > 0 then
             table.insert(upgrade_data, {
-                handler = "hyperlanes-rubia-launching-" .. category_name .. "-bonus",
-                technology_name = "hyperlanes-launching-" .. category_name,
+                handler = "hyperlanes-rubia-launching-" .. category_name .. "-" .. level .. "-bonus",
+                technology_name = "hyperlanes-launching-" .. category_name .. "-" .. level,
                 modifier_icon = {icon=utils.launch_effect_icons[category_name]},
                 entity_names = utils.launch_building_associations[category_name],
                 module_effects = {
-                    speed = 0.10,
-                    productivity = 0.10,
-                    consumption = -0.10
+                    speed = 0.05,
+                    productivity = 0.05,
+                    consumption = -0.05
                 },
                 effect_name = "All " .. category_name .. " machines",
             })
@@ -199,34 +226,25 @@ end
 
 
 -- Personal launching effects
-table.insert(
-    data.raw["technology"]["hyperlanes-launching-personal"].effects,
-    {
+
+for level = 1, 5, 1 do
+    table.insert(data.raw["technology"]["hyperlanes-launching-personal-" .. level].effects, {
         type = "character-mining-speed",
-        modifier = 0.2
-    }
-)
+        modifier = 0.1
+    })
 
-table.insert(
-    data.raw["technology"]["hyperlanes-launching-personal"].effects,
-    {
+    table.insert(data.raw["technology"]["hyperlanes-launching-personal-" .. level].effects, {
         type = "character-running-speed",
-        modifier = 0.2
-    }
-)
+        modifier = 0.1
+    })
 
-table.insert(
-    data.raw["technology"]["hyperlanes-launching-personal"].effects,
-    {
+    table.insert(data.raw["technology"]["hyperlanes-launching-personal-" .. level].effects, {
         type = "character-crafting-speed",
-        modifier = 0.2
-    }
-)
+        modifier = 0.1
+    })
 
-table.insert(
-    data.raw["technology"]["hyperlanes-launching-personal"].effects,
-    {
+    table.insert(data.raw["technology"]["hyperlanes-launching-personal-" .. level].effects, {
         type = "character-inventory-slots-bonus",
         modifier = 10
-    }
-)
+    })
+end
