@@ -130,7 +130,8 @@ for index, category_name in ipairs(utils.launch_categories) do
         },
         prerequisites = {"hyperlanes-launching-bonuses"},
         order = "zzz-launching",
-        essential = false
+        essential = false,
+        upgrade = true
     }
     data:extend({launch_item_tech})
 

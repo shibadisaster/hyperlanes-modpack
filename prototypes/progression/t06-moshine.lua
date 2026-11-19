@@ -631,9 +631,6 @@ local science_prod_bonuses = {
         "advanced-oxide-asteroid-crushing",
         "carbonic-asteroid-crushing",
         "advanced-carbonic-asteroid-crushing",
-        "anorthite-crushing",
-        "advanced-anorthite-crushing",
-        "bismuth-asteroid-crushing",
     },
     ["production"] = {
         0.02,

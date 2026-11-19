@@ -106,6 +106,8 @@ data.raw["technology"]["rubia-long-bulk-inserter"].unit.count = utils.t5_spcost_
 data.raw["technology"]["rubia-long-stack-inserter"].unit.ingredients = utils.placeholder_sp
 data.raw["technology"]["rubia-long-stack-inserter"].unit.count = utils.t5_spcost_bigtech
 
+data.raw["technology"]["rubia-biochamber-productivity-bonus"].enabled = false
+data.raw["technology"]["rubia-biochamber-productivity-bonus"].hidden = true
 data.raw["technology"]["rubia-biochamber-productivity-bonus"].unit.ingredients = utils.t5_sp_rubia_biofusion
 data.raw["technology"]["rubia-biochamber-productivity-bonus"].unit.count_formula = "2^(L-0)*" .. utils.t5_spcost_smalltech
 
