@@ -29,6 +29,9 @@
         "quality-condenser-forked >= 2.1.3",
         "Return-Inserter >= 1.0.1",
         "alien-biomes >= 0.8.1",
+        "Teleporters >= 2.1.0",
+        "holographic_signs >= 2.1.0",
+        "interplanetary-power-grid >= 2.3.0",
 
         "+ Redrawn-Space-Connections",
         "+ rubia-minus-memes",
@@ -40,13 +43,17 @@
         "+ enhanced-shadows",
         "+ InfiniteOresAndOil",
         "+ disco-science-lite",
-        "+ holographic_signs",
         "+ inventory-repair",
         "+ blueprint-sandboxes",
-        "+ interplanetary-power-grid",
         "+ floating-damage-text",
         "+ discovery_tree",
-        "+ Teleporters"
+        "+ RealisticDecorationCleanup",
+        "+ RealisticReactorGlow",
+        "+ heat_glow-fork",
+        "+ sa-science-packs-fix",
+        "+ Automatic_Train_Painter",
+        "+ automatic-station-painter",
+        "+ light-overhaul"
     ],
     "description": "Factorio modpack made with the goal of creating a Space Age experience with a focus on long-term progression, mod cohesion, and interplanetary logistics!",
     "license": "MIT"
