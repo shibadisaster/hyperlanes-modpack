@@ -270,6 +270,10 @@ data.raw["recipe"]["ipg-chrono-pole"].results = {
 data.raw["recipe"]["ipg-chrono-pole"].allow_quality = false
 data.raw["recipe"]["ipg-chrono-pole"].categories = {"thinkingbrain"}
 
+data.raw["item"]["ipg-chrono-pole"].localised_name = "Wormhole pylon"
+data.raw["item"]["ipg-chrono-pole"].localised_description = "Build it to connect this surface to every other surface that has a wormhole pylon."
+data.raw["electric-pole"]["ipg-chrono-pole"].localised_name = "Wormhole pylon"
+
 
 -- Teleporter
 data.raw["recipe"]["teleporter"].ingredients = {

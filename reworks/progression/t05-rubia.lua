@@ -64,6 +64,13 @@ data.raw["recipe"]["long-stack-inserter"].ingredients = {
 
 -- Redesign eff4 module
 data.raw["module"]["rubia-efficiency-module4"].icon = "__hyperlanes-modpack__/graphics/icons/efficiency-4.png"
+data.raw["module"]["rubia-efficiency-module4"].localised_description = "Allows machines to consume less power by reusing wasted energy at the cost of speed."
+data.raw["technology"]["rubia-efficiency-module4"].icon = "__hyperlanes-modpack__/graphics/technology/efficiency-4.png"
+
+
+-- Redesign craptonite processing
+data.raw["technology"]["craptonite-processing"].icon = "__hyperlanes-modpack__/graphics/technology/biorecycling-science-pack.png"
+
 
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗

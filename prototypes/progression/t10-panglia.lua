@@ -199,6 +199,14 @@ local crime_against_humanity = {
     type = "recipe",
     name = "hyperlanes-sedate-sentient-processor",
     enabled = false,
+    icons = {
+        {
+            icon = "__panglia_planet__/graphics/icons/panglia_sentient_processor.png"
+        },
+        {
+            icon = "__hyperlanes-modpack__/graphics/icons/recirculation.png"
+        }
+    },
     ingredients =
     {
         {type = "item", name = "hyperlanes-rogue-processor", amount = 1},

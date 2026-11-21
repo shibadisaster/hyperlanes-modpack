@@ -11,8 +11,8 @@
         "maraxsis = 1.42.1",
         "Moshine = 1.2.14",
         "rubia = 0.69.162",
-        "Cerys-Moon-of-Fulgora = 4.25.0",
-        "Muria = 1.11.4",
+        "Cerys-Moon-of-Fulgora = 4.25.1",
+        "Muria = 1.11.5",
         "Paracelsin = 1.13.1",
         "planet-muluna = 2.9.15",
         "skewer_planet_vesta = 2.1.32",
@@ -24,6 +24,7 @@
 
         "Crystalline-Library >= 1.0.0",
         "machine-upgrades >= 0.69.23",
+        "rigor-module >= 1.2.0",
 
         "quality-down-binning >= 0.10.3",
         "quality-condenser-forked >= 2.1.3",

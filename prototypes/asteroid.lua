@@ -201,7 +201,8 @@ local asteroid_item_graphics = {
     ["hyperlanes-tellus-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/tellus.png",
     ["hyperlanes-vesta-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/vesta.png",
     ["promethium-asteroid-chunk"] = "__space-age__/graphics/icons/promethium-asteroid-chunk.png",
-    ["hyperlanes-panglia-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/panglia.png"
+    ["hyperlanes-panglia-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/panglia.png",
+    ["crystalline-asteroid-chunk"] = "__Crystalline-Library__/graphics/icons/crystalline-asteroid-chunk.png"
 }
 
 local asteroid_chunk_replace_graphics = {
@@ -412,15 +413,15 @@ data.raw["recipe"]["advanced-anorthite-crushing"].icons = {
     }
 }
 
--- data.raw["recipe"]["advanced-anorthite-crushing"].icon = nil
--- data.raw["recipe"]["advanced-anorthite-crushing"].icons = {
---     {
---         icon = asteroid_item_graphics["anorthite-chunk"]
---     },
---     {
---         icon = "__hyperlanes-modpack__/graphics/icons/advanced-crushing.png"
---     }
--- }
+data.raw["recipe"]["advanced-crystalline-asteroid-crushing"].icon = nil
+data.raw["recipe"]["advanced-crystalline-asteroid-crushing"].icons = {
+    {
+        icon = asteroid_item_graphics["crystalline-asteroid-chunk"]
+    },
+    {
+        icon = "__hyperlanes-modpack__/graphics/icons/advanced-crushing.png"
+    }
+}
 
 
 
