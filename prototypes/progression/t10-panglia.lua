@@ -223,6 +223,8 @@ table.insert(data.raw["technology"]["panglia_sentient_processor"].effects, {
 local dna_from_artificial_lifeform = {
     type = "recipe",
     name = "hyperlanes-collect-dna-artificial-lifeform",
+    subgroup = "data-fluid",
+    order = "h[dna_raw_data]-6",
     enabled = false,
     icons = {
         {

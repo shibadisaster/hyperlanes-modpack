@@ -287,6 +287,52 @@ utils.asteroids = {
     "hyperlanes-panglia-asteroid-chunk",
 }
 
+utils.asteroid_prefix = {
+    ["metallic-asteroid-chunk"] = "Metallic",
+    ["carbonic-asteroid-chunk"] = "Carbonic",
+    ["oxide-asteroid-chunk"] = "Oxide",
+    ["anorthite-chunk"] = "Anorthite",
+    ["hyperlanes-fulgora-asteroid-chunk"] = "Holmic",
+    ["hyperlanes-gleba-asteroid-chunk"] = "Organic",
+    ["hyperlanes-vulcanus-asteroid-chunk"] = "Volcanic",
+    ["hyperlanes-cerys-asteroid-chunk"] = "Radioactive",
+    ["hyperlanes-arig-asteroid-chunk"] = "Sandstone",
+    ["hyperlanes-muria-asteroid-chunk"] = "Acidic",
+    ["hyperlanes-rubia-asteroid-chunk"] = "Junk-laden",
+    ["bismuth-asteroid-chunk"] = "Bismuth",
+    ["hyperlanes-moshine-asteroid-chunk"] = "Neodymium",
+    ["hyperlanes-aquilo-asteroid-chunk"] = "Icy",
+    ["hyperlanes-maraxsis-asteroid-chunk"] = "Saline",
+    ["hyperlanes-paracelsin-asteroid-chunk"] = "Deepfrozen",
+    ["hyperlanes-tellus-asteroid-chunk"] = "Pathogenic",
+    ["hyperlanes-vesta-asteroid-chunk"] = "Algae-laden",
+    ["promethium-asteroid-chunk"] = "Promethium",
+    ["hyperlanes-panglia-asteroid-chunk"] = "Timewarped",
+}
+
+utils.asteroid_prefix_lowercase = {
+    ["metallic-asteroid-chunk"] = "metallic",
+    ["carbonic-asteroid-chunk"] = "carbonic",
+    ["oxide-asteroid-chunk"] = "oxide",
+    ["anorthite-chunk"] = "anorthite",
+    ["hyperlanes-fulgora-asteroid-chunk"] = "holmic",
+    ["hyperlanes-gleba-asteroid-chunk"] = "organic",
+    ["hyperlanes-vulcanus-asteroid-chunk"] = "volcanic",
+    ["hyperlanes-cerys-asteroid-chunk"] = "radioactive",
+    ["hyperlanes-arig-asteroid-chunk"] = "sandstone",
+    ["hyperlanes-muria-asteroid-chunk"] = "acidic",
+    ["hyperlanes-rubia-asteroid-chunk"] = "junk-laden",
+    ["bismuth-asteroid-chunk"] = "bismuth",
+    ["hyperlanes-moshine-asteroid-chunk"] = "neodymium",
+    ["hyperlanes-aquilo-asteroid-chunk"] = "icy",
+    ["hyperlanes-maraxsis-asteroid-chunk"] = "saline",
+    ["hyperlanes-paracelsin-asteroid-chunk"] = "deepfrozen",
+    ["hyperlanes-tellus-asteroid-chunk"] = "pathogenic",
+    ["hyperlanes-vesta-asteroid-chunk"] = "algae-laden",
+    ["promethium-asteroid-chunk"] = "promethium",
+    ["hyperlanes-panglia-asteroid-chunk"] = "timewarped",
+}
+
 utils.upcyclable_asteroids = {
     "metallic-asteroid-chunk",
     "carbonic-asteroid-chunk",

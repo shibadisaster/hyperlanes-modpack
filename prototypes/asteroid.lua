@@ -240,12 +240,15 @@ for index, planet_name in ipairs(utils.planets) do
     -- Item
     local asteroid_chunk_item = table.deepcopy(data.raw["item"]["metallic-asteroid-chunk"])
     asteroid_chunk_item.name = "hyperlanes-" .. planet_name .. "-asteroid-chunk"
+    asteroid_chunk_item.localised_name = utils.asteroid_prefix[asteroid_chunk_item.name] .. " asteroid chunk"
     asteroid_chunk_item.order = "d[hyperlanes]-e[chunk]-" .. utils.planet_tier_orders[planet_name]
     asteroid_chunk_item.icon = asteroid_item_graphics["hyperlanes-" .. planet_name .. "-asteroid-chunk"]
 
     -- Asteroid chunk    
     local asteroid_chunk = table.deepcopy(data.raw["asteroid-chunk"]["metallic-asteroid-chunk"])
     asteroid_chunk.name = "hyperlanes-" .. planet_name .. "-asteroid-chunk"
+    asteroid_chunk.icon = asteroid_item_graphics["hyperlanes-" .. planet_name .. "-asteroid-chunk"]
+    asteroid_chunk.localised_name = utils.asteroid_prefix[asteroid_chunk_item.name] .. " asteroid chunk"
     asteroid_chunk.minable.result = "hyperlanes-" .. planet_name .. "-asteroid-chunk"
 
     if asteroid_chunk_replace_graphics[asteroid_chunk.name] then
@@ -303,6 +306,7 @@ for index, planet_name in ipairs(utils.planets) do
         local asteroid_chunk_crushing = {
             type = "recipe",
             name = "hyperlanes-" .. planet_name .. "-asteroid-crushing",
+            localised_name = utils.asteroid_prefix[asteroid_chunk_item.name] .. " asteroid crushing",
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
@@ -331,6 +335,7 @@ for index, planet_name in ipairs(utils.planets) do
         local advanced_asteroid_chunk_crushing = {
             type = "recipe",
             name = "hyperlanes-advanced-" .. planet_name .. "-asteroid-crushing",
+            localised_name = "Advanced " .. utils.asteroid_prefix_lowercase[asteroid_chunk_item.name] .. " asteroid crushing",
             enabled = false,
             subgroup = "space-crushing",
             order = "c-a-z-c",
@@ -438,6 +443,7 @@ for index, planet_name in ipairs(utils.planets) do
         local asteroid_chunk_upcycle_broken_to_normal = {
             type = "recipe",
             name = asteroid_name .. "-upcycling-q0-to-q1",
+            localised_name = utils.asteroid_prefix[asteroid_name] .. " asteroid chunk upcycling to Normal",
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
@@ -465,8 +471,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 2.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "broken", quality_max = "broken", independent_probability = 0.40},
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal", independent_probability = 0.10},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "broken", quality_max = "broken", shared_probability = {min = 0.00, max = 0.80}},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal", shared_probability = {min = 0.80, max = 1.00}},
             },
             -- main_product = asteroid_name,
             allow_productivity = false,
@@ -478,6 +484,7 @@ for index, planet_name in ipairs(utils.planets) do
         local asteroid_chunk_upcycle_normal_to_uncommon = {
             type = "recipe",
             name = asteroid_name .. "-upcycling-q1-to-q2",
+            localised_name = utils.asteroid_prefix[asteroid_name] .. " asteroid chunk upcycling to Enhanced",
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
@@ -505,8 +512,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 3.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal", independent_probability = 0.40},
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "uncommon", quality_max = "uncommon", independent_probability = 0.10},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal", shared_probability = {min = 0.00, max = 0.40}},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "uncommon", quality_max = "uncommon", shared_probability = {min = 0.40, max = 0.50}},
             },
             -- main_product = asteroid_name,
             allow_productivity = false,
@@ -518,6 +525,7 @@ for index, planet_name in ipairs(utils.planets) do
         local asteroid_chunk_upcycle_uncommon_to_rare = {
             type = "recipe",
             name = asteroid_name .. "-upcycling-q2-to-q3",
+            localised_name = utils.asteroid_prefix[asteroid_name] .. " asteroid chunk upcycling to Industrial-grade",
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
@@ -545,8 +553,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 4.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "uncommon", quality_max = "uncommon", independent_probability = 0.40},
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "rare", quality_max = "rare", independent_probability = 0.10},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "uncommon", quality_max = "uncommon", shared_probability = {min = 0.00, max = 0.40}},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "rare", quality_max = "rare", shared_probability = {min = 0.40, max = 0.50}},
             },
             -- main_product = asteroid_name,
             allow_productivity = false,
@@ -558,6 +566,7 @@ for index, planet_name in ipairs(utils.planets) do
         local asteroid_chunk_upcycle_rare_to_epic = {
             type = "recipe",
             name = asteroid_name .. "-upcycling-q3-to-q4",
+            localised_name = utils.asteroid_prefix[asteroid_name] .. " asteroid chunk upcycling to Precision-grade",
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
@@ -585,8 +594,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 5.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "rare", quality_max = "rare", independent_probability = 0.40},
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "epic", quality_max = "epic", independent_probability = 0.10},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "rare", quality_max = "rare", shared_probability = {min = 0.00, max = 0.40}},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "epic", quality_max = "epic", shared_probability = {min = 0.40, max = 0.50}},
             },
             -- main_product = asteroid_name,
             allow_productivity = false,
@@ -598,6 +607,7 @@ for index, planet_name in ipairs(utils.planets) do
         local asteroid_chunk_upcycle_epic_to_legendary = {
             type = "recipe",
             name = asteroid_name .. "-upcycling-q4-to-q5",
+            localised_name = utils.asteroid_prefix[asteroid_name] .. " asteroid chunk upcycling to Space-grade",
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
@@ -625,8 +635,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 6.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "epic", quality_max = "epic", independent_probability = 0.40},
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "legendary", quality_max = "legendary", independent_probability = 0.10},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "epic", quality_max = "epic", shared_probability = {min = 0.00, max = 0.40}},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "legendary", quality_max = "legendary", shared_probability = {min = 0.40, max = 0.50}},
             },
             -- main_product = asteroid_name,
             allow_productivity = false,
@@ -638,6 +648,7 @@ for index, planet_name in ipairs(utils.planets) do
         local asteroid_chunk_upcycle_legendary_to_mythic = {
             type = "recipe",
             name = asteroid_name .. "-upcycling-q5-to-q6",
+            localised_name = utils.asteroid_prefix[asteroid_name] .. " asteroid chunk upcycling to Interstellar-grade",
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
@@ -665,8 +676,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 7.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "legendary", quality_max = "legendary", independent_probability = 0.40},
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "mythic", quality_max = "mythic", independent_probability = 0.10},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "legendary", quality_max = "legendary", shared_probability = {min = 0.00, max = 0.40}},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "mythic", quality_max = "mythic", shared_probability = {min = 0.40, max = 0.50}},
             },
             -- main_product = asteroid_name,
             allow_productivity = false,
@@ -678,6 +689,7 @@ for index, planet_name in ipairs(utils.planets) do
         local asteroid_chunk_upcycle_mythic_to_ethereal = {
             type = "recipe",
             name = asteroid_name .. "-upcycling-q6-to-q7",
+            localised_name = utils.asteroid_prefix[asteroid_name] .. " asteroid chunk upcycling to Perfected",
             enabled = false,
             subgroup = "space-crushing",
             order = "b-a-z-c",
@@ -705,8 +717,8 @@ for index, planet_name in ipairs(utils.planets) do
             },
             energy_required = 8.0 * 1.35 ^ (utils.planet_tier_associations[planet_name] - 1),
             results = {
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "mythic", quality_max = "mythic", independent_probability = 0.40},
-                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "ethereal", quality_max = "ethereal", independent_probability = 0.10},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "mythic", quality_max = "mythic", shared_probability = {min = 0.00, max = 0.40}},
+                {type = "item", name = asteroid_name, amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1, quality_min = "ethereal", quality_max = "ethereal", shared_probability = {min = 0.40, max = 0.50}},
             },
             -- main_product = asteroid_name,
             allow_productivity = false,
@@ -1105,6 +1117,7 @@ end
 local bis_advanced_asteroid_chunk_crushing = {
     type = "recipe",
     name = "hyperlanes-advanced-bismuth-asteroid-crushing",
+    localised_name = "Advanced bismuth asteroid crushing",
     enabled = false,
     subgroup = "space-crushing",
     order = "c-a-z-c",
@@ -1307,6 +1320,7 @@ for index, asteroid_name in ipairs(crushable_asteroids) do
         local tech = {
             type = "technology",
             name = crushing_recipe_name[asteroid_name],
+            localised_name = utils.asteroid_prefix[asteroid_name] .. " asteroid chunk crushing",
             -- icon_size = 256,
             -- icon = crushing_recipe_name[asteroid_name].icon,
             icons = {
@@ -1350,6 +1364,7 @@ for index, asteroid_name in ipairs(crushable_asteroids) do
     local tech = {
         type = "technology",
         name = advanced_crushing_recipe_name[asteroid_name],
+        localised_name = "Advanced " .. utils.asteroid_prefix_lowercase[asteroid_name] .. " asteroid chunk crushing",
         -- icon_size = 256,
         -- icon = advanced_crushing_recipe_name[asteroid_name].icon,
         icons = {
