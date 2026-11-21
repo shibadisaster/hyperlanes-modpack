@@ -268,6 +268,7 @@ data:extend({antimatter_chunk_tech})
 local productivity_5_tech = {
     type = "technology",
     name = "hyperlanes-productivity-module-5",
+    localised_name = "Replication module",
     icon_size = 256,
     icon = "__hyperlanes-modpack__/graphics/technology/productivity-5.png",
     effects = {
@@ -292,6 +293,7 @@ data:extend({productivity_5_tech})
 local speed_5_tech = {
     type = "technology",
     name = "hyperlanes-speed-module-5",
+    localised_name = "Timewarp module",
     icon_size = 256,
     icon = "__hyperlanes-modpack__/graphics/technology/speed-5.png",
     effects = {
@@ -316,6 +318,7 @@ data:extend({speed_5_tech})
 local efficiency_5_tech = {
     type = "technology",
     name = "hyperlanes-efficiency-module-5",
+    localised_name = "Multidimensional module",
     icon_size = 256,
     icon = "__hyperlanes-modpack__/graphics/technology/efficiency-5.png",
     effects = {
@@ -394,6 +397,7 @@ data:extend({time_crystal_tech})
 local quality_4_tech = {
     type = "technology",
     name = "hyperlanes-quality-module-4",
+    localised_name = "Precision module",
     icon_size = 256,
     icon = "__hyperlanes-modpack__/graphics/technology/quality-4.png",
     effects = {

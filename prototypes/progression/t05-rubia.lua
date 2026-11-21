@@ -141,7 +141,7 @@ for index, category_name in ipairs(utils.launch_categories) do
         local ext_launch_item_tech = {
             type = "technology",
             name = "hyperlanes-launching-" .. category_name .. "-" .. level,
-            localised_name = category_name .. " waste management",
+            localised_name = utils.launch_category_names[category_name] .. " waste management " .. level,
             icons = {
                 {
                     icon = "__hyperlanes-modpack__/graphics/technology/launch-base.png",

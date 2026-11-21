@@ -407,6 +407,16 @@ data.raw["recipe"]["advanced-anorthite-crushing"].icons = {
     }
 }
 
+-- data.raw["recipe"]["advanced-anorthite-crushing"].icon = nil
+-- data.raw["recipe"]["advanced-anorthite-crushing"].icons = {
+--     {
+--         icon = asteroid_item_graphics["anorthite-chunk"]
+--     },
+--     {
+--         icon = "__hyperlanes-modpack__/graphics/icons/advanced-crushing.png"
+--     }
+-- }
+
 
 
 -- ╒════╗ ╒════╗ ╒══════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗ ╒════╗      ╒══════╗  ╒════╗   ╒════╗ ╒════════╗ 
