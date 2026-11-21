@@ -92,6 +92,7 @@ for index, category_name in ipairs(utils.launch_categories) do
     local launch_item_tech = {
         type = "technology",
         name = "hyperlanes-launching-" .. category_name .. "-1",
+        localised_name = utils.launch_category_names[category_name] .. " waste management",
         -- icon_size = 256,
         -- icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
         icons = {
@@ -140,6 +141,7 @@ for index, category_name in ipairs(utils.launch_categories) do
         local ext_launch_item_tech = {
             type = "technology",
             name = "hyperlanes-launching-" .. category_name .. "-" .. level,
+            localised_name = category_name .. " waste management",
             icons = {
                 {
                     icon = "__hyperlanes-modpack__/graphics/technology/launch-base.png",

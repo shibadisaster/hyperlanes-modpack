@@ -32,10 +32,21 @@ table.remove(data.raw["technology"]["cerys-fulgoran-cryogenics"].effects, 6)
 -- Radioactive module
 data.raw["recipe"]["cerys-radioactive-module-charged"].ingredients = {
     {type = "item", name = "uranium-235", amount = 4},
-    {type = "item", name = "superconductor", amount = 4, quality_min = "uncommon"},
-    {type = "item", name = "productivity-module-2", amount = 8},
+    {type = "item", name = "biter-egg", amount = 4, quality_min = "uncommon"},
+    {type = "item", name = "productivity-module-3", amount = 2},
     {type = "fluid", name = "nitric-acid", amount = 25},
 }
+data.raw["technology"]["cerys-radioactive-module"].prerequisites = {"cerys-overclock-module"}
+
+
+-- Overclock module
+data.raw["recipe"]["cerys-overclock-module"].ingredients = {
+    {type = "item", name = "plutonium-239", amount = 4},
+    {type = "item", name = "tungsten-carbide", amount = 4, quality_min = "uncommon"},
+    {type = "item", name = "speed-module-3", amount = 2},
+    {type = "fluid", name = "nitric-acid", amount = 25},
+}
+data.raw["technology"]["cerys-overclock-module"].prerequisites = {"planetslib-cerys-cargo-drops"}
 
 
 -- Radiative heater (post-Aquilo)

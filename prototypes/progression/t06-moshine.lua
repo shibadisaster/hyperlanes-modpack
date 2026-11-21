@@ -143,9 +143,13 @@ local item_sounds = require("__base__.prototypes.item_sounds")
 
 
 for index, science_name in ipairs(utils.data_analysis_sciences) do
+    local science_color = utils.science_colors_hex[science_name .. "-science-pack"]
+
+
     local data_fluid = {
         type = "fluid",
         name = "hyperlanes-" .. science_name .. "-data",
+        localised_name = "[font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_data_names[science_name .. "-science-pack"] .. ".data" .. "[/color][/font]",
         subgroup = "data-fluid",
         order = utils.science_order[science_name .. "-science-pack"],
         default_temperature = 15,
@@ -176,6 +180,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         type = "item",
         name = "hyperlanes-datacell-" .. science_name,
         -- icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
+        localised_name = "Datacell with [font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_data_names[science_name .. "-science-pack"] .. ".data" .. "[/color][/font]",
         icons = {
             {
                 icon = "__Moshine__/graphics/icons/data/datacell-empty.png"
@@ -204,6 +209,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         type = "recipe",
         name = "hyperlanes-datacell-" .. science_name,
         -- icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
+        localised_name = "Datacell: [font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_data_names[science_name .. "-science-pack"] .. ".data" .. "[/color][/font] loading",
         categories = {"data-processing"},
         subgroup = "moshine-datacells",
         order = utils.science_order[science_name .. "-science-pack"],
@@ -223,6 +229,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         type = "recipe",
         name = "hyperlanes-datacell-remove-" .. science_name,
         -- icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data-remove.png",
+        localised_name = "Datacell: [font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_data_names[science_name .. "-science-pack"] .. ".data" .. "[/color][/font] unloading",
         icons = {
             {
                 icon = "__hyperlanes-modpack__/graphics/icons/empty.png",
@@ -261,6 +268,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local data_unlock_tech = {
         type = "technology",
         name = "hyperlanes-" .. science_name .. "-data-unlock",
+        localised_name = utils.science_names[science_name .. "-science-pack"] .. " data collection",
         -- icon_size = 256,
         -- icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
         icons = {
@@ -309,6 +317,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local data_infinite_tech = {
         type = "technology",
         name = "hyperlanes-" .. science_name .. "-data-infinite",
+        localised_name = utils.science_names[science_name .. "-science-pack"] .. " data analysis",
         -- icon_size = 256,
         -- icon = "__hyperlanes-modpack__/graphics/icons/tech-placeholder.png",
         icons = {
@@ -340,6 +349,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local analyzing_plant = {
         type = "plant",
         name = "hyperlanes-analyze-data-" .. science_name,
+        localised_name = "[font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_data_names[science_name .. "-science-pack"] .. ".data" .. "[/color][/font] analysis",
         icon = "__Moshine__/graphics/icons/data/processing-grid-process-equation.png",
         flags = {"placeable-neutral"},
         minable =
@@ -438,6 +448,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local analyzed_data_fluid = {
         type = "fluid",
         name = "hyperlanes-" .. science_name .. "-data-analyzed",
+        localised_name = "[font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_data_names[science_name .. "-science-pack"] .. "_analyzed.data" .. "[/color][/font]",
         subgroup = "data-fluid",
         order = utils.science_order[science_name .. "-science-pack"],
         default_temperature = 15,
@@ -452,6 +463,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         type = "item",
         name = "hyperlanes-datacell-" .. science_name .. "-analyzed",
         -- icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
+        localised_name = "Datacell with [font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_data_names[science_name .. "-science-pack"] .. "_analyzed.data" .. "[/color][/font]",
         icons = {
             {
                 icon = "__Moshine__/graphics/icons/data/datacell-empty.png"
@@ -479,6 +491,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         type = "recipe",
         name = "hyperlanes-datacell-" .. science_name .. "-analyzed",
         -- icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data.png",
+        localised_name = "Datacell: [font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_data_names[science_name .. "-science-pack"] .. "_analyzed.data" .. "[/color][/font] loading",
         categories = {"data-processing"},
         subgroup = "moshine-datacells",
         order = utils.science_order[science_name .. "-science-pack"],
@@ -498,6 +511,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         type = "recipe",
         name = "hyperlanes-datacell-remove-" .. science_name .. "-analyzed",
         -- icon = "__Moshine__/graphics/icons/data/datacell-cosmic-data-remove.png",
+        localised_name = "Datacell: [font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_data_names[science_name .. "-science-pack"] .. "_analyzed.data" .. "[/color][/font] unloading",
         icons = {
             {
                 icon = "__hyperlanes-modpack__/graphics/icons/empty.png",
