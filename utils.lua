@@ -150,6 +150,34 @@ utils.science_names = {
     ["promethium-science-pack"] = "Interstellar"
 }
 
+utils.science_enlightenment_noun = {
+    ["automation-science-pack"] = "automation",
+    ["logistic-science-pack"] = "logistics",
+    ["military-science-pack"] = "military",
+    ["chemical-science-pack"] = "chemistry",
+    ["production-science-pack"] = "production",
+    ["utility-science-pack"] = "utility",
+    ["space-science-pack"] = "space",
+    ["metallurgic-science-pack"] = "metallurgy",
+    ["agricultural-science-pack"] = "agriculture",
+    ["electromagnetic-science-pack"] = "electromagnetics",
+    ["cerysian-science-pack"] = "radioactivity",
+    ["interstellar-science-pack"] = "astronomy",
+    ["planetaris-compression-science-pack"] = "compression",
+    ["biorecycling-science-pack"] = "biorecycling",
+    ["rubia-biofusion-science-pack"] = "biofusion",
+    ["acidworking-science-pack"] = "acidworking",
+    ["planetaris-polishing-science-pack"] = "polishing",
+    ["planetaris-refraction-science-pack"] = "refraction",
+    ["cryogenic-science-pack"] = "cryogenics",
+    ["hydraulic-science-pack"] = "hydraulics",
+    ["gas-manipulation-science-pack"] = "gas manipulation",
+    ["planetaris-bioengineering-science-pack"] = "bioengineering",
+    ["planetaris-pathological-science-pack"] = "pathology",
+    ["galvanization-science-pack"] = "galvanization",
+    ["promethium-science-pack"] = "cosmology"
+}
+
 utils.progression_sciences = {
     "automation-science-pack",
     "logistic-science-pack",
