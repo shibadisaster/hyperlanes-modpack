@@ -271,10 +271,20 @@ data:extend({t10_epp})
 -- ╒╛  ╚═══╛ ║ ╒╛  ╚╗       ╒╛  ╚╗            ╒╛  ╚═══╛ ║ │  ╚═╛ ╚╛  ║ ╒╛  ╚╗       ╒╛  ╚╗    ╒╛  ╚╗ ╒╛  ╚╗  └┐    ║     ╒╛  ╚╗   
 -- └─────────╜ └────╜       └────╜            └─────────╜ └─────┐ ╓──╜ └────╜       └────╜    └────╜ └────╜   └────╜     └────╜ 
 
+local epp_subgroup = {
+    type = "item-subgroup",
+    name = "hyperlanes-epps",
+    group = "combat",
+    order = "dz"
+}
+data:extend({epp_subgroup})
+
+
 for tier = 2, 10, 1 do
     local epp_equipment = {
         type = "energy-shield-equipment",
         name = "hyperlanes-t" .. tier .. "-epp-equipment",
+        order = "z-" .. utils.tier_order[tier],
         sprite =
         {
             filename = "__hyperlanes-modpack__/graphics/technology/t" .. tier .. ".png",
@@ -319,6 +329,8 @@ for tier = 2, 10, 1 do
         },
         stack_size = 20,
         weight = 50 * kg,
+        subgroup = "hyperlanes-epps",
+        order = utils.tier_order[tier],
         place_as_equipment_result = "hyperlanes-t" .. tier .. "-epp-equipment"
     }
 
