@@ -299,7 +299,7 @@ for tier = 2, 10, 1 do
             height = 2,
             type = "full"
         },
-        max_shield_value = 5,
+        max_shield_value = 5 + 2.5 * (tier - 2),
         energy_source =
         {
             type = "electric",
