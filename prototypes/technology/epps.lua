@@ -257,3 +257,71 @@ local t10_epp = {
     essential = true
 }
 data:extend({t10_epp})
+
+
+
+
+
+-- ╒═════════╗ ╒══════════╗ ╒══════════╗      ╒═════════╗ ╒══════════╗ ╒══════════╗  ╒════════════╗   ╒════╗   ╒════╗ ╒══════════╗
+-- └┐  ╓───┐ ║ └┐  ╓───┐  ║ └┐  ╓───┐  ║      └┐  ╓───┐ ║ │  ╓────┐  ║ └┐  ╓───┐  ║  │  ╓─┐  ╓─┐  ║   │    ╚╗  └┐  ╓╜ │ ╓─┐  ╓─┐ ║
+--  │  ║   └─╜  │  ║   │  ║  │  ║   │  ║       │  ║   └─╜ │  ║    │  ║  │  ║   │  ║  │  ║ │  ║ │  ║   │  ╟┐ ╚╗  │  ║  └─╜ │  ║ └─╜
+--  │  ╚══╗     │  ╚═══╛  ║  │  ╚═══╛  ║       │  ╚══╗    │  ║    │  ║  │  ╚═══╛  ║  │  ║ │  ║ │  ║   │  ║└┐ ╚╗ │  ║      │  ║    
+--  │  ╓──╜     │  ╓──────╜  │  ╓──────╜       │  ╓──╜    │  ║    │  ║  │  ╓──────╜  │  ║ │  ║ │  ║   │  ║ └┐ ╚╗│  ║      │  ║    
+--  │  ║   ╒═╗  │  ║         │  ║              │  ║   ╒═╗ │  ║ ╒═╗│  ║  │  ║         │  ║ └──╜ │  ║   │  ║  └┐ ╚╡  ║      │  ║    
+-- ╒╛  ╚═══╛ ║ ╒╛  ╚╗       ╒╛  ╚╗            ╒╛  ╚═══╛ ║ │  ╚═╛ ╚╛  ║ ╒╛  ╚╗       ╒╛  ╚╗    ╒╛  ╚╗ ╒╛  ╚╗  └┐    ║     ╒╛  ╚╗   
+-- └─────────╜ └────╜       └────╜            └─────────╜ └─────┐ ╓──╜ └────╜       └────╜    └────╜ └────╜   └────╜     └────╜ 
+
+for tier = 2, 10, 1 do
+    local epp_equipment = {
+        type = "energy-shield-equipment",
+        name = "hyperlanes-t" .. tier .. "-epp-equipment",
+        sprite =
+        {
+            filename = "__hyperlanes-modpack__/graphics/technology/t" .. tier .. ".png",
+            width = 256,
+            height = 256,
+            priority = "medium",
+            scale = 0.25 * 1.25
+        },
+        shape =
+        {
+            width = 2,
+            height = 2,
+            type = "full"
+        },
+        max_shield_value = 5,
+        energy_source =
+        {
+            type = "electric",
+            buffer_capacity = "1QJ",
+            input_flow_limit = "" .. (250 * 1.3 ^ (tier - 2)) .. "kW",
+            usage_priority = "primary-input"
+        },
+        energy_per_shield = "" .. (10 * 1.3 ^ (tier - 2)) .. "kJ",
+        categories = {"armor"}
+    }
+
+
+    local epp_equipment_item = {
+        type = "item",
+        name = "hyperlanes-t" .. tier .. "-epp-equipment",
+        icons = {
+            {
+                icon = "__hyperlanes-modpack__/graphics/icons/empty.png",
+                icon_size = 64
+            },
+            {
+                icon = "__hyperlanes-modpack__/graphics/technology/t" .. tier .. ".png",
+                icon_size = 256,
+                scale = 0.125 * 1.25,
+                floating = true
+            }
+        },
+        stack_size = 20,
+        weight = 50 * kg,
+        place_as_equipment_result = "hyperlanes-t" .. tier .. "-epp-equipment"
+    }
+
+
+    data:extend({epp_equipment, epp_equipment_item})
+end

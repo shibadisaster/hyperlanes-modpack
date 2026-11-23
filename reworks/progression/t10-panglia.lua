@@ -70,8 +70,8 @@ data.raw["recipe"]["snouz_wall_hull"].ingredients = {
 }
 data.raw["recipe"]["snouz_wall_hull"].categories = {"space-manufacturing"}
 
-data.raw["wall"]["snouz_wall_hull"].max_health = 1000
-data.raw["wall"]["snouz_wall_hull"].healing_per_tick = 10.0 / 60.0
+data.raw["wall"]["snouz_wall_hull"].max_health = 5000
+data.raw["wall"]["snouz_wall_hull"].healing_per_tick = 50.0 / 60.0
 table.insert(data.raw["wall"]["snouz_wall_hull"].resistances, {
     type = "rubia-kinetic",
     percent = 100
