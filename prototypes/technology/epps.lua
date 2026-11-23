@@ -307,7 +307,7 @@ for tier = 2, 10, 1 do
             input_flow_limit = "" .. (250 * 1.3 ^ (tier - 2)) .. "kW",
             usage_priority = "primary-input"
         },
-        energy_per_shield = "" .. (10 * 1.3 ^ (tier - 2)) .. "kJ",
+        energy_per_shield = "" .. (10 * 1.15 ^ (tier - 2)) .. "kJ",
         categories = {"armor"}
     }
 
@@ -337,3 +337,262 @@ for tier = 2, 10, 1 do
 
     data:extend({epp_equipment, epp_equipment_item})
 end
+
+
+-- Recipes
+local t2_epp_recipe = {
+    type = "recipe",
+    name = "hyperlanes-t2-epp-equipment",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "energy-shield-equipment", amount = 1},
+        {type = "item", name = "steel-plate", amount = 100},
+        {type = "item", name = "plastic-bar", amount = 100},
+        {type = "item", name = "advanced-circuit", amount = 50},
+        {type = "item", name = "processing-unit", amount = 50},
+    },
+    energy_required = 30.0,
+    results = {
+        {type = "item", name = "hyperlanes-t2-epp-equipment", amount = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal"}
+    },
+    allow_productivity = false,
+    categories = {"advanced-crafting"},
+    auto_recycle = true,
+    -- surface_conditions = {
+    --     {
+    --         property="gravity",
+    --         min=0,
+    --         max=0,
+    --     }
+    -- }
+}
+data:extend({t2_epp_recipe})
+table.insert(data.raw["technology"]["hyperlanes-t2-epp"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-t2-epp-equipment"
+})
+
+
+local t3_epp_recipe = {
+    type = "recipe",
+    name = "hyperlanes-t3-epp-equipment",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "hyperlanes-t2-epp-equipment", amount = 1},
+        {type = "item", name = "alumina-crushed", amount = 200},
+        {type = "item", name = "ice", amount = 200},
+        {type = "item", name = "processing-unit", amount = 100},
+        {type = "item", name = "muluna-roboport-propellant-barrel", amount = 20},
+    },
+    energy_required = 45.0,
+    results = {
+        {type = "item", name = "hyperlanes-t3-epp-equipment", amount = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal"}
+    },
+    allow_productivity = false,
+    categories = {"advanced-crafting"},
+    auto_recycle = true,
+}
+data:extend({t3_epp_recipe})
+table.insert(data.raw["technology"]["hyperlanes-t3-epp"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-t3-epp-equipment"
+})
+
+
+local t4_epp_recipe = {
+    type = "recipe",
+    name = "hyperlanes-t4-epp-equipment",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "hyperlanes-t3-epp-equipment", amount = 1},
+        {type = "item", name = "tungsten-carbide", amount = 400},
+        {type = "item", name = "bioflux", amount = 400},
+        {type = "item", name = "supercapacitor", amount = 400},
+        {type = "item", name = "tungsten-plate", amount = 50, quality_min = "uncommon"},
+        {type = "item", name = "carbon-fiber", amount = 50, quality_min = "uncommon"},
+        {type = "item", name = "superconductor", amount = 50, quality_min = "uncommon"},
+    },
+    energy_required = 60.0,
+    results = {
+        {type = "item", name = "hyperlanes-t4-epp-equipment", amount = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal"}
+    },
+    allow_productivity = false,
+    categories = {"advanced-crafting"},
+    auto_recycle = true,
+}
+data:extend({t4_epp_recipe})
+table.insert(data.raw["technology"]["hyperlanes-t4-epp"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-t4-epp-equipment"
+})
+
+
+local t5_epp_recipe = {
+    type = "recipe",
+    name = "hyperlanes-t5-epp-equipment",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "hyperlanes-t4-epp-equipment", amount = 1},
+        {type = "item", name = "plutonium-238", amount = 50},
+        {type = "item", name = "plutonium-239", amount = 200},
+        {type = "item", name = "muluna-basic-hard-drive-astronomical-data", amount = 50},
+        {type = "item", name = "muluna-microcellular-plastic", amount = 100, quality_min = "uncommon"},
+    },
+    energy_required = 75.0,
+    results = {
+        {type = "item", name = "hyperlanes-t5-epp-equipment", amount = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal"}
+    },
+    allow_productivity = false,
+    categories = {"advanced-crafting"},
+    auto_recycle = true,
+}
+data:extend({t5_epp_recipe})
+table.insert(data.raw["technology"]["hyperlanes-t5-epp"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-t5-epp-equipment"
+})
+
+
+local t6_epp_recipe = {
+    type = "recipe",
+    name = "hyperlanes-t6-epp-equipment",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "hyperlanes-t5-epp-equipment", amount = 1},
+        {type = "item", name = "planetaris-glass-panel", amount = 350},
+        {type = "item", name = "lead-plate", amount = 350},
+        {type = "item", name = "craptonite-frame", amount = 350},
+        {type = "item", name = "planetaris-heavy-glass", amount = 100, quality_min = "rare"},
+        {type = "item", name = "anti-corrosion-cladding", amount = 50, quality_min = "rare"},
+        {type = "item", name = "hyperlanes-metamaterial-microsuspension-barrel", amount = 50},
+    },
+    energy_required = 90.0,
+    results = {
+        {type = "item", name = "hyperlanes-t6-epp-equipment", amount = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal"}
+    },
+    allow_productivity = false,
+    categories = {"advanced-crafting"},
+    auto_recycle = true,
+}
+data:extend({t6_epp_recipe})
+table.insert(data.raw["technology"]["hyperlanes-t6-epp"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-t6-epp-equipment"
+})
+
+
+local t7_epp_recipe = {
+    type = "recipe",
+    name = "hyperlanes-t7-epp-equipment",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "hyperlanes-t6-epp-equipment", amount = 1},
+        {type = "item", name = "ai-tier-8", amount = 10},
+        {type = "item", name = "planetaris-crystalization-motor", amount = 500},
+        {type = "item", name = "glass", amount = 200, quality_min = "epic"},
+        {type = "item", name = "planetaris-polished-diamond", amount = 200, quality_min = "epic"},
+    },
+    energy_required = 105.0,
+    results = {
+        {type = "item", name = "hyperlanes-t7-epp-equipment", amount = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal"}
+    },
+    allow_productivity = false,
+    categories = {"advanced-crafting"},
+    auto_recycle = true,
+}
+data:extend({t7_epp_recipe})
+table.insert(data.raw["technology"]["hyperlanes-t7-epp"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-t7-epp-equipment"
+})
+
+
+local t8_epp_recipe = {
+    type = "recipe",
+    name = "hyperlanes-t8-epp-equipment",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "hyperlanes-t7-epp-equipment", amount = 1},
+        {type = "item", name = "quantum-processor", amount = 750},
+        {type = "item", name = "maraxsis-glass-panes", amount = 750},
+        {type = "item", name = "lithium-plate", amount = 250, quality_min = "legendary"},
+        {type = "item", name = "limestone", amount = 250, quality_min = "legendary"},
+    },
+    energy_required = 120.0,
+    results = {
+        {type = "item", name = "hyperlanes-t8-epp-equipment", amount = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal"}
+    },
+    allow_productivity = false,
+    categories = {"advanced-crafting"},
+    auto_recycle = true,
+}
+data:extend({t8_epp_recipe})
+table.insert(data.raw["technology"]["hyperlanes-t8-epp"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-t8-epp-equipment"
+})
+
+
+local t9_epp_recipe = {
+    type = "recipe",
+    name = "hyperlanes-t9-epp-equipment",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "hyperlanes-t8-epp-equipment", amount = 1},
+        {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 1000},
+        {type = "item", name = "planetaris-polimer-skin", amount = 1000},
+        {type = "item", name = "galvanized-steel-plate", amount = 1000},
+        {type = "item", name = "ske_mesh", amount = 500, quality_min = "legendary"},
+        {type = "item", name = "planetaris-magnesium-sheet", amount = 500, quality_min = "legendary"},
+        {type = "item", name = "electric-coil", amount = 500, quality_min = "legendary"},
+    },
+    energy_required = 135.0,
+    results = {
+        {type = "item", name = "hyperlanes-t9-epp-equipment", amount = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal"}
+    },
+    allow_productivity = false,
+    categories = {"advanced-crafting"},
+    auto_recycle = true,
+}
+data:extend({t9_epp_recipe})
+table.insert(data.raw["technology"]["hyperlanes-t9-epp"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-t9-epp-equipment"
+})
+
+
+local t10_epp_recipe = {
+    type = "recipe",
+    name = "hyperlanes-t10-epp-equipment",
+    enabled = false,
+    ingredients =
+    {
+        {type = "item", name = "hyperlanes-t9-epp-equipment", amount = 1},
+        {type = "item", name = "hyperlanes-antimatter-particulate", amount = 200},
+        {type = "item", name = "hyperlanes-time-crystal-a", amount = 5},
+        {type = "item", name = "hyperlanes-time-crystal-b", amount = 5},
+        {type = "item", name = "iron-plate", amount = 1000, quality_min = "mythic"},
+        {type = "item", name = "ice", amount = 1000, quality_min = "mythic"},
+        {type = "item", name = "carbon", amount = 1000, quality_min = "mythic"},
+    },
+    energy_required = 150.0,
+    results = {
+        {type = "item", name = "hyperlanes-t10-epp-equipment", amount = 1, ignored_by_productivity = 1, quality_min = "normal", quality_max = "normal"}
+    },
+    allow_productivity = false,
+    categories = {"advanced-crafting"},
+    auto_recycle = true,
+}
+data:extend({t10_epp_recipe})
+table.insert(data.raw["technology"]["hyperlanes-t10-epp"].effects, {
+    type = "unlock-recipe",
+    recipe = "hyperlanes-t10-epp-equipment"
+})
