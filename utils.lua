@@ -388,7 +388,9 @@ utils.upcyclable_asteroids = {
     "hyperlanes-fulgora-asteroid-chunk",
     "hyperlanes-gleba-asteroid-chunk",
     "hyperlanes-vulcanus-asteroid-chunk",
+    "hyperlanes-castra-asteroid-chunk",
     "hyperlanes-cerys-asteroid-chunk",
+    "hyperlanes-crucible-asteroid-chunk",
     "hyperlanes-arig-asteroid-chunk",
     "hyperlanes-muria-asteroid-chunk",
     "hyperlanes-rubia-asteroid-chunk",
@@ -399,6 +401,7 @@ utils.upcyclable_asteroids = {
     "hyperlanes-paracelsin-asteroid-chunk",
     "hyperlanes-tellus-asteroid-chunk",
     "hyperlanes-vesta-asteroid-chunk",
+    "hyperlanes-carna-asteroid-chunk",
     "hyperlanes-panglia-asteroid-chunk",
 }
 
@@ -546,6 +549,12 @@ utils.t4_sp_cerys = {
     {"space-science-pack", 1},
 }
 
+utils.t4_sp_castra = table.deepcopy(utils.t4_sp)
+table.insert(utils.t4_sp_castra, {"battlefield-science-pack", 1})
+
+utils.t4_sp_crucible = table.deepcopy(utils.t4_sp)
+table.insert(utils.t4_sp_crucible, {"planet-crucible-science-pack", 1})
+
 utils.t4_sp_muluna = table.deepcopy(utils.t4_sp)
 table.insert(utils.t4_sp_muluna, {"interstellar-science-pack", 1})
 
@@ -572,6 +581,8 @@ local t5_sp = {
     {"metallurgic-science-pack", 1},
     {"agricultural-science-pack", 1},
     {"electromagnetic-science-pack", 1},
+    {"battlefield-science-pack", 1},
+    {"planet-crucible-science-pack", 1},
     {"interstellar-science-pack", 1}
 }
 utils.t5_sp = t5_sp
@@ -798,6 +809,8 @@ local t6_sp = {
     {"metallurgic-science-pack", 1},
     {"agricultural-science-pack", 1},
     {"electromagnetic-science-pack", 1},
+    {"battlefield-science-pack", 1},
+    {"planet-crucible-science-pack", 1},
     {"interstellar-science-pack", 1},
     {"planetaris-compression-science-pack", 1},
     {"biorecycling-science-pack", 1},
@@ -895,6 +908,8 @@ local t7_sp = {
     {"metallurgic-science-pack", 1},
     {"agricultural-science-pack", 1},
     {"electromagnetic-science-pack", 1},
+    {"battlefield-science-pack", 1},
+    {"planet-crucible-science-pack", 1},
     {"interstellar-science-pack", 1},
     {"planetaris-compression-science-pack", 1},
     {"biorecycling-science-pack", 1},
@@ -937,6 +952,8 @@ local t8_sp = {
     {"metallurgic-science-pack", 1},
     {"agricultural-science-pack", 1},
     {"electromagnetic-science-pack", 1},
+    {"battlefield-science-pack", 1},
+    {"planet-crucible-science-pack", 1},
     {"interstellar-science-pack", 1},
     {"planetaris-compression-science-pack", 1},
     {"biorecycling-science-pack", 1},
@@ -1001,6 +1018,8 @@ local t9_sp = {
     {"metallurgic-science-pack", 1},
     {"agricultural-science-pack", 1},
     {"electromagnetic-science-pack", 1},
+    {"battlefield-science-pack", 1},
+    {"planet-crucible-science-pack", 1},
     {"interstellar-science-pack", 1},
     {"planetaris-compression-science-pack", 1},
     {"biorecycling-science-pack", 1},
@@ -1020,6 +1039,9 @@ utils.t9_spcost_planet = 30000
 utils.t9_spcost_tech = 10000
 utils.t9_spcost_bigtech = utils.t9_spcost_tech * 2
 utils.t9_spcost_smalltech = utils.t9_spcost_tech / 2
+
+utils.t9_sp_carna = table.deepcopy(utils.t9_sp)
+table.insert(utils.t9_sp_carna, {"carnal-science-pack", 1})
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗       ╒══╗  ╒═════════╗
@@ -1043,6 +1065,8 @@ local t10_sp = {
     {"metallurgic-science-pack", 1},
     {"agricultural-science-pack", 1},
     {"electromagnetic-science-pack", 1},
+    {"battlefield-science-pack", 1},
+    {"planet-crucible-science-pack", 1},
     {"interstellar-science-pack", 1},
     {"planetaris-compression-science-pack", 1},
     {"biorecycling-science-pack", 1},
@@ -1055,6 +1079,7 @@ local t10_sp = {
     {"planetaris-bioengineering-science-pack", 1},
     {"planetaris-pathological-science-pack", 1},
     {"galvanization-science-pack", 1},
+    {"carnal-science-pack", 1},
     {"promethium-science-pack", 1}
 }
 utils.t10_sp = t10_sp
