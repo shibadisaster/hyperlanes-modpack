@@ -9,3 +9,9 @@ data.raw["bool-setting"]["disable-lyrical-music"].hidden = true
 
 data.raw["bool-setting"]["maraxsis-fish-rocket"].forced_value = false
 data.raw["bool-setting"]["maraxsis-fish-rocket"].hidden = true
+
+data.raw["string-setting"]["planet-crucible-vanilla-change-amount"].forced_value = "none"
+data.raw["string-setting"]["planet-crucible-vanilla-change-amount"].hidden = true
+
+data.raw["bool-setting"]["planet-crucible-add-science-pack-prod"].forced_value = false
+data.raw["bool-setting"]["planet-crucible-add-science-pack-prod"].hidden = true

@@ -114,42 +114,42 @@ data.raw["recipe"]["muluna-satellite-radar"].ingredients = {
 --    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
-data.raw["technology"]["muluna-telescope"].unit.ingredients = utils.t4_sp
-data.raw["technology"]["muluna-telescope"].unit.count = utils.t3_spcost_tech
+data.raw["technology"]["muluna-telescope"].unit.ingredients = utils.t4_sp_premuluna
+data.raw["technology"]["muluna-telescope"].unit.count = utils.t4_spcost_tech
 
-data.raw["technology"]["crusher-2"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["crusher-2"].unit.ingredients = utils.t5_sp
 data.raw["technology"]["crusher-2"].unit.count = utils.t4_spcost_bigtech
 
-data.raw["technology"]["muluna-asteroid-upcycling"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["muluna-asteroid-upcycling"].unit.ingredients = utils.t5_sp
 data.raw["technology"]["muluna-asteroid-upcycling"].unit.count = utils.t4_spcost_bigtech
 
-data.raw["technology"]["advanced-space-science-pack"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["advanced-space-science-pack"].unit.ingredients = utils.t5_sp
 data.raw["technology"]["advanced-space-science-pack"].unit.count = utils.t4_spcost_tech
 
 data.raw["technology"]["muluna-cycling-steam-turbine"].prerequisites = {
     "interstellar-science-pack"
 }
-data.raw["technology"]["muluna-cycling-steam-turbine"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["muluna-cycling-steam-turbine"].unit.ingredients = utils.t5_sp
 data.raw["technology"]["muluna-cycling-steam-turbine"].unit.count = utils.t4_spcost_bigtech
 
-data.raw["technology"]["water-recycling-productivity"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["water-recycling-productivity"].unit.ingredients = utils.t5_sp
 data.raw["technology"]["water-recycling-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t4_spcost_tech
 
-data.raw["technology"]["thruster-fuel-productivity"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["thruster-fuel-productivity"].unit.ingredients = utils.t5_sp
 data.raw["technology"]["thruster-fuel-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t4_spcost_bigtech
 
-data.raw["technology"]["muluna-satellite-radar"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["muluna-satellite-radar"].unit.ingredients = utils.t5_sp
 data.raw["technology"]["muluna-satellite-radar"].unit.count = utils.t4_spcost_bigtech
 
-data.raw["technology"]["muluna-vacuum-heating-tower"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["muluna-vacuum-heating-tower"].unit.ingredients = utils.t5_sp
 data.raw["technology"]["muluna-vacuum-heating-tower"].unit.count = utils.t4_spcost_tech
 
 data.raw["technology"]["rigor-module-3"].unit.ingredients = utils.placeholder_sp
 
-data.raw["technology"]["space-chest-muluna"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["space-chest-muluna"].unit.ingredients = utils.t5_sp
 data.raw["technology"]["space-chest-muluna"].unit.count = utils.t4_spcost_tech
 
-data.raw["technology"]["rigor-module"].unit.ingredients = utils.t4_sp_muluna
+data.raw["technology"]["rigor-module"].unit.ingredients = utils.t5_sp
 data.raw["technology"]["rigor-module"].unit.count = utils.t4_spcost_bigtech
 
 for index, asteroid_name in ipairs(utils.upcyclable_asteroids) do
