@@ -718,18 +718,23 @@ utils.launch_building_associations = {
         "planetaris-space-manufacturer",
         "maraxsis-hydro-plant",
         "mechanical-plant",
-        "planetaris-bioassembler"
+        "planetaris-bioassembler",
+        "algite-assembler",
+        "feron-assembler"
     },
     ["mining"] = {
         "burner-mining-drill",
         "electric-mining-drill",
         "big-mining-drill",
-        "hyarion-geode-mining-drill"
+        "hyarion-geode-mining-drill",
+        "molybdenum-miner"
     },
     ["extraction"] = {
         "pumpjack",
         "pressure-turbine",
-        "oil-refinery"
+        "oil-refinery",
+        "molybdenum-airpump",
+        "feron-airpump"
     },
     ["crushing"] = {
         "muluna-steam-crusher",
@@ -743,7 +748,8 @@ utils.launch_building_associations = {
         "electric-furnace",
         "foundry",
         "smelting-plant",
-        "combustion-furnace"
+        "combustion-furnace",
+        "planet-crucible-kiln"
     },
     ["research"] = {
         "lab",
@@ -760,7 +766,10 @@ utils.launch_building_associations = {
         "planetaris-sifter",
         "planetaris-polisher",
         "planetaris-particle-manipulator",
-        "planetaris-refraction-plant"
+        "planetaris-refraction-plant",
+        "planet-crucible-pressure-forge",
+        "molybdenum-seiver",
+        "algite-knowledge-chamber"
     },
     ["chemistry"] = {
         "chemical-plant",
@@ -776,6 +785,7 @@ utils.launch_building_associations = {
     },
     ["cultivation"] = {
         "biochamber",
+        "feron-biochamber",
         "biovat",
         "planetaris-incubator"
     },
