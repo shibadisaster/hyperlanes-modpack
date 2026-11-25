@@ -74,6 +74,7 @@ data.raw["recipe"]["planetaris-promethium-science-pack"].hidden = true
 --    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
+data.raw["technology"]["stellar-discovery-solar-system-edge"].prerequisites = {"carnal-science-pack"}
 data.raw["technology"]["stellar-discovery-solar-system-edge"].unit.ingredients = utils.t9_sp
 data.raw["technology"]["stellar-discovery-solar-system-edge"].unit.count = utils.t9_spcost_planet
 table.insert(data.raw["technology"]["stellar-discovery-solar-system-edge"].effects, {

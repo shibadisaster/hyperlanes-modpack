@@ -133,8 +133,11 @@ data.raw["technology"]["rubia-cargo-landing-pad-capacity"].unit.count = utils.t5
 data.raw["technology"]["rubia-nutrient-productivity"].unit.ingredients = utils.t5_sp_rubia_biofusion
 data.raw["technology"]["rubia-nutrient-productivity"].unit.count_formula = "1.8^(L-1)*" .. utils.t5_spcost_tech
 
+data.raw["technology"]["planetslib-rubia-cargo-drops"].essential = false
 data.raw["technology"]["planetslib-rubia-cargo-drops"].unit.ingredients = utils.t5_sp_rubia
 data.raw["technology"]["planetslib-rubia-cargo-drops"].unit.count = utils.t5_spcost_smalltech
+
+data.raw["technology"]["rubia-project-trashdragon"].essential = false
 
 
 -- ╒═════════╗ ╒═════════╗  ╒════════════╗  ╒═════════╗  ╒═════════╗ ╒═════════╗

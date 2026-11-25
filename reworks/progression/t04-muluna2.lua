@@ -7,7 +7,9 @@ local utils = require("__hyperlanes-modpack__/utils")
 
 -- Nanofoamed polymers: tech moved to require Cerysian science pack 
 local nanopoly_tech = data.raw["technology"]["muluna-nanofoamed-polymers"]
+table.insert(nanopoly_tech.prerequisites, "battlefield-science-pack")
 table.insert(nanopoly_tech.prerequisites, "cerysian-science-pack")
+table.insert(nanopoly_tech.prerequisites, "planet-crucible-science-pack")
 
 -- Telescope: tech moved to require nanofoamed polymers
 local telesc_tech = data.raw["technology"]["muluna-telescope"]

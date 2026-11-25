@@ -7,7 +7,9 @@ local planet_tier_associations = {
     ["fulgora"] = 3,
     ["gleba"] = 3,
     ["vulcanus"] = 3,
+    ["castra"] = 4,
     ["cerys"] = 4,
+    ["crucible"] = 4,
     ["arig"] = 5,
     ["muria"] = 5,
     ["rubia"] = 5,
@@ -18,6 +20,7 @@ local planet_tier_associations = {
     ["paracelsin"] = 8,
     ["tellus"] = 8,
     ["vesta"] = 8,
+    ["carna"] = 9,
     ["panglia"] = 10
 }
 

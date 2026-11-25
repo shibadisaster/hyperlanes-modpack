@@ -1,4 +1,4 @@
-data.raw["int-setting"]["muluna-interstellar-science-pack-packs-required"].forced_value = 4
+data.raw["int-setting"]["muluna-interstellar-science-pack-packs-required"].forced_value = 6
 data.raw["int-setting"]["muluna-interstellar-science-pack-packs-required"].hidden = true
 
 data.raw["bool-setting"]["enable-arig-cargo-drops"].forced_value = true
