@@ -188,3 +188,33 @@ data.raw["technology"]["muluna-asteroid-upcycling"].icons = {
         floating = true
     },
 }
+
+
+-- ╒═════════╗ ╒═════════╗  ╒════════════╗  ╒═════════╗  ╒═════════╗ ╒═════════╗
+-- │  ╓────┐ ║ │  ╓───┐  ║  │  ╓─┐  ╓─┐  ║  └┐  ╓───┐ ╚╗ │  ╓───┐  ║ │  ╓────┐ ║
+-- │  ║    └─╜ │  ║   │  ║  │  ║ │  ║ │  ║   │  ║   │  ║ │  ║   │  ║ │  ║    └─╜
+-- │  ║        │  ║   │  ║  │  ║ │  ║ │  ║   │  ╚═══╛  ║ │  ║   │  ║ │  ╚══════╗
+-- │  ║        │  ║   │  ║  │  ║ │  ║ │  ║   │  ╓───┐  ║ │  ║   │  ║ └──────┐  ║
+-- │  ║    ╒═╗ │  ║   │  ║  │  ║ └──╜ │  ║   │  ║   │  ║ │  ║   │  ║ ╒═╗    │  ║
+-- │  ╚════╛ ║ │  ╚═══╛  ║ ╒╛  ╚╗    ╒╛  ╚╗ ╒╛  ╚═══╛ ╓╜ │  ╚═══╛  ║ │ ╚════╛  ║
+-- └─────────╜ └─────────╜ └────╜    └────╜ └─────────╜  └─────────╜ └─────────╜
+
+-- Castra + Cerys = lithium-battery
+data.raw["technology"]["lithium-battery"].prerequisites = {"battlefield-science-pack", "planetslib-cerys-cargo-drops"}
+data.raw["technology"]["lithium-battery"].unit.ingredients = utils.t4_sp_castra_cerys
+data.raw["technology"]["lithium-battery"].unit.count = utils.t4_spcost_bigtech
+
+
+-- Castra + Crucible = planet-crucible-military
+data.raw["technology"]["planet-crucible-military"].prerequisites = {"battlefield-science-pack", "planet-crucible-science-pack"}
+data.raw["technology"]["planet-crucible-military"].unit.ingredients = utils.t4_sp_castra_crucible
+data.raw["technology"]["planet-crucible-military"].unit.count = utils.t4_spcost_bigtech
+
+data.raw["technology"]["planet-crucible-military-2"].unit.ingredients = utils.t4_sp_castra_crucible
+data.raw["technology"]["planet-crucible-military-2"].unit.count = utils.t4_spcost_bigtech
+
+
+-- Cerys + Crucible = planet-crucible-lithium-hydride
+data.raw["technology"]["planet-crucible-lithium-hydride"].prerequisites = {"planetslib-cerys-cargo-drops", "planet-crucible-science-pack"}
+data.raw["technology"]["planet-crucible-lithium-hydride"].unit.ingredients = utils.t4_sp_cerys_crucible
+data.raw["technology"]["planet-crucible-lithium-hydride"].unit.count = utils.t4_spcost_bigtech

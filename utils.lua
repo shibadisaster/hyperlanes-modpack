@@ -570,6 +570,16 @@ table.insert(utils.t4_sp_castra, {"battlefield-science-pack", 1})
 utils.t4_sp_crucible = table.deepcopy(utils.t4_sp)
 table.insert(utils.t4_sp_crucible, {"planet-crucible-science-pack", 1})
 
+utils.t4_sp_castra_cerys = table.deepcopy(utils.t4_sp)
+table.insert(utils.t4_sp_castra_cerys, {"battlefield-science-pack", 1})
+
+utils.t4_sp_castra_crucible = table.deepcopy(utils.t4_sp)
+table.insert(utils.t4_sp_castra_crucible, {"battlefield-science-pack", 1})
+table.insert(utils.t4_sp_castra_crucible, {"planet-crucible-science-pack", 1})
+
+utils.t4_sp_cerys_crucible = table.deepcopy(utils.t4_sp)
+table.insert(utils.t4_sp_cerys_crucible, {"planet-crucible-science-pack", 1})
+
 utils.t4_sp_premuluna = table.deepcopy(utils.t4_sp)
 table.insert(utils.t4_sp_premuluna, {"battlefield-science-pack", 1})
 table.insert(utils.t4_sp_premuluna, {"planet-crucible-science-pack", 1})

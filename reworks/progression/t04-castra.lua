@@ -58,10 +58,18 @@ data.raw["technology"]["combat-roboport"].unit.count = utils.t4_spcost_bigtech
 data.raw["technology"]["holmium-catalyzing"].unit.ingredients = utils.t4_sp_castra
 data.raw["technology"]["holmium-catalyzing"].unit.count = utils.t4_spcost_bigtech
 
--- data.raw["technology"]["follower-robot-count-1"].unit.ingredients = utils.t4_sp_castra
--- data.raw["technology"]["follower-robot-count-2"].unit.ingredients = utils.t4_sp_castra
--- data.raw["technology"]["follower-robot-count-3"].unit.ingredients = utils.t4_sp_castra
--- data.raw["technology"]["follower-robot-count-4"].unit.ingredients = utils.t4_sp_castra
--- data.raw["technology"]["follower-robot-count-5"].unit.ingredients = utils.t4_sp_castra
+data.raw["technology"]["follower-robot-count-1"].unit.ingredients = utils.t4_sp_castra
+data.raw["technology"]["follower-robot-count-2"].unit.ingredients = utils.t4_sp_castra
+data.raw["technology"]["follower-robot-count-3"].unit.ingredients = utils.t4_sp_castra
+data.raw["technology"]["follower-robot-count-4"].unit.ingredients = utils.t4_sp_castra
+data.raw["technology"]["follower-robot-count-5"].unit.ingredients = utils.t4_sp_castra
+
+data.raw["technology"]["refined-flammables-1"].unit.ingredients = utils.t4_sp_castra
+data.raw["technology"]["refined-flammables-2"].unit.ingredients = utils.t4_sp_castra
+data.raw["technology"]["refined-flammables-3"].unit.ingredients = utils.t4_sp_castra
+data.raw["technology"]["refined-flammables-4"].unit.ingredients = utils.t4_sp_castra
+data.raw["technology"]["refined-flammables-5"].unit.ingredients = utils.t4_sp_castra
+data.raw["technology"]["refined-flammables-6"].unit.ingredients = utils.t4_sp_castra
+data.raw["technology"]["refined-flammables-7"].unit.ingredients = utils.t4_sp_castra
 
 -- Lithium battery tech moved to combo tech with Cerys
