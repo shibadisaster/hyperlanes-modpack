@@ -73,3 +73,7 @@ data.raw["technology"]["refined-flammables-6"].unit.ingredients = utils.t4_sp_ca
 data.raw["technology"]["refined-flammables-7"].unit.ingredients = utils.t4_sp_castra
 
 -- Lithium battery tech moved to combo tech with Cerys
+
+data.raw["technology"]["physical-ammo-productivity"].prerequisites = {"battlefield-science-pack"}
+data.raw["technology"]["physical-ammo-productivity"].unit.ingredients = utils.t4_sp_castra
+data.raw["technology"]["physical-ammo-productivity"].unit.count_formula = "1.5^(L-1)*" .. utils.t4_spcost_tech

@@ -756,6 +756,9 @@ local science_prod_bonuses = {
         "muluna-telescope-observation-panglia",
         "muluna-telescope-observation-paracelsin",
         "muluna-telescope-observation-muluna",
+        "muluna-telescope-observation-castra",
+        "muluna-telescope-observation-crucible",
+        "muluna-telescope-observation-carna",
     },
     ["planetaris-compression"] = {
         0.02,

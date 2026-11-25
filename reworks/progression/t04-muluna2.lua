@@ -204,6 +204,14 @@ data.raw["technology"]["lithium-battery"].prerequisites = {"battlefield-science-
 data.raw["technology"]["lithium-battery"].unit.ingredients = utils.t4_sp_castra_cerys
 data.raw["technology"]["lithium-battery"].unit.count = utils.t4_spcost_bigtech
 
+data.raw["technology"]["energy-shield-mk3-equipment"].prerequisites = {"lithium-battery", "energy-shield-mk2-equipment"}
+data.raw["technology"]["energy-shield-mk3-equipment"].unit.ingredients = utils.t4_sp_castra_cerys
+data.raw["technology"]["energy-shield-mk3-equipment"].unit.count = utils.t4_spcost_bigtech
+
+data.raw["technology"]["battery-mk3-equipment"].prerequisites = {"lithium-battery", "battery-mk2-equipment"}
+data.raw["technology"]["battery-mk3-equipment"].unit.ingredients = utils.t4_sp_castra_cerys
+data.raw["technology"]["battery-mk3-equipment"].unit.count = utils.t4_spcost_bigtech
+
 
 -- Castra + Crucible = planet-crucible-military
 data.raw["technology"]["planet-crucible-military"].prerequisites = {"battlefield-science-pack", "planet-crucible-science-pack"}
