@@ -67,7 +67,9 @@ utils.science_colors = {
     ["metallurgic-science-pack"] = {255, 162, 12},
     ["agricultural-science-pack"] = {184, 221, 0},
     ["electromagnetic-science-pack"] = {255, 52, 120},
+    ["battlefield-science-pack"] = {82, 60, 56},
     ["cerysian-science-pack"] = {0, 253, 171},
+    ["planet-crucible-science-pack"] = {128, 64, 96},
     ["interstellar-science-pack"] = {150, 150, 150},
     ["planetaris-compression-science-pack"] = {208, 190, 115},
     ["biorecycling-science-pack"] = {182, 128, 61},
@@ -81,6 +83,7 @@ utils.science_colors = {
     ["planetaris-bioengineering-science-pack"] = {216, 229, 79},
     ["planetaris-pathological-science-pack"] = {227, 144, 57},
     ["galvanization-science-pack"] = {160, 35, 0},
+    ["carnal-science-pack"] = {0, 255, 255},
     ["promethium-science-pack"] = {12, 4, 123}
 }
 
@@ -95,7 +98,9 @@ utils.science_colors_hex= {
     ["metallurgic-science-pack"] = "FFA20C",
     ["agricultural-science-pack"] = "B8DD00",
     ["electromagnetic-science-pack"] = "FF3478",
+    ["battlefield-science-pack"] = "523C38",
     ["cerysian-science-pack"] = "00FDAB",
+    ["planet-crucible-science-pack"] = "804060",
     ["interstellar-science-pack"] = "969696",
     ["planetaris-compression-science-pack"] = "D0BE73",
     ["biorecycling-science-pack"] = "B6803D",
@@ -109,6 +114,7 @@ utils.science_colors_hex= {
     ["planetaris-bioengineering-science-pack"] = "D8E54F",
     ["planetaris-pathological-science-pack"] = "E39039",
     ["galvanization-science-pack"] = "A02300",
+    ["carnal-science-pack"] = "00FFFF",
     ["promethium-science-pack"] = "0C047B"
 }
 
@@ -123,7 +129,9 @@ utils.science_data_names = {
     ["metallurgic-science-pack"] = "metallurgic",
     ["agricultural-science-pack"] = "agricultural",
     ["electromagnetic-science-pack"] = "electromagnetic",
+    ["battlefield-science-pack"] = "battlefield",
     ["cerysian-science-pack"] = "radiation",
+    ["planet-crucible-science-pack"] = "ABCDEFGHIJKLMNOPidk",
     ["interstellar-science-pack"] = "exploration",
     ["planetaris-compression-science-pack"] = "compression",
     ["biorecycling-science-pack"] = "biorecycling",
@@ -137,6 +145,7 @@ utils.science_data_names = {
     ["planetaris-bioengineering-science-pack"] = "bioengineering",
     ["planetaris-pathological-science-pack"] = "pathological",
     ["galvanization-science-pack"] = "galvanization",
+    ["carnal-science-pack"] = "ABCDEFGHIJKLMNOPidk2",
     ["promethium-science-pack"] = "interstellar"
 }
 
@@ -151,7 +160,9 @@ utils.science_names = {
     ["metallurgic-science-pack"] = "Metallurgic",
     ["agricultural-science-pack"] = "Agricultural",
     ["electromagnetic-science-pack"] = "Electromagnetic",
+    ["battlefield-science-pack"] = "Battlefield",
     ["cerysian-science-pack"] = "Radiation",
+    ["planet-crucible-science-pack"] = "ABCDEFGHIJKLMNOPIDK",
     ["interstellar-science-pack"] = "Exploration",
     ["planetaris-compression-science-pack"] = "Compression",
     ["biorecycling-science-pack"] = "Biorecycling",
@@ -165,6 +176,7 @@ utils.science_names = {
     ["planetaris-bioengineering-science-pack"] = "Bioengineering",
     ["planetaris-pathological-science-pack"] = "Pathological",
     ["galvanization-science-pack"] = "Galvanization",
+    ["carnal-science-pack"] = "ABCDEFGHIJKLMNOPIDK2",
     ["promethium-science-pack"] = "Interstellar"
 }
 
@@ -179,7 +191,9 @@ utils.science_enlightenment_noun = {
     ["metallurgic-science-pack"] = "metallurgy",
     ["agricultural-science-pack"] = "agriculture",
     ["electromagnetic-science-pack"] = "electromagnetics",
+    ["battlefield-science-pack"] = "advanced warfare",
     ["cerysian-science-pack"] = "radioactivity",
+    ["planet-crucible-science-pack"] = "ABCDEFGHIJKLMNOPidk",
     ["interstellar-science-pack"] = "astronomy",
     ["planetaris-compression-science-pack"] = "compression",
     ["biorecycling-science-pack"] = "biorecycling",
@@ -193,6 +207,7 @@ utils.science_enlightenment_noun = {
     ["planetaris-bioengineering-science-pack"] = "bioengineering",
     ["planetaris-pathological-science-pack"] = "pathology",
     ["galvanization-science-pack"] = "galvanization",
+    ["carnal-science-pack"] = "ABCDEFGHIJKLMNOPidk2",
     ["promethium-science-pack"] = "cosmology"
 }
 
@@ -841,7 +856,9 @@ utils.data_analysis_sciences = {
     "electromagnetic",
     "agricultural",
     "metallurgic",
+    "battlefield",
     "cerysian",
+    "planet-crucible",
     "interstellar",
     "planetaris-compression",
     "acidworking",
@@ -855,6 +872,7 @@ utils.data_analysis_sciences = {
     "planetaris-bioengineering",
     "planetaris-pathological",
     "gas-manipulation",
+    "carnal",
     "promethium",
 }
 
@@ -869,7 +887,9 @@ utils.data_analysis_sciences_technology_associations = {
     ["electromagnetic"]             = "electromagnetic-science-pack",
     ["agricultural"]                = "agricultural-science-pack",
     ["metallurgic"]                 = "metallurgic-science-pack",
+    ["battlefield"]                 = "battlefield-science-pack",
     ["cerysian"]                    = "cerysian-science-pack",
+    ["planet-crucible"]             = "planet-crucible-science-pack",
     ["interstellar"]                = "interstellar-science-pack",
     ["planetaris-compression"]      = "planetaris-compression-science",
     ["acidworking"]                 = "acidworking-science-pack",
@@ -883,6 +903,7 @@ utils.data_analysis_sciences_technology_associations = {
     ["planetaris-bioengineering"]   = "planetaris-bioengineering-science-pack",
     ["planetaris-pathological"]     = "planetaris-pathological-science-pack",
     ["gas-manipulation"]            = "s1_gas_manipulation_science_pack",
+    ["carnal"]                      = "carnal-science-pack",
     ["promethium"]                  = "promethium-science-pack",
 }
 
