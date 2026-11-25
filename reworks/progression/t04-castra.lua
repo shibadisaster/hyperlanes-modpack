@@ -24,6 +24,15 @@ data.raw["recipe"]["forge"].ingredients = {
 }
 
 
+-- Lithium battery uses Lithium brine
+data.raw["recipe"]["lithium-battery"].ingredients = {
+    {type = "item", name = "battery", amount = 5, quality_min = "uncommon"},
+    {type = "item", name = "supercapacitor", amount = 10},
+    {type = "fluid", name = "lithium-brine", amount = 100},
+}
+data.raw["recipe"]["lithium-battery"].categories = {"electromagnetics"}
+
+
 
 -- ╒══════════╗ ╒═════════╗ ╒═════════╗ ╒════╗╒════╗ ╒═════════╗
 -- │ ╓─┐  ╓─┐ ║ └┐  ╓───┐ ║ │  ╓────┐ ║ └┐  ╓╜└┐  ╓╜ │  ╓────┐ ║
