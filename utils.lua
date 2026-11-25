@@ -37,7 +37,9 @@ utils.science_order = {
     ["agricultural-science-pack"] = "t03-b",
     ["electromagnetic-science-pack"] = "t03-c",
     ["cerysian-science-pack"] = "t04-a",
-    ["interstellar-science-pack"] = "t04-b",
+    ["battlefield-science-pack"] = "t04-b",
+    ["planet-crucible-science-pack"] = "t04-c",
+    ["interstellar-science-pack"] = "t04-d",
     ["planetaris-compression-science-pack"] = "t05-a",
     ["biorecycling-science-pack"] = "t05-b",
     ["rubia-biofusion-science-pack"] = "t05-c",
@@ -50,7 +52,8 @@ utils.science_order = {
     ["planetaris-bioengineering-science-pack"] = "t08-b",
     ["planetaris-pathological-science-pack"] = "t08-c",
     ["galvanization-science-pack"] = "t08-d",
-    ["promethium-science-pack"] = "t09-a"
+    ["carnal-science-pack"] = "t09-a",
+    ["promethium-science-pack"] = "t09-b"
 }
 
 utils.science_colors = {
@@ -204,6 +207,7 @@ utils.progression_sciences = {
     "metallurgic-science-pack",
     "agricultural-science-pack",
     "electromagnetic-science-pack",
+    -- "battlefield-science-pack",
     "interstellar-science-pack",
     "planetaris-compression-science-pack",
     "biorecycling-science-pack",
@@ -231,6 +235,8 @@ utils.all_sciences = {
     "agricultural-science-pack",
     "electromagnetic-science-pack",
     "cerysian-science-pack",
+    "battlefield-science-pack",
+    "planet-crucible-science-pack",
     "interstellar-science-pack",
     "planetaris-compression-science-pack",
     "biorecycling-science-pack",
@@ -244,6 +250,7 @@ utils.all_sciences = {
     "planetaris-bioengineering-science-pack",
     "planetaris-pathological-science-pack",
     "galvanization-science-pack",
+    "carnal-science-pack",
     "promethium-science-pack"
 }
 

@@ -21,6 +21,7 @@
         "planetaris-arig = 1.1.47",
         "planetaris-hyarion = 1.3.24",
         "planetaris-tellus = 1.1.19",
+        "castra-prime = 0.9.5",
 
         "Crystalline-Library >= 1.0.0",
         "machine-upgrades >= 0.69.23",
