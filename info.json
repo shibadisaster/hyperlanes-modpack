@@ -56,7 +56,8 @@
         "+ light-overhaul",
         "+ NoRespawnGun-SpaceAge-fork",
         "+ respawn-to-any-planet",
-        "+ squeak-through-2"
+        "+ squeak-through-2",
+        "+ space-route-overlay"
     ],
     "description": "Factorio modpack made with the goal of creating a Space Age experience with a focus on long-term progression, mod cohesion, and interplanetary logistics!",
     "license": "MIT"

@@ -45,7 +45,7 @@ script.on_nth_tick(tick_interval,
             local surface = player.surface
 
             local armor = nil
-            if player and player.valid and player.character then armor = player.get_inventory(defines.inventory.character_armor)[1] end
+            if player and player.valid and player.character and player.get_inventory(defines.inventory.character_armor) then armor = player.get_inventory(defines.inventory.character_armor)[1] end
 
             local equipment_grid = nil
             if armor and armor.valid_for_read and armor.grid then equipment_grid = armor.grid end -- thanks lua very cool
