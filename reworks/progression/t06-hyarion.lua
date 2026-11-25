@@ -278,7 +278,7 @@ data.raw["splitter"]["planetaris-hyper-splitter"].speed = 0.1875
 
 
 -- Bismuth asteroid
-data.raw["item"]["bismuth-asteroid-chunk"].order = "d[hyperlanes]-e[chunk]-" .. utils.planet_tier_orders["hyarion"]
+data.raw["item"]["bismuth-asteroid-chunk"].order = "d[hyperlanes]-e[chunk]-" .. utils.tier_order[utils.planet_tier_associations["hyarion"]]
 
 
 -- Polisher technology

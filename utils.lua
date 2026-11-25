@@ -207,7 +207,8 @@ utils.progression_sciences = {
     "metallurgic-science-pack",
     "agricultural-science-pack",
     "electromagnetic-science-pack",
-    -- "battlefield-science-pack",
+    "battlefield-science-pack",
+    "planet-crucible-science-pack",
     "interstellar-science-pack",
     "planetaris-compression-science-pack",
     "biorecycling-science-pack",
@@ -220,6 +221,7 @@ utils.progression_sciences = {
     "planetaris-bioengineering-science-pack",
     "planetaris-pathological-science-pack",
     "galvanization-science-pack",
+    "carnal-science-pack",
     "promethium-science-pack"
 }
 
@@ -260,7 +262,9 @@ utils.planets = {
     "fulgora",
     "gleba",
     "vulcanus",
+    "castra",
     "cerys",
+    "crucible",
     "arig",
     "muria",
     "rubia",
@@ -271,6 +275,7 @@ utils.planets = {
     "paracelsin",
     "tellus",
     "vesta",
+    "carna",
     "panglia"
 }
 
@@ -280,7 +285,9 @@ utils.planet_tier_associations = {
     ["fulgora"] = 3,
     ["gleba"] = 3,
     ["vulcanus"] = 3,
+    ["castra"] = 4,
     ["cerys"] = 4,
+    ["crucible"] = 4,
     ["arig"] = 5,
     ["muria"] = 5,
     ["rubia"] = 5,
@@ -291,27 +298,8 @@ utils.planet_tier_associations = {
     ["paracelsin"] = 8,
     ["tellus"] = 8,
     ["vesta"] = 8,
+    ["carna"] = 9,
     ["panglia"] = 10
-}
-
-utils.planet_tier_orders = {
-    ["nauvis"] = "a",
-    ["muluna"] = "b",
-    ["fulgora"] = "c",
-    ["gleba"] = "c",
-    ["vulcanus"] = "c",
-    ["cerys"] = "d",
-    ["arig"] = "e",
-    ["muria"] = "e",
-    ["rubia"] = "e",
-    ["hyarion"] = "f",
-    ["moshine"] = "f",
-    ["aquilo"] = "g",
-    ["maraxsis"] = "g",
-    ["paracelsin"] = "h",
-    ["tellus"] = "h",
-    ["vesta"] = "h",
-    ["panglia"] = "j"
 }
 
 utils.asteroids = {
@@ -322,7 +310,9 @@ utils.asteroids = {
     "hyperlanes-fulgora-asteroid-chunk",
     "hyperlanes-gleba-asteroid-chunk",
     "hyperlanes-vulcanus-asteroid-chunk",
+    "hyperlanes-castra-asteroid-chunk",
     "hyperlanes-cerys-asteroid-chunk",
+    "hyperlanes-crucible-asteroid-chunk",
     "hyperlanes-arig-asteroid-chunk",
     "hyperlanes-muria-asteroid-chunk",
     "hyperlanes-rubia-asteroid-chunk",
@@ -333,6 +323,7 @@ utils.asteroids = {
     "hyperlanes-paracelsin-asteroid-chunk",
     "hyperlanes-tellus-asteroid-chunk",
     "hyperlanes-vesta-asteroid-chunk",
+    "hyperlanes-carna-asteroid-chunk",
     "promethium-asteroid-chunk",
     "hyperlanes-panglia-asteroid-chunk",
 }
@@ -345,7 +336,9 @@ utils.asteroid_prefix = {
     ["hyperlanes-fulgora-asteroid-chunk"] = "Holmic",
     ["hyperlanes-gleba-asteroid-chunk"] = "Organic",
     ["hyperlanes-vulcanus-asteroid-chunk"] = "Volcanic",
+    ["hyperlanes-castra-asteroid-chunk"] = "Castran???",
     ["hyperlanes-cerys-asteroid-chunk"] = "Radioactive",
+    ["hyperlanes-crucible-asteroid-chunk"] = "Cruciblean???",
     ["hyperlanes-arig-asteroid-chunk"] = "Sandstone",
     ["hyperlanes-muria-asteroid-chunk"] = "Acidic",
     ["hyperlanes-rubia-asteroid-chunk"] = "Junk-laden",
@@ -356,6 +349,7 @@ utils.asteroid_prefix = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = "Deepfrozen",
     ["hyperlanes-tellus-asteroid-chunk"] = "Pathogenic",
     ["hyperlanes-vesta-asteroid-chunk"] = "Algae-laden",
+    ["hyperlanes-carna-asteroid-chunk"] = "Carnan???",
     ["promethium-asteroid-chunk"] = "Promethium",
     ["hyperlanes-panglia-asteroid-chunk"] = "Timewarped",
 }
@@ -368,7 +362,9 @@ utils.asteroid_prefix_lowercase = {
     ["hyperlanes-fulgora-asteroid-chunk"] = "holmic",
     ["hyperlanes-gleba-asteroid-chunk"] = "organic",
     ["hyperlanes-vulcanus-asteroid-chunk"] = "volcanic",
+    ["hyperlanes-castra-asteroid-chunk"] = "castran???",
     ["hyperlanes-cerys-asteroid-chunk"] = "radioactive",
+    ["hyperlanes-crucible-asteroid-chunk"] = "cruciblean???",
     ["hyperlanes-arig-asteroid-chunk"] = "sandstone",
     ["hyperlanes-muria-asteroid-chunk"] = "acidic",
     ["hyperlanes-rubia-asteroid-chunk"] = "junk-laden",
@@ -379,6 +375,7 @@ utils.asteroid_prefix_lowercase = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = "deepfrozen",
     ["hyperlanes-tellus-asteroid-chunk"] = "pathogenic",
     ["hyperlanes-vesta-asteroid-chunk"] = "algae-laden",
+    ["hyperlanes-carna-asteroid-chunk"] = "carnan???",
     ["promethium-asteroid-chunk"] = "promethium",
     ["hyperlanes-panglia-asteroid-chunk"] = "timewarped",
 }

@@ -167,7 +167,9 @@ local planet_associated_asteroids = {
     ["fulgora"] = {"hyperlanes-fulgora-asteroid-chunk"},
     ["gleba"] = {"hyperlanes-gleba-asteroid-chunk"},
     ["vulcanus"] = {"hyperlanes-vulcanus-asteroid-chunk"},
+    ["castra"] = {"hyperlanes-castra-asteroid-chunk"},
     ["cerys"] = {"hyperlanes-cerys-asteroid-chunk"},
+    ["crucible"] = {"hyperlanes-crucible-asteroid-chunk"},
     ["arig"] = {"hyperlanes-arig-asteroid-chunk"},
     ["muria"] = {"hyperlanes-muria-asteroid-chunk"},
     ["rubia"] = {"hyperlanes-rubia-asteroid-chunk"},
@@ -178,6 +180,7 @@ local planet_associated_asteroids = {
     ["paracelsin"] = {"hyperlanes-paracelsin-asteroid-chunk"},
     ["tellus"] = {"hyperlanes-tellus-asteroid-chunk"},
     ["vesta"] = {"hyperlanes-vesta-asteroid-chunk"},
+    ["carna"] = {"hyperlanes-carna-asteroid-chunk"},
     ["panglia"] = {"hyperlanes-panglia-asteroid-chunk"}
 }
 
@@ -189,7 +192,9 @@ local asteroid_item_graphics = {
     ["hyperlanes-fulgora-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/fulgora.png",
     ["hyperlanes-gleba-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/gleba.png",
     ["hyperlanes-vulcanus-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/vulcanus.png",
+    ["hyperlanes-castra-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/castra.png",
     ["hyperlanes-cerys-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/cerys.png",
+    ["hyperlanes-crucible-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/crucible.png",
     ["hyperlanes-arig-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/arig.png",
     ["hyperlanes-muria-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/muria.png",
     ["hyperlanes-rubia-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/rubia.png",
@@ -200,6 +205,7 @@ local asteroid_item_graphics = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/paracelsin.png",
     ["hyperlanes-tellus-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/tellus.png",
     ["hyperlanes-vesta-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/vesta.png",
+    ["hyperlanes-carna-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/carna.png",
     ["promethium-asteroid-chunk"] = "__space-age__/graphics/icons/promethium-asteroid-chunk.png",
     ["hyperlanes-panglia-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/panglia.png",
     ["crystalline-asteroid-chunk"] = "__Crystalline-Library__/graphics/icons/crystalline-asteroid-chunk.png"
@@ -213,7 +219,9 @@ local asteroid_chunk_replace_graphics = {
     ["hyperlanes-fulgora-asteroid-chunk"] = true,
     ["hyperlanes-gleba-asteroid-chunk"] = true,
     ["hyperlanes-vulcanus-asteroid-chunk"] = true,
+    ["hyperlanes-castra-asteroid-chunk"] = true,
     ["hyperlanes-cerys-asteroid-chunk"] = true,
+    ["hyperlanes-crucible-asteroid-chunk"] = true,
     ["hyperlanes-arig-asteroid-chunk"] = true,
     ["hyperlanes-muria-asteroid-chunk"] = true,
     ["hyperlanes-rubia-asteroid-chunk"] = true,
@@ -224,6 +232,7 @@ local asteroid_chunk_replace_graphics = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = true,
     ["hyperlanes-tellus-asteroid-chunk"] = true,
     ["hyperlanes-vesta-asteroid-chunk"] = true,
+    ["hyperlanes-carna-asteroid-chunk"] = true,
     ["promethium-asteroid-chunk"] = false,
     ["hyperlanes-panglia-asteroid-chunk"] = true
 }
@@ -242,7 +251,7 @@ for index, planet_name in ipairs(utils.planets) do
     local asteroid_chunk_item = table.deepcopy(data.raw["item"]["metallic-asteroid-chunk"])
     asteroid_chunk_item.name = "hyperlanes-" .. planet_name .. "-asteroid-chunk"
     asteroid_chunk_item.localised_name = utils.asteroid_prefix[asteroid_chunk_item.name] .. " asteroid chunk"
-    asteroid_chunk_item.order = "d[hyperlanes]-e[chunk]-" .. utils.planet_tier_orders[planet_name]
+    asteroid_chunk_item.order = "d[hyperlanes]-e[chunk]-" .. utils.tier_order[utils.planet_tier_associations[planet_name]]
     asteroid_chunk_item.icon = asteroid_item_graphics["hyperlanes-" .. planet_name .. "-asteroid-chunk"]
 
     -- Asteroid chunk    
