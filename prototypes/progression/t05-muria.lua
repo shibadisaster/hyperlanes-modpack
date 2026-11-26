@@ -31,12 +31,14 @@ local purified_lead_recipe = {
     enabled = false,
     ingredients = {
         {type = "item", name = "lead", amount = 1},
+        {type = "item", name = "nickel-plate", amount = 1},
         {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_stats = 1},
         {type = "fluid", name = "muriatic-solution", amount = 100},
     },
     energy_required = 2.0,
     results = {
         {type = "item", name = "hyperlanes-purified-lead", amount = 1},
+        {type = "item", name = "nickel-plate", amount = 1, independent_probability = 0.20},
         {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1, ignored_by_productivity = 1, independent_probability = 0.99},
         {type = "fluid", name = "muriatic-solution", amount = 50, ignored_by_productivity = 50},
     },

@@ -8,7 +8,7 @@ data.raw["recipe"]["planetaris-quartz-furnace"].enabled = false
 -- kill it kill it
 data.raw["technology"]["planetaris-quartz-furnace"].enabled = false
 data.raw["technology"]["planetaris-quartz-furnace"].hidden = true
-data.raw["technology"]["planetaris-quartz-furnace"].prerequisites = {}
+-- data.raw["technology"]["planetaris-quartz-furnace"].prerequisites = {}
 data.raw["recipe"]["planetaris-quartz-furnace"].enabled = false
 data.raw["recipe"]["planetaris-quartz-furnace"].hidden = true
 data.raw["furnace"]["planetaris-quartz-furnace"].hidden = true

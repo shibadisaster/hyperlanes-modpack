@@ -737,13 +737,13 @@ utils.launch_building_associations = {
         "burner-mining-drill",
         "electric-mining-drill",
         "big-mining-drill",
-        "hyarion-geode-mining-drill",
-        "molybdenum-miner"
+        "hyarion-geode-mining-drill"
     },
     ["extraction"] = {
         "pumpjack",
         "pressure-turbine",
         "oil-refinery",
+        "molybdenum-miner",
         "molybdenum-airpump",
         "feron-airpump"
     },

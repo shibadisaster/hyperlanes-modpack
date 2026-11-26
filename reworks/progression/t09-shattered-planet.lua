@@ -1,30 +1,7 @@
 local utils = require("__hyperlanes-modpack__/utils")
 
 
--- Cryolab rebalance
-data.raw["lab"]["cryolab"].surface_conditions = {
-    {
-        property = "gravity",
-        min = 0.0,
-        max = 0.0
-    }
-}
-data.raw["lab"]["cryolab"].effect_receiver = data.raw["lab"]["cryolab"].effect_receiver or {}
-data.raw["lab"]["cryolab"].effect_receiver.base_effect = {
-    productivity = 0.25
-}
 
-data.raw["recipe"]["cryolab"].ingredients = {
-    {type = "item", name = "biolab", amount = 3, quality_min = "legendary"},
-    {type = "item", name = "hyperlanes-artificial-lifeform", amount = 1, quality_min = "uncommon"},
-    {type = "item", name = "ai-tier-10", amount = 10, quality_min = "legendary"},
-    {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 50},
-    {type = "item", name = "quantum-processor", amount = 200, quality_min = "rare"},
-    {type = "item", name = "cerys-radioactive-module-charged", amount = 10, quality_min = "legendary"},
-    {type = "item", name = "hyperlanes-time-crystal-b", amount = 1},
-    {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 1000},
-    {type = "fluid", name = "hyperlanes-bioslurry", amount = 500},
-}
 
 
 
@@ -74,8 +51,8 @@ data.raw["recipe"]["planetaris-promethium-science-pack"].hidden = true
 --    ╒╛  ╚╗    ╒╛  ╚═══╛ ║ │  ╚════╛ ║ ╒╛  ╚╗╒╛  ╚╗ │ ╚════╛  ║
 --    └────╜    └─────────╜ └─────────╜ └────╜└────╜ └─────────╜
 
-data.raw["technology"]["stellar-discovery-solar-system-edge"].prerequisites = {"carnal-science-pack"}
-data.raw["technology"]["stellar-discovery-solar-system-edge"].unit.ingredients = utils.t9_sp
+data.raw["technology"]["stellar-discovery-solar-system-edge"].prerequisites = {"forging-exotic-material"}
+data.raw["technology"]["stellar-discovery-solar-system-edge"].unit.ingredients = utils.t9_sp_carna
 data.raw["technology"]["stellar-discovery-solar-system-edge"].unit.count = utils.t9_spcost_planet
 table.insert(data.raw["technology"]["stellar-discovery-solar-system-edge"].effects, {
     type = "unlock-space-location",
@@ -83,14 +60,10 @@ table.insert(data.raw["technology"]["stellar-discovery-solar-system-edge"].effec
 })
 
 data.raw["technology"]["promethium-science-pack"].prerequisites = {"hyperlanes-time-crystal"}
-data.raw["technology"]["promethium-science-pack"].unit.ingredients = utils.t9_sp
+data.raw["technology"]["promethium-science-pack"].unit.ingredients = utils.t9_sp_carna
 data.raw["technology"]["promethium-science-pack"].unit.count = utils.t9_spcost_bigtech
 table.remove(data.raw["technology"]["promethium-science-pack"].effects, 1)
 table.remove(data.raw["technology"]["promethium-science-pack"].effects, 2)
-
-data.raw["technology"]["cryolab"].prerequisites = {"hyperlanes-time-crystal"}
-data.raw["technology"]["cryolab"].unit.ingredients = utils.t9_sp
-data.raw["technology"]["cryolab"].unit.count = utils.t9_spcost_bigtech
 
 data.raw["technology"]["rubia-biofusion-promethium-science-pack"].enabled = false
 data.raw["technology"]["rubia-biofusion-promethium-science-pack"].hidden = true

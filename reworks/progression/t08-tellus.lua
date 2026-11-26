@@ -10,7 +10,7 @@ data.raw["technology"]["planetaris-tellus-rocket-silo"].essential = false
 
 -- Bioassembler
 data.raw["recipe"]["planetaris-bioassembler-seed"].ingredients = {
-    {type = "item", name = "planetaris-assembling-machine-4", amount = 1, quality_min = "uncommon"},
+    {type = "item", name = "planetaris-assembling-machine-4", amount = 1, quality_min = "rare"},
     {type = "item", name = "biochamber", amount = 1, quality_min = "epic"},
     {type = "item", name = "ai-tier-10", amount = 1},
     {type = "item", name = "planetaris-magnesium-sheet", amount = 20},

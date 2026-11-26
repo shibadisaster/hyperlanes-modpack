@@ -280,7 +280,7 @@ local productivity_5_tech = {
     unit =
     {
         count = utils.t9_spcost_bigtech,
-        ingredients = utils.t9_sp,
+        ingredients = utils.t9_sp_carna,
         time = 60
     },
     prerequisites = {"hyperlanes-antimatter-chunk"},
@@ -305,7 +305,7 @@ local speed_5_tech = {
     unit =
     {
         count = utils.t9_spcost_bigtech,
-        ingredients = utils.t9_sp,
+        ingredients = utils.t9_sp_carna,
         time = 60
     },
     prerequisites = {"hyperlanes-antimatter-chunk"},
@@ -330,7 +330,7 @@ local efficiency_5_tech = {
     unit =
     {
         count = utils.t9_spcost_bigtech,
-        ingredients = utils.t9_sp,
+        ingredients = utils.t9_sp_carna,
         time = 60
     },
     prerequisites = {"hyperlanes-antimatter-chunk"},
@@ -412,7 +412,7 @@ local quality_4_tech = {
     },
     unit = {
         count = utils.t9_spcost_bigtech,
-        ingredients = utils.t9_sp,
+        ingredients = utils.t9_sp_carna,
         time = 60
     },
     prerequisites = {"hyperlanes-antimatter-processing", "legendary-quality"},
