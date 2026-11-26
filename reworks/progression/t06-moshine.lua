@@ -129,6 +129,7 @@ data.raw["recipe"]["data-processor"].ingredients = {
     {type = "item", name = "silicon-carbide", amount = 5},
     {type = "item", name = "productivity-module-3", amount = 5},
     {type = "item", name = "optical-cable", amount = 10},
+    {type = "item", name = "lithium-battery", amount = 10},
     {type = "fluid", name = "hyperlanes-superacid", amount = 50},
 }
 data.raw["recipe"]["data-processor"].categories = {
@@ -144,6 +145,7 @@ data.raw["recipe"]["neural_computer"].ingredients = {
     {type = "item", name = "processing-unit", amount = 50, quality_min = "rare"},
     {type = "item", name = "silicon-carbide", amount = 40},
     {type = "item", name = "magnet", amount = 20},
+    {type = "item", name = "lithium-battery", amount = 10},
 }
 
 
@@ -257,6 +259,7 @@ data.raw["recipe"]["big-accumulator"].ingredients = {
     {type = "item", name = "supercapacitor", amount = 60},
     {type = "item", name = "copper-cable", amount = 60, quality_min = "rare"},
     {type = "item", name = "magnet", amount = 10},
+    {type = "item", name = "lithium-battery", amount = 20},
     {type = "item", name = "refined-concrete", amount = 80, quality_min = "rare"},
     {type = "item", name = "accumulator", amount = 12},
 }

@@ -12,17 +12,17 @@ data.raw["recipe"]["panglia_panglite"].categories = {"leadworking"}
 data.raw["recipe"]["panglia_panglite"].ingredients = {
     {type = "item", name = "panglia_panglite", amount = 5},
     {type = "item", name = "hyperlanes-antimatter-particulate", amount = 2},
-    {type = "item", name = "hyperlanes-time-crystal-a", amount = 1},
+    {type = "item", name = "exotic-matter", amount = 1},
 }
 data.raw["recipe"]["panglia_panglite"].results = {
     {type = "item", name = "panglia_panglite", amount_min = 2, amount_max = 4},
-    {type = "item", name = "hyperlanes-time-crystal-a", amount = 1, ignored_by_productivity = 1},
 }
 
 
 -- Branbalite slurry
 data.raw["recipe"]["panglia_branbalite_slurry"].ingredients = {
     {type = "item", name = "panglia_branbalite", amount = 1},
+    {type = "fluid", name = "carna-richwater", amount = 100},
     {type = "fluid", name = "hyperlanes-bioslurry", amount = 100},
     {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 5},
 }
@@ -184,7 +184,7 @@ data.raw["recipe"]["simulation_chamber"].ingredients = {
 
 -- Synaptic assembler
 data.raw["recipe"]["thinking-brain"].ingredients = {
-    {type = "item", name = "planetaris-bioassembler-seed", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "algite-knowledge-chamber", amount = 1, quality_min = "rare"},
     {type = "item", name = "panglia_cloned_specimen_body_3_genius", amount = 1},
     {type = "item", name = "simulation_chamber", amount = 1},
     {type = "item", name = "data-processor", amount = 1, quality_min = "legendary"},
@@ -254,7 +254,7 @@ data.raw["recipe"]["panglia_collect_dna_pentapod"].results = {
 
 -- Interplanetary power grid Chrono pole
 data.raw["recipe"]["ipg-chrono-pole"].ingredients = {
-    {type = "item", name = "maraxsis-sonar", amount = 10},
+    {type = "item", name = "maraxsis-sonar", amount = 10, quality_min = "legendary"},
     {type = "item", name = "hyperlanes-enlightened-processor", amount = 3},
     {type = "item", name = "panglia_sentient_processor", amount = 100},
     {type = "item", name = "ai-tier-10", amount = 5, quality_min = "legendary"},
@@ -277,7 +277,7 @@ data.raw["electric-pole"]["ipg-chrono-pole"].localised_name = "Wormhole pylon"
 
 -- Teleporter
 data.raw["recipe"]["teleporter"].ingredients = {
-    {type = "item", name = "maraxsis-sonar", amount = 10},
+    {type = "item", name = "maraxsis-sonar", amount = 10, quality_min = "legendary"},
     {type = "item", name = "hyperlanes-enlightened-processor", amount = 1},
     {type = "item", name = "panglia_sentient_processor", amount = 50},
     {type = "item", name = "ai-tier-10", amount = 3, quality_min = "legendary"},

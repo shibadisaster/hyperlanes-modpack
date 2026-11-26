@@ -134,6 +134,9 @@ data.raw["recipe"]["ske_ammonia_chilled_plate"].ingredients = {
     {type = "item", name = "steel-plate", amount = 1, quality_min = "legendary"},
     {type = "fluid", name = "ammonia", amount = 50},
 }
+data.raw["recipe"]["ske_ammonia_chilled_plate"].results = {
+    {type = "item", name = "ske_ammonia_chilled_plate", amount = 2, quality_min = "normal", quality_max = "normal"},
+}
 
 
 -- Oxygenated fuel

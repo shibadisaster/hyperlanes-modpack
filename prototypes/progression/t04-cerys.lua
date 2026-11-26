@@ -1,6 +1,10 @@
 local utils = require("__hyperlanes-modpack__/utils")
 
 
+-- Make lithium brine barrelable
+data.raw["fluid"]["lithium-brine"].auto_barrel = true
+
+
 -- Inert radioactive catalyst
 local elcatalyst_recipe = {
     type = "recipe",

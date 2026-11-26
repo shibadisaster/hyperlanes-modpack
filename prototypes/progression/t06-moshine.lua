@@ -706,7 +706,27 @@ local science_prod_bonuses = {
         "big-mining-drill",
         "foundry"
     },
+    ["battlefield"] = {
+        0.02,
+        "cerys-nuclear-scrap-recycling",
+        "mixed-oxide-fuel-cell",
+        "mixed-oxide-waste-centrifuging",
+        "uranium-processing",
+        "kovarex-enrichment-process",
+        "hyperlanes-elementary-catalyst",
+        "hyperlanes-advanced-material-microsuspension",
+    },
     ["cerysian"] = {
+        0.02,
+        "cerys-nuclear-scrap-recycling",
+        "mixed-oxide-fuel-cell",
+        "mixed-oxide-waste-centrifuging",
+        "uranium-processing",
+        "kovarex-enrichment-process",
+        "hyperlanes-elementary-catalyst",
+        "hyperlanes-advanced-material-microsuspension",
+    },
+    ["planet-crucible"] = {
         0.02,
         "cerys-nuclear-scrap-recycling",
         "mixed-oxide-fuel-cell",
@@ -736,6 +756,9 @@ local science_prod_bonuses = {
         "muluna-telescope-observation-panglia",
         "muluna-telescope-observation-paracelsin",
         "muluna-telescope-observation-muluna",
+        "muluna-telescope-observation-castra",
+        "muluna-telescope-observation-crucible",
+        "muluna-telescope-observation-carna",
     },
     ["planetaris-compression"] = {
         0.02,
@@ -854,6 +877,16 @@ local science_prod_bonuses = {
         "combustion-furnace",
         "heating-conductor",
         "vesta-foundation"
+    },
+    ["carnal"] = {
+        0.02,
+        "cerys-nuclear-scrap-recycling",
+        "mixed-oxide-fuel-cell",
+        "mixed-oxide-waste-centrifuging",
+        "uranium-processing",
+        "kovarex-enrichment-process",
+        "hyperlanes-elementary-catalyst",
+        "hyperlanes-advanced-material-microsuspension",
     },
     ["promethium"] = {
         0.05,

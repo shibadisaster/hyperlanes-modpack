@@ -264,3 +264,14 @@ data.raw["technology"]["maraxsis-abyssal-diving-gear"].unit.count = utils.t7_spc
 
 data.raw["technology"]["maraxsis-depth-charges"].unit.ingredients = utils.t8_sp
 data.raw["technology"]["maraxsis-depth-charges"].unit.count = utils.t7_spcost_bigtech
+
+
+-- Fusion generator
+data.raw["recipe"]["fusion-generator"].ingredients = {
+    {type = "item", name = "tungsten-plate", amount = 100, quality_min = "legendary"},
+    {type = "item", name = "lead-plate", amount = 50, quality_min = "uncommon"},
+    {type = "item", name = "maraxsis-glass-panes", amount = 50},
+    {type = "item", name = "quantum-processor", amount = 50},
+    {type = "item", name = "lithium-battery", amount = 50},
+    {type = "item", name = "pressure-turbine", amount = 1, quality_min = "uncommon"},
+}

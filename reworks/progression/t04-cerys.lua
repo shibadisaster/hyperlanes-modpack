@@ -87,3 +87,5 @@ data.raw["recipe"]["mixed-oxide-reactor-equipment"].ingredients = {
 
 data.raw["technology"]["moon-discovery-cerys"].unit.ingredients = utils.t4_sp
 data.raw["technology"]["moon-discovery-cerys"].unit.count = utils.t4_spcost_planet
+
+data.raw["technology"]["planetslib-cerys-cargo-drops"].essential = false

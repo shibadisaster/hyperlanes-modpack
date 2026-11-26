@@ -18,7 +18,9 @@ data.raw["recipe"]["planetaris-press"].ingredients = {
     {type = "item", name = "processing-unit", amount = 10},
     {type = "item", name = "planetaris-glass-panel", amount = 10},
     {type = "item", name = "hyperlanes-sealant", amount = 10},
+    {type = "fluid", name = "planet-crucible-hydraulic-fluid", amount = 50},
 }
+data.raw["recipe"]["planetaris-press"].categories = {"crafting-with-fluid", "advanced-crafting"}
 
 -- Condensing agricultural tower
 data.raw["recipe"]["condensing-agricultural-tower"].ingredients = {

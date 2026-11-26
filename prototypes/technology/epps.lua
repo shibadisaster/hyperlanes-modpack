@@ -52,7 +52,7 @@ local t3_epp = {
         ingredients = utils.t3_sp,
         time = 60
     },
-    prerequisites = {"hyperlanes-t2-epp", "space-science-pack", "production-science-pack", "utility-science-pack"},
+    prerequisites = {"hyperlanes-t2-epp", "space-science-pack", "production-science-pack", "utility-science-pack", "military-science-pack", "asteroid-collector"},
     order = "c-a",
     essential = true
 }

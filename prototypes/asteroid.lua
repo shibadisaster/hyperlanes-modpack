@@ -17,9 +17,17 @@ local planet_asteroid_crushing_results = {
         {type = "item", name = "coal", amount = 30},
         {type = "item", name = "hyperlanes-vulcanus-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
     },
+    ["castra"] = {
+        {type = "item", name = "millerite", amount = 20},
+        {type = "item", name = "hyperlanes-castra-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
+    },
     ["cerys"] = {
         {type = "item", name = "cerys-nuclear-scrap", amount = 10},
         {type = "item", name = "hyperlanes-cerys-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
+    },
+    ["crucible"] = {
+        {type = "item", name = "planet-crucible-skarn", amount = 10},
+        {type = "item", name = "hyperlanes-crucible-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
     },
     ["arig"] = {
         {type = "item", name = "stone", amount = 20},
@@ -62,6 +70,10 @@ local planet_asteroid_crushing_results = {
         {type = "item", name = "ske_algea_clump", amount = 15},
         {type = "item", name = "hyperlanes-vesta-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
     },
+    ["carna"] = {
+        {type = "item", name = "salvage-cluster", amount = 20},
+        {type = "item", name = "hyperlanes-carna-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
+    },
     ["panglia"] = {
         {type = "item", name = "panglia_panglite", amount = 20},
         {type = "item", name = "hyperlanes-panglia-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.30},
@@ -87,11 +99,21 @@ local planet_advanced_asteroid_crushing_results = {
         {type = "item", name = "tungsten-ore", amount = 8},
         {type = "item", name = "hyperlanes-vulcanus-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
     },
+    ["castra"] = {
+        {type = "item", name = "millerite", amount = 10},
+        {type = "item", name = "gunpowder", amount = 5},
+        {type = "item", name = "hyperlanes-castra-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
+    },
     ["cerys"] = {
         {type = "item", name = "cerys-nuclear-scrap", amount = 5},
         {type = "item", name = "plutonium-239", amount = 1},
         {type = "item", name = "plutonium-238", amount = 1, independent_probability = 0.20},
         {type = "item", name = "hyperlanes-cerys-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
+    },
+    ["crucible"] = {
+        {type = "item", name = "planet-crucible-skarn", amount = 5},
+        {type = "item", name = "planet-crucible-denatured-hydrogen", amount = 1},
+        {type = "item", name = "hyperlanes-crucible-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
     },
     ["arig"] = {
         {type = "item", name = "stone", amount = 10},
@@ -153,6 +175,11 @@ local planet_advanced_asteroid_crushing_results = {
         {type = "item", name = "ske_ammonia_chilled_plate", amount = 1},
         {type = "item", name = "hyperlanes-vesta-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
     },
+    ["carna"] = {
+        {type = "item", name = "salvage-cluster", amount = 10},
+        {type = "item", name = "algite-ore", amount = 5},
+        {type = "item", name = "hyperlanes-carna-asteroid-chunk", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1, independent_probability = 0.10},
+    },
     ["panglia"] = {
         {type = "item", name = "panglia_panglite", amount = 10},
         {type = "item", name = "datacell-timewarp_data", amount = 1},
@@ -167,7 +194,9 @@ local planet_associated_asteroids = {
     ["fulgora"] = {"hyperlanes-fulgora-asteroid-chunk"},
     ["gleba"] = {"hyperlanes-gleba-asteroid-chunk"},
     ["vulcanus"] = {"hyperlanes-vulcanus-asteroid-chunk"},
+    ["castra"] = {"hyperlanes-castra-asteroid-chunk"},
     ["cerys"] = {"hyperlanes-cerys-asteroid-chunk"},
+    ["crucible"] = {"hyperlanes-crucible-asteroid-chunk"},
     ["arig"] = {"hyperlanes-arig-asteroid-chunk"},
     ["muria"] = {"hyperlanes-muria-asteroid-chunk"},
     ["rubia"] = {"hyperlanes-rubia-asteroid-chunk"},
@@ -178,6 +207,7 @@ local planet_associated_asteroids = {
     ["paracelsin"] = {"hyperlanes-paracelsin-asteroid-chunk"},
     ["tellus"] = {"hyperlanes-tellus-asteroid-chunk"},
     ["vesta"] = {"hyperlanes-vesta-asteroid-chunk"},
+    ["carna"] = {"hyperlanes-carna-asteroid-chunk"},
     ["panglia"] = {"hyperlanes-panglia-asteroid-chunk"}
 }
 
@@ -189,7 +219,9 @@ local asteroid_item_graphics = {
     ["hyperlanes-fulgora-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/fulgora.png",
     ["hyperlanes-gleba-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/gleba.png",
     ["hyperlanes-vulcanus-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/vulcanus.png",
+    ["hyperlanes-castra-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/castra.png",
     ["hyperlanes-cerys-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/cerys.png",
+    ["hyperlanes-crucible-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/crucible.png",
     ["hyperlanes-arig-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/arig.png",
     ["hyperlanes-muria-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/muria.png",
     ["hyperlanes-rubia-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/rubia.png",
@@ -200,6 +232,7 @@ local asteroid_item_graphics = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/paracelsin.png",
     ["hyperlanes-tellus-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/tellus.png",
     ["hyperlanes-vesta-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/vesta.png",
+    ["hyperlanes-carna-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/carna.png",
     ["promethium-asteroid-chunk"] = "__space-age__/graphics/icons/promethium-asteroid-chunk.png",
     ["hyperlanes-panglia-asteroid-chunk"] = "__hyperlanes-modpack__/graphics/icons/asteroid-items/panglia.png",
     ["crystalline-asteroid-chunk"] = "__Crystalline-Library__/graphics/icons/crystalline-asteroid-chunk.png"
@@ -213,7 +246,9 @@ local asteroid_chunk_replace_graphics = {
     ["hyperlanes-fulgora-asteroid-chunk"] = true,
     ["hyperlanes-gleba-asteroid-chunk"] = true,
     ["hyperlanes-vulcanus-asteroid-chunk"] = true,
+    ["hyperlanes-castra-asteroid-chunk"] = true,
     ["hyperlanes-cerys-asteroid-chunk"] = true,
+    ["hyperlanes-crucible-asteroid-chunk"] = true,
     ["hyperlanes-arig-asteroid-chunk"] = true,
     ["hyperlanes-muria-asteroid-chunk"] = true,
     ["hyperlanes-rubia-asteroid-chunk"] = true,
@@ -224,6 +259,7 @@ local asteroid_chunk_replace_graphics = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = true,
     ["hyperlanes-tellus-asteroid-chunk"] = true,
     ["hyperlanes-vesta-asteroid-chunk"] = true,
+    ["hyperlanes-carna-asteroid-chunk"] = true,
     ["promethium-asteroid-chunk"] = false,
     ["hyperlanes-panglia-asteroid-chunk"] = true
 }
@@ -242,7 +278,7 @@ for index, planet_name in ipairs(utils.planets) do
     local asteroid_chunk_item = table.deepcopy(data.raw["item"]["metallic-asteroid-chunk"])
     asteroid_chunk_item.name = "hyperlanes-" .. planet_name .. "-asteroid-chunk"
     asteroid_chunk_item.localised_name = utils.asteroid_prefix[asteroid_chunk_item.name] .. " asteroid chunk"
-    asteroid_chunk_item.order = "d[hyperlanes]-e[chunk]-" .. utils.planet_tier_orders[planet_name]
+    asteroid_chunk_item.order = "d[hyperlanes]-e[chunk]-" .. utils.tier_order[utils.planet_tier_associations[planet_name]]
     asteroid_chunk_item.icon = asteroid_item_graphics["hyperlanes-" .. planet_name .. "-asteroid-chunk"]
 
     -- Asteroid chunk    
@@ -1155,7 +1191,9 @@ local crushing_unlocks = {
     ["hyperlanes-fulgora-asteroid-chunk"] = "electromagnetic-science-pack",
     ["hyperlanes-gleba-asteroid-chunk"] = "agricultural-science-pack",
     ["hyperlanes-vulcanus-asteroid-chunk"] = "metallurgic-science-pack",
+    ["hyperlanes-castra-asteroid-chunk"] = "battlefield-science-pack",
     ["hyperlanes-cerys-asteroid-chunk"] = "cerysian-science-pack",
+    ["hyperlanes-crucible-asteroid-chunk"] = "planet-crucible-science-pack",
     ["hyperlanes-arig-asteroid-chunk"] = "planetaris-compression-science",
     ["hyperlanes-muria-asteroid-chunk"] = "acidworking-science-pack",
     ["hyperlanes-rubia-asteroid-chunk"] = "planetslib-rubia-cargo-drops",
@@ -1166,6 +1204,7 @@ local crushing_unlocks = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = "galvanization-science-pack",
     ["hyperlanes-tellus-asteroid-chunk"] = "planetaris-pathological-science-pack",
     ["hyperlanes-vesta-asteroid-chunk"] = "s1_gas_manipulation_science_pack",
+    ["hyperlanes-carna-asteroid-chunk"] = "carnal-science-pack",
     ["hyperlanes-panglia-asteroid-chunk"] = "panglia_sentient_processor"
 }
 
@@ -1174,7 +1213,9 @@ local crushable_asteroids = {
     "hyperlanes-fulgora-asteroid-chunk",
     "hyperlanes-gleba-asteroid-chunk",
     "hyperlanes-vulcanus-asteroid-chunk",
+    "hyperlanes-castra-asteroid-chunk",
     "hyperlanes-cerys-asteroid-chunk",
+    "hyperlanes-crucible-asteroid-chunk",
     "hyperlanes-arig-asteroid-chunk",
     "hyperlanes-muria-asteroid-chunk",
     "hyperlanes-rubia-asteroid-chunk",
@@ -1185,6 +1226,7 @@ local crushable_asteroids = {
     "hyperlanes-paracelsin-asteroid-chunk",
     "hyperlanes-tellus-asteroid-chunk",
     "hyperlanes-vesta-asteroid-chunk",
+    "hyperlanes-carna-asteroid-chunk",
     "hyperlanes-panglia-asteroid-chunk"
 }
 
@@ -1193,7 +1235,9 @@ local advanced_crushing_unlocks = {
     ["hyperlanes-fulgora-asteroid-chunk"] = "planetslib-rubia-cargo-drops",
     ["hyperlanes-gleba-asteroid-chunk"] = "acidworking-science-pack",
     ["hyperlanes-vulcanus-asteroid-chunk"] = "planetaris-compression-science",
+    ["hyperlanes-castra-asteroid-chunk"] = "moshine-tech-ai-tier-8",
     ["hyperlanes-cerys-asteroid-chunk"] = "planetaris-refraction-science-pack",
+    ["hyperlanes-crucible-asteroid-chunk"] = "planetaris-refraction-science-pack",
     ["hyperlanes-arig-asteroid-chunk"] = "hydraulic-science-pack",
     ["hyperlanes-muria-asteroid-chunk"] = "cryogenic-science-pack",
     ["hyperlanes-rubia-asteroid-chunk"] = "hydraulic-science-pack",
@@ -1201,9 +1245,10 @@ local advanced_crushing_unlocks = {
     ["hyperlanes-moshine-asteroid-chunk"] = "s1_gas_manipulation_science_pack",
     ["hyperlanes-aquilo-asteroid-chunk"] = "planetaris-bioengineering-science-pack",
     ["hyperlanes-maraxsis-asteroid-chunk"] = "planetaris-pathological-science-pack",
-    ["hyperlanes-paracelsin-asteroid-chunk"] = "promethium-science-pack",
-    ["hyperlanes-tellus-asteroid-chunk"] = "promethium-science-pack",
-    ["hyperlanes-vesta-asteroid-chunk"] = "promethium-science-pack",
+    ["hyperlanes-paracelsin-asteroid-chunk"] = "carnal-science-pack",
+    ["hyperlanes-tellus-asteroid-chunk"] = "carnal-science-pack",
+    ["hyperlanes-vesta-asteroid-chunk"] = "carnal-science-pack",
+    ["hyperlanes-carna-asteroid-chunk"] = "promethium-science-pack",
     ["hyperlanes-panglia-asteroid-chunk"] = "hyperlanes-victory"
 }
 
@@ -1211,7 +1256,9 @@ local crushing_recipe_name = {
     ["hyperlanes-fulgora-asteroid-chunk"] = "hyperlanes-fulgora-asteroid-crushing",
     ["hyperlanes-gleba-asteroid-chunk"] = "hyperlanes-gleba-asteroid-crushing",
     ["hyperlanes-vulcanus-asteroid-chunk"] = "hyperlanes-vulcanus-asteroid-crushing",
+    ["hyperlanes-castra-asteroid-chunk"] = "hyperlanes-castra-asteroid-crushing",
     ["hyperlanes-cerys-asteroid-chunk"] = "hyperlanes-cerys-asteroid-crushing",
+    ["hyperlanes-crucible-asteroid-chunk"] = "hyperlanes-crucible-asteroid-crushing",
     ["hyperlanes-arig-asteroid-chunk"] = "hyperlanes-arig-asteroid-crushing",
     ["hyperlanes-muria-asteroid-chunk"] = "hyperlanes-muria-asteroid-crushing",
     ["hyperlanes-rubia-asteroid-chunk"] = "hyperlanes-rubia-asteroid-crushing",
@@ -1222,6 +1269,7 @@ local crushing_recipe_name = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = "hyperlanes-paracelsin-asteroid-crushing",
     ["hyperlanes-tellus-asteroid-chunk"] = "hyperlanes-tellus-asteroid-crushing",
     ["hyperlanes-vesta-asteroid-chunk"] = "hyperlanes-vesta-asteroid-crushing",
+    ["hyperlanes-carna-asteroid-chunk"] = "hyperlanes-carna-asteroid-crushing",
     ["hyperlanes-panglia-asteroid-chunk"] = "hyperlanes-panglia-asteroid-crushing"
 }
 
@@ -1229,7 +1277,9 @@ local advanced_crushing_recipe_name = {
     ["hyperlanes-fulgora-asteroid-chunk"] = "hyperlanes-advanced-fulgora-asteroid-crushing",
     ["hyperlanes-gleba-asteroid-chunk"] = "hyperlanes-advanced-gleba-asteroid-crushing",
     ["hyperlanes-vulcanus-asteroid-chunk"] = "hyperlanes-advanced-vulcanus-asteroid-crushing",
+    ["hyperlanes-castra-asteroid-chunk"] = "hyperlanes-advanced-castra-asteroid-crushing",
     ["hyperlanes-cerys-asteroid-chunk"] = "hyperlanes-advanced-cerys-asteroid-crushing",
+    ["hyperlanes-crucible-asteroid-chunk"] = "hyperlanes-advanced-crucible-asteroid-crushing",
     ["hyperlanes-arig-asteroid-chunk"] = "hyperlanes-advanced-arig-asteroid-crushing",
     ["hyperlanes-muria-asteroid-chunk"] = "hyperlanes-advanced-muria-asteroid-crushing",
     ["hyperlanes-rubia-asteroid-chunk"] = "hyperlanes-advanced-rubia-asteroid-crushing",
@@ -1240,6 +1290,7 @@ local advanced_crushing_recipe_name = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = "hyperlanes-advanced-paracelsin-asteroid-crushing",
     ["hyperlanes-tellus-asteroid-chunk"] = "hyperlanes-advanced-tellus-asteroid-crushing",
     ["hyperlanes-vesta-asteroid-chunk"] = "hyperlanes-advanced-vesta-asteroid-crushing",
+    ["hyperlanes-carna-asteroid-chunk"] = "hyperlanes-advanced-carna-asteroid-crushing",
     ["hyperlanes-panglia-asteroid-chunk"] = "hyperlanes-advanced-panglia-asteroid-crushing"
 }
 
@@ -1247,7 +1298,9 @@ local crushing_science_packs = {
     ["hyperlanes-fulgora-asteroid-chunk"] = utils.t3_sp_fulgora,
     ["hyperlanes-gleba-asteroid-chunk"] = utils.t3_sp_gleba,
     ["hyperlanes-vulcanus-asteroid-chunk"] = utils.t3_sp_vulcanus,
+    ["hyperlanes-castra-asteroid-chunk"] = utils.t4_sp_castra,
     ["hyperlanes-cerys-asteroid-chunk"] = utils.t4_sp_cerys,
+    ["hyperlanes-crucible-asteroid-chunk"] = utils.t4_sp_crucible,
     ["hyperlanes-arig-asteroid-chunk"] = utils.t5_sp_arig,
     ["hyperlanes-muria-asteroid-chunk"] = utils.t5_sp_muria,
     ["hyperlanes-rubia-asteroid-chunk"] = utils.t5_sp_rubia,
@@ -1258,6 +1311,7 @@ local crushing_science_packs = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = utils.t8_sp_paracelsin,
     ["hyperlanes-tellus-asteroid-chunk"] = utils.t8_sp_tellus,
     ["hyperlanes-vesta-asteroid-chunk"] = utils.t8_sp_vesta,
+    ["hyperlanes-carna-asteroid-chunk"] = utils.t9_sp_carna,
     ["hyperlanes-panglia-asteroid-chunk"] = utils.t10_sp
 }
 
@@ -1265,7 +1319,9 @@ local crushing_science_costs = {
     ["hyperlanes-fulgora-asteroid-chunk"] = utils.t3_spcost_bigtech,
     ["hyperlanes-gleba-asteroid-chunk"] = utils.t3_spcost_bigtech,
     ["hyperlanes-vulcanus-asteroid-chunk"] = utils.t3_spcost_bigtech,
+    ["hyperlanes-castra-asteroid-chunk"] = utils.t4_spcost_bigtech,
     ["hyperlanes-cerys-asteroid-chunk"] = utils.t4_spcost_bigtech,
+    ["hyperlanes-crucible-asteroid-chunk"] = utils.t4_spcost_bigtech,
     ["hyperlanes-arig-asteroid-chunk"] = utils.t5_spcost_bigtech,
     ["hyperlanes-muria-asteroid-chunk"] = utils.t5_spcost_bigtech,
     ["hyperlanes-rubia-asteroid-chunk"] = utils.t5_spcost_bigtech,
@@ -1276,6 +1332,7 @@ local crushing_science_costs = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = utils.t8_spcost_bigtech,
     ["hyperlanes-tellus-asteroid-chunk"] = utils.t8_spcost_bigtech,
     ["hyperlanes-vesta-asteroid-chunk"] = utils.t8_spcost_bigtech,
+    ["hyperlanes-carna-asteroid-chunk"] = utils.t9_spcost_bigtech,
     ["hyperlanes-panglia-asteroid-chunk"] = utils.t10_spcost_bigtech
 }
 
@@ -1283,7 +1340,9 @@ local advanced_crushing_science_packs = {
     ["hyperlanes-fulgora-asteroid-chunk"] = utils.t5_sp_arig,
     ["hyperlanes-gleba-asteroid-chunk"] = utils.t5_sp_muria,
     ["hyperlanes-vulcanus-asteroid-chunk"] = utils.t5_sp_rubia,
+    ["hyperlanes-castra-asteroid-chunk"] = utils.t6_sp,
     ["hyperlanes-cerys-asteroid-chunk"] = utils.t6_sp_hyarion_refraction,
+    ["hyperlanes-crucible-asteroid-chunk"] = utils.t6_sp_hyarion_refraction,
     ["hyperlanes-arig-asteroid-chunk"] = utils.t7_sp_maraxsis,
     ["hyperlanes-muria-asteroid-chunk"] = utils.t7_sp_aquilo,
     ["hyperlanes-rubia-asteroid-chunk"] = utils.t7_sp_maraxsis,
@@ -1291,9 +1350,10 @@ local advanced_crushing_science_packs = {
     ["hyperlanes-moshine-asteroid-chunk"] = utils.t8_sp_vesta,
     ["hyperlanes-aquilo-asteroid-chunk"] = utils.t8_sp_tellus,
     ["hyperlanes-maraxsis-asteroid-chunk"] = utils.t8_sp_tellus_pathological,
-    ["hyperlanes-paracelsin-asteroid-chunk"] = utils.t10_sp,
-    ["hyperlanes-tellus-asteroid-chunk"] = utils.t10_sp,
-    ["hyperlanes-vesta-asteroid-chunk"] = utils.t10_sp,
+    ["hyperlanes-paracelsin-asteroid-chunk"] = utils.t9_sp_carna,
+    ["hyperlanes-tellus-asteroid-chunk"] = utils.t9_sp_carna,
+    ["hyperlanes-vesta-asteroid-chunk"] = utils.t9_sp_carna,
+    ["hyperlanes-carna-asteroid-chunk"] = utils.t10_sp,
     ["hyperlanes-panglia-asteroid-chunk"] = utils.t10_sp
 }
 
@@ -1301,7 +1361,9 @@ local advanced_crushing_science_costs = {
     ["hyperlanes-fulgora-asteroid-chunk"] = utils.t5_spcost_bigtech,
     ["hyperlanes-gleba-asteroid-chunk"] = utils.t5_spcost_bigtech,
     ["hyperlanes-vulcanus-asteroid-chunk"] = utils.t5_spcost_bigtech,
+    ["hyperlanes-castra-asteroid-chunk"] = utils.t6_spcost_bigtech,
     ["hyperlanes-cerys-asteroid-chunk"] = utils.t6_spcost_bigtech,
+    ["hyperlanes-crucible-asteroid-chunk"] = utils.t6_spcost_bigtech,
     ["hyperlanes-arig-asteroid-chunk"] = utils.t7_spcost_bigtech,
     ["hyperlanes-muria-asteroid-chunk"] = utils.t7_spcost_bigtech,
     ["hyperlanes-rubia-asteroid-chunk"] = utils.t7_spcost_bigtech,
@@ -1312,6 +1374,7 @@ local advanced_crushing_science_costs = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = utils.t9_spcost_bigtech,
     ["hyperlanes-tellus-asteroid-chunk"] = utils.t9_spcost_bigtech,
     ["hyperlanes-vesta-asteroid-chunk"] = utils.t9_spcost_bigtech,
+    ["hyperlanes-carna-asteroid-chunk"] = utils.t9_spcost_bigtech,
     ["hyperlanes-panglia-asteroid-chunk"] = utils.t10_spcost_bigtech
 }
 

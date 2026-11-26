@@ -37,7 +37,9 @@ utils.science_order = {
     ["agricultural-science-pack"] = "t03-b",
     ["electromagnetic-science-pack"] = "t03-c",
     ["cerysian-science-pack"] = "t04-a",
-    ["interstellar-science-pack"] = "t04-b",
+    ["battlefield-science-pack"] = "t04-b",
+    ["planet-crucible-science-pack"] = "t04-c",
+    ["interstellar-science-pack"] = "t04-d",
     ["planetaris-compression-science-pack"] = "t05-a",
     ["biorecycling-science-pack"] = "t05-b",
     ["rubia-biofusion-science-pack"] = "t05-c",
@@ -50,7 +52,8 @@ utils.science_order = {
     ["planetaris-bioengineering-science-pack"] = "t08-b",
     ["planetaris-pathological-science-pack"] = "t08-c",
     ["galvanization-science-pack"] = "t08-d",
-    ["promethium-science-pack"] = "t09-a"
+    ["carnal-science-pack"] = "t09-a",
+    ["promethium-science-pack"] = "t09-b"
 }
 
 utils.science_colors = {
@@ -64,7 +67,9 @@ utils.science_colors = {
     ["metallurgic-science-pack"] = {255, 162, 12},
     ["agricultural-science-pack"] = {184, 221, 0},
     ["electromagnetic-science-pack"] = {255, 52, 120},
+    ["battlefield-science-pack"] = {82, 60, 56},
     ["cerysian-science-pack"] = {0, 253, 171},
+    ["planet-crucible-science-pack"] = {128, 64, 96},
     ["interstellar-science-pack"] = {150, 150, 150},
     ["planetaris-compression-science-pack"] = {208, 190, 115},
     ["biorecycling-science-pack"] = {182, 128, 61},
@@ -78,6 +83,7 @@ utils.science_colors = {
     ["planetaris-bioengineering-science-pack"] = {216, 229, 79},
     ["planetaris-pathological-science-pack"] = {227, 144, 57},
     ["galvanization-science-pack"] = {160, 35, 0},
+    ["carnal-science-pack"] = {0, 255, 255},
     ["promethium-science-pack"] = {12, 4, 123}
 }
 
@@ -92,7 +98,9 @@ utils.science_colors_hex= {
     ["metallurgic-science-pack"] = "FFA20C",
     ["agricultural-science-pack"] = "B8DD00",
     ["electromagnetic-science-pack"] = "FF3478",
+    ["battlefield-science-pack"] = "523C38",
     ["cerysian-science-pack"] = "00FDAB",
+    ["planet-crucible-science-pack"] = "804060",
     ["interstellar-science-pack"] = "969696",
     ["planetaris-compression-science-pack"] = "D0BE73",
     ["biorecycling-science-pack"] = "B6803D",
@@ -106,6 +114,7 @@ utils.science_colors_hex= {
     ["planetaris-bioengineering-science-pack"] = "D8E54F",
     ["planetaris-pathological-science-pack"] = "E39039",
     ["galvanization-science-pack"] = "A02300",
+    ["carnal-science-pack"] = "00FFFF",
     ["promethium-science-pack"] = "0C047B"
 }
 
@@ -120,7 +129,9 @@ utils.science_data_names = {
     ["metallurgic-science-pack"] = "metallurgic",
     ["agricultural-science-pack"] = "agricultural",
     ["electromagnetic-science-pack"] = "electromagnetic",
+    ["battlefield-science-pack"] = "battlefield",
     ["cerysian-science-pack"] = "radiation",
+    ["planet-crucible-science-pack"] = "ABCDEFGHIJKLMNOPidk",
     ["interstellar-science-pack"] = "exploration",
     ["planetaris-compression-science-pack"] = "compression",
     ["biorecycling-science-pack"] = "biorecycling",
@@ -134,6 +145,7 @@ utils.science_data_names = {
     ["planetaris-bioengineering-science-pack"] = "bioengineering",
     ["planetaris-pathological-science-pack"] = "pathological",
     ["galvanization-science-pack"] = "galvanization",
+    ["carnal-science-pack"] = "ABCDEFGHIJKLMNOPidk2",
     ["promethium-science-pack"] = "interstellar"
 }
 
@@ -148,7 +160,9 @@ utils.science_names = {
     ["metallurgic-science-pack"] = "Metallurgic",
     ["agricultural-science-pack"] = "Agricultural",
     ["electromagnetic-science-pack"] = "Electromagnetic",
+    ["battlefield-science-pack"] = "Battlefield",
     ["cerysian-science-pack"] = "Radiation",
+    ["planet-crucible-science-pack"] = "ABCDEFGHIJKLMNOPIDK",
     ["interstellar-science-pack"] = "Exploration",
     ["planetaris-compression-science-pack"] = "Compression",
     ["biorecycling-science-pack"] = "Biorecycling",
@@ -162,6 +176,7 @@ utils.science_names = {
     ["planetaris-bioengineering-science-pack"] = "Bioengineering",
     ["planetaris-pathological-science-pack"] = "Pathological",
     ["galvanization-science-pack"] = "Galvanization",
+    ["carnal-science-pack"] = "ABCDEFGHIJKLMNOPIDK2",
     ["promethium-science-pack"] = "Interstellar"
 }
 
@@ -176,7 +191,9 @@ utils.science_enlightenment_noun = {
     ["metallurgic-science-pack"] = "metallurgy",
     ["agricultural-science-pack"] = "agriculture",
     ["electromagnetic-science-pack"] = "electromagnetics",
+    ["battlefield-science-pack"] = "advanced warfare",
     ["cerysian-science-pack"] = "radioactivity",
+    ["planet-crucible-science-pack"] = "ABCDEFGHIJKLMNOPidk",
     ["interstellar-science-pack"] = "astronomy",
     ["planetaris-compression-science-pack"] = "compression",
     ["biorecycling-science-pack"] = "biorecycling",
@@ -190,6 +207,7 @@ utils.science_enlightenment_noun = {
     ["planetaris-bioengineering-science-pack"] = "bioengineering",
     ["planetaris-pathological-science-pack"] = "pathology",
     ["galvanization-science-pack"] = "galvanization",
+    ["carnal-science-pack"] = "ABCDEFGHIJKLMNOPidk2",
     ["promethium-science-pack"] = "cosmology"
 }
 
@@ -204,6 +222,8 @@ utils.progression_sciences = {
     "metallurgic-science-pack",
     "agricultural-science-pack",
     "electromagnetic-science-pack",
+    "battlefield-science-pack",
+    "planet-crucible-science-pack",
     "interstellar-science-pack",
     "planetaris-compression-science-pack",
     "biorecycling-science-pack",
@@ -216,6 +236,7 @@ utils.progression_sciences = {
     "planetaris-bioengineering-science-pack",
     "planetaris-pathological-science-pack",
     "galvanization-science-pack",
+    "carnal-science-pack",
     "promethium-science-pack"
 }
 
@@ -231,6 +252,8 @@ utils.all_sciences = {
     "agricultural-science-pack",
     "electromagnetic-science-pack",
     "cerysian-science-pack",
+    "battlefield-science-pack",
+    "planet-crucible-science-pack",
     "interstellar-science-pack",
     "planetaris-compression-science-pack",
     "biorecycling-science-pack",
@@ -244,6 +267,7 @@ utils.all_sciences = {
     "planetaris-bioengineering-science-pack",
     "planetaris-pathological-science-pack",
     "galvanization-science-pack",
+    "carnal-science-pack",
     "promethium-science-pack"
 }
 
@@ -253,7 +277,9 @@ utils.planets = {
     "fulgora",
     "gleba",
     "vulcanus",
+    "castra",
     "cerys",
+    "crucible",
     "arig",
     "muria",
     "rubia",
@@ -264,6 +290,7 @@ utils.planets = {
     "paracelsin",
     "tellus",
     "vesta",
+    "carna",
     "panglia"
 }
 
@@ -273,7 +300,9 @@ utils.planet_tier_associations = {
     ["fulgora"] = 3,
     ["gleba"] = 3,
     ["vulcanus"] = 3,
+    ["castra"] = 4,
     ["cerys"] = 4,
+    ["crucible"] = 4,
     ["arig"] = 5,
     ["muria"] = 5,
     ["rubia"] = 5,
@@ -284,27 +313,8 @@ utils.planet_tier_associations = {
     ["paracelsin"] = 8,
     ["tellus"] = 8,
     ["vesta"] = 8,
+    ["carna"] = 9,
     ["panglia"] = 10
-}
-
-utils.planet_tier_orders = {
-    ["nauvis"] = "a",
-    ["muluna"] = "b",
-    ["fulgora"] = "c",
-    ["gleba"] = "c",
-    ["vulcanus"] = "c",
-    ["cerys"] = "d",
-    ["arig"] = "e",
-    ["muria"] = "e",
-    ["rubia"] = "e",
-    ["hyarion"] = "f",
-    ["moshine"] = "f",
-    ["aquilo"] = "g",
-    ["maraxsis"] = "g",
-    ["paracelsin"] = "h",
-    ["tellus"] = "h",
-    ["vesta"] = "h",
-    ["panglia"] = "j"
 }
 
 utils.asteroids = {
@@ -315,7 +325,9 @@ utils.asteroids = {
     "hyperlanes-fulgora-asteroid-chunk",
     "hyperlanes-gleba-asteroid-chunk",
     "hyperlanes-vulcanus-asteroid-chunk",
+    "hyperlanes-castra-asteroid-chunk",
     "hyperlanes-cerys-asteroid-chunk",
+    "hyperlanes-crucible-asteroid-chunk",
     "hyperlanes-arig-asteroid-chunk",
     "hyperlanes-muria-asteroid-chunk",
     "hyperlanes-rubia-asteroid-chunk",
@@ -326,6 +338,7 @@ utils.asteroids = {
     "hyperlanes-paracelsin-asteroid-chunk",
     "hyperlanes-tellus-asteroid-chunk",
     "hyperlanes-vesta-asteroid-chunk",
+    "hyperlanes-carna-asteroid-chunk",
     "promethium-asteroid-chunk",
     "hyperlanes-panglia-asteroid-chunk",
 }
@@ -338,7 +351,9 @@ utils.asteroid_prefix = {
     ["hyperlanes-fulgora-asteroid-chunk"] = "Holmic",
     ["hyperlanes-gleba-asteroid-chunk"] = "Organic",
     ["hyperlanes-vulcanus-asteroid-chunk"] = "Volcanic",
+    ["hyperlanes-castra-asteroid-chunk"] = "Castran???",
     ["hyperlanes-cerys-asteroid-chunk"] = "Radioactive",
+    ["hyperlanes-crucible-asteroid-chunk"] = "Cruciblean???",
     ["hyperlanes-arig-asteroid-chunk"] = "Sandstone",
     ["hyperlanes-muria-asteroid-chunk"] = "Acidic",
     ["hyperlanes-rubia-asteroid-chunk"] = "Junk-laden",
@@ -349,6 +364,7 @@ utils.asteroid_prefix = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = "Deepfrozen",
     ["hyperlanes-tellus-asteroid-chunk"] = "Pathogenic",
     ["hyperlanes-vesta-asteroid-chunk"] = "Algae-laden",
+    ["hyperlanes-carna-asteroid-chunk"] = "Carnan???",
     ["promethium-asteroid-chunk"] = "Promethium",
     ["hyperlanes-panglia-asteroid-chunk"] = "Timewarped",
 }
@@ -361,7 +377,9 @@ utils.asteroid_prefix_lowercase = {
     ["hyperlanes-fulgora-asteroid-chunk"] = "holmic",
     ["hyperlanes-gleba-asteroid-chunk"] = "organic",
     ["hyperlanes-vulcanus-asteroid-chunk"] = "volcanic",
+    ["hyperlanes-castra-asteroid-chunk"] = "castran???",
     ["hyperlanes-cerys-asteroid-chunk"] = "radioactive",
+    ["hyperlanes-crucible-asteroid-chunk"] = "cruciblean???",
     ["hyperlanes-arig-asteroid-chunk"] = "sandstone",
     ["hyperlanes-muria-asteroid-chunk"] = "acidic",
     ["hyperlanes-rubia-asteroid-chunk"] = "junk-laden",
@@ -372,6 +390,7 @@ utils.asteroid_prefix_lowercase = {
     ["hyperlanes-paracelsin-asteroid-chunk"] = "deepfrozen",
     ["hyperlanes-tellus-asteroid-chunk"] = "pathogenic",
     ["hyperlanes-vesta-asteroid-chunk"] = "algae-laden",
+    ["hyperlanes-carna-asteroid-chunk"] = "carnan???",
     ["promethium-asteroid-chunk"] = "promethium",
     ["hyperlanes-panglia-asteroid-chunk"] = "timewarped",
 }
@@ -384,7 +403,9 @@ utils.upcyclable_asteroids = {
     "hyperlanes-fulgora-asteroid-chunk",
     "hyperlanes-gleba-asteroid-chunk",
     "hyperlanes-vulcanus-asteroid-chunk",
+    "hyperlanes-castra-asteroid-chunk",
     "hyperlanes-cerys-asteroid-chunk",
+    "hyperlanes-crucible-asteroid-chunk",
     "hyperlanes-arig-asteroid-chunk",
     "hyperlanes-muria-asteroid-chunk",
     "hyperlanes-rubia-asteroid-chunk",
@@ -395,6 +416,7 @@ utils.upcyclable_asteroids = {
     "hyperlanes-paracelsin-asteroid-chunk",
     "hyperlanes-tellus-asteroid-chunk",
     "hyperlanes-vesta-asteroid-chunk",
+    "hyperlanes-carna-asteroid-chunk",
     "hyperlanes-panglia-asteroid-chunk",
 }
 
@@ -542,8 +564,25 @@ utils.t4_sp_cerys = {
     {"space-science-pack", 1},
 }
 
-utils.t4_sp_muluna = table.deepcopy(utils.t4_sp)
-table.insert(utils.t4_sp_muluna, {"interstellar-science-pack", 1})
+utils.t4_sp_castra = table.deepcopy(utils.t4_sp)
+table.insert(utils.t4_sp_castra, {"battlefield-science-pack", 1})
+
+utils.t4_sp_crucible = table.deepcopy(utils.t4_sp)
+table.insert(utils.t4_sp_crucible, {"planet-crucible-science-pack", 1})
+
+utils.t4_sp_castra_cerys = table.deepcopy(utils.t4_sp)
+table.insert(utils.t4_sp_castra_cerys, {"battlefield-science-pack", 1})
+
+utils.t4_sp_castra_crucible = table.deepcopy(utils.t4_sp)
+table.insert(utils.t4_sp_castra_crucible, {"battlefield-science-pack", 1})
+table.insert(utils.t4_sp_castra_crucible, {"planet-crucible-science-pack", 1})
+
+utils.t4_sp_cerys_crucible = table.deepcopy(utils.t4_sp)
+table.insert(utils.t4_sp_cerys_crucible, {"planet-crucible-science-pack", 1})
+
+utils.t4_sp_premuluna = table.deepcopy(utils.t4_sp)
+table.insert(utils.t4_sp_premuluna, {"battlefield-science-pack", 1})
+table.insert(utils.t4_sp_premuluna, {"planet-crucible-science-pack", 1})
 
 
 
@@ -568,6 +607,8 @@ local t5_sp = {
     {"metallurgic-science-pack", 1},
     {"agricultural-science-pack", 1},
     {"electromagnetic-science-pack", 1},
+    {"battlefield-science-pack", 1},
+    {"planet-crucible-science-pack", 1},
     {"interstellar-science-pack", 1}
 }
 utils.t5_sp = t5_sp
@@ -688,7 +729,9 @@ utils.launch_building_associations = {
         "planetaris-space-manufacturer",
         "maraxsis-hydro-plant",
         "mechanical-plant",
-        "planetaris-bioassembler"
+        "planetaris-bioassembler",
+        "algite-assembler",
+        "feron-assembler"
     },
     ["mining"] = {
         "burner-mining-drill",
@@ -699,7 +742,10 @@ utils.launch_building_associations = {
     ["extraction"] = {
         "pumpjack",
         "pressure-turbine",
-        "oil-refinery"
+        "oil-refinery",
+        "molybdenum-miner",
+        "molybdenum-airpump",
+        "feron-airpump"
     },
     ["crushing"] = {
         "muluna-steam-crusher",
@@ -713,7 +759,8 @@ utils.launch_building_associations = {
         "electric-furnace",
         "foundry",
         "smelting-plant",
-        "combustion-furnace"
+        "combustion-furnace",
+        "planet-crucible-kiln"
     },
     ["research"] = {
         "lab",
@@ -730,7 +777,10 @@ utils.launch_building_associations = {
         "planetaris-sifter",
         "planetaris-polisher",
         "planetaris-particle-manipulator",
-        "planetaris-refraction-plant"
+        "planetaris-refraction-plant",
+        "planet-crucible-pressure-forge",
+        "molybdenum-seiver",
+        "algite-knowledge-chamber"
     },
     ["chemistry"] = {
         "chemical-plant",
@@ -746,6 +796,7 @@ utils.launch_building_associations = {
     },
     ["cultivation"] = {
         "biochamber",
+        "feron-biochamber",
         "biovat",
         "planetaris-incubator"
     },
@@ -794,6 +845,8 @@ local t6_sp = {
     {"metallurgic-science-pack", 1},
     {"agricultural-science-pack", 1},
     {"electromagnetic-science-pack", 1},
+    {"battlefield-science-pack", 1},
+    {"planet-crucible-science-pack", 1},
     {"interstellar-science-pack", 1},
     {"planetaris-compression-science-pack", 1},
     {"biorecycling-science-pack", 1},
@@ -824,7 +877,9 @@ utils.data_analysis_sciences = {
     "electromagnetic",
     "agricultural",
     "metallurgic",
+    "battlefield",
     "cerysian",
+    "planet-crucible",
     "interstellar",
     "planetaris-compression",
     "acidworking",
@@ -838,6 +893,7 @@ utils.data_analysis_sciences = {
     "planetaris-bioengineering",
     "planetaris-pathological",
     "gas-manipulation",
+    "carnal",
     "promethium",
 }
 
@@ -852,7 +908,9 @@ utils.data_analysis_sciences_technology_associations = {
     ["electromagnetic"]             = "electromagnetic-science-pack",
     ["agricultural"]                = "agricultural-science-pack",
     ["metallurgic"]                 = "metallurgic-science-pack",
+    ["battlefield"]                 = "battlefield-science-pack",
     ["cerysian"]                    = "cerysian-science-pack",
+    ["planet-crucible"]             = "planet-crucible-science-pack",
     ["interstellar"]                = "interstellar-science-pack",
     ["planetaris-compression"]      = "planetaris-compression-science",
     ["acidworking"]                 = "acidworking-science-pack",
@@ -866,6 +924,7 @@ utils.data_analysis_sciences_technology_associations = {
     ["planetaris-bioengineering"]   = "planetaris-bioengineering-science-pack",
     ["planetaris-pathological"]     = "planetaris-pathological-science-pack",
     ["gas-manipulation"]            = "s1_gas_manipulation_science_pack",
+    ["carnal"]                      = "carnal-science-pack",
     ["promethium"]                  = "promethium-science-pack",
 }
 
@@ -891,6 +950,8 @@ local t7_sp = {
     {"metallurgic-science-pack", 1},
     {"agricultural-science-pack", 1},
     {"electromagnetic-science-pack", 1},
+    {"battlefield-science-pack", 1},
+    {"planet-crucible-science-pack", 1},
     {"interstellar-science-pack", 1},
     {"planetaris-compression-science-pack", 1},
     {"biorecycling-science-pack", 1},
@@ -933,6 +994,8 @@ local t8_sp = {
     {"metallurgic-science-pack", 1},
     {"agricultural-science-pack", 1},
     {"electromagnetic-science-pack", 1},
+    {"battlefield-science-pack", 1},
+    {"planet-crucible-science-pack", 1},
     {"interstellar-science-pack", 1},
     {"planetaris-compression-science-pack", 1},
     {"biorecycling-science-pack", 1},
@@ -997,6 +1060,8 @@ local t9_sp = {
     {"metallurgic-science-pack", 1},
     {"agricultural-science-pack", 1},
     {"electromagnetic-science-pack", 1},
+    {"battlefield-science-pack", 1},
+    {"planet-crucible-science-pack", 1},
     {"interstellar-science-pack", 1},
     {"planetaris-compression-science-pack", 1},
     {"biorecycling-science-pack", 1},
@@ -1016,6 +1081,9 @@ utils.t9_spcost_planet = 30000
 utils.t9_spcost_tech = 10000
 utils.t9_spcost_bigtech = utils.t9_spcost_tech * 2
 utils.t9_spcost_smalltech = utils.t9_spcost_tech / 2
+
+utils.t9_sp_carna = table.deepcopy(utils.t9_sp)
+table.insert(utils.t9_sp_carna, {"carnal-science-pack", 1})
 
 
 -- ╒══════════╗ ╒══════╗ ╒═════════╗ ╒══════════╗       ╒══╗  ╒═════════╗
@@ -1039,6 +1107,8 @@ local t10_sp = {
     {"metallurgic-science-pack", 1},
     {"agricultural-science-pack", 1},
     {"electromagnetic-science-pack", 1},
+    {"battlefield-science-pack", 1},
+    {"planet-crucible-science-pack", 1},
     {"interstellar-science-pack", 1},
     {"planetaris-compression-science-pack", 1},
     {"biorecycling-science-pack", 1},
@@ -1051,6 +1121,7 @@ local t10_sp = {
     {"planetaris-bioengineering-science-pack", 1},
     {"planetaris-pathological-science-pack", 1},
     {"galvanization-science-pack", 1},
+    {"carnal-science-pack", 1},
     {"promethium-science-pack", 1}
 }
 utils.t10_sp = t10_sp
