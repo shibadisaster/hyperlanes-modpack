@@ -55,7 +55,7 @@ data.raw["recipe"]["planet-crucible-lithium-hydride"].ingredients = {
 
 -- Hydrogen remetallization
 data.raw["recipe"]["planet-crucible-hydrogen-remetallization"].categories = {"chemistry", "cryogenics"}
-data.raw["recipe"]["planet-crucible-hydrogen-remetallization"].results[5] = {type = "fluid", name = "lithium-brine", amount = 150, ignored_by_productivity = 150}
+data.raw["recipe"]["planet-crucible-hydrogen-remetallization"].results[5] = {type = "fluid", name = "lithium-brine", amount = 75, ignored_by_productivity = 75}
 
 
 -- Advanced thruster oxidizer (we aren't gonna touch this even!)

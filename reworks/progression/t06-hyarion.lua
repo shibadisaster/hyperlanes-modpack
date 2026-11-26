@@ -22,6 +22,7 @@ data.raw["technology"]["planetaris-polishing"].prerequisites = {"planetaris-meta
 -- Polishing compound
 data.raw["recipe"]["planetaris-polishing-compound"].ingredients = {
     {type = "item", name = "iron-ore", amount = 20, quality_min = "rare"},
+    {type = "item", name = "planet-crucible-ruby", amount = 1, quality_min = "uncommon"}, -- DUDE irl corundum is used as a polishing abrasive YES!!!!!
     {type = "item", name = "hyperlanes-activated-elementary-catalyst", amount = 1},
     {type = "fluid", name = "hyperlanes-metamaterial-microsuspension", amount = 10},
 }
@@ -39,6 +40,11 @@ table.insert(data.raw["recipe"]["planetaris-polished-emerald"].ingredients, {typ
 table.insert(data.raw["recipe"]["planetaris-polished-quartz"].ingredients, {type = "fluid", name = "hyperlanes-superacid", amount = 5})
 table.insert(data.raw["recipe"]["planetaris-polished-ruby"].ingredients, {type = "fluid", name = "hyperlanes-superacid", amount = 5})
 table.insert(data.raw["recipe"]["planetaris-polished-sapphire"].ingredients, {type = "fluid", name = "hyperlanes-superacid", amount = 5})
+
+-- Crucible gem compatibility
+table.insert(data.raw["recipe"]["planetaris-raw-diamond"].ingredients, {type = "item", name = "planet-crucible-diamond", amount = 1})
+table.insert(data.raw["recipe"]["planetaris-raw-diamond"].results, {type = "item", name = "planet-crucible-diamond", amount = 1, ignored_by_productivity = 1, independent_probability = 0.5})
+data.raw["recipe"]["planetaris-raw-diamond"].main_product = "planetaris-raw-diamond"
 
 
 -- Polisher
@@ -119,6 +125,7 @@ data.raw["recipe"]["planetaris-assembling-machine-4"].ingredients = {
     {type = "item", name = "speed-module-3", amount = 2, quality_min = "rare"},
     {type = "item", name = "steel-plate", amount = 50, quality_min = "rare"},
     {type = "item", name = "planetaris-heavy-glass", amount = 5},
+    {type = "fluid", name = "planet-crucible-hydraulic-fluid", amount = 50},
 }
 data.raw["recipe"]["planetaris-assembling-machine-4"].surface_conditions = {
     {

@@ -18,16 +18,6 @@ data.raw["recipe"]["pressure-turbine"].surface_conditions = {
 }
 
 
--- Fusion generator
-data.raw["recipe"]["fusion-generator"].ingredients = {
-    {type = "item", name = "tungsten-plate", amount = 100, quality_min = "epic"},
-    {type = "item", name = "lead-plate", amount = 50, quality_min = "uncommon"},
-    {type = "item", name = "maraxsis-glass-panes", amount = 50},
-    {type = "item", name = "quantum-processor", amount = 50},
-    {type = "item", name = "pressure-turbine", amount = 1, quality_min = "uncommon"},
-}
-
-
 -- Cryovolcanic mixture
 data.raw["recipe"]["cryovolcanic-mixture-separation"].categories = {"cryogenics", "electrochemistry"}
 
