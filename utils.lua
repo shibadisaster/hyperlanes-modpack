@@ -131,7 +131,7 @@ utils.science_data_names = {
     ["electromagnetic-science-pack"] = "electromagnetic",
     ["battlefield-science-pack"] = "battlefield",
     ["cerysian-science-pack"] = "radiation",
-    ["planet-crucible-science-pack"] = "ABCDEFGHIJKLMNOPidk",
+    ["planet-crucible-science-pack"] = "high_pressure",
     ["interstellar-science-pack"] = "exploration",
     ["planetaris-compression-science-pack"] = "compression",
     ["biorecycling-science-pack"] = "biorecycling",
@@ -145,7 +145,7 @@ utils.science_data_names = {
     ["planetaris-bioengineering-science-pack"] = "bioengineering",
     ["planetaris-pathological-science-pack"] = "pathological",
     ["galvanization-science-pack"] = "galvanization",
-    ["carnal-science-pack"] = "ABCDEFGHIJKLMNOPidk2",
+    ["carnal-science-pack"] = "thermocline",
     ["promethium-science-pack"] = "interstellar"
 }
 
@@ -162,7 +162,7 @@ utils.science_names = {
     ["electromagnetic-science-pack"] = "Electromagnetic",
     ["battlefield-science-pack"] = "Battlefield",
     ["cerysian-science-pack"] = "Radiation",
-    ["planet-crucible-science-pack"] = "ABCDEFGHIJKLMNOPIDK",
+    ["planet-crucible-science-pack"] = "High-pressure",
     ["interstellar-science-pack"] = "Exploration",
     ["planetaris-compression-science-pack"] = "Compression",
     ["biorecycling-science-pack"] = "Biorecycling",
@@ -176,7 +176,7 @@ utils.science_names = {
     ["planetaris-bioengineering-science-pack"] = "Bioengineering",
     ["planetaris-pathological-science-pack"] = "Pathological",
     ["galvanization-science-pack"] = "Galvanization",
-    ["carnal-science-pack"] = "ABCDEFGHIJKLMNOPIDK2",
+    ["carnal-science-pack"] = "Thermocline",
     ["promethium-science-pack"] = "Interstellar"
 }
 
@@ -193,7 +193,7 @@ utils.science_enlightenment_noun = {
     ["electromagnetic-science-pack"] = "electromagnetics",
     ["battlefield-science-pack"] = "advanced warfare",
     ["cerysian-science-pack"] = "radioactivity",
-    ["planet-crucible-science-pack"] = "ABCDEFGHIJKLMNOPidk",
+    ["planet-crucible-science-pack"] = "high pressure",
     ["interstellar-science-pack"] = "astronomy",
     ["planetaris-compression-science-pack"] = "compression",
     ["biorecycling-science-pack"] = "biorecycling",
@@ -207,7 +207,7 @@ utils.science_enlightenment_noun = {
     ["planetaris-bioengineering-science-pack"] = "bioengineering",
     ["planetaris-pathological-science-pack"] = "pathology",
     ["galvanization-science-pack"] = "galvanization",
-    ["carnal-science-pack"] = "ABCDEFGHIJKLMNOPidk2",
+    ["carnal-science-pack"] = "temperature",
     ["promethium-science-pack"] = "cosmology"
 }
 

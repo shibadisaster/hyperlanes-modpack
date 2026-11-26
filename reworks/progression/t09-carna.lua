@@ -423,6 +423,16 @@ data.raw["recipe"]["carna-spire-energy-core-spent"].results = { -- we love envir
 }
 
 
+-- Carnan science pack
+data.raw["recipe"]["carnal-science-pack"].ingredients = {
+    {type = "item", name = "algite-aura-core", amount = 5},
+    {type = "item", name = "stingfrondfruit", amount = 10},
+    {type = "item", name = "intenseplasma-chunk", amount = 1},
+    {type = "item", name = "intensecoolant-chunk", amount = 1},
+    {type = "fluid", name = "carnal-data", amount = 100},
+}
+
+
 
 -- Intense plasma
 

@@ -37,7 +37,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local enlightenment_step = {
         type = "item",
         name = "hyperlanes-enlightened-processor-step-" .. index,
-        localised_name = "Sentient processor (enlightened by " .. "[font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_enlightenment_noun[science_name .. "-science-pack"] .. "[/color][/font]" .. ")",
+        localised_name = "Sentient processor (enlightened about " .. "[font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_enlightenment_noun[science_name .. "-science-pack"] .. "[/color][/font]" .. ")",
         -- icon = "__panglia_planet__/graphics/icons/panglia_sentient_processor.png",
         icons = {
             {
@@ -72,7 +72,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
         type = "recipe",
         name = "hyperlanes-enlightened-processor-step-" .. index,
         order = utils.science_order[science_name .. "-science-pack"],
-        localised_name = "Enlighten with " .. "[font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_enlightenment_noun[science_name .. "-science-pack"] .. "[/color][/font]",
+        localised_name = "Enlighten about " .. "[font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_enlightenment_noun[science_name .. "-science-pack"] .. "[/color][/font]",
         enabled = false,
         icons = {
             {
