@@ -184,7 +184,7 @@ data.raw["recipe"]["simulation_chamber"].ingredients = {
 
 -- Synaptic assembler
 data.raw["recipe"]["thinking-brain"].ingredients = {
-    {type = "item", name = "planetaris-bioassembler-seed", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "algite-knowledge-chamber", amount = 1, quality_min = "rare"},
     {type = "item", name = "panglia_cloned_specimen_body_3_genius", amount = 1},
     {type = "item", name = "simulation_chamber", amount = 1},
     {type = "item", name = "data-processor", amount = 1, quality_min = "legendary"},

@@ -71,6 +71,7 @@ for index, science_name in ipairs(utils.data_analysis_sciences) do
     local enlightenment_step_recipe = {
         type = "recipe",
         name = "hyperlanes-enlightened-processor-step-" .. index,
+        order = utils.science_order[science_name .. "-science-pack"],
         localised_name = "Enlighten with " .. "[font=moshine-data][color=#" .. utils.science_colors_hex[science_name .. "-science-pack"] .. "]" .. utils.science_enlightenment_noun[science_name .. "-science-pack"] .. "[/color][/font]",
         enabled = false,
         icons = {
@@ -149,6 +150,7 @@ end
 local enlightenment_recipe = {
     type = "recipe",
     name = "hyperlanes-enlightened-processor",
+    order = "aaaaaaa",
     enabled = false,
     ingredients =
     {

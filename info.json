@@ -22,6 +22,8 @@
         "planetaris-hyarion = 1.3.24",
         "planetaris-tellus = 1.1.19",
         "castra-prime = 0.9.5",
+        "planet-crucible = 1.2.14",
+        "carna = 0.3.32",
 
         "Crystalline-Library >= 1.0.0",
         "machine-upgrades >= 0.69.23",
@@ -57,7 +59,8 @@
         "+ light-overhaul",
         "+ NoRespawnGun-SpaceAge-fork",
         "+ respawn-to-any-planet",
-        "+ squeak-through-2"
+        "+ squeak-through-2",
+        "+ power-grid-comb-chasemuss-fork"
     ],
     "description": "Factorio modpack made with the goal of creating a Space Age experience with a focus on long-term progression, mod cohesion, and interplanetary logistics!",
     "license": "MIT"
