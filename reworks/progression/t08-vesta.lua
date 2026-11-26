@@ -87,6 +87,7 @@ data.raw["recipe"]["combustion-furnace"].ingredients = {
     {type = "item", name = "flare-stack", amount = 1},
     {type = "item", name = "lithium-plate", amount = 50, quality_min = "uncommon"},
     {type = "item", name = "quantum-processor", amount = 10},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 20},
     {type = "item", name = "ske_algea_clump", amount = 2},
 }
 
@@ -98,6 +99,7 @@ data.raw["recipe"]["vesta-electrolyzer"].ingredients = {
     {type = "item", name = "lithium-plate", amount = 50, quality_min = "uncommon"},
     {type = "item", name = "ske_ammonia_chilled_plate", amount = 20},
     {type = "item", name = "quantum-processor", amount = 20},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 20},
     {type = "item", name = "superconductor", amount = 20, quality_min = "legendary"},
 }
 
@@ -109,6 +111,7 @@ data.raw["recipe"]["heating-conductor"].ingredients = {
     {type = "item", name = "heat-pipe", amount = 50, quality_min = "legendary"},
     {type = "item", name = "ske_ammonia_chilled_plate", amount = 20},
     {type = "item", name = "quantum-processor", amount = 20},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 20},
     {type = "item", name = "ai-tier-10", amount = 1},
 }
 
@@ -122,6 +125,7 @@ data.raw["recipe"]["supermagnet"].ingredients = {
     {type = "item", name = "quantum-processor", amount = 20},
     {type = "item", name = "planetaris-crystalization-motor", amount = 20},
     {type = "item", name = "ai-tier-10", amount = 1},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 20},
     {type = "fluid", name = "electrolyte", amount = 1000},
 }
 
@@ -132,6 +136,7 @@ data.raw["recipe"]["ske_ammonia_chilled_plate"].ingredients = {
     {type = "item", name = "tungsten-plate", amount = 1, quality_min = "legendary"},
     {type = "item", name = "aluminum-plate", amount = 1, quality_min = "legendary"},
     {type = "item", name = "steel-plate", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 1},
     {type = "fluid", name = "ammonia", amount = 50},
 }
 data.raw["recipe"]["ske_ammonia_chilled_plate"].results = {

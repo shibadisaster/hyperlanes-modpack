@@ -43,6 +43,7 @@ data.raw["recipe"]["panglia_panglite_fiber"].ingredients = {
     {type = "item", name = "ske_mesh", amount = 20, quality_min = "legendary"},
     {type = "item", name = "panglia_panglite", amount = 50},
     {type = "item", name = "plutonium-239", amount = 10},
+    {type = "item", name = "galvanized-steel-plate", amount = 10},
     {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1},
 }
 data.raw["recipe"]["panglia_panglite_fiber"].results = {
@@ -66,6 +67,7 @@ data.raw["recipe"]["snouz_wall_hull"].ingredients = {
     {type = "item", name = "panglia_panglite_fiber", amount = 5},
     {type = "item", name = "low-density-space-platform-foundation", amount = 1},
     {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 2, quality_min = "legendary"},
+    {type = "item", name = "galvanized-steel-plate", amount = 10},
     {type = "item", name = "craptonite-wall", amount = 1, quality_min = "legendary"},
 }
 data.raw["recipe"]["snouz_wall_hull"].categories = {"space-manufacturing"}
@@ -92,6 +94,7 @@ data.raw["recipe"]["panglia_crusher"].ingredients = {
     {type = "item", name = "planetaris-sifter", amount = 1, quality_min = "legendary"},
     {type = "item", name = "panglia_panglite_fiber", amount = 10},
     {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 10, quality_min = "legendary"},
+    {type = "item", name = "electric-coil", amount = 50, quality_min = "rare"},
     {type = "item", name = "quantum-processor", amount = 10, quality_min = "legendary"},
 }
 
@@ -143,6 +146,7 @@ data.raw["recipe"]["panglia_dna_scanner"].ingredients = {
     {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 100, quality_min = "legendary"},
     {type = "item", name = "quantum-processor", amount = 100, quality_min = "legendary"},
     {type = "item", name = "maraxsis-super-sealant-substance", amount = 20, quality_min = "legendary"},
+    {type = "item", name = "electric-coil", amount = 50, quality_min = "rare"},
     {type = "fluid", name = "hyperlanes-bioslurry", amount = 100},
 }
 data.raw["recipe"]["panglia_dna_scanner"].categories = {"mechanics"}
@@ -157,6 +161,7 @@ data.raw["recipe"]["panglia_dna_builder"].ingredients = {
     {type = "item", name = "planetaris-crystalization-motor", amount = 20, quality_min = "legendary"},
     {type = "item", name = "datacell-dna-raw", amount = 100},
     {type = "item", name = "datacell-dna-sequenced", amount = 50},
+    {type = "item", name = "electric-coil", amount = 100, quality_min = "rare"},
     {type = "fluid", name = "panglia_branbalite_slurry", amount = 200},
 }
 
@@ -321,6 +326,9 @@ local cosmic_incubator_recipes = {
     "cosmic_incubator_recipe_vesta",
     "cosmic_incubator_recipe_muria",
     "cosmic_incubator_recipe_rubia",
+    "cosmic_incubator_recipe_castra",
+    "cosmic_incubator_recipe_crucible",
+    "cosmic_incubator_recipe_carna",
 }
 
 local cosmic_incubator_recipes_results = {
@@ -342,6 +350,9 @@ local cosmic_incubator_recipes_results = {
     ["cosmic_incubator_recipe_vesta"] = {"hyperlanes-vesta-asteroid-chunk"},
     ["cosmic_incubator_recipe_muria"] = {"hyperlanes-muria-asteroid-chunk"},
     ["cosmic_incubator_recipe_rubia"] = {"hyperlanes-rubia-asteroid-chunk"},
+    ["cosmic_incubator_recipe_castra"] = {"hyperlanes-castra-asteroid-chunk"},
+    ["cosmic_incubator_recipe_crucible"] = {"hyperlanes-crucible-asteroid-chunk"},
+    ["cosmic_incubator_recipe_carna"] = {"hyperlanes-carna-asteroid-chunk"},
 }
 
 

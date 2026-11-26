@@ -91,6 +91,7 @@ data.raw["recipe"]["electrochemical-plant"].ingredients = {
     {type = "item", name = "quantum-processor", amount = 30},
     {type = "item", name = "zinc-plate", amount = 25, quality_min = "rare"},
     {type = "item", name = "zinc-solder", amount = 20},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 20},
     {type = "item", name = "ai-tier-10", amount = 1},
 }
 
@@ -102,6 +103,7 @@ data.raw["recipe"]["mechanical-plant"].ingredients = {
     {type = "item", name = "planetaris-crystalization-motor", amount = 30},
     {type = "item", name = "zinc-plate", amount = 25, quality_min = "rare"},
     {type = "item", name = "zinc-rivets", amount = 20},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 20},
     {type = "item", name = "ai-tier-10", amount = 1},
 }
 
@@ -163,7 +165,8 @@ data.raw["recipe"]["electric-coil"].ingredients = {
 
 -- Casting galvanized steel
 data.raw["recipe"]["casting-galvanized-steel-plate"].ingredients = {
-    {type = "item", name = "carbon", amount = 3, quality_min = "legendary"},
+    {type = "item", name = "carbon", amount = 5, quality_min = "legendary"},
+    {type = "item", name = "nickel-plate", amount = 3, quality_min = "legendary"},
     {type = "item", name = "zinc", amount = 3},
     {type = "fluid", name = "molten-iron", amount = 150},
     {type = "fluid", name = "nitrogen", amount = 20},

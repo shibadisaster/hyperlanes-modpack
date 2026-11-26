@@ -853,7 +853,7 @@ local t6_sp = {
     {"acidworking-science-pack", 1}
 }
 utils.t6_sp = t6_sp
-utils.t6_spcost_epp = 30000
+utils.t6_spcost_epp = 25000
 utils.t6_spcost_planet = 10000
 utils.t6_spcost_tech = 3500
 utils.t6_spcost_bigtech = utils.t6_spcost_tech * 2
@@ -960,7 +960,7 @@ local t7_sp = {
     {"planetaris-refraction-science-pack", 1}
 }
 utils.t7_sp = t7_sp
-utils.t7_spcost_epp = 60000
+utils.t7_spcost_epp = 40000
 utils.t7_spcost_planet = 15000
 utils.t7_spcost_tech = 5000
 utils.t7_spcost_bigtech = utils.t7_spcost_tech * 2
@@ -1006,7 +1006,7 @@ local t8_sp = {
     {"hydraulic-science-pack", 1}
 }
 utils.t8_sp = t8_sp
-utils.t8_spcost_epp = 100000
+utils.t8_spcost_epp = 60000
 utils.t8_spcost_planet = 25000
 utils.t8_spcost_tech = 7500
 utils.t8_spcost_bigtech = utils.t8_spcost_tech * 2
@@ -1076,7 +1076,7 @@ local t9_sp = {
     {"galvanization-science-pack", 1},
 }
 utils.t9_sp = t9_sp
-utils.t9_spcost_epp = 200000
+utils.t9_spcost_epp = 80000
 utils.t9_spcost_planet = 30000
 utils.t9_spcost_tech = 10000
 utils.t9_spcost_bigtech = utils.t9_spcost_tech * 2
@@ -1125,7 +1125,7 @@ local t10_sp = {
     {"promethium-science-pack", 1}
 }
 utils.t10_sp = t10_sp
-utils.t10_spcost_epp = 500000
+utils.t10_spcost_epp = 100000
 utils.t10_spcost_planet = 50000
 utils.t10_spcost_tech = 15000
 utils.t10_spcost_bigtech = utils.t10_spcost_tech * 2

@@ -22,6 +22,7 @@ data.raw["recipe"]["cryolab"].ingredients = {
     {type = "item", name = "quantum-processor", amount = 200, quality_min = "rare"},
     {type = "item", name = "cerys-radioactive-module-charged", amount = 10, quality_min = "legendary"},
     {type = "item", name = "algite-aura-core", amount = 1},
+    {type = "item", name = "electric-coil", amount = 250},
     {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 1000},
     {type = "fluid", name = "hyperlanes-bioslurry", amount = 500},
 }
@@ -64,6 +65,7 @@ data.raw["recipe"]["molybdenum-core"].ingredients = {
     {type = "item", name = "hyperlanes-supercooled-magnet", amount = 1},
     {type = "item", name = "quantum-processor", amount = 1, quality_min = "rare"},
     {type = "item", name = "steel-plate", amount = 50, quality_min = "legendary"},
+    {type = "item", name = "galvanized-steel-plate", amount = 50},
 }
 
 
@@ -119,6 +121,7 @@ data.raw["recipe"]["emf-core-mk01"].ingredients = {
 -- Algite iron alloy
 data.raw["recipe"]["algite-iron-alloy"].ingredients = {
     {type = "item", name = "iron-ore", amount = 20, quality_min = "legendary"},
+    {type = "item", name = "nickel-plate", amount = 2, quality_min = "legendary"},
     {type = "item", name = "algite-ore", amount = 5},
     {type = "fluid", name = "oxygen", amount = 200},
 }
@@ -244,6 +247,7 @@ data.raw["recipe"]["carna-richwater1"].ingredients = {
     {type = "item", name = "molybdenum-plate", amount = 5},
     {type = "item", name = "nutrients", amount = 5, quality_min = "legendary"},
     {type = "fluid", name = "hyperlanes-aerated-water", amount = 500},
+    {type = "fluid", name = "planetaris-chlorophyll", amount = 500},
 }
 data.raw["recipe"]["carna-richwater1"].categories = {"organic"}
 
@@ -284,6 +288,7 @@ data.raw["recipe"]["feron-biochamber"].ingredients = {
     {type = "item", name = "algite-aura-core", amount = 3},
     {type = "item", name = "ai-tier-10", amount = 1, quality_min = "legendary"},
     {type = "item", name = "quantum-processor", amount = 50, quality_min = "rare"},
+    {type = "item", name = "galvanized-steel-plate", amount = 150},
     {type = "fluid", name = "hyperlanes-bioslurry", amount = 300},
 }
 
@@ -335,6 +340,7 @@ data.raw["recipe"]["feron-assembler"].ingredients = {
     {type = "item", name = "hyperlanes-osmiridium-alloy-plate", amount = 100},
     {type = "item", name = "ai-tier-10", amount = 2, quality_min = "legendary"},
     {type = "item", name = "quantum-processor", amount = 100, quality_min = "rare"},
+    {type = "item", name = "galvanized-steel-plate", amount = 100},
     {type = "fluid", name = "carna-geysergas", amount = 1000},
 }
 
@@ -402,6 +408,7 @@ data.raw["recipe"]["carna-spire-energy-core-dormant"].ingredients = {
     {type = "item", name = "feron-e-core", amount = 5},
     {type = "item", name = "quantum-processor", amount = 50, quality_min = "rare"},
     {type = "fluid", name = "molybdenum-molten", amount = 2000},
+    {type = "item", name = "electric-coil", amount = 100},
 }
 
 data.raw["recipe"]["carna-spire-energy-core"].ingredients = {
@@ -410,7 +417,7 @@ data.raw["recipe"]["carna-spire-energy-core"].ingredients = {
     {type = "fluid", name = "carna-emfgas", amount = 200},
 }
 
-data.raw["recipe"]["carna-spire-energy-core-spent"].results = {
+data.raw["recipe"]["carna-spire-energy-core-spent"].results = { -- we love environmental storytelling
     {type = "item", name = "scrap", amount_min = 15, amount_max = 55},
     {type = "fluid", name = "heavy-oil", amount_min = 200, amount_max = 400},
 }

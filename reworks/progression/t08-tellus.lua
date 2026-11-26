@@ -41,6 +41,7 @@ data.raw["recipe"]["planetaris-root"].ingredients = {
     {type = "item", name = "cellulose", amount = 10, quality_min = "legendary"},
     {type = "item", name = "planetaris-compost", amount = 20},
     {type = "item", name = "planetaris-magnesium-sheet", amount = 5},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 2},
     {type = "item", name = "anti-corrosion-cladding", amount = 2, quality_min = "legendary"},
     {type = "fluid", name = "hyperlanes-bioslurry", amount = 5},
 }
@@ -156,10 +157,24 @@ data.raw["recipe"]["planetaris-mycelia-processing"].categories = {"organic"}
 
 
 -- Artificial skin
-table.insert(
-    data.raw["recipe"]["planetaris-polimer-skin"].ingredients,
+-- table.insert(
+--     data.raw["recipe"]["planetaris-polimer-skin"].ingredients,
+--     {type = "fluid", name = "hyperlanes-bioslurry", amount = 20}
+-- )
+
+-- table.insert(
+--     data.raw["recipe"]["planetaris-polimer-skin"].ingredients,
+--     {type = "item", name = "maraxsis-super-sealant-substance", amount = 2}
+-- )
+data.raw["recipe"]["planetaris-polimer-skin"].ingredients = {
+    {type = "item", name = "muluna-microcellular-plastic", amount = 1, quality_min = "legendary"},
+    {type = "item", name = "nutrients", amount = 5, quality_min = "legendary"},
+    {type = "item", name = "planetaris-mycelia-composite", amount = 2},
+    {type = "item", name = "maraxsis-super-sealant-substance", amount = 2},
     {type = "fluid", name = "hyperlanes-bioslurry", amount = 20}
-)
+}
+
+
 
 
 -- Artificial heart

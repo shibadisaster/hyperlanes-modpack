@@ -29,6 +29,7 @@ data.raw["recipe"]["maraxsis-glass-panes"].ingredients = {
     {type = "item", name = "limestone", amount = 1},
     {type = "item", name = "salt", amount = 2, quality_min = "uncommon"},
     {type = "item", name = "hyperlanes-sealant", amount = 1},
+    {type = "item", name = "planetaris-polished-diamond", amount = 1},
     {type = "fluid", name = "planetaris-polishing-compound", amount = 10},
 }
 
