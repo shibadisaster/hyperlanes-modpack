@@ -9,6 +9,7 @@ local ac_recipe = {
     ingredients =
     {
         {type = "item", name = "promethium-asteroid-chunk", amount = 1},
+        {type = "item", name = "exotic-matter", amount = 1},
         {type = "fluid", name = "fusion-plasma", amount = 2},
         {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 2},
     },
@@ -77,6 +78,7 @@ local ap_restab_recipe = {
     ingredients =
     {
         {type = "item", name = "hyperlanes-antimatter-particulate", amount = 20},
+        {type = "item", name = "exotic-matter", amount = 1},
         {type = "fluid", name = "planetaris-pure-light", amount = 20}
     },
     energy_required = 1.0,
@@ -100,6 +102,7 @@ local time_crystal_recipe = {
     {
         {type = "item", name = "planetaris-polished-diamond", amount = 4, quality_min = "legendary"},
         {type = "item", name = "hyperlanes-volatile-catalyst", amount = 1, quality_min = "legendary"},
+        {type = "item", name = "exotic-matter", amount = 250},
         {type = "item", name = "hyperlanes-antimatter-particulate", amount = 20},
         {type = "fluid", name = "planetaris-pure-light", amount = 20}
     },
@@ -149,6 +152,7 @@ local speed_5_recipe = {
     {
         {type = "item", name = "cerys-overclock-module", amount = 1, quality_min = "legendary"},
         {type = "item", name = "quantum-processor", amount = 5, quality_min = "rare"},
+        {type = "item", name = "exotic-matter", amount = 100},
         {type = "item", name = "hyperlanes-antimatter-chunk", amount = 1},
         {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 100},
         {type = "item", name = "electric-coil", amount = 3, quality_min = "uncommon"},
@@ -172,6 +176,7 @@ local productivity_5_recipe = {
     {
         {type = "item", name = "cerys-radioactive-module-charged", amount = 1, quality_min = "legendary"},
         {type = "item", name = "quantum-processor", amount = 5, quality_min = "rare"},
+        {type = "item", name = "exotic-matter", amount = 100},
         {type = "item", name = "hyperlanes-antimatter-chunk", amount = 1},
         {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 100},
         {type = "item", name = "planetaris-wasp-egg", amount = 3, quality_min = "uncommon"},
@@ -195,6 +200,7 @@ local efficiency_5_recipe = {
     {
         {type = "item", name = "rubia-efficiency-module4", amount = 1, quality_min = "legendary"},
         {type = "item", name = "quantum-processor", amount = 5, quality_min = "rare"},
+        {type = "item", name = "exotic-matter", amount = 100},
         {type = "item", name = "hyperlanes-antimatter-chunk", amount = 1},
         {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 100},
         {type = "item", name = "ske_algea_clump_rare", amount = 3, quality_min = "uncommon"},
@@ -218,6 +224,7 @@ local quality_4_recipe = {
     {
         {type = "item", name = "quality-module-3", amount = 1, quality_min = "legendary"},
         {type = "item", name = "quantum-processor", amount = 10, quality_min = "epic"},
+        {type = "item", name = "exotic-matter", amount = 100},
         {type = "item", name = "hyperlanes-antimatter-particulate", amount = 50},
         {type = "fluid", name = "hyperlanes-bose-einstein-condensate", amount = 200},
         {type = "item", name = "promethium-asteroid-chunk", amount = 3, quality_min = "rare"},

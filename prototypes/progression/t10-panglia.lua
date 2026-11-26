@@ -152,7 +152,7 @@ local enlightenment_recipe = {
     enabled = false,
     ingredients =
     {
-        {type = "item", name = "hyperlanes-enlightened-processor-step-25", amount = 1},
+        {type = "item", name = "hyperlanes-enlightened-processor-step-28", amount = 1},
         {type = "item", name = "datacell-cosmic-data", amount = 10000},
     },
     energy_required = 300.0,
